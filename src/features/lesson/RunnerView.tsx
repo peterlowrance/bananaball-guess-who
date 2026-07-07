@@ -13,6 +13,7 @@ import { useStore } from '../../store';
 import { playSound } from '../../lib/sound';
 import { haptic } from '../../lib/haptics';
 import type { RunnerSummary } from './useQuestionRunner';
+import type { SessionQuestion } from '../../engine/quiz/types';
 
 interface Runner {
   current: ReturnType<typeof import('./useQuestionRunner').useQuestionRunner>['current'];
@@ -35,13 +36,22 @@ export function RunnerView({
   const soundOn = useStore((s) => s.profile.settings.sound);
   const hapticsOn = useStore((s) => s.profile.settings.haptics);
 
-  const [feedback, setFeedback] = useState(false);
   const [acked, setAcked] = useState<Set<string>>(new Set());
   const [lastCorrect, setLastCorrect] = useState(false);
   const [revealCorrect, setRevealCorrect] = useState<number | null>(null);
   const [pickedIndex, setPickedIndex] = useState<number | null>(null);
+  // While feedback is showing we FREEZE the question that was just answered, so
+  // the sheet (and the revealed answer) stay pinned to it — runner.submit has
+  // already advanced runner.current to the next question underneath. Without
+  // this, the next question renders early with its answer given away.
+  const [answered, setAnswered] = useState<{
+    question: SessionQuestion;
+    combo: number;
+  } | null>(null);
+  const feedback = answered !== null;
 
-  const q = runner.current;
+  // The question to render: the frozen answered one during feedback, else live.
+  const q = answered?.question ?? runner.current;
   const showIntro = !!q && q.intro && !acked.has(q.id) && !feedback;
 
   const ackIntro = useCallback(() => {
@@ -49,48 +59,53 @@ export function RunnerView({
   }, [q]);
 
   const advance = useCallback(() => {
-    setFeedback(false);
+    setAnswered(null);
     setRevealCorrect(null);
     setPickedIndex(null);
   }, []);
 
   const onAnswer = useCallback(
     (p: AnswerPayload) => {
-      if (!q || feedback) return;
-      const picked = q.choices.findIndex((c, i) =>
-        p.correct ? i === q.correctIndex : c.playerId === p.confusedWith,
+      const cur = runner.current;
+      if (!cur || feedback) return;
+      const picked = cur.choices.findIndex((c, i) =>
+        p.correct ? i === cur.correctIndex : c.playerId === p.confusedWith,
       );
-      setPickedIndex(p.correct ? q.correctIndex : picked >= 0 ? picked : null);
-      setRevealCorrect(q.correctIndex >= 0 ? q.correctIndex : null);
+      setPickedIndex(p.correct ? cur.correctIndex : picked >= 0 ? picked : null);
+      setRevealCorrect(cur.correctIndex >= 0 ? cur.correctIndex : null);
       setLastCorrect(p.correct);
       // combo detection: the answer bumps the combo to this value
       const nextCombo = p.correct ? runner.combo + 1 : 0;
+      // freeze the answered question BEFORE submit advances runner.current
+      setAnswered({ question: cur, combo: nextCombo });
       runner.submit(p.correct, p.confusedWith);
       if (soundOn) {
         if (p.correct && nextCombo > 0 && nextCombo % 5 === 0) playSound('combo');
         else playSound(p.correct ? 'correct' : 'wrong');
       }
       if (hapticsOn) haptic(p.correct ? 'correct' : 'wrong');
-      setFeedback(true);
     },
-    [q, feedback, runner, soundOn, hapticsOn],
+    [feedback, runner, soundOn, hapticsOn],
   );
 
-  // finalize when the queue is exhausted
+  // finalize when the queue is exhausted — but only after the last question's
+  // feedback sheet has been dismissed (feedback === false), so the user still
+  // sees the result of their final answer.
   const ranComplete = useRef(false);
   useEffect(() => {
-    if (runner.done && !ranComplete.current) {
+    if (runner.done && !feedback && !ranComplete.current) {
       ranComplete.current = true;
       if (soundOn) playSound('complete');
       onComplete(runner.summary());
     }
-  }, [runner, soundOn, onComplete]);
+  }, [runner, feedback, soundOn, onComplete]);
 
-  if (runner.done || !q) {
+  if (!q) {
     return <div className="p-8 text-center font-bold">Wrapping up…</div>;
   }
 
   const target = getPlayer(q.targetId);
+  const feedbackCombo = answered?.combo ?? runner.combo;
 
   return (
     <div className="flex h-full min-h-0 flex-1 flex-col">
@@ -136,7 +151,7 @@ export function RunnerView({
       </div>
 
       {feedback && (
-        <FeedbackSheet correct={lastCorrect} player={target} combo={runner.combo} onContinue={advance} />
+        <FeedbackSheet correct={lastCorrect} player={target} combo={feedbackCombo} onContinue={advance} />
       )}
     </div>
   );
