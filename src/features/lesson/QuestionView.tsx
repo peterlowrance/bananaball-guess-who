@@ -212,11 +212,16 @@ function NameToPhoto({ question: q, onAnswer, disabled, revealCorrect, pickedInd
 
 function WhichTeam({ question: q, onAnswer, disabled, revealCorrect, pickedIndex }: Props) {
   const target = getPlayer(q.targetId);
+  // No photo here on purpose: the player's picture often gives away the team
+  // (uniform colors), so we show text-only identity cues instead.
   return (
     <div>
       <Prompt>What team is {target.name} on?</Prompt>
-      <div className="mb-6 flex justify-center">
-        <PlayerImage player={target} size={160} rounded="rounded-3xl" />
+      <div className="mb-6 rounded-2xl border-2 border-[var(--hairline)] p-4 text-center">
+        <p className="text-2xl font-black">{target.name}</p>
+        <p className="mt-1 font-bold text-[var(--muted)]">
+          #{target.jersey_number} · {target.position_label}
+        </p>
       </div>
       <div className="grid grid-cols-2 gap-3">
         {q.choices.map((c, i) => {
@@ -433,7 +438,7 @@ function TypeName({ question: q, onAnswer, disabled }: Props) {
           if (e.key === 'Enter' && value.trim()) submit();
         }}
         placeholder="Player name…"
-        className="mb-3 w-full rounded-2xl border-2 border-[var(--hairline)] bg-transparent p-4 text-center text-lg font-bold"
+        className="mb-3 w-full select-text rounded-2xl border-2 border-[var(--hairline)] bg-transparent p-4 text-center text-lg font-bold"
       />
       <TapButton
         onPick={submit}

@@ -126,7 +126,9 @@ export function RunnerView({
         {runner.combo >= 2 && <span className="text-sm font-black">🔥{runner.combo}</span>}
       </div>
 
-      <div className="min-h-0 flex-1 overflow-y-auto px-5 py-4">
+      {/* select-none: rapid tapping on mobile can trigger the browser's
+          double-tap/long-press text selection on prompts and labels. */}
+      <div className="min-h-0 flex-1 select-none overflow-y-auto px-5 py-4">
         <AnimatePresence mode="wait">
           <m.div
             key={showIntro ? `intro-${q.id}` : q.id}

@@ -54,12 +54,16 @@ export function useLessonSession(config: LessonConfig) {
     const dueIds = new Set(
       pool.filter((p) => isDue(srsFor(p.player_id), now)).map((p) => p.player_id),
     );
-    // A unit quiz is a checkpoint on the players you just learned: always test
-    // the unit's introduced members, whether or not SRS says they're "due"
-    // yet — otherwise a quiz taken right after the lessons has nothing due and
-    // ends up empty (0/0). Merge those in, most-overdue first.
+    // Make sure a session is never empty. Two cases need the unit's already-
+    // introduced members folded in as review candidates regardless of SRS due:
+    //  - a quiz (reviewOnly) is a checkpoint on what you just learned; and
+    //  - replaying a unit whose players are all introduced but none are due yet
+    //    (e.g. a completed unit) — otherwise buildSession gets nothing and the
+    //    lesson lands straight on "0/0 correct".
+    // Whenever there are no brand-new players to introduce, seed the unit's
+    // introduced members so there's always something to practice.
     const reviewIds = new Set(dueIds);
-    if (config.reviewOnly) {
+    if (config.reviewOnly || newPlayers.length === 0) {
       for (const id of config.unitPlayerIds) {
         if (srsFor(id).introducedAt !== null) reviewIds.add(id);
       }
