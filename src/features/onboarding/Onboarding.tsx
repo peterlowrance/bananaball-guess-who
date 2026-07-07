@@ -6,6 +6,7 @@ import { PlayerImage } from '../shared/PlayerImage';
 import { mulberry32 } from '../../engine/rng';
 import { generateOfType } from '../../engine/quiz/generator';
 import { GOAL_XP, type Goal } from '../../engine/gamification/streak';
+import { GUIDE_MASCOT } from '../shared/Mascot';
 import confetti from 'canvas-confetti';
 
 type Step = 'splash' | 'taste' | 'goal' | 'done';
@@ -38,7 +39,11 @@ export function Onboarding() {
   if (step === 'splash') {
     return (
       <Centered>
-        <div className="text-7xl">🍌</div>
+        <img
+          src={GUIDE_MASCOT}
+          alt="Split"
+          className="h-32 w-auto animate-[bob_2.5s_ease-in-out_infinite]"
+        />
         <h1 className="text-3xl font-black">Bananaball Guess Who</h1>
         <p className="text-[var(--muted)]">Learn every Banana Ball player. 3 minutes a day.</p>
         <Primary onClick={() => setStep('taste')}>Let's go</Primary>

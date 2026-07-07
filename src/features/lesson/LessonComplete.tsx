@@ -3,6 +3,7 @@ import { useLocation, useNavigate } from 'react-router-dom';
 import confetti from 'canvas-confetti';
 import { useStore } from '../../store';
 import { ACHIEVEMENTS } from '../../engine/gamification/achievements';
+import { MascotSpeech } from '../shared/Mascot';
 
 interface CompleteState {
   summary: { total: number; correctCount: number; firstTryCorrect: number; bestCombo: number };
@@ -52,11 +53,19 @@ export function LessonComplete() {
   const accuracy = summary.total ? Math.round((summary.correctCount / summary.total) * 100) : 0;
   const perfect = summary.firstTryCorrect === summary.total && summary.total > 0;
   const backTo = location.pathname.startsWith('/practice') ? '/practice' : '/';
+  const cheer = perfect
+    ? 'Flawless! You are on fire! 🔥'
+    : accuracy >= 70
+      ? 'Nice work — you are getting to know the roster!'
+      : 'Every rep counts. You will know them all soon! 🍌';
 
   return (
     <div className="flex min-h-[100dvh] flex-col items-center justify-center gap-6 px-6 text-center">
-      <div className="text-6xl">{perfect ? '🌟' : '🍌'}</div>
       <h1 className="text-3xl font-black">{perfect ? 'Perfect lesson!' : 'Lesson complete!'}</h1>
+
+      <div className="w-full max-w-xs">
+        <MascotSpeech message={cheer} size={88} />
+      </div>
 
       <div className="text-5xl font-black text-[var(--team,#f4b400)]">+{shownXp} XP</div>
 

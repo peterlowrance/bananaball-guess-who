@@ -5,12 +5,12 @@ import { teamThemeSlug } from '../../lib/theme';
 // blocked by ORB — those URLs serve HTML, not images). Missing logos fall back
 // to a themed initials chip. Correct/complete logo set is finalized in Stage M.
 const LOGOS: Record<string, string> = {
+  'savannah-bananas': `${import.meta.env.BASE_URL}logos/savannah-bananas.png`,
   firefighters: `${import.meta.env.BASE_URL}logos/firefighters.png`,
   'party-animals': `${import.meta.env.BASE_URL}logos/party-animals.png`,
   'texas-tailgaters': `${import.meta.env.BASE_URL}logos/texas-tailgaters.png`,
   'loco-beach-coconuts': `${import.meta.env.BASE_URL}logos/loco-beach-coconuts.png`,
   'indianapolis-clowns': `${import.meta.env.BASE_URL}logos/indianapolis-clowns.png`,
-  // 'savannah-bananas' intentionally omitted until a correct asset is sourced.
 };
 
 export function teamLogoSrc(teamName: string): string | null {
