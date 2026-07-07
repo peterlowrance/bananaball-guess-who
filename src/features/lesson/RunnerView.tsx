@@ -151,7 +151,13 @@ export function RunnerView({
       </div>
 
       {feedback && (
-        <FeedbackSheet correct={lastCorrect} player={target} combo={feedbackCombo} onContinue={advance} />
+        <FeedbackSheet
+          correct={lastCorrect}
+          player={target}
+          combo={feedbackCombo}
+          questionType={answered?.question.type}
+          onContinue={advance}
+        />
       )}
     </div>
   );

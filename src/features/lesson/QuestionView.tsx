@@ -3,6 +3,7 @@ import type { SessionQuestion } from '../../engine/quiz/types';
 import { getPlayer, getTeam, teamByName, players as allPlayers } from '../../data/dataset';
 import { PlayerImage } from '../shared/PlayerImage';
 import { TeamLogo } from '../shared/TeamLogo';
+import { useTap } from '../shared/useTap';
 import { checkTypedAnswer } from '../../engine/quiz/answer-check';
 
 export interface AnswerPayload {
@@ -78,13 +79,67 @@ function ChoiceButton({
           : 'border-[var(--hairline)] active:scale-[0.98]';
   const anim =
     state === 'correct' ? 'animate-[pop_0.3s_ease-out]' : state === 'wrong' ? 'animate-[shake_0.4s]' : '';
+  const tap = useTap(onClick, disabled);
   return (
     <button
-      onClick={onClick}
+      {...tap}
       disabled={disabled}
-      className={`w-full rounded-2xl border-2 p-4 text-center font-bold transition ${cls} ${anim}`}
+      className={`w-full touch-manipulation rounded-2xl border-2 p-4 text-center font-bold transition ${cls} ${anim}`}
     >
       {label}
+    </button>
+  );
+}
+
+// Generic touch-tolerant button: fires `onPick` on a tap even if the finger
+// slid slightly. Use anywhere a quiz control needs custom content/styling.
+function TapButton({
+  onPick,
+  disabled,
+  className,
+  children,
+}: {
+  onPick: () => void;
+  disabled?: boolean;
+  className?: string;
+  children: React.ReactNode;
+}) {
+  const tap = useTap(onPick, disabled);
+  return (
+    <button {...tap} disabled={disabled} className={`touch-manipulation ${className ?? ''}`}>
+      {children}
+    </button>
+  );
+}
+
+// A tappable player-photo tile (used by name-to-photo). Same touch-tolerant tap.
+function PhotoChoice({
+  player,
+  onPick,
+  disabled,
+  state,
+}: {
+  player: ReturnType<typeof getPlayer>;
+  onPick: () => void;
+  disabled: boolean;
+  state: CState;
+}) {
+  const tap = useTap(onPick, disabled);
+  return (
+    <button
+      {...tap}
+      disabled={disabled}
+      className={`touch-manipulation overflow-hidden rounded-2xl border-4 transition active:scale-[0.98] ${
+        state === 'correct'
+          ? 'border-[var(--ok)]'
+          : state === 'wrong'
+            ? 'border-[var(--bad)]'
+            : state === 'dim'
+              ? 'border-transparent opacity-40'
+              : 'border-transparent'
+      }`}
+    >
+      <PlayerImage player={player} size={150} rounded="rounded-none" className="w-full" />
     </button>
   );
 }
@@ -141,28 +196,15 @@ function NameToPhoto({ question: q, onAnswer, disabled, revealCorrect, pickedInd
     <div>
       <Prompt>Pick {target.name}</Prompt>
       <div className="grid grid-cols-2 gap-3">
-        {q.choices.map((c, i) => {
-          const p = getPlayer(c.playerId);
-          const st = choiceState(i, revealCorrect, pickedIndex);
-          return (
-            <button
-              key={c.playerId + i}
-              disabled={disabled}
-              onClick={() => onAnswer({ correct: i === q.correctIndex, confusedWith: c.playerId })}
-              className={`overflow-hidden rounded-2xl border-4 transition active:scale-[0.98] ${
-                st === 'correct'
-                  ? 'border-[var(--ok)]'
-                  : st === 'wrong'
-                    ? 'border-[var(--bad)]'
-                    : st === 'dim'
-                      ? 'border-transparent opacity-40'
-                      : 'border-transparent'
-              }`}
-            >
-              <PlayerImage player={p} size={150} rounded="rounded-none" className="w-full" />
-            </button>
-          );
-        })}
+        {q.choices.map((c, i) => (
+          <PhotoChoice
+            key={c.playerId + i}
+            player={getPlayer(c.playerId)}
+            disabled={disabled}
+            state={choiceState(i, revealCorrect, pickedIndex)}
+            onPick={() => onAnswer({ correct: i === q.correctIndex, confusedWith: c.playerId })}
+          />
+        ))}
       </div>
     </div>
   );
@@ -181,10 +223,10 @@ function WhichTeam({ question: q, onAnswer, disabled, revealCorrect, pickedIndex
           const team = getTeam(c.playerId);
           const st = choiceState(i, revealCorrect, pickedIndex);
           return (
-            <button
+            <TapButton
               key={c.playerId + i}
               disabled={disabled}
-              onClick={() => onAnswer({ correct: i === q.correctIndex })}
+              onPick={() => onAnswer({ correct: i === q.correctIndex })}
               className={`flex flex-col items-center gap-2 rounded-2xl border-2 p-3 font-bold transition active:scale-[0.98] ${
                 st === 'correct'
                   ? 'border-[var(--ok)] bg-[var(--ok)] text-white'
@@ -197,7 +239,7 @@ function WhichTeam({ question: q, onAnswer, disabled, revealCorrect, pickedIndex
             >
               <TeamLogo teamName={team.name} size={40} />
               <span className="text-sm leading-tight">{team.name}</span>
-            </button>
+            </TapButton>
           );
         })}
       </div>
@@ -238,10 +280,10 @@ function PositionPick({ question: q, onAnswer, disabled, revealCorrect, pickedIn
           const p = getPlayer(c.playerId);
           const st = choiceState(i, revealCorrect, pickedIndex);
           return (
-            <button
+            <TapButton
               key={c.playerId + i}
               disabled={disabled}
-              onClick={() => onAnswer({ correct: i === q.correctIndex, confusedWith: c.playerId })}
+              onPick={() => onAnswer({ correct: i === q.correctIndex, confusedWith: c.playerId })}
               className={`flex flex-col items-center gap-1 overflow-hidden rounded-2xl border-4 pb-2 transition active:scale-[0.98] ${
                 st === 'correct'
                   ? 'border-[var(--ok)]'
@@ -254,7 +296,7 @@ function PositionPick({ question: q, onAnswer, disabled, revealCorrect, pickedIn
             >
               <PlayerImage player={p} size={130} rounded="rounded-none" className="w-full" />
               <span className="text-xs font-bold">{p.name}</span>
-            </button>
+            </TapButton>
           );
         })}
       </div>
@@ -278,35 +320,35 @@ function BuildName({ question: q, onAnswer, disabled }: Props) {
       <div className="mb-3 flex min-h-14 flex-wrap items-center justify-center gap-2 rounded-2xl border-2 border-dashed border-[var(--hairline)] p-3">
         {slots.length === 0 && <span className="text-[var(--muted)]">tap tiles below</span>}
         {slots.map((tileIdx, pos) => (
-          <button
+          <TapButton
             key={pos}
             disabled={disabled}
-            onClick={() => setSlots((s) => s.filter((_, p) => p !== pos))}
+            onPick={() => setSlots((s) => s.filter((_, p) => p !== pos))}
             className="rounded-xl bg-[var(--team-soft)] px-3 py-2 font-bold transition active:scale-95"
           >
             {tiles[tileIdx]}
-          </button>
+          </TapButton>
         ))}
       </div>
       <div className="mb-4 flex flex-wrap justify-center gap-2">
         {inBank.map((i) => (
-          <button
+          <TapButton
             key={i}
             disabled={disabled}
-            onClick={() => setSlots((s) => [...s, i])}
+            onPick={() => setSlots((s) => [...s, i])}
             className="rounded-xl border-2 border-[var(--hairline)] px-3 py-2 font-bold active:scale-95"
           >
             {tiles[i]}
-          </button>
+          </TapButton>
         ))}
       </div>
-      <button
-        onClick={() => onAnswer({ correct: built === q.answerText })}
+      <TapButton
+        onPick={() => onAnswer({ correct: built === q.answerText })}
         disabled={disabled || slots.length === 0}
         className="w-full rounded-2xl bg-[var(--ok-strong)] py-3 font-black text-white transition active:scale-[0.98] disabled:opacity-40 disabled:active:scale-100"
       >
         Check
-      </button>
+      </TapButton>
     </div>
   );
 }
@@ -329,36 +371,36 @@ function BuildLetters({ question: q, onAnswer, disabled, prompt }: Props & { pro
       <div className="mb-3 flex min-h-14 flex-wrap items-center justify-center gap-1 rounded-2xl border-2 border-dashed border-[var(--hairline)] p-3">
         {slots.length === 0 && <span className="text-[var(--muted)]">tap letters below</span>}
         {slots.map((tileIdx, pos) => (
-          <button
+          <TapButton
             key={pos}
             disabled={disabled}
-            onClick={() => setSlots((s) => s.filter((_, p) => p !== pos))}
+            onPick={() => setSlots((s) => s.filter((_, p) => p !== pos))}
             className="h-10 w-9 rounded-lg bg-[var(--team-soft)] font-black transition active:scale-95"
           >
             {tiles[tileIdx]}
-          </button>
+          </TapButton>
         ))}
       </div>
       {/* letter bank */}
       <div className="mb-4 flex flex-wrap justify-center gap-1.5">
         {inBank.map((i) => (
-          <button
+          <TapButton
             key={i}
             disabled={disabled}
-            onClick={() => setSlots((s) => [...s, i])}
+            onPick={() => setSlots((s) => [...s, i])}
             className="h-10 w-9 rounded-lg border-2 border-[var(--hairline)] font-black transition active:scale-95"
           >
             {tiles[i]}
-          </button>
+          </TapButton>
         ))}
       </div>
-      <button
-        onClick={() => onAnswer({ correct })}
+      <TapButton
+        onPick={() => onAnswer({ correct })}
         disabled={disabled || slots.length === 0}
         className="w-full rounded-2xl bg-[var(--ok-strong)] py-3 font-black text-white transition active:scale-[0.98] disabled:opacity-40 disabled:active:scale-100"
       >
         Check
-      </button>
+      </TapButton>
     </div>
   );
 }
@@ -393,13 +435,13 @@ function TypeName({ question: q, onAnswer, disabled }: Props) {
         placeholder="Player name…"
         className="mb-3 w-full rounded-2xl border-2 border-[var(--hairline)] bg-transparent p-4 text-center text-lg font-bold"
       />
-      <button
-        onClick={submit}
+      <TapButton
+        onPick={submit}
         disabled={disabled || !value.trim()}
         className="w-full rounded-2xl bg-[var(--ok-strong)] py-3 font-black text-white transition active:scale-[0.98] disabled:opacity-40 disabled:active:scale-100"
       >
         Check
-      </button>
+      </TapButton>
     </div>
   );
 }

@@ -91,6 +91,29 @@ describe('buildSession', () => {
     }
   });
 
+  it('a review-only session with candidates fills to length (quiz is never empty)', () => {
+    // Regression: a unit quiz builds with newPlayers=[] and passes the unit's
+    // introduced players as reviews. Even with a short candidate list it must
+    // fill all 15 slots by recycling — never return 0 questions (the "0/0" bug).
+    const s = buildSession(
+      {
+        newPlayers: [],
+        dueReviews: teamPlayers.slice(0, 3).map((p) => state(p, 2)),
+        roster,
+        length: 15,
+      },
+      mulberry32(7),
+    );
+    expect(s).toHaveLength(15);
+  });
+
+  it('a review-only session with no candidates is empty (why the quiz needed unit players)', () => {
+    // Documents the root cause: with nothing to review, buildSession yields 0
+    // questions. The quiz fix is to always feed it the unit's introduced players.
+    const s = buildSession({ newPlayers: [], dueReviews: [], roster, length: 15 }, mulberry32(8));
+    expect(s).toHaveLength(0);
+  });
+
   it('is deterministic per seed', () => {
     const spec = {
       newPlayers: teamPlayers.slice(0, 3).map((p) => state(p, 0, false)),

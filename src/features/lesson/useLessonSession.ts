@@ -51,10 +51,22 @@ export function useLessonSession(config: LessonConfig) {
     const pool = focusTeams.length
       ? players.filter((p) => focusTeams.includes(p.team_name))
       : players;
-    const dueReviews = pool
-      .filter((p) => isDue(srsFor(p.player_id), now))
-      .sort((a, b) => srsFor(a.player_id).due - srsFor(b.player_id).due)
-      .map((p) => stateFor(p.player_id));
+    const dueIds = new Set(
+      pool.filter((p) => isDue(srsFor(p.player_id), now)).map((p) => p.player_id),
+    );
+    // A unit quiz is a checkpoint on the players you just learned: always test
+    // the unit's introduced members, whether or not SRS says they're "due"
+    // yet — otherwise a quiz taken right after the lessons has nothing due and
+    // ends up empty (0/0). Merge those in, most-overdue first.
+    const reviewIds = new Set(dueIds);
+    if (config.reviewOnly) {
+      for (const id of config.unitPlayerIds) {
+        if (srsFor(id).introducedAt !== null) reviewIds.add(id);
+      }
+    }
+    const dueReviews = [...reviewIds]
+      .sort((a, b) => srsFor(a).due - srsFor(b).due)
+      .map(stateFor);
 
     // roster available as distractors: whole roster (locked players allowed),
     // but narrow to focus teams if the user is focusing, so distractors feel
