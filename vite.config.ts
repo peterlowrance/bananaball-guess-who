@@ -55,7 +55,11 @@ export default defineConfig({
         test: {
           name: 'engine',
           environment: 'node',
-          include: ['src/engine/**/*.test.ts', 'src/data/**/*.test.ts'],
+          include: [
+            'src/engine/**/*.test.ts',
+            'src/data/**/*.test.ts',
+            'src/store/**/*.test.ts',
+          ],
         },
       },
       {
