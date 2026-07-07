@@ -1,6 +1,8 @@
+import { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { useStore } from '../../store';
 import { getPlayer } from '../../data/dataset';
+import { warmUnitImages } from '../../lib/images';
 import { ACT_BY_TIER } from '../../data/curriculum';
 import { curriculumUnits } from './units';
 import { computePathProgress, LESSONS_PER_UNIT, type UnitProgress } from './progress';
@@ -19,6 +21,13 @@ export function PathScreen() {
   const units = curriculumUnits(focusTeams);
   const progress = computePathProgress(units, pathState, srs);
   const due = dueCount(srs, focusTeams);
+
+  // Warm the current active unit's headshots on idle so the next lesson's
+  // images are ready and offline-safe.
+  const activeUnit = progress.find((p) => p.status === 'active');
+  useEffect(() => {
+    if (activeUnit) warmUnitImages(activeUnit.unit.playerIds.map(getPlayer));
+  }, [activeUnit]);
 
   return (
     <div className="flex flex-col gap-4 pb-24">

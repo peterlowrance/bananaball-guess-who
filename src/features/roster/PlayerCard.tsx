@@ -31,7 +31,7 @@ export function PlayerCard() {
   return (
     <div
       data-team-theme={teamThemeSlug(player.team_name)}
-      className="flex min-h-[100dvh] flex-col"
+      className="flex h-full min-h-0 flex-1 flex-col overflow-y-auto"
       style={{ background: 'var(--bg)' }}
     >
       <div className="flex items-center gap-3 px-4 py-3">

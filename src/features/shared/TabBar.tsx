@@ -10,7 +10,7 @@ const TABS = [
 export function TabBar() {
   return (
     <nav
-      className="sticky bottom-0 z-20 mx-auto flex w-full max-w-[480px] items-stretch justify-around border-t bg-[var(--surface)]"
+      className="sticky bottom-0 z-20 flex w-full shrink-0 items-stretch justify-around border-t bg-[var(--surface)]"
       style={{ borderColor: 'var(--hairline)', paddingBottom: 'env(safe-area-inset-bottom)' }}
     >
       {TABS.map((t) => (

@@ -68,7 +68,7 @@ export function RosterScreen() {
         ))}
       </div>
 
-      <div className="grid grid-cols-3 gap-3">
+      <div className="grid grid-cols-3 gap-3 min-[420px]:grid-cols-4">
         {shown.map((p) => {
           const r = rec(p.player_id);
           const known = r.introducedAt != null;

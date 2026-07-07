@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useRef, useState } from 'react';
 import { useStore } from '../../store';
 import { teams } from '../../data/dataset';
 import { teamThemeSlug } from '../../lib/theme';
@@ -19,8 +19,30 @@ export function SettingsScreen() {
   const resetProgress = useStore((s) => s.resetProgress);
   const exportState = useStore((s) => s.exportState);
   const importState = useStore((s) => s.importState);
-  const [copied, setCopied] = useState(false);
-  const [importText, setImportText] = useState('');
+  const fileInput = useRef<HTMLInputElement>(null);
+  const [status, setStatus] = useState<string | null>(null);
+
+  const downloadBackup = () => {
+    const blob = new Blob([exportState()], { type: 'application/json' });
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement('a');
+    a.href = url;
+    a.download = 'bananaball-guess-who-backup.json';
+    a.click();
+    URL.revokeObjectURL(url);
+    setStatus('Backup downloaded ✓');
+    setTimeout(() => setStatus(null), 2500);
+  };
+
+  const onFilePicked = async (e: React.ChangeEvent<HTMLInputElement>) => {
+    const file = e.target.files?.[0];
+    e.target.value = ''; // allow re-picking the same file
+    if (!file) return;
+    const text = await file.text();
+    if (importState(text)) setStatus('Progress restored ✓');
+    else setStatus('That file could not be read.');
+    setTimeout(() => setStatus(null), 2500);
+  };
 
   const toggleFocus = (teamName: string) => {
     const set = new Set(settings.focusTeams);
@@ -83,42 +105,27 @@ export function SettingsScreen() {
         <Toggle label="Dark mode" value={settings.dark} onChange={(v) => setSettings({ dark: v })} />
       </Section>
 
-      <Section title="Backup" subtitle="Copy your progress or paste a saved backup.">
+      <Section title="Backup" subtitle="Save your progress to a file, or restore from one.">
         <button
-          className="w-full rounded-2xl bg-[var(--team-soft)] p-3 font-bold"
-          onClick={async () => {
-            const blob = exportState();
-            try {
-              await navigator.clipboard.writeText(blob);
-              setCopied(true);
-              setTimeout(() => setCopied(false), 1500);
-            } catch {
-              setImportText(blob);
-            }
-          }}
+          className="w-full rounded-2xl bg-[var(--team-soft)] p-3.5 font-bold active:scale-[0.99]"
+          onClick={downloadBackup}
         >
-          {copied ? 'Copied! ✓' : 'Export progress'}
+          ⬇ Download backup
         </button>
-        <textarea
-          value={importText}
-          onChange={(e) => setImportText(e.target.value)}
-          placeholder="Paste backup JSON here…"
-          className="mt-2 h-20 w-full rounded-2xl border-2 border-[var(--hairline)] bg-transparent p-2 text-xs"
+        <button
+          className="mt-2 w-full rounded-2xl border-2 border-[var(--hairline)] p-3.5 font-bold active:scale-[0.99]"
+          onClick={() => fileInput.current?.click()}
+        >
+          ⬆ Restore from file
+        </button>
+        <input
+          ref={fileInput}
+          type="file"
+          accept="application/json,.json"
+          className="hidden"
+          onChange={onFilePicked}
         />
-        <button
-          className="mt-2 w-full rounded-2xl border-2 border-[var(--hairline)] p-3 font-bold disabled:opacity-40"
-          disabled={!importText.trim()}
-          onClick={() => {
-            if (importState(importText.trim())) {
-              setImportText('');
-              alert('Progress restored!');
-            } else {
-              alert('That backup could not be read.');
-            }
-          }}
-        >
-          Import progress
-        </button>
+        {status && <p className="mt-2 text-center text-sm font-bold text-[var(--muted)]">{status}</p>}
       </Section>
 
       <Section title="Danger zone">
@@ -150,17 +157,23 @@ function Section({ title, subtitle, children }: { title: string; subtitle?: stri
 }
 
 function Toggle({ label, value, onChange }: { label: string; value: boolean; onChange: (v: boolean) => void }) {
+  // Track 56x32, knob 28 inset 2px → slides exactly 24px (56-28-2-2).
   return (
-    <label className="flex items-center justify-between py-2">
+    <label className="flex cursor-pointer items-center justify-between py-2.5">
       <span className="font-semibold">{label}</span>
       <button
+        type="button"
+        role="switch"
+        aria-checked={value}
+        aria-label={label}
         onClick={() => onChange(!value)}
-        className={`relative h-7 w-12 rounded-full transition ${value ? 'bg-[var(--ok)]' : 'bg-[var(--hairline)]'}`}
-        aria-pressed={value}
+        className={`relative h-8 w-14 shrink-0 rounded-full transition-colors duration-200 ${
+          value ? 'bg-[var(--ok)]' : 'bg-[var(--hairline)]'
+        }`}
       >
         <span
-          className="absolute top-0.5 h-6 w-6 rounded-full bg-white shadow transition-transform"
-          style={{ transform: value ? 'translateX(1.35rem)' : 'translateX(0.1rem)' }}
+          className="absolute left-0.5 top-0.5 h-7 w-7 rounded-full bg-white shadow-md transition-transform duration-200"
+          style={{ transform: value ? 'translateX(24px)' : 'translateX(0)' }}
         />
       </button>
     </label>

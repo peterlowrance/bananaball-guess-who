@@ -37,6 +37,21 @@ body,
   50% { transform: translateY(-8px); }
 }
 
+/* Desktop backdrop behind the framed app column. On phones this is a no-op
+   (the app fills the screen); on >=640px it shows a warm banana-tinted page. */
+.app-backdrop {
+  background: var(--bg);
+}
+@media (min-width: 640px) {
+  .app-backdrop {
+    background:
+      radial-gradient(circle at 50% 0%, #ffe9a8 0%, #f6e7bf 55%, #efe0b0 100%);
+  }
+  .dark .app-backdrop {
+    background: #0f0d09;
+  }
+}
+
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after {
     animation-duration: 0.001ms !important;

@@ -115,10 +115,7 @@ export function Onboarding() {
 
 function Centered({ children }: { children: React.ReactNode }) {
   return (
-    <div
-      className="mx-auto flex min-h-[100dvh] max-w-[480px] flex-col items-center justify-center gap-5 px-6 text-center"
-      style={{ background: 'var(--bg)', color: 'var(--text)' }}
-    >
+    <div className="flex h-full min-h-0 flex-1 flex-col items-center justify-center gap-5 overflow-y-auto px-6 py-8 text-center">
       {children}
     </div>
   );

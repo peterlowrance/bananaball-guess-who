@@ -92,7 +92,7 @@ export function RunnerView({
   const target = getPlayer(q.targetId);
 
   return (
-    <div className="flex min-h-[100dvh] flex-col">
+    <div className="flex h-full min-h-0 flex-1 flex-col">
       <div className="flex items-center gap-3 px-4 py-3">
         <button onClick={() => navigate('/')} aria-label="Quit" className="text-xl">
           ✕
@@ -106,7 +106,7 @@ export function RunnerView({
         {runner.combo >= 2 && <span className="text-sm font-black">🔥{runner.combo}</span>}
       </div>
 
-      <div className="flex-1 overflow-hidden px-5 py-4">
+      <div className="min-h-0 flex-1 overflow-y-auto px-5 py-4">
         <AnimatePresence mode="wait">
           <m.div
             key={showIntro ? `intro-${q.id}` : q.id}

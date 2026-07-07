@@ -1,5 +1,6 @@
 import { createHashRouter } from 'react-router-dom';
 import { Layout } from './features/shared/Layout';
+import { FullScreen } from './features/shared/FullScreen';
 import { SettingsScreen } from './features/settings/SettingsScreen';
 import { PathScreen } from './features/path/PathScreen';
 import { LessonScreen } from './features/lesson/LessonScreen';
@@ -12,13 +13,13 @@ import { PlayerCard } from './features/roster/PlayerCard';
 import { Onboarding, RequireOnboarding } from './features/onboarding/Onboarding';
 
 export const router = createHashRouter([
-  { path: '/onboarding', element: <Onboarding /> },
+  { path: '/onboarding', element: <FullScreen><Onboarding /></FullScreen> },
   // Lesson & practice players run full-screen, outside the tab layout.
-  { path: '/lesson/:unitId', element: <LessonScreen /> },
-  { path: '/lesson/:unitId/complete', element: <LessonComplete /> },
-  { path: '/practice/run', element: <PracticeRun /> },
-  { path: '/practice/complete', element: <LessonComplete /> },
-  { path: '/roster/:slug', element: <PlayerCard /> },
+  { path: '/lesson/:unitId', element: <FullScreen><LessonScreen /></FullScreen> },
+  { path: '/lesson/:unitId/complete', element: <FullScreen><LessonComplete /></FullScreen> },
+  { path: '/practice/run', element: <FullScreen><PracticeRun /></FullScreen> },
+  { path: '/practice/complete', element: <FullScreen><LessonComplete /></FullScreen> },
+  { path: '/roster/:slug', element: <FullScreen><PlayerCard /></FullScreen> },
   {
     path: '/',
     element: (

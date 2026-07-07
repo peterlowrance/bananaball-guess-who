@@ -60,7 +60,7 @@ export function LessonComplete() {
       : 'Every rep counts. You will know them all soon! 🍌';
 
   return (
-    <div className="flex min-h-[100dvh] flex-col items-center justify-center gap-6 px-6 text-center">
+    <div className="flex h-full min-h-0 flex-1 flex-col items-center justify-center gap-6 overflow-y-auto px-6 py-8 text-center">
       <h1 className="text-3xl font-black">{perfect ? 'Perfect lesson!' : 'Lesson complete!'}</h1>
 
       <div className="w-full max-w-xs">
