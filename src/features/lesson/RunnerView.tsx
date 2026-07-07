@@ -108,7 +108,11 @@ export function RunnerView({
   const feedbackCombo = answered?.combo ?? runner.combo;
 
   return (
-    <div className="flex h-full min-h-0 flex-1 flex-col">
+    // select-none across the whole runner: tapping a choice can otherwise make
+    // the browser select nearby text (a prompt, a label, or the feedback line
+    // that pops up under your finger). The type-name input opts back in with
+    // select-text so you can still edit what you type.
+    <div className="flex h-full min-h-0 flex-1 flex-col select-none">
       <div className="flex items-center gap-3 px-4 py-3">
         <button
           onClick={() => navigate('/')}
@@ -126,9 +130,7 @@ export function RunnerView({
         {runner.combo >= 2 && <span className="text-sm font-black">🔥{runner.combo}</span>}
       </div>
 
-      {/* select-none: rapid tapping on mobile can trigger the browser's
-          double-tap/long-press text selection on prompts and labels. */}
-      <div className="min-h-0 flex-1 select-none overflow-y-auto px-5 py-4">
+      <div className="min-h-0 flex-1 overflow-y-auto px-5 py-4">
         <AnimatePresence mode="wait">
           <m.div
             key={showIntro ? `intro-${q.id}` : q.id}

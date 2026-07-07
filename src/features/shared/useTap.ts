@@ -10,13 +10,23 @@ import type { PointerEvent as ReactPointerEvent } from 'react';
 // How far (px) a pointer may move between down and up and still count as a tap.
 const TAP_SLOP = 16;
 
+// After we service a tap on pointerup, the browser still dispatches a synthetic
+// `click`. If our handler mutated the layout (e.g. a tile moves between the bank
+// and the answer row), that click can land on a DIFFERENT element that slid
+// under the finger — causing a phantom second selection. We can't guard this
+// per-element, so we suppress ALL clicks for a short window after any
+// pointer-driven tap, module-wide. Real keyboard/mouse clicks never follow a
+// pointerup this closely, so they're unaffected.
+let suppressClicksUntil = 0;
+const CLICK_SUPPRESS_MS = 400;
+// now() without Date.now (unavailable in some sandboxes): performance.now is fine.
+const now = () =>
+  typeof performance !== 'undefined' && performance.now ? performance.now() : 0;
+
 export function useTap(handler: (() => void) | undefined, disabled?: boolean) {
   const start = useRef<{ x: number; y: number; id: number } | null>(null);
-  // Guard so a synthetic click after our pointer-driven tap doesn't double-fire.
-  const firedByPointer = useRef(false);
 
   const onPointerDown = useCallback((e: ReactPointerEvent) => {
-    firedByPointer.current = false;
     start.current = { x: e.clientX, y: e.clientY, id: e.pointerId };
   }, []);
 
@@ -27,7 +37,9 @@ export function useTap(handler: (() => void) | undefined, disabled?: boolean) {
       if (disabled || !handler || !s || s.id !== e.pointerId) return;
       const moved = Math.hypot(e.clientX - s.x, e.clientY - s.y);
       if (moved <= TAP_SLOP) {
-        firedByPointer.current = true;
+        // Swallow the synthetic click that follows this pointerup (and any
+        // stray click on a reflowed neighbor) for a brief window.
+        suppressClicksUntil = now() + CLICK_SUPPRESS_MS;
         handler();
       }
     },
@@ -35,12 +47,10 @@ export function useTap(handler: (() => void) | undefined, disabled?: boolean) {
   );
 
   const onClick = useCallback(() => {
-    // Keyboard/mouse path (or a browser click we didn't already service).
     if (disabled || !handler) return;
-    if (firedByPointer.current) {
-      firedByPointer.current = false;
-      return;
-    }
+    // Skip clicks that trail a pointer-driven tap — this includes the phantom
+    // click that lands on whatever element reflowed under the finger.
+    if (now() < suppressClicksUntil) return;
     handler();
   }, [handler, disabled]);
 

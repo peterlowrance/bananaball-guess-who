@@ -5,6 +5,22 @@ import { useState, useRef, useCallback } from 'react';
 import { useStore } from '../../store';
 import type { SessionQuestion } from '../../engine/quiz/types';
 
+// Re-shuffle a question's multiple-choice options so a re-asked question (after
+// a wrong answer) doesn't have the answer in the same spot — otherwise you can
+// "cheat" by remembering the position. Keeps correctIndex pointing at the same
+// choice. No-op for tile/typed questions (no fixed-position choices).
+export function reshuffleChoices(q: SessionQuestion): SessionQuestion {
+  if (q.choices.length < 2) return q;
+  const order = q.choices.map((_, i) => i);
+  for (let i = order.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [order[i], order[j]] = [order[j], order[i]];
+  }
+  const choices = order.map((i) => q.choices[i]);
+  const correctIndex = q.correctIndex >= 0 ? order.indexOf(q.correctIndex) : q.correctIndex;
+  return { ...q, choices, correctIndex };
+}
+
 export interface AnswerRecord {
   question: SessionQuestion;
   correct: boolean;
@@ -67,7 +83,7 @@ export function useQuestionRunner(initialQuestions: SessionQuestion[]) {
           setQueue((prev) => {
             const copy = [...prev];
             const at = Math.min(index + 3, copy.length);
-            copy.splice(at, 0, { ...q });
+            copy.splice(at, 0, reshuffleChoices(q));
             return copy;
           });
         }
