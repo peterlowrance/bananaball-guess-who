@@ -68,11 +68,13 @@ function ChoiceButton({
         : state === 'dim'
           ? 'border-[var(--hairline)] opacity-50'
           : 'border-[var(--hairline)] active:scale-[0.98]';
+  const anim =
+    state === 'correct' ? 'animate-[pop_0.3s_ease-out]' : state === 'wrong' ? 'animate-[shake_0.4s]' : '';
   return (
     <button
       onClick={onClick}
       disabled={disabled}
-      className={`w-full rounded-2xl border-2 p-4 text-center font-bold transition ${cls}`}
+      className={`w-full rounded-2xl border-2 p-4 text-center font-bold transition ${cls} ${anim}`}
     >
       {label}
     </button>
