@@ -4,7 +4,7 @@ import { useLessonSession } from './useLessonSession';
 import { RunnerView } from './RunnerView';
 import { curriculumUnits } from '../path/units';
 import { useStore } from '../../store';
-import { lessonXp, XP } from '../../engine/gamification/xp';
+import { lessonXp } from '../../engine/gamification/xp';
 import type { RunnerSummary } from './useQuestionRunner';
 
 /** Lesson player. Route: /lesson/:unitId?attempt=n&mode=quiz */
@@ -32,16 +32,15 @@ export function LessonScreen() {
   const onComplete = useCallback(
     (s: RunnerSummary) => {
       if (!unit) return;
-      const xp = lessonXp(s) + XP.firstOfDay;
       if (isQuiz) {
         const passed = s.correctCount >= Math.ceil(s.total * 0.8);
         if (passed) passUnitQuiz(unit.key);
       } else {
         markUnitLesson(unit.key);
       }
-      const res = finishLesson({ ...s, xp, finishHour: new Date().getHours() });
+      const res = finishLesson({ ...s, xp: lessonXp(s), finishHour: new Date().getHours() });
       navigate(`/lesson/${unit.key}/complete`, {
-        state: { summary: s, xp, newlyUnlocked: res.newlyUnlocked, quiz: isQuiz },
+        state: { summary: s, xp: res.awardedXp, newlyUnlocked: res.newlyUnlocked, quiz: isQuiz },
         replace: true,
       });
     },

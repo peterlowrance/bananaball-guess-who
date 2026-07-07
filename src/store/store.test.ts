@@ -68,11 +68,25 @@ describe('store actions', () => {
       finishHour: 14,
     });
     const p = useStore.getState().profile;
-    expect(p.totalXp).toBe(44);
+    // 44 base + 5 first-of-day bonus (added by the store, once per day)
+    expect(p.totalXp).toBe(49);
+    expect(res.awardedXp).toBe(49);
     expect(p.lessonsCompleted).toBe(1);
     expect(p.achievements).toContain('first-pitch');
     expect(res.newlyUnlocked).toContain('first-pitch');
     expect(res.streakExtended).toBe(true);
+  });
+
+  it('adds the first-of-day bonus only once per day', () => {
+    const fin = () =>
+      useStore.getState().finishLesson({
+        correctCount: 10, total: 12, firstTryCorrect: 10, bestCombo: 4, xp: 20, finishHour: 12,
+      });
+    fin();
+    const afterFirst = useStore.getState().profile.totalXp; // 20 + 5
+    const res2 = fin();
+    expect(res2.awardedXp).toBe(20); // no bonus the second time same day
+    expect(useStore.getState().profile.totalXp).toBe(afterFirst + 20);
   });
 
   it('tracks perfect-lessons-in-a-row and resets on imperfect', () => {
@@ -112,11 +126,12 @@ describe('store actions', () => {
       xp: 20,
       finishHour: 9,
     });
+    const exportedXp = useStore.getState().profile.totalXp; // 20 + 5 first-of-day
     const blob = useStore.getState().exportState();
     reset();
     expect(useStore.getState().profile.totalXp).toBe(0);
     expect(useStore.getState().importState(blob)).toBe(true);
-    expect(useStore.getState().profile.totalXp).toBe(20);
+    expect(useStore.getState().profile.totalXp).toBe(exportedXp);
     expect(useStore.getState().srsFor(id).introducedAt).not.toBeNull();
   });
 

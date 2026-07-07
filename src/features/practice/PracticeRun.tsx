@@ -22,8 +22,8 @@ export function PracticeRun() {
     (s: RunnerSummary) => {
       // practice awards flat XP (no box grinding — the engine already blocks
       // box advancement for not-due players).
-      finishLesson({ ...s, xp: XP.practice, finishHour: new Date().getHours() });
-      navigate('/practice/complete', { state: { summary: s, xp: XP.practice }, replace: true });
+      const res = finishLesson({ ...s, xp: XP.practice, finishHour: new Date().getHours() });
+      navigate('/practice/complete', { state: { summary: s, xp: res.awardedXp }, replace: true });
     },
     [finishLesson, navigate],
   );

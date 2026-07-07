@@ -13,6 +13,7 @@ import {
 } from './schema';
 import { migrate, freshState } from './migrations';
 import { newStreakState, addXp, type Goal } from '../engine/gamification/streak';
+import { XP } from '../engine/gamification/xp';
 import {
   evaluateAchievements,
   type AchievementSnapshot,
@@ -21,6 +22,8 @@ import { newSrsRecord, type SrsRecord } from '../engine/srs/types';
 import { grade as srsGrade, introduce as srsIntroduce, type GradeInput } from '../engine/srs/scheduler';
 import { mulberry32 } from '../engine/rng';
 import { players, playersByTeamId, playersByDifficulty, teamById } from '../data/dataset';
+
+const FIRST_OF_DAY_BONUS = XP.firstOfDay;
 
 const now = () => Date.now();
 const tz = () => new Date().getTimezoneOffset();
@@ -52,7 +55,7 @@ interface StoreActions {
   srsFor(playerId: string): SrsRecord;
   introducePlayer(playerId: string): void;
   gradeAnswer(args: GradeArgs): void;
-  finishLesson(f: LessonFinish): { newlyUnlocked: string[]; streakExtended: boolean };
+  finishLesson(f: LessonFinish): { newlyUnlocked: string[]; streakExtended: boolean; awardedXp: number };
   markUnitLesson(unitKey: string): void;
   passUnitQuiz(unitKey: string): void;
   passCheckpoint(act: number): void;
@@ -132,14 +135,21 @@ export const useStore = create<Store>()(
         const before = get();
         const prevAch = new Set(before.profile.achievements);
 
+        // First-of-day bonus is decided here (not the UI) so it applies exactly
+        // once per local day. We peek at xpToday after a virtual rollover by
+        // doing a zero-xp addXp first.
+        const rolled = addXp({ state: before.profile.streak, xp: 0, now: now(), tzOffsetMinutes: tz() });
+        const firstOfDay = rolled.state.xpToday === 0;
+        const awardedXp = f.xp + (firstOfDay ? FIRST_OF_DAY_BONUS : 0);
+
         // streak + xp
         const streakRes = addXp({
-          state: before.profile.streak,
-          xp: f.xp,
+          state: rolled.state,
+          xp: awardedXp,
           now: now(),
           tzOffsetMinutes: tz(),
         });
-        const totalXp = before.profile.totalXp + f.xp;
+        const totalXp = before.profile.totalXp + awardedXp;
         const perfect = f.firstTryCorrect === f.total && f.total > 0;
 
         const profile = {
@@ -164,7 +174,7 @@ export const useStore = create<Store>()(
         profile.achievements = [...new Set([...before.profile.achievements, ...earned])];
 
         set({ profile });
-        return { newlyUnlocked: newly, streakExtended: streakRes.streakExtended };
+        return { newlyUnlocked: newly, streakExtended: streakRes.streakExtended, awardedXp };
       },
 
       markUnitLesson(unitKey) {
