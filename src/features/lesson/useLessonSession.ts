@@ -2,15 +2,15 @@
 // grading + progression callbacks the lesson UI drives. Session content is
 // transient (not persisted); SRS/XP effects go through the store.
 
-import { useMemo, useRef, useState, useCallback } from 'react';
+import { useMemo } from 'react';
 import { useStore } from '../../store';
 import { players, getPlayer } from '../../data/dataset';
 import { buildSession, type PlayerState } from '../../engine/quiz/session';
-import type { SessionQuestion } from '../../engine/quiz/types';
 import { mulberry32, hashSeed } from '../../engine/rng';
 import { isDue } from '../../engine/srs/scheduler';
 import { newSrsRecord } from '../../engine/srs/types';
 import { brokenImageIds } from '../shared/PlayerImage';
+import { useQuestionRunner } from './useQuestionRunner';
 
 export interface LessonConfig {
   /** unit player ids to (potentially) introduce/practice */
@@ -75,98 +75,5 @@ export function useLessonSession(config: LessonConfig) {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [config.unitPlayerIds.join(','), config.attempt, config.reviewOnly, focusTeams.join(',')]);
 
-  return useLessonRunner(questions, config.unitPlayerIds);
-}
-
-export interface AnswerRecord {
-  question: SessionQuestion;
-  correct: boolean;
-  firstTry: boolean;
-}
-
-function useLessonRunner(initialQuestions: SessionQuestion[], unitPlayerIds: string[]) {
-  // A mutable queue: wrong answers re-queue the player (capped) as in Duolingo.
-  const [queue, setQueue] = useState<SessionQuestion[]>(initialQuestions);
-  const [index, setIndex] = useState(0);
-  const answers = useRef<AnswerRecord[]>([]);
-  const requeueCount = useRef<Map<string, number>>(new Map());
-  const combo = useRef(0);
-  const bestCombo = useRef(0);
-  const firstTryIds = useRef<Set<string>>(new Set());
-  const missedIds = useRef<Set<string>>(new Set());
-
-  const gradeAnswer = useStore((s) => s.gradeAnswer);
-  const introducePlayer = useStore((s) => s.introducePlayer);
-
-  const current = queue[index] ?? null;
-  const total = initialQuestions.length;
-  const done = index >= queue.length;
-
-  const submit = useCallback(
-    (correct: boolean, confusedWith?: string | null) => {
-      const q = queue[index];
-      if (!q) return;
-      const firstTry = !missedIds.current.has(q.targetId + q.id);
-
-      // ensure the player is introduced when first seen
-      if (q.intro) introducePlayer(q.targetId);
-
-      gradeAnswer({
-        playerId: q.targetId,
-        correct,
-        typed: q.type === 'type-name',
-        confusedWith: correct ? null : confusedWith ?? null,
-        isReview: q.isReview,
-        jerseyQuestion: q.type === 'jersey',
-      });
-
-      answers.current.push({ question: q, correct, firstTry });
-
-      if (correct) {
-        combo.current += 1;
-        bestCombo.current = Math.max(bestCombo.current, combo.current);
-        if (firstTry) firstTryIds.current.add(q.id);
-      } else {
-        combo.current = 0;
-        missedIds.current.add(q.targetId + q.id);
-        // re-queue up to twice, then let it go (no rage loop)
-        const n = requeueCount.current.get(q.id) ?? 0;
-        if (n < 2) {
-          requeueCount.current.set(q.id, n + 1);
-          setQueue((prev) => {
-            const copy = [...prev];
-            // insert 2 slots ahead (or at end)
-            const at = Math.min(index + 3, copy.length);
-            copy.splice(at, 0, { ...q });
-            return copy;
-          });
-        }
-      }
-      setIndex((i) => i + 1);
-    },
-    [queue, index, gradeAnswer, introducePlayer],
-  );
-
-  const summary = useCallback(() => {
-    const correctCount = answers.current.filter((a) => a.correct).length;
-    const firstTryCorrect = firstTryIds.current.size;
-    return {
-      total,
-      correctCount,
-      firstTryCorrect,
-      bestCombo: bestCombo.current,
-      unitPlayerIds,
-    };
-  }, [total, unitPlayerIds]);
-
-  return {
-    current,
-    index,
-    total,
-    queueLength: queue.length,
-    combo: combo.current,
-    done,
-    submit,
-    summary,
-  };
+  return useQuestionRunner(questions);
 }

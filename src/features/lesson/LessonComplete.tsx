@@ -7,7 +7,8 @@ import { ACHIEVEMENTS } from '../../engine/gamification/achievements';
 interface CompleteState {
   summary: { total: number; correctCount: number; firstTryCorrect: number; bestCombo: number };
   xp: number;
-  newlyUnlocked: string[];
+  newlyUnlocked?: string[];
+  quiz?: boolean;
 }
 
 export function LessonComplete() {
@@ -46,9 +47,11 @@ export function LessonComplete() {
     );
   }
 
-  const { summary, newlyUnlocked } = state;
+  const { summary } = state;
+  const newlyUnlocked = state.newlyUnlocked ?? [];
   const accuracy = summary.total ? Math.round((summary.correctCount / summary.total) * 100) : 0;
   const perfect = summary.firstTryCorrect === summary.total && summary.total > 0;
+  const backTo = location.pathname.startsWith('/practice') ? '/practice' : '/';
 
   return (
     <div className="flex min-h-[100dvh] flex-col items-center justify-center gap-6 px-6 text-center">
@@ -78,7 +81,7 @@ export function LessonComplete() {
       )}
 
       <button
-        onClick={() => navigate('/')}
+        onClick={() => navigate(backTo)}
         className="w-full max-w-xs rounded-2xl bg-[var(--ok)] py-4 font-black text-white"
       >
         Continue

@@ -59,6 +59,7 @@ export default defineConfig({
             'src/engine/**/*.test.ts',
             'src/data/**/*.test.ts',
             'src/store/**/*.test.ts',
+            'src/features/**/*.test.ts',
           ],
         },
       },
