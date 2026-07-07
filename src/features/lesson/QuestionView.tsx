@@ -22,6 +22,10 @@ export function QuestionView(props: Props) {
   switch (props.question.type) {
     case 'photo-to-name':
       return <PhotoToName {...props} />;
+    case 'first-name':
+      return <PartialName {...props} prompt="Pick the FIRST name" />;
+    case 'last-name':
+      return <PartialName {...props} prompt="Whose LAST name is this?" />;
     case 'name-to-photo':
       return <NameToPhoto {...props} />;
     case 'which-team':
@@ -32,6 +36,10 @@ export function QuestionView(props: Props) {
       return <PositionPick {...props} />;
     case 'build-name':
       return <BuildName {...props} />;
+    case 'build-first':
+      return <BuildLetters {...props} prompt="Spell the FIRST name" />;
+    case 'build-last':
+      return <BuildLetters {...props} prompt="Spell the LAST name" />;
     case 'type-name':
       return <TypeName {...props} />;
   }
@@ -90,6 +98,29 @@ function PhotoToName({ question: q, onAnswer, disabled, revealCorrect, pickedInd
         <PlayerImage player={target} size={200} rounded="rounded-3xl" />
       </div>
       <div className="grid grid-cols-1 gap-3">
+        {q.choices.map((c, i) => (
+          <ChoiceButton
+            key={c.playerId + i}
+            label={c.label}
+            disabled={disabled}
+            state={choiceState(i, revealCorrect, pickedIndex)}
+            onClick={() => onAnswer({ correct: i === q.correctIndex, confusedWith: c.playerId })}
+          />
+        ))}
+      </div>
+    </div>
+  );
+}
+
+function PartialName({ question: q, onAnswer, disabled, revealCorrect, pickedIndex, prompt }: Props & { prompt: string }) {
+  const target = getPlayer(q.targetId);
+  return (
+    <div>
+      <Prompt>{prompt}</Prompt>
+      <div className="mb-6 flex justify-center">
+        <PlayerImage player={target} size={200} rounded="rounded-3xl" />
+      </div>
+      <div className="grid grid-cols-2 gap-3">
         {q.choices.map((c, i) => (
           <ChoiceButton
             key={c.playerId + i}
@@ -251,7 +282,7 @@ function BuildName({ question: q, onAnswer, disabled }: Props) {
             key={pos}
             disabled={disabled}
             onClick={() => setSlots((s) => s.filter((_, p) => p !== pos))}
-            className="rounded-xl bg-[var(--team-soft)] px-3 py-2 font-bold"
+            className="rounded-xl bg-[var(--team-soft)] px-3 py-2 font-bold transition active:scale-95"
           >
             {tiles[tileIdx]}
           </button>
@@ -272,7 +303,59 @@ function BuildName({ question: q, onAnswer, disabled }: Props) {
       <button
         onClick={() => onAnswer({ correct: built === q.answerText })}
         disabled={disabled || slots.length === 0}
-        className="w-full rounded-2xl bg-[var(--ok-strong)] py-3 font-black text-white disabled:opacity-40"
+        className="w-full rounded-2xl bg-[var(--ok-strong)] py-3 font-black text-white transition active:scale-[0.98] disabled:opacity-40 disabled:active:scale-100"
+      >
+        Check
+      </button>
+    </div>
+  );
+}
+
+function BuildLetters({ question: q, onAnswer, disabled, prompt }: Props & { prompt: string }) {
+  const target = getPlayer(q.targetId);
+  const [slots, setSlots] = useState<number[]>([]);
+  const tiles = q.tiles ?? [];
+  const inBank = tiles.map((_, i) => i).filter((i) => !slots.includes(i));
+  const built = slots.map((i) => tiles[i]).join('');
+  const answer = (q.answerText ?? '').replace(/[^a-zA-Z]/g, '');
+  const correct = built.toLowerCase() === answer.toLowerCase();
+  return (
+    <div>
+      <Prompt>{prompt}</Prompt>
+      <div className="mb-4 flex justify-center">
+        <PlayerImage player={target} size={160} rounded="rounded-3xl" />
+      </div>
+      {/* assembled letters */}
+      <div className="mb-3 flex min-h-14 flex-wrap items-center justify-center gap-1 rounded-2xl border-2 border-dashed border-[var(--hairline)] p-3">
+        {slots.length === 0 && <span className="text-[var(--muted)]">tap letters below</span>}
+        {slots.map((tileIdx, pos) => (
+          <button
+            key={pos}
+            disabled={disabled}
+            onClick={() => setSlots((s) => s.filter((_, p) => p !== pos))}
+            className="h-10 w-9 rounded-lg bg-[var(--team-soft)] font-black transition active:scale-95"
+          >
+            {tiles[tileIdx]}
+          </button>
+        ))}
+      </div>
+      {/* letter bank */}
+      <div className="mb-4 flex flex-wrap justify-center gap-1.5">
+        {inBank.map((i) => (
+          <button
+            key={i}
+            disabled={disabled}
+            onClick={() => setSlots((s) => [...s, i])}
+            className="h-10 w-9 rounded-lg border-2 border-[var(--hairline)] font-black transition active:scale-95"
+          >
+            {tiles[i]}
+          </button>
+        ))}
+      </div>
+      <button
+        onClick={() => onAnswer({ correct })}
+        disabled={disabled || slots.length === 0}
+        className="w-full rounded-2xl bg-[var(--ok-strong)] py-3 font-black text-white transition active:scale-[0.98] disabled:opacity-40 disabled:active:scale-100"
       >
         Check
       </button>
@@ -313,7 +396,7 @@ function TypeName({ question: q, onAnswer, disabled }: Props) {
       <button
         onClick={submit}
         disabled={disabled || !value.trim()}
-        className="w-full rounded-2xl bg-[var(--ok-strong)] py-3 font-black text-white disabled:opacity-40"
+        className="w-full rounded-2xl bg-[var(--ok-strong)] py-3 font-black text-white transition active:scale-[0.98] disabled:opacity-40 disabled:active:scale-100"
       >
         Check
       </button>

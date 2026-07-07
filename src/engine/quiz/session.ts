@@ -31,7 +31,11 @@ export interface SessionSpec {
 const PHOTO_TYPES: ReadonlySet<QuestionType> = new Set([
   'photo-to-name',
   'name-to-photo',
+  'first-name',
+  'last-name',
   'build-name',
+  'build-first',
+  'build-last',
   'type-name',
   'jersey',
   'position',

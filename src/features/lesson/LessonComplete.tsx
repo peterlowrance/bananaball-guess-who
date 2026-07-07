@@ -1,9 +1,9 @@
 import { useEffect, useState } from 'react';
 import { useLocation, useNavigate } from 'react-router-dom';
 import confetti from 'canvas-confetti';
-import { useStore } from '../../store';
 import { ACHIEVEMENTS } from '../../engine/gamification/achievements';
 import { MascotSpeech } from '../shared/Mascot';
+import { mascotQuote, type QuoteMoment } from '../shared/quotes';
 
 interface CompleteState {
   summary: { total: number; correctCount: number; firstTryCorrect: number; bestCombo: number };
@@ -16,14 +16,11 @@ export function LessonComplete() {
   const navigate = useNavigate();
   const location = useLocation();
   const state = location.state as CompleteState | null;
-  const reducedMotion = useStore((s) => s.profile.settings.reducedMotion);
   const [shownXp, setShownXp] = useState(0);
 
   useEffect(() => {
     if (!state) return;
-    if (!reducedMotion) {
-      confetti({ particleCount: 120, spread: 70, origin: { y: 0.6 }, colors: ['#ffd23f', '#f4b400', '#58cc02'] });
-    }
+    confetti({ particleCount: 120, spread: 70, origin: { y: 0.6 }, colors: ['#ffd23f', '#f4b400', '#58cc02'] });
     // count-up animation for XP
     const target = state.xp;
     let raf = 0;
@@ -35,7 +32,7 @@ export function LessonComplete() {
     };
     raf = requestAnimationFrame(tick);
     return () => cancelAnimationFrame(raf);
-  }, [state, reducedMotion]);
+  }, [state]);
 
   if (!state) {
     return (
@@ -53,11 +50,19 @@ export function LessonComplete() {
   const accuracy = summary.total ? Math.round((summary.correctCount / summary.total) * 100) : 0;
   const perfect = summary.firstTryCorrect === summary.total && summary.total > 0;
   const backTo = location.pathname.startsWith('/practice') ? '/practice' : '/';
-  const cheer = perfect
-    ? 'Flawless! You are on fire! 🔥'
-    : accuracy >= 70
-      ? 'Nice work — you are getting to know the roster!'
-      : 'Every rep counts. You will know them all soon! 🍌';
+  const isQuiz = state.quiz === true;
+  const moment: QuoteMoment = isQuiz
+    ? accuracy >= 80
+      ? 'quiz-passed'
+      : 'quiz-failed'
+    : perfect
+      ? 'lesson-perfect'
+      : accuracy >= 70
+        ? 'lesson-great'
+        : 'lesson-okay';
+  // rotate the line per result so replays feel fresh
+  const seed = `${summary.total}:${summary.correctCount}:${summary.bestCombo}`;
+  const cheer = mascotQuote(moment, seed);
 
   return (
     <div className="flex h-full min-h-0 flex-1 flex-col items-center justify-center gap-6 overflow-y-auto px-6 py-8 text-center">
@@ -91,7 +96,7 @@ export function LessonComplete() {
 
       <button
         onClick={() => navigate(backTo)}
-        className="w-full max-w-xs rounded-2xl bg-[var(--ok-strong)] py-4 font-black text-white"
+        className="w-full max-w-xs rounded-2xl bg-[var(--ok-strong)] py-4 font-black text-white transition active:scale-[0.98]"
       >
         Continue
       </button>

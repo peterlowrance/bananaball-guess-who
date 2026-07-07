@@ -1,4 +1,5 @@
 import { useRef, useState } from 'react';
+import { Download, Upload } from 'lucide-react';
 import { useStore } from '../../store';
 import { teams } from '../../data/dataset';
 import { teamThemeSlug } from '../../lib/theme';
@@ -11,7 +12,8 @@ const GOALS: { id: Goal; label: string; xp: number }[] = [
   { id: 'fanatic', label: 'Fanatic', xp: 60 },
 ];
 
-export function SettingsScreen() {
+/** Settings sections, composed at the bottom of the Profile tab. */
+export function SettingsPanel() {
   const settings = useStore((s) => s.profile.settings);
   const goal = useStore((s) => s.profile.streak.goal);
   const setSettings = useStore((s) => s.setSettings);
@@ -30,7 +32,7 @@ export function SettingsScreen() {
     a.download = 'bananaball-guess-who-backup.json';
     a.click();
     URL.revokeObjectURL(url);
-    setStatus('Backup downloaded ✓');
+    setStatus('Backup downloaded');
     setTimeout(() => setStatus(null), 2500);
   };
 
@@ -39,7 +41,7 @@ export function SettingsScreen() {
     e.target.value = ''; // allow re-picking the same file
     if (!file) return;
     const text = await file.text();
-    if (importState(text)) setStatus('Progress restored ✓');
+    if (importState(text)) setStatus('Progress restored');
     else setStatus('That file could not be read.');
     setTimeout(() => setStatus(null), 2500);
   };
@@ -52,8 +54,8 @@ export function SettingsScreen() {
   };
 
   return (
-    <div className="flex flex-col gap-6 px-5 py-6">
-      <h1 className="text-2xl font-black">Settings</h1>
+    <div className="flex flex-col gap-6 border-t-2 border-[var(--hairline)] pt-6">
+      <h2 className="text-xl font-black">Settings</h2>
 
       <Section title="Daily goal">
         <div className="flex gap-2">
@@ -61,7 +63,7 @@ export function SettingsScreen() {
             <button
               key={g.id}
               onClick={() => setGoal(g.id)}
-              className={`flex-1 rounded-2xl border-2 p-3 text-center font-bold transition ${
+              className={`flex-1 rounded-2xl border-2 p-3 text-center font-bold transition active:scale-[0.97] ${
                 goal === g.id ? 'border-[var(--team)] bg-[var(--team-soft)]' : 'border-[var(--hairline)]'
               }`}
             >
@@ -81,7 +83,7 @@ export function SettingsScreen() {
                 key={t.team_id}
                 data-team-theme={teamThemeSlug(t.name)}
                 onClick={() => toggleFocus(t.name)}
-                className={`flex items-center gap-2 rounded-2xl border-2 p-2 text-left text-sm font-bold transition ${
+                className={`flex items-center gap-2 rounded-2xl border-2 p-2 text-left text-sm font-bold transition active:scale-[0.97] ${
                   on ? 'border-[var(--team)] bg-[var(--team-soft)]' : 'border-[var(--hairline)]'
                 }`}
               >
@@ -96,27 +98,21 @@ export function SettingsScreen() {
       <Section title="Preferences">
         <Toggle label="Sound effects" value={settings.sound} onChange={(v) => setSettings({ sound: v })} />
         <Toggle label="Haptics" value={settings.haptics} onChange={(v) => setSettings({ haptics: v })} />
-        <Toggle
-          label="Hard mode (type names)"
-          value={settings.hardMode}
-          onChange={(v) => setSettings({ hardMode: v })}
-        />
-        <Toggle label="Reduce motion" value={settings.reducedMotion} onChange={(v) => setSettings({ reducedMotion: v })} />
         <Toggle label="Dark mode" value={settings.dark} onChange={(v) => setSettings({ dark: v })} />
       </Section>
 
       <Section title="Backup" subtitle="Save your progress to a file, or restore from one.">
         <button
-          className="w-full rounded-2xl bg-[var(--team-soft)] p-3.5 font-bold active:scale-[0.99]"
+          className="flex w-full items-center justify-center gap-2 rounded-2xl bg-[var(--team-soft)] p-3.5 font-bold transition active:scale-[0.99]"
           onClick={downloadBackup}
         >
-          ⬇ Download backup
+          <Download size={18} aria-hidden /> Download backup
         </button>
         <button
-          className="mt-2 w-full rounded-2xl border-2 border-[var(--hairline)] p-3.5 font-bold active:scale-[0.99]"
+          className="mt-2 flex w-full items-center justify-center gap-2 rounded-2xl border-2 border-[var(--hairline)] p-3.5 font-bold transition active:scale-[0.99]"
           onClick={() => fileInput.current?.click()}
         >
-          ⬆ Restore from file
+          <Upload size={18} aria-hidden /> Restore from file
         </button>
         <input
           ref={fileInput}
@@ -130,7 +126,7 @@ export function SettingsScreen() {
 
       <Section title="Danger zone">
         <button
-          className="w-full rounded-2xl border-2 border-[var(--bad)] p-3 font-bold text-[var(--bad)]"
+          className="w-full rounded-2xl border-2 border-[var(--bad)] p-3 font-bold text-[var(--bad)] transition active:scale-[0.99]"
           onClick={() => {
             if (confirm('Erase ALL progress? This cannot be undone.') && confirm('Really erase everything?')) {
               resetProgress();

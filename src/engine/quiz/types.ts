@@ -1,9 +1,13 @@
 // Question and session shapes produced by the generator. Pure data.
 
 export type QuestionType =
-  | 'photo-to-name' // show headshot, pick name (4 choices)
+  | 'photo-to-name' // show headshot, pick full name (4 choices)
   | 'name-to-photo' // show name, pick photo (4 photos)
-  | 'build-name' // show headshot, assemble name from word-bank tiles
+  | 'first-name' // show headshot, pick FIRST name (4 choices)
+  | 'last-name' // show headshot, pick LAST name (4 choices)
+  | 'build-name' // show headshot, assemble full name from word tiles
+  | 'build-first' // show headshot, spell FIRST name from letter tiles
+  | 'build-last' // show headshot, spell LAST name from letter tiles
   | 'type-name' // show headshot, type the name
   | 'which-team' // show headshot+name, pick team logo
   | 'jersey' // show headshot, pick jersey number

@@ -52,7 +52,7 @@ export const ACHIEVEMENTS: readonly Achievement[] = [
   {
     id: 'deep-cut',
     name: 'Deep Cut',
-    hint: 'Master a hard-tier player before finishing Act II.',
+    hint: 'Master a hard player early — before you finish the medium ones.',
     earned: (s) =>
       !s.act2Reached &&
       Object.entries(s.srs).some(([id, r]) => r.box >= 5 && s.hardTierIds.has(id)),

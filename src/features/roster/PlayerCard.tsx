@@ -1,4 +1,5 @@
 import { useNavigate, useParams } from 'react-router-dom';
+import { ChevronLeft, Sparkles } from 'lucide-react';
 import { useStore } from '../../store';
 import { playerBySlug } from '../../data/dataset';
 import { PlayerImage } from '../shared/PlayerImage';
@@ -35,8 +36,12 @@ export function PlayerCard() {
       style={{ background: 'var(--bg)' }}
     >
       <div className="flex items-center gap-3 px-4 py-3">
-        <button onClick={() => navigate('/roster')} aria-label="Back" className="text-xl">
-          ←
+        <button
+          onClick={() => navigate('/roster')}
+          aria-label="Back"
+          className="transition active:scale-90"
+        >
+          <ChevronLeft size={24} aria-hidden />
         </button>
         <span className="font-black">{player.name}</span>
       </div>
@@ -59,8 +64,12 @@ export function PlayerCard() {
           {known && (
             <div className="mt-3">
               <StrengthMeter box={r.box} />
-              <p className="mt-1 text-center text-xs text-[var(--muted)]">
-                {r.legendary ? 'Legendary ✦ · ' : ''}
+              <p className="mt-1 flex items-center justify-center gap-1 text-center text-xs text-[var(--muted)]">
+                {r.legendary && (
+                  <span className="inline-flex items-center gap-1 font-black text-[var(--team-ink)]">
+                    <Sparkles size={13} aria-hidden /> Legendary ·
+                  </span>
+                )}
                 {accuracy}% accuracy over {r.seen} question{r.seen === 1 ? '' : 's'}
               </p>
             </div>

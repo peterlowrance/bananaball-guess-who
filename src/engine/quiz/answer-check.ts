@@ -8,6 +8,8 @@
 //    the target (so "smith" isn't accepted when there are two Smiths and the
 //    other is the closer match)
 
+import { dropSuffix, lastName } from './name-parts';
+
 export function normalize(s: string): string {
   return s
     .normalize('NFD')
@@ -44,31 +46,17 @@ function threshold(target: string): number {
   return target.length <= 4 ? 1 : 2;
 }
 
-const SUFFIXES = new Set(['jr', 'sr', 'ii', 'iii', 'iv']);
-
-/** normalized name with any trailing generational suffix dropped */
-function withoutSuffix(fullName: string): string {
-  const parts = normalize(fullName).split(' ');
-  while (parts.length > 1 && SUFFIXES.has(parts[parts.length - 1])) parts.pop();
-  return parts.join(' ');
-}
-
-function lastName(fullName: string): string {
-  const parts = withoutSuffix(fullName).split(' ');
-  return parts[parts.length - 1] ?? '';
-}
-
 /**
  * Distance of `input` to a single player's name — best of full name, full name
  * without suffix (so "Jackie Bradley" matches "Jackie Bradley Jr."), and last
- * name alone.
+ * name alone. Suffix handling is shared with the generator via name-parts.
  */
 export function distanceToName(input: string, fullName: string): number {
   const nInput = normalize(input);
   return Math.min(
     editDistance(nInput, normalize(fullName)),
-    editDistance(nInput, withoutSuffix(fullName)),
-    editDistance(nInput, lastName(fullName)),
+    editDistance(nInput, normalize(dropSuffix(fullName))),
+    editDistance(nInput, normalize(lastName(fullName))),
   );
 }
 

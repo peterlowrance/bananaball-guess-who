@@ -1,5 +1,6 @@
 import { useMemo, useState } from 'react';
 import { Link } from 'react-router-dom';
+import { HelpCircle } from 'lucide-react';
 import { useStore } from '../../store';
 import { players, teams } from '../../data/dataset';
 import { PlayerImage } from '../shared/PlayerImage';
@@ -80,8 +81,8 @@ export function RosterScreen() {
                 key={p.player_id}
                 className="flex flex-col items-center gap-2 rounded-2xl border-2 border-[var(--hairline)] p-2 opacity-70"
               >
-                <div className="flex aspect-square w-full items-center justify-center rounded-xl bg-[var(--hairline)] text-2xl">
-                  ❓
+                <div className="flex aspect-square w-full items-center justify-center rounded-xl bg-[var(--hairline)] text-[var(--muted)]">
+                  <HelpCircle size={32} aria-hidden />
                 </div>
                 <span className="text-[11px] font-bold text-[var(--muted)]">???</span>
               </div>
@@ -124,7 +125,7 @@ function Chip({
   return (
     <button
       onClick={onClick}
-      className={`rounded-full border-2 px-3 py-1 text-xs font-bold transition ${
+      className={`rounded-full border-2 px-3 py-1 text-xs font-bold transition active:scale-95 ${
         active ? 'border-[var(--banana-dark,#f4b400)] bg-[var(--color-banana,#ffd23f)] text-black' : 'border-[var(--hairline)]'
       }`}
     >

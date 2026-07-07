@@ -2,7 +2,7 @@
 //
 // The learning path is never hardcoded: given the player pool (optionally
 // filtered to focus teams) it produces an ordered list of units. Ordering:
-//   1. difficulty tier: easy -> medium -> hard (Act I/II/III)
+//   1. difficulty tier: easy -> medium -> hard (implicit ramp, not a mode)
 //   2. within a tier, round-robin across teams by each player's per-team
 //      popularity_rank, so every unit mixes several teams and the most
 //      recognizable faces come first.
@@ -14,10 +14,15 @@ import type { Difficulty, Player } from './types';
 
 export const UNIT_SIZE = 9;
 const TIER_ORDER: Difficulty[] = ['easy', 'medium', 'hard'];
-export const ACT_BY_TIER: Record<Difficulty, { act: number; name: string }> = {
-  easy: { act: 1, name: 'Famous Faces' },
-  medium: { act: 2, name: 'The Regulars' },
-  hard: { act: 3, name: 'Deep Cuts' },
+
+// Presentational banners for each tier of the path. Difficulty is NOT a mode
+// the user picks — it ramps implicitly as you scroll: later units introduce
+// more obscure players, and questions get less scaffolded (the engine gates
+// harder question types by SRS box). These banners just orient the learner.
+export const TIER_BANNER: Record<Difficulty, { name: string; blurb: string; act: number }> = {
+  easy: { name: 'Easy', blurb: 'The players everyone knows.', act: 1 },
+  medium: { name: 'Medium', blurb: 'Getting deeper into the rosters.', act: 2 },
+  hard: { name: 'Hard', blurb: 'The tricky ones.', act: 3 },
 };
 
 export interface Unit {
@@ -105,7 +110,7 @@ export function deriveCurriculum(
       const members = tierPlayers.slice(i, i + UNIT_SIZE);
       if (members.length === 0) continue;
       const ids = members.map((p) => p.player_id);
-      const { act, name } = ACT_BY_TIER[tier];
+      const { act, name } = TIER_BANNER[tier];
       units.push({
         index: cursor++,
         key: unitKey(ids),

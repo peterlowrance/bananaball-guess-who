@@ -27,8 +27,8 @@ describe('PathScreen (smoke)', () => {
         <PathScreen />
       </MemoryRouter>,
     );
-    // Act headers from the derived curriculum should be present.
-    expect(screen.getByText(/FAMOUS FACES/i)).toBeTruthy();
+    // Tier banner from the derived curriculum should be present.
+    expect(screen.getByText(/The players everyone knows/i)).toBeTruthy();
     expect(screen.getAllByText(/leads with/i).length).toBeGreaterThan(0);
     // header shows XP
     expect(screen.getByText(/XP/)).toBeTruthy();

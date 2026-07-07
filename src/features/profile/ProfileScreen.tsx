@@ -3,6 +3,8 @@ import { levelForXp, LEVELS } from '../../engine/gamification/xp';
 import { ACHIEVEMENTS } from '../../engine/gamification/achievements';
 import { introducedCount } from '../practice/due';
 import { players } from '../../data/dataset';
+import { SettingsPanel } from '../settings/SettingsScreen';
+import { Lock } from 'lucide-react';
 
 export function ProfileScreen() {
   const profile = useStore((s) => s.profile);
@@ -67,7 +69,9 @@ export function ProfileScreen() {
                   got ? 'border-[var(--team)] bg-[var(--team-soft)]' : 'border-[var(--hairline)] opacity-60'
                 }`}
               >
-                <span className="text-2xl">{got ? '🏅' : '🔒'}</span>
+                <span className="flex h-8 items-center justify-center text-2xl">
+                  {got ? '🏅' : <Lock size={22} className="text-[var(--muted)]" aria-hidden />}
+                </span>
                 <span className="text-[11px] font-bold leading-tight">{a.name}</span>
                 <span className="text-[10px] leading-tight text-[var(--muted)]">
                   {got ? 'Unlocked' : a.hint}
@@ -77,6 +81,9 @@ export function ProfileScreen() {
           })}
         </div>
       </section>
+
+      {/* Settings live at the bottom of Profile */}
+      <SettingsPanel />
     </div>
   );
 }

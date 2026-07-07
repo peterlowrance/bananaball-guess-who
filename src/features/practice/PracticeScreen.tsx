@@ -4,6 +4,8 @@ import { teams } from '../../data/dataset';
 import { TeamLogo } from '../shared/TeamLogo';
 import { teamThemeSlug } from '../../lib/theme';
 import { dueCount, introducedCount } from './due';
+import { mascotQuote } from '../shared/quotes';
+import { RotateCw, Target } from 'lucide-react';
 import { useState } from 'react';
 
 export function PracticeScreen() {
@@ -35,17 +37,19 @@ export function PracticeScreen() {
           to="/practice/run?mode=review"
           className="flex items-center justify-between rounded-[var(--radius)] bg-[var(--bad)] p-5 font-black text-white active:scale-[0.99]"
         >
-          <span>🔁 Review due</span>
+          <span className="flex items-center gap-2">
+            <RotateCw size={20} aria-hidden /> Review due
+          </span>
           <span className="rounded-full bg-white/25 px-3 py-1">{due}</span>
         </Link>
       ) : (
         <div className="rounded-[var(--radius)] border-2 border-[var(--hairline)] p-5 text-center">
           <p className="font-black">All caught up! 🎉</p>
-          <p className="mt-1 text-sm text-[var(--muted)]">No reviews due right now.</p>
+          <p className="mt-1 text-sm text-[var(--muted)]">{mascotQuote('all-caught-up', introduced)}</p>
           {introduced > 0 && (
             <Link
               to="/practice/run?mode=review&any=1"
-              className="mt-3 inline-block rounded-2xl border-2 border-[var(--hairline)] px-4 py-2 text-sm font-bold"
+              className="mt-3 inline-block rounded-2xl border-2 border-[var(--hairline)] px-4 py-2 text-sm font-bold transition active:scale-[0.98]"
             >
               Practice anyway
             </Link>
@@ -57,9 +61,9 @@ export function PracticeScreen() {
       {introduced >= 4 && (
         <Link
           to="/practice/run?mode=weak"
-          className="rounded-[var(--radius)] border-2 border-[var(--hairline)] p-4 font-bold active:scale-[0.99]"
+          className="flex items-center gap-2 rounded-[var(--radius)] border-2 border-[var(--hairline)] p-4 font-bold transition active:scale-[0.99]"
         >
-          🎯 Weak spots — drill your lowest-accuracy players
+          <Target size={20} aria-hidden className="shrink-0" /> Weak spots — drill your lowest-accuracy players
         </Link>
       )}
 
@@ -77,7 +81,7 @@ export function PracticeScreen() {
                 key={t.team_id}
                 data-team-theme={teamThemeSlug(t.name)}
                 onClick={() => toggle(t.name)}
-                className={`flex items-center gap-2 rounded-2xl border-2 p-2 text-left text-sm font-bold transition ${
+                className={`flex items-center gap-2 rounded-2xl border-2 p-2 text-left text-sm font-bold transition active:scale-[0.97] ${
                   on ? 'border-[var(--team)] bg-[var(--team-soft)]' : 'border-[var(--hairline)]'
                 }`}
               >
@@ -90,7 +94,7 @@ export function PracticeScreen() {
         {teamDrillHref ? (
           <Link
             to={teamDrillHref}
-            className="mt-3 block rounded-2xl bg-[var(--ok-strong)] py-3 text-center font-black text-white"
+            className="mt-3 block rounded-2xl bg-[var(--ok-strong)] py-3 text-center font-black text-white transition active:scale-[0.98]"
           >
             Start drill ({selected.size} {selected.size === 1 ? 'team' : 'teams'})
           </Link>

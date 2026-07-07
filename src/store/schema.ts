@@ -12,8 +12,6 @@ export interface Settings {
   focusTeams: string[]; // team names; empty = all
   sound: boolean;
   haptics: boolean;
-  hardMode: boolean; // enable type-name questions
-  reducedMotion: boolean; // user override; also respects OS setting
   dark: boolean;
 }
 
@@ -59,8 +57,6 @@ export function defaultSettings(): Settings {
     focusTeams: [],
     sound: true,
     haptics: true,
-    hardMode: false,
-    reducedMotion: false,
     dark: false,
   };
 }

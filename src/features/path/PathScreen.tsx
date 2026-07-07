@@ -1,9 +1,10 @@
 import { useEffect } from 'react';
 import { Link } from 'react-router-dom';
+import { RotateCw, Star, Lock } from 'lucide-react';
 import { useStore } from '../../store';
 import { getPlayer } from '../../data/dataset';
 import { warmUnitImages } from '../../lib/images';
-import { ACT_BY_TIER } from '../../data/curriculum';
+import { TIER_BANNER } from '../../data/curriculum';
 import { curriculumUnits } from './units';
 import { computePathProgress, LESSONS_PER_UNIT, type UnitProgress } from './progress';
 import { levelForXp } from '../../engine/gamification/xp';
@@ -36,22 +37,23 @@ export function PathScreen() {
         style={{ background: 'var(--bg)', borderBottom: '1px solid var(--hairline)' }}
       >
         <div className="flex items-center gap-1 text-lg font-black">🔥 <span>{streakCurrent}</span></div>
-        <div className="text-center">
+        <div className="text-right">
           <div className="text-xs font-bold text-[var(--muted)]">{level.title}</div>
           <div className="text-sm font-black">{totalXp} XP</div>
         </div>
-        <Link to="/settings" className="text-xl" aria-label="Settings">⚙️</Link>
       </header>
 
       <div className="flex flex-col gap-4 px-5">
         {progress.map((p, i) => {
-          const firstOfAct = i === 0 || progress[i - 1].unit.act !== p.unit.act;
+          const firstOfTier = i === 0 || progress[i - 1].unit.tier !== p.unit.tier;
+          const banner = TIER_BANNER[p.unit.tier];
           return (
             <div key={p.unit.key}>
-              {firstOfAct && (
-                <h2 className="mb-2 mt-4 text-xs font-black uppercase tracking-widest text-[var(--muted)]">
-                  Act {p.unit.act} · {ACT_BY_TIER[p.unit.tier].name}
-                </h2>
+              {firstOfTier && (
+                <div className="mb-2 mt-4 rounded-2xl bg-[var(--team-soft)] px-4 py-2">
+                  <div className="text-sm font-black">{banner.name}</div>
+                  <div className="text-xs text-[var(--muted)]">{banner.blurb}</div>
+                </div>
               )}
               <UnitCard progress={p} srs={srs} />
             </div>
@@ -62,9 +64,11 @@ export function PathScreen() {
       {due > 0 && (
         <Link
           to="/practice"
-          className="fixed bottom-24 left-1/2 z-20 -translate-x-1/2 rounded-full bg-[var(--bad)] px-5 py-3 font-black text-white shadow-lg"
+          className="fixed bottom-24 left-1/2 z-20 -translate-x-1/2 rounded-full bg-[var(--bad)] px-5 py-3 font-black text-white shadow-lg transition active:scale-95"
         >
-          🔁 {due} review{due === 1 ? '' : 's'} due
+          <span className="flex items-center gap-2">
+            <RotateCw size={18} aria-hidden /> {due} review{due === 1 ? '' : 's'} due
+          </span>
         </Link>
       )}
     </div>
@@ -83,7 +87,13 @@ function UnitCard({
   const locked = p.status === 'locked';
   const complete = p.status === 'complete';
 
-  const badge = complete ? '★' : locked ? '🔒' : p.unit.index + 1;
+  const badge = complete ? (
+    <Star size={20} fill="currentColor" aria-hidden />
+  ) : locked ? (
+    <Lock size={18} aria-hidden />
+  ) : (
+    p.unit.index + 1
+  );
   const lessonNumber = Math.min(p.lessonsDone + 1, LESSONS_PER_UNIT);
   const showQuiz = p.quizUnlocked && !p.quizPassed;
 

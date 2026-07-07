@@ -3,6 +3,7 @@
 // with the summary when the queue is exhausted. Shared by lessons and practice.
 import { useState, useCallback, useEffect, useRef } from 'react';
 import { useNavigate } from 'react-router-dom';
+import { X } from 'lucide-react';
 import { AnimatePresence, m } from 'motion/react';
 import { QuestionView, type AnswerPayload } from './QuestionView';
 import { IntroCard } from './IntroCard';
@@ -94,8 +95,12 @@ export function RunnerView({
   return (
     <div className="flex h-full min-h-0 flex-1 flex-col">
       <div className="flex items-center gap-3 px-4 py-3">
-        <button onClick={() => navigate('/')} aria-label="Quit" className="text-xl">
-          ✕
+        <button
+          onClick={() => navigate('/')}
+          aria-label="Quit"
+          className="text-[var(--muted)] transition active:scale-90"
+        >
+          <X size={24} aria-hidden />
         </button>
         <div className="h-3 flex-1 overflow-hidden rounded-full bg-[var(--hairline)]">
           <div
@@ -130,7 +135,9 @@ export function RunnerView({
         </AnimatePresence>
       </div>
 
-      {feedback && <FeedbackSheet correct={lastCorrect} player={target} onContinue={advance} />}
+      {feedback && (
+        <FeedbackSheet correct={lastCorrect} player={target} combo={runner.combo} onContinue={advance} />
+      )}
     </div>
   );
 }

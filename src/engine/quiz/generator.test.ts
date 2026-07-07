@@ -4,23 +4,37 @@ import { players, getPlayer } from '../../data/dataset';
 import { mulberry32 } from '../rng';
 import { generateOfType, eligibleTypes, generateQuestion } from './generator';
 import { checkTypedAnswer } from './answer-check';
+import { firstName, lastName, dropSuffix } from './name-parts';
 import type { QuestionType } from './types';
 
 const ALL_TYPES: QuestionType[] = [
   'photo-to-name',
   'name-to-photo',
+  'first-name',
+  'last-name',
   'which-team',
   'build-name',
+  'build-first',
+  'build-last',
   'jersey',
   'position',
   'type-name',
 ];
 
+const BUILD_TYPES = new Set<QuestionType>(['build-name', 'build-first', 'build-last']);
+const TEXT_TYPES = new Set<QuestionType>([...BUILD_TYPES, 'type-name']);
+
 describe('eligibleTypes', () => {
   it('unlocks harder types with higher box', () => {
+    // easiest rung: first/last-name recognition available from box 0
+    expect(eligibleTypes(0)).toContain('first-name');
+    expect(eligibleTypes(0)).toContain('last-name');
     expect(eligibleTypes(0)).not.toContain('type-name');
     expect(eligibleTypes(0)).not.toContain('build-name');
+    expect(eligibleTypes(0)).not.toContain('build-first');
     expect(eligibleTypes(2)).toContain('build-name');
+    expect(eligibleTypes(2)).toContain('build-first');
+    expect(eligibleTypes(2)).toContain('build-last');
     expect(eligibleTypes(3)).toContain('jersey');
     expect(eligibleTypes(4)).toContain('type-name');
   });
@@ -43,13 +57,24 @@ describe('generateQuestion — property: always answerable', () => {
           );
           expect(q.targetId).toBe(target.player_id);
 
-          if (type === 'type-name' || type === 'build-name') {
+          if (TEXT_TYPES.has(type)) {
             expect(q.answerText).toBeTruthy();
             expect(q.correctIndex).toBe(-1);
             if (type === 'build-name') {
-              // every part of the name is present among the tiles
-              for (const part of target.name.split(' ')) {
+              // every word of the *suffix-stripped* name is a tile — never "Jr."
+              for (const part of dropSuffix(target.name).split(' ')) {
                 expect(q.tiles).toContain(part);
+              }
+              expect(q.tiles).not.toContain('Jr.');
+            }
+            if (type === 'build-first' || type === 'build-last') {
+              // the answer's letters are all present among the (uppercase) tiles
+              const answer = (type === 'build-first' ? firstName : lastName)(target.name);
+              const bank = [...(q.tiles ?? [])];
+              for (const ch of answer.replace(/[^a-zA-Z]/g, '').toUpperCase()) {
+                const at = bank.indexOf(ch);
+                expect(at).toBeGreaterThanOrEqual(0);
+                bank.splice(at, 1); // consume so duplicate letters need duplicate tiles
               }
             }
           } else {
@@ -62,6 +87,11 @@ describe('generateQuestion — property: always answerable', () => {
             // the correct choice resolves to the target for identity types
             if (type === 'photo-to-name' || type === 'name-to-photo') {
               expect(q.choices[q.correctIndex].playerId).toBe(target.player_id);
+            }
+            if (type === 'first-name' || type === 'last-name') {
+              expect(q.choices[q.correctIndex].playerId).toBe(target.player_id);
+              const part = type === 'first-name' ? firstName : lastName;
+              expect(q.choices[q.correctIndex].label).toBe(part(target.name));
             }
             if (type === 'jersey') {
               expect(q.choices[q.correctIndex].label).toBe(String(target.jersey_number));
@@ -87,6 +117,46 @@ describe('generateQuestion — random type respects box eligibility', () => {
       expect(q.type).not.toBe('type-name');
       expect(q.type).not.toBe('build-name');
     }
+  });
+});
+
+describe('first/last-name choices are unambiguous', () => {
+  it('no two choices share the tested part-name across many seeds', () => {
+    for (const type of ['first-name', 'last-name'] as const) {
+      const part = type === 'first-name' ? firstName : lastName;
+      for (let s = 0; s < 300; s++) {
+        const target = players[s % players.length];
+        const q = generateOfType(
+          { target, box: 0, roster: players, isReview: true, qid: 'q' },
+          type,
+          mulberry32(s + 1),
+        );
+        const labels = q.choices.map((c) => part(getPlayer(c.playerId).name).toLowerCase());
+        expect(new Set(labels).size).toBe(labels.length); // exactly one right answer
+        expect(q.choices.length).toBeGreaterThanOrEqual(2);
+      }
+    }
+  });
+});
+
+describe('build-name / build-last never leak a Jr. suffix', () => {
+  it('a suffixed player builds without the suffix, and last-name build accepts the suffix-less last name', () => {
+    const jr = players.find((p) => /\bjr\.?$/i.test(p.name));
+    if (!jr) return; // dataset may not contain one; guard rather than fail
+    const bn = generateOfType(
+      { target: jr, box: 2, roster: players, isReview: true, qid: 'q' },
+      'build-name',
+      mulberry32(3),
+    );
+    expect(bn.answerText).toBe(dropSuffix(jr.name));
+    expect(bn.tiles).not.toContain('Jr.');
+
+    const bl = generateOfType(
+      { target: jr, box: 2, roster: players, isReview: true, qid: 'q' },
+      'build-last',
+      mulberry32(3),
+    );
+    expect(bl.answerText).toBe(lastName(jr.name));
   });
 });
 

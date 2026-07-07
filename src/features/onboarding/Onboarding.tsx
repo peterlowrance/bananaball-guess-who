@@ -7,6 +7,7 @@ import { mulberry32 } from '../../engine/rng';
 import { generateOfType } from '../../engine/quiz/generator';
 import { GOAL_XP, type Goal } from '../../engine/gamification/streak';
 import { GUIDE_MASCOT } from '../shared/Mascot';
+import { mascotQuote } from '../shared/quotes';
 import confetti from 'canvas-confetti';
 
 type Step = 'splash' | 'taste' | 'goal' | 'done';
@@ -45,7 +46,7 @@ export function Onboarding() {
           className="h-32 w-auto animate-[bob_2.5s_ease-in-out_infinite]"
         />
         <h1 className="text-3xl font-black">Bananaball Guess Who</h1>
-        <p className="text-[var(--muted)]">Learn every Banana Ball player. 3 minutes a day.</p>
+        <p className="max-w-xs text-[var(--muted)]">{mascotQuote('welcome')}</p>
         <Primary onClick={() => setStep('taste')}>Let's go</Primary>
       </Centered>
     );
@@ -68,7 +69,7 @@ export function Onboarding() {
                 key={c.playerId}
                 disabled={answered !== null}
                 onClick={() => setAnswered(i)}
-                className={`rounded-2xl border-2 border-[var(--hairline)] p-4 font-bold transition ${state}`}
+                className={`rounded-2xl border-2 border-[var(--hairline)] p-4 font-bold transition active:scale-[0.98] ${state}`}
               >
                 {c.label}
               </button>
@@ -78,7 +79,9 @@ export function Onboarding() {
         {answered !== null && (
           <div className="w-full max-w-xs">
             <p className="mb-3 font-bold text-[var(--ok)]">
-              {answered === q.correctIndex ? "That's right! 🎉" : `That's ${star.name} — you'll know them all soon 🍌`}
+              {answered === q.correctIndex
+                ? mascotQuote('onboarding-correct', answered)
+                : `That's ${star.name}. ${mascotQuote('onboarding-wrong', answered)}`}
             </p>
             <Primary onClick={() => setStep('goal')}>Continue</Primary>
           </div>

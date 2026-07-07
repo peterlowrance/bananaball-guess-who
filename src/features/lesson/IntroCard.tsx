@@ -27,7 +27,7 @@ export function IntroCard({ player, onContinue }: { player: Player; onContinue: 
       {funFact && <p className="max-w-xs text-sm text-[var(--muted)]">{funFact}</p>}
       <button
         onClick={onContinue}
-        className="mt-4 w-full max-w-xs rounded-2xl py-4 font-black text-[var(--team-ink)]"
+        className="mt-4 w-full max-w-xs rounded-2xl py-4 font-black text-[var(--team-ink)] transition active:scale-[0.98]"
         style={{ background: 'var(--team)' }}
       >
         Got it

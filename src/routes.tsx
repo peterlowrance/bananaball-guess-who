@@ -1,7 +1,6 @@
 import { createHashRouter } from 'react-router-dom';
 import { Layout } from './features/shared/Layout';
 import { FullScreen } from './features/shared/FullScreen';
-import { SettingsScreen } from './features/settings/SettingsScreen';
 import { PathScreen } from './features/path/PathScreen';
 import { LessonScreen } from './features/lesson/LessonScreen';
 import { LessonComplete } from './features/lesson/LessonComplete';
@@ -32,7 +31,6 @@ export const router = createHashRouter([
       { path: 'practice', element: <PracticeScreen /> },
       { path: 'roster', element: <RosterScreen /> },
       { path: 'profile', element: <ProfileScreen /> },
-      { path: 'settings', element: <SettingsScreen /> },
     ],
   },
 ]);
