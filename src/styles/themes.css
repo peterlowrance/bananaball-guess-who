@@ -1,0 +1,60 @@
+/* Team color themes. Applied via [data-team-theme="<slug>"] on any container;
+   components read var(--team) / var(--team-ink). Base app is banana-yellow. */
+
+:root {
+  --team: #f4b400;
+  --team-ink: #2b2b2b;
+  --team-soft: #fff3cd;
+
+  --surface: #ffffff;
+  --bg: var(--color-peel, #fff8e1);
+  --text: #2b2b2b;
+  --muted: #8a8a8a;
+  --hairline: #eee6cf;
+
+  --ok: #58cc02; /* duolingo-green */
+  --ok-ink: #ffffff;
+  --bad: #ff4b4b;
+  --radius: 1.25rem;
+}
+
+.dark {
+  --surface: #22201a;
+  --bg: #17150f;
+  --text: #f4efe1;
+  --muted: #a49f8f;
+  --hairline: #34302650;
+  --team-soft: #2e2a1c;
+}
+
+/* Six team palettes (approximate brand colors). */
+[data-team-theme='savannah-bananas'] {
+  --team: #f5d213;
+  --team-ink: #1b1b1b;
+  --team-soft: #fff6c4;
+}
+[data-team-theme='party-animals'] {
+  --team: #ec4899;
+  --team-ink: #ffffff;
+  --team-soft: #fce1ef;
+}
+[data-team-theme='firefighters'] {
+  --team: #e23b2e;
+  --team-ink: #ffffff;
+  --team-soft: #fbdcd9;
+}
+[data-team-theme='texas-tailgaters'] {
+  --team: #1f6feb;
+  --team-ink: #ffffff;
+  --team-soft: #d8e6fd;
+}
+[data-team-theme='loco-beach-coconuts'] {
+  --team: #12a594;
+  --team-ink: #ffffff;
+  --team-soft: #d1f2ec;
+}
+[data-team-theme='indianapolis-clowns'] {
+  --team: #7c3aed;
+  --team-ink: #ffffff;
+  --team-soft: #e9ddfb;
+}

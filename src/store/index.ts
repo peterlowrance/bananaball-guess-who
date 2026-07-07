@@ -13,7 +13,6 @@ import {
 } from './schema';
 import { migrate, freshState } from './migrations';
 import { newStreakState, addXp, type Goal } from '../engine/gamification/streak';
-import { levelForXp } from '../engine/gamification/xp';
 import {
   evaluateAchievements,
   type AchievementSnapshot,
@@ -308,6 +307,7 @@ function memoryStorage(): Storage {
   };
 }
 
-// convenience selectors
-export const selectLevel = (s: Store) => levelForXp(s.profile.totalXp);
+// NOTE: never select a freshly-constructed object from the store (e.g.
+// levelForXp(...)) — zustand compares by Object.is and will re-render forever.
+// Select the primitive (totalXp) and derive in the component.
 export { defaultSettings, newStreakState };

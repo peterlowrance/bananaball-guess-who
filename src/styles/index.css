@@ -1,4 +1,5 @@
 @import 'tailwindcss';
+@import './themes.css';
 
 @theme {
   --color-banana: #ffd23f;

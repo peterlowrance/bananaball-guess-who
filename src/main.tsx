@@ -4,11 +4,12 @@ import { registerSW } from 'virtual:pwa-register';
 import './styles/index.css';
 import App from './App.tsx';
 
-// Prompt-based update: reload when the user accepts a new version.
-registerSW({
+// Prompt-based update: when a new SW is waiting, offer to activate+reload.
+// updateSW(true) performs the reload itself — never call location.reload too.
+const updateSW = registerSW({
   onNeedRefresh() {
     if (confirm('A new version of Bananaball Guess Who is available. Reload?')) {
-      window.location.reload();
+      void updateSW(true);
     }
   },
 });
