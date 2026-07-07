@@ -52,6 +52,13 @@ describe('deriveCurriculum', () => {
     expect(teamNames.size).toBeGreaterThan(1);
   });
 
+  it('the very first player learned is the flagship Savannah Bananas star', () => {
+    const firstId = full[0].playerIds[0];
+    const firstPlayer = players.find((p) => p.player_id === firstId)!;
+    expect(firstPlayer.team_name).toBe('Savannah Bananas');
+    expect(firstPlayer.popularity_rank).toBe(1);
+  });
+
   it('is deterministic across calls', () => {
     const a = deriveCurriculum(players);
     const b = deriveCurriculum(players);

@@ -51,16 +51,16 @@
   ],
   "players": [
     {
-      "player_id": "70262018-9e5b-4880-a9e8-3c60c6d320fd",
-      "slug": "christian-dearman-70262018",
-      "name": "Christian Dearman",
+      "player_id": "735fa56e-fb9f-4bc7-bed8-b27b0a5cc83b",
+      "slug": "ben-dum-735fa56e",
+      "name": "Ben Dum",
       "team_id": "bd78559e-298f-4a5d-9f7b-a0e24c4342a6",
       "team_name": "Firefighters",
-      "jersey_number": 1,
+      "jersey_number": 18,
       "position_label": "Relief Pitcher",
-      "image_url": "https://thebananaball.com/stats/players/cc626c07-fcb6-46d0-b9ae-71c7895e0393.webp",
+      "image_url": "https://thebananaball.com/stats/players/35709beb-15a3-40ff-a5c0-faaa97b21cc6.webp",
       "hitting": {
-        "g": 5,
+        "g": 18,
         "ab": 0,
         "r": 0,
         "h": 0,
@@ -70,13 +70,13 @@
         "ops": "—"
       },
       "pitching": {
-        "g": 5,
-        "w": 0,
-        "l": 1,
+        "g": 18,
+        "w": 1,
+        "l": 2,
         "sv": null,
-        "ip": "1.2",
+        "ip": "23.2",
         "so": null,
-        "era": "54.00"
+        "era": "7.61"
       },
       "difficulty": "easy",
       "popularity_rank": 1,
@@ -163,62 +163,6 @@
       "popularity_confidence": "high"
     },
     {
-      "player_id": "cc186bf1-2826-46ca-b5c8-e32648c7a284",
-      "slug": "dakota-mcfadden-cc186bf1",
-      "name": "Dakota McFadden",
-      "team_id": "bd78559e-298f-4a5d-9f7b-a0e24c4342a6",
-      "team_name": "Firefighters",
-      "jersey_number": 24,
-      "position_label": "Two-Way Player",
-      "image_url": "https://thebananaball.com/stats/players/03470635-b2ad-47f0-a88c-af7378fa5e5b.webp",
-      "hitting": {
-        "g": 23,
-        "ab": 49,
-        "r": 2,
-        "h": 15,
-        "rbi": 4,
-        "hr": 0,
-        "avg": ".306",
-        "ops": ".720"
-      },
-      "pitching": {
-        "g": 1,
-        "w": 0,
-        "l": 0,
-        "sv": null,
-        "ip": "0.2",
-        "so": null,
-        "era": "40.50"
-      },
-      "difficulty": "easy",
-      "popularity_rank": 5,
-      "popularity_confidence": "high"
-    },
-    {
-      "player_id": "05deb2bf-b1b8-410f-be46-7d07ede8c5c1",
-      "slug": "val-perez-05deb2bf",
-      "name": "Val Perez",
-      "team_id": "bd78559e-298f-4a5d-9f7b-a0e24c4342a6",
-      "team_name": "Firefighters",
-      "jersey_number": 27,
-      "position_label": "Second Baseman",
-      "image_url": "https://thebananaball.com/stats/players/4f3460be-eec6-40f7-8eba-53e1884a633a.webp",
-      "hitting": {
-        "g": 2,
-        "ab": 1,
-        "r": 0,
-        "h": 0,
-        "rbi": 1,
-        "hr": 0,
-        "avg": ".000",
-        "ops": ".500"
-      },
-      "pitching": null,
-      "difficulty": "easy",
-      "popularity_rank": 6,
-      "popularity_confidence": "high"
-    },
-    {
       "player_id": "78d964c6-3b69-49db-80d2-53540d42ac7e",
       "slug": "dalton-cornett-78d964c6",
       "name": "Dalton Cornett",
@@ -239,7 +183,7 @@
       },
       "pitching": null,
       "difficulty": "easy",
-      "popularity_rank": 7,
+      "popularity_rank": 5,
       "popularity_confidence": "high"
     },
     {
@@ -271,7 +215,127 @@
         "era": "4.76"
       },
       "difficulty": "easy",
+      "popularity_rank": 6,
+      "popularity_confidence": "high"
+    },
+    {
+      "player_id": "70262018-9e5b-4880-a9e8-3c60c6d320fd",
+      "slug": "christian-dearman-70262018",
+      "name": "Christian Dearman",
+      "team_id": "bd78559e-298f-4a5d-9f7b-a0e24c4342a6",
+      "team_name": "Firefighters",
+      "jersey_number": 1,
+      "position_label": "Relief Pitcher",
+      "image_url": "https://thebananaball.com/stats/players/cc626c07-fcb6-46d0-b9ae-71c7895e0393.webp",
+      "hitting": {
+        "g": 5,
+        "ab": 0,
+        "r": 0,
+        "h": 0,
+        "rbi": 0,
+        "hr": 0,
+        "avg": ".000",
+        "ops": "—"
+      },
+      "pitching": {
+        "g": 5,
+        "w": 0,
+        "l": 1,
+        "sv": null,
+        "ip": "1.2",
+        "so": null,
+        "era": "54.00"
+      },
+      "difficulty": "easy",
+      "popularity_rank": 7,
+      "popularity_confidence": "high"
+    },
+    {
+      "player_id": "c7c82442-fd40-45d3-93c1-6c4dce82479c",
+      "slug": "jared-donalson-c7c82442",
+      "name": "Jared Donalson",
+      "team_id": "bd78559e-298f-4a5d-9f7b-a0e24c4342a6",
+      "team_name": "Firefighters",
+      "jersey_number": 21,
+      "position_label": "Starting Pitcher",
+      "image_url": "https://thebananaball.com/stats/players/7aacb01b-63b2-41e9-bc2b-5c8d2606a1ac.webp",
+      "hitting": {
+        "g": 12,
+        "ab": 0,
+        "r": 0,
+        "h": 0,
+        "rbi": 0,
+        "hr": 0,
+        "avg": ".000",
+        "ops": "—"
+      },
+      "pitching": {
+        "g": 12,
+        "w": 2,
+        "l": 1,
+        "sv": null,
+        "ip": "38.1",
+        "so": null,
+        "era": "7.28"
+      },
+      "difficulty": "easy",
       "popularity_rank": 8,
+      "popularity_confidence": "high"
+    },
+    {
+      "player_id": "cc186bf1-2826-46ca-b5c8-e32648c7a284",
+      "slug": "dakota-mcfadden-cc186bf1",
+      "name": "Dakota McFadden",
+      "team_id": "bd78559e-298f-4a5d-9f7b-a0e24c4342a6",
+      "team_name": "Firefighters",
+      "jersey_number": 24,
+      "position_label": "Two-Way Player",
+      "image_url": "https://thebananaball.com/stats/players/03470635-b2ad-47f0-a88c-af7378fa5e5b.webp",
+      "hitting": {
+        "g": 23,
+        "ab": 49,
+        "r": 2,
+        "h": 15,
+        "rbi": 4,
+        "hr": 0,
+        "avg": ".306",
+        "ops": ".720"
+      },
+      "pitching": {
+        "g": 1,
+        "w": 0,
+        "l": 0,
+        "sv": null,
+        "ip": "0.2",
+        "so": null,
+        "era": "40.50"
+      },
+      "difficulty": "medium",
+      "popularity_rank": 9,
+      "popularity_confidence": "high"
+    },
+    {
+      "player_id": "05deb2bf-b1b8-410f-be46-7d07ede8c5c1",
+      "slug": "val-perez-05deb2bf",
+      "name": "Val Perez",
+      "team_id": "bd78559e-298f-4a5d-9f7b-a0e24c4342a6",
+      "team_name": "Firefighters",
+      "jersey_number": 27,
+      "position_label": "Second Baseman",
+      "image_url": "https://thebananaball.com/stats/players/4f3460be-eec6-40f7-8eba-53e1884a633a.webp",
+      "hitting": {
+        "g": 2,
+        "ab": 1,
+        "r": 0,
+        "h": 0,
+        "rbi": 1,
+        "hr": 0,
+        "avg": ".000",
+        "ops": ".500"
+      },
+      "pitching": null,
+      "difficulty": "medium",
+      "popularity_rank": 10,
       "popularity_confidence": "high"
     },
     {
@@ -303,7 +367,7 @@
         "era": "6.14"
       },
       "difficulty": "medium",
-      "popularity_rank": 9,
+      "popularity_rank": 11,
       "popularity_confidence": "medium"
     },
     {
@@ -335,39 +399,7 @@
         "era": "10.66"
       },
       "difficulty": "medium",
-      "popularity_rank": 10,
-      "popularity_confidence": "medium"
-    },
-    {
-      "player_id": "735fa56e-fb9f-4bc7-bed8-b27b0a5cc83b",
-      "slug": "ben-dum-735fa56e",
-      "name": "Ben Dum",
-      "team_id": "bd78559e-298f-4a5d-9f7b-a0e24c4342a6",
-      "team_name": "Firefighters",
-      "jersey_number": 18,
-      "position_label": "Relief Pitcher",
-      "image_url": "https://thebananaball.com/stats/players/35709beb-15a3-40ff-a5c0-faaa97b21cc6.webp",
-      "hitting": {
-        "g": 18,
-        "ab": 0,
-        "r": 0,
-        "h": 0,
-        "rbi": 0,
-        "hr": 0,
-        "avg": ".000",
-        "ops": "—"
-      },
-      "pitching": {
-        "g": 18,
-        "w": 1,
-        "l": 2,
-        "sv": null,
-        "ip": "23.2",
-        "so": null,
-        "era": "7.61"
-      },
-      "difficulty": "medium",
-      "popularity_rank": 11,
+      "popularity_rank": 12,
       "popularity_confidence": "medium"
     },
     {
@@ -391,7 +423,7 @@
       },
       "pitching": null,
       "difficulty": "medium",
-      "popularity_rank": 12,
+      "popularity_rank": 13,
       "popularity_confidence": "medium"
     },
     {
@@ -415,7 +447,7 @@
       },
       "pitching": null,
       "difficulty": "medium",
-      "popularity_rank": 13,
+      "popularity_rank": 14,
       "popularity_confidence": "medium"
     },
     {
@@ -439,7 +471,7 @@
       },
       "pitching": null,
       "difficulty": "medium",
-      "popularity_rank": 14,
+      "popularity_rank": 15,
       "popularity_confidence": "medium"
     },
     {
@@ -462,38 +494,6 @@
         "ops": ".100"
       },
       "pitching": null,
-      "difficulty": "medium",
-      "popularity_rank": 15,
-      "popularity_confidence": "medium"
-    },
-    {
-      "player_id": "c7c82442-fd40-45d3-93c1-6c4dce82479c",
-      "slug": "jared-donalson-c7c82442",
-      "name": "Jared Donalson",
-      "team_id": "bd78559e-298f-4a5d-9f7b-a0e24c4342a6",
-      "team_name": "Firefighters",
-      "jersey_number": 21,
-      "position_label": "Starting Pitcher",
-      "image_url": "https://thebananaball.com/stats/players/7aacb01b-63b2-41e9-bc2b-5c8d2606a1ac.webp",
-      "hitting": {
-        "g": 12,
-        "ab": 0,
-        "r": 0,
-        "h": 0,
-        "rbi": 0,
-        "hr": 0,
-        "avg": ".000",
-        "ops": "—"
-      },
-      "pitching": {
-        "g": 12,
-        "w": 2,
-        "l": 1,
-        "sv": null,
-        "ip": "38.1",
-        "so": null,
-        "era": "7.28"
-      },
       "difficulty": "medium",
       "popularity_rank": 16,
       "popularity_confidence": "medium"

@@ -52,9 +52,12 @@ export function unitKey(playerIds: readonly string[]): string {
 /**
  * Round-robin interleave players within one tier: sort each team's players by
  * popularity_rank (best first, nulls last), then take one from each team in
- * turn. Teams are visited in a stable order (by name) so output is
- * deterministic.
+ * turn. The flagship Savannah Bananas lead each round (so the very first
+ * player learned is their biggest star); remaining teams follow alphabetically.
+ * Order is otherwise deterministic.
  */
+const LEAD_TEAM = 'Savannah Bananas';
+
 function interleaveTier(tierPlayers: Player[]): Player[] {
   const byTeam = new Map<string, Player[]>();
   for (const p of tierPlayers) {
@@ -63,8 +66,17 @@ function interleaveTier(tierPlayers: Player[]): Player[] {
     else byTeam.set(p.team_name, [p]);
   }
   const rank = (p: Player) => p.popularity_rank ?? Number.POSITIVE_INFINITY;
+  // Sort so LEAD_TEAM is first, then the rest alphabetically. (An explicit
+  // priority comparator — not a whitespace prefix — since localeCompare
+  // ignores leading spaces under default collation.)
+  const teamCmp = (a: string, b: string) => {
+    if (a === b) return 0;
+    if (a === LEAD_TEAM) return -1;
+    if (b === LEAD_TEAM) return 1;
+    return a.localeCompare(b);
+  };
   const queues = [...byTeam.entries()]
-    .sort((a, b) => a[0].localeCompare(b[0]))
+    .sort((a, b) => teamCmp(a[0], b[0]))
     .map(([, arr]) => arr.sort((a, b) => rank(a) - rank(b) || a.name.localeCompare(b.name)));
 
   const out: Player[] = [];
