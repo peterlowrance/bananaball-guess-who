@@ -1,8 +1,8 @@
-import { useMemo } from 'react';
 import { Link } from 'react-router-dom';
 import { useStore } from '../../store';
-import { players, getPlayer } from '../../data/dataset';
-import { deriveCurriculum, ACT_BY_TIER } from '../../data/curriculum';
+import { getPlayer } from '../../data/dataset';
+import { ACT_BY_TIER } from '../../data/curriculum';
+import { curriculumUnits } from './units';
 import { levelForXp } from '../../engine/gamification/xp';
 import { teamThemeSlug } from '../../lib/theme';
 
@@ -17,7 +17,7 @@ export function PathScreen() {
   const totalXp = useStore((s) => s.profile.totalXp);
   const level = levelForXp(totalXp);
 
-  const units = useMemo(() => deriveCurriculum(players, focusTeams), [focusTeams]);
+  const units = curriculumUnits(focusTeams);
 
   return (
     <div className="flex flex-col gap-4 pb-6">
@@ -48,9 +48,10 @@ export function PathScreen() {
                   Act {u.act} · {ACT_BY_TIER[u.tier].name}
                 </h2>
               )}
-              <div
+              <Link
+                to={`/lesson/${u.key}`}
                 data-team-theme={teamThemeSlug(lead.team_name)}
-                className="flex items-center gap-3 rounded-[var(--radius)] border-2 p-3"
+                className="flex items-center gap-3 rounded-[var(--radius)] border-2 p-3 transition active:scale-[0.99]"
                 style={{ borderColor: 'var(--hairline)', background: 'var(--surface)' }}
               >
                 <div
@@ -65,7 +66,7 @@ export function PathScreen() {
                     {u.playerIds.length} players · leads with {lead.name}
                   </div>
                 </div>
-              </div>
+              </Link>
             </div>
           );
         })}
