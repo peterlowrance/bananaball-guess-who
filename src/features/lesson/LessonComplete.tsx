@@ -91,7 +91,7 @@ export function LessonComplete() {
 
       <button
         onClick={() => navigate(backTo)}
-        className="w-full max-w-xs rounded-2xl bg-[var(--ok)] py-4 font-black text-white"
+        className="w-full max-w-xs rounded-2xl bg-[var(--ok-strong)] py-4 font-black text-white"
       >
         Continue
       </button>

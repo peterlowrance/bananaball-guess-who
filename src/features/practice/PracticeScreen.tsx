@@ -90,7 +90,7 @@ export function PracticeScreen() {
         {teamDrillHref ? (
           <Link
             to={teamDrillHref}
-            className="mt-3 block rounded-2xl bg-[var(--ok)] py-3 text-center font-black text-white"
+            className="mt-3 block rounded-2xl bg-[var(--ok-strong)] py-3 text-center font-black text-white"
           >
             Start drill ({selected.size} {selected.size === 1 ? 'team' : 'teams'})
           </Link>

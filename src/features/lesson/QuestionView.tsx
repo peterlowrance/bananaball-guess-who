@@ -272,7 +272,7 @@ function BuildName({ question: q, onAnswer, disabled }: Props) {
       <button
         onClick={() => onAnswer({ correct: built === q.answerText })}
         disabled={disabled || slots.length === 0}
-        className="w-full rounded-2xl bg-[var(--ok)] py-3 font-black text-white disabled:opacity-40"
+        className="w-full rounded-2xl bg-[var(--ok-strong)] py-3 font-black text-white disabled:opacity-40"
       >
         Check
       </button>
@@ -313,7 +313,7 @@ function TypeName({ question: q, onAnswer, disabled }: Props) {
       <button
         onClick={submit}
         disabled={disabled || !value.trim()}
-        className="w-full rounded-2xl bg-[var(--ok)] py-3 font-black text-white disabled:opacity-40"
+        className="w-full rounded-2xl bg-[var(--ok-strong)] py-3 font-black text-white disabled:opacity-40"
       >
         Check
       </button>

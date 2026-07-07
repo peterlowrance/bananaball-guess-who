@@ -91,7 +91,7 @@ function UnitCard({
     <div
       data-team-theme={theme}
       className={`flex items-center gap-3 rounded-[var(--radius)] border-2 p-3 transition ${
-        locked ? 'opacity-50' : 'active:scale-[0.99]'
+        locked ? 'opacity-70' : 'active:scale-[0.99]'
       }`}
       style={{ borderColor: complete ? 'var(--team)' : 'var(--hairline)', background: 'var(--surface)' }}
     >

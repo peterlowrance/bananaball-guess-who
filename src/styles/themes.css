@@ -9,11 +9,12 @@
   --surface: #ffffff;
   --bg: var(--color-peel, #fff8e1);
   --text: #2b2b2b;
-  --muted: #8a8a8a;
+  --muted: #6b6459; /* darkened for WCAG AA contrast on peel/surface */
   --hairline: #eee6cf;
 
-  --ok: #58cc02; /* duolingo-green */
+  --ok: #58cc02; /* duolingo-green — used for feedback fills, icons, meters */
   --ok-ink: #ffffff;
+  --ok-strong: #327400; /* darker green for white-text CTA buttons (WCAG AA 4.5:1) */
   --bad: #ff4b4b;
   --radius: 1.25rem;
 }

@@ -125,7 +125,7 @@ function Primary({ onClick, children }: { onClick: () => void; children: React.R
   return (
     <button
       onClick={onClick}
-      className="w-full max-w-xs rounded-2xl bg-[var(--ok)] py-4 font-black text-white active:scale-[0.99]"
+      className="w-full max-w-xs rounded-2xl bg-[var(--ok-strong)] py-4 font-black text-white active:scale-[0.99]"
     >
       {children}
     </button>
