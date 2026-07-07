@@ -1,0 +1,31 @@
+{
+  "team": "Firefighters",
+  "players": [
+    {"name": "Christian Dearman", "popularity_rank": 1, "tier": "easy", "confidence": "high", "reason": "'Mr. Electrik,' long Bananas/Firefighters tenure, firefighter-family story, named a most well-known player"},
+    {"name": "Zack Phillips", "popularity_rank": 2, "tier": "easy", "confidence": "high", "reason": "'From MLB Draft pick to viral sensation,' high-profile return to Firefighters"},
+    {"name": "Lamar Sparks", "popularity_rank": 3, "tier": "easy", "confidence": "high", "reason": "Heavy 2026 coverage, pro background (Orioles/Brewers), viral emotional 'Wave' moment"},
+    {"name": "Noah Bridges", "popularity_rank": 4, "tier": "easy", "confidence": "high", "reason": "Ex-Bananas 'Heartthrob,' viral faith/backflip storylines, Bridges-brothers narrative"},
+    {"name": "Dakota McFadden", "popularity_rank": 5, "tier": "easy", "confidence": "high", "reason": "Former Savannah Banana (2021-23), named among most well-known, player/coach"},
+    {"name": "Val Perez", "popularity_rank": 6, "tier": "easy", "confidence": "high", "reason": "Head coach and player-coach, extensively profiled (Firehouse, SABR, TV)"},
+    {"name": "Dalton Cornett", "popularity_rank": 7, "tier": "easy", "confidence": "high", "reason": "'Five Standout Stars,' .323 avg, playoff walk-off homer, fan favorite"},
+    {"name": "Johnny Hummel", "popularity_rank": 8, "tier": "easy", "confidence": "high", "reason": "Viral 16.04s strikeout, 'Lightning McQueen,' 9/11 Yankee Stadium moment"},
+    {"name": "Bradford Webb", "popularity_rank": 9, "tier": "medium", "confidence": "medium", "reason": "'Five Standout Stars,' pitched in historic playoff upset over Bananas, podcast"},
+    {"name": "Austin Temple", "popularity_rank": 10, "tier": "medium", "confidence": "medium", "reason": "'Five Standout Stars,' 11 strikeouts, prior MLB (Astros)/Notre Dame background"},
+    {"name": "Ben Dum", "popularity_rank": 11, "tier": "medium", "confidence": "medium", "reason": "'Five Standout Stars,' signature handstand pitch, feature articles and podcast"},
+    {"name": "Logan Lacey", "popularity_rank": 12, "tier": "medium", "confidence": "medium", "reason": "'Five Standout Stars,' 18 trick plays, HR over Fenway's Green Monster"},
+    {"name": "Eric Jones Jr.", "popularity_rank": 13, "tier": "medium", "confidence": "medium", "reason": "~90K Instagram, jersey/trading card promotion, home run highlights"},
+    {"name": "Caden Green", "popularity_rank": 14, "tier": "medium", "confidence": "medium", "reason": "'Peanut' persona with active TikTok/IG/YouTube fan content"},
+    {"name": "Zachary Bridges", "popularity_rank": 15, "tier": "medium", "confidence": "medium", "reason": "'Bridges brothers' storyline, less individual coverage than Noah"},
+    {"name": "Jared Donalson", "popularity_rank": 16, "tier": "medium", "confidence": "medium", "reason": "~70K TikTok, moved from Bananas to Firefighters, performance features"},
+    {"name": "Marshall Shill", "popularity_rank": 17, "tier": "medium", "confidence": "medium", "reason": "'Fire Marshall,' distinctive mustache, emotional health story"},
+    {"name": "Mason Maxwell", "popularity_rank": 18, "tier": "medium", "confidence": "low", "reason": "'Mad Max' bare-hand move, some local news features"},
+    {"name": "Tyner Hughes", "popularity_rank": 19, "tier": "hard", "confidence": "low", "reason": "Utility 'Swiss Army knife,' tattoo story, started on developmental Visitors"},
+    {"name": "Darrien McDowell", "popularity_rank": 20, "tier": "hard", "confidence": "low", "reason": "Some highlights and 'Showman' honors, viral defensive clip, little sustained coverage"},
+    {"name": "Blake Morgan", "popularity_rank": 21, "tier": "hard", "confidence": "low", "reason": "Recently drafted (2026), local Texarkana coverage"},
+    {"name": "South Trimble", "popularity_rank": 22, "tier": "hard", "confidence": "low", "reason": "Local Virginia Beach features, niche 'Designated Runner' role"},
+    {"name": "Armando Becerra", "popularity_rank": 23, "tier": "hard", "confidence": "low", "reason": "Occasional highlight mentions, little standalone presence"},
+    {"name": "Brian Trepanier", "popularity_rank": 24, "tier": "hard", "confidence": "low", "reason": "Minor recap mentions, one YouTube feature, no major storyline"},
+    {"name": "Ga'von Wray", "popularity_rank": 25, "tier": "hard", "confidence": "low", "reason": "Limited coverage beyond roster listings and one alumni-spotlight"}
+  ],
+  "notes": "Val Perez is head coach/player-coach. SI 'Five Standout Stars' (Cornett, Temple, Dum, Webb, Lacey) anchored mid-upper rankings."
+}

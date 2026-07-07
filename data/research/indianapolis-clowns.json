@@ -1,0 +1,33 @@
+{
+  "team": "Indianapolis Clowns",
+  "players": [
+    {"name": "Jackie Bradley Jr.", "popularity_rank": 1, "tier": "easy", "confidence": "high", "reason": "Former MLB All-Star, 2018 World Series champion, first overall pick in Banana Ball draft; extensive ESPN/Boston Globe coverage"},
+    {"name": "Mo'ne Davis", "popularity_rank": 2, "tier": "easy", "confidence": "high", "reason": "Little League World Series legend since 2014, nationally famous independent of Banana Ball; heavy signing coverage"},
+    {"name": "Correlle Prime", "popularity_rank": 3, "tier": "easy", "confidence": "high", "reason": "Called 'The Ohtani of Banana Ball,' established star who pitched to 65,000 fans before joining Clowns"},
+    {"name": "Peanuts The Elephant", "popularity_rank": 4, "tier": "easy", "confidence": "high", "reason": "'First mascot pitcher in baseball history,' viral debut moment, heavily featured in team media"},
+    {"name": "Mat Wolf", "popularity_rank": 5, "tier": "easy", "confidence": "high", "reason": "Signature rodeo-clown act inherited from his father, 5th-season veteran, recurring feature subject"},
+    {"name": "Eli Paton", "popularity_rank": 6, "tier": "easy", "confidence": "high", "reason": "4th player in Banana Ball history to hit for the cycle, multiple viral trick-play clips"},
+    {"name": "Joe Lytle", "popularity_rank": 7, "tier": "easy", "confidence": "high", "reason": "Multiyear veteran (since 2023), 'Best Mullet in Banana Ball,' hit for the cycle, strong social following"},
+    {"name": "Fisher Polydoroff", "popularity_rank": 8, "tier": "easy", "confidence": "high", "reason": "Viral 'Ole Knuckles' 1950s time-traveler persona, unanimous draft selection, musician angle"},
+    {"name": "Malachi Mitchell", "popularity_rank": 9, "tier": "easy", "confidence": "high", "reason": "'Flash Tha Kid,' signature backflip moves, repeatedly featured in local media"},
+    {"name": "Joe Gray Jr.", "popularity_rank": 10, "tier": "medium", "confidence": "medium", "reason": "Named 'Showman of the game,' series-winning plays, storyline tie to Jackie Bradley Jr."},
+    {"name": "Jalen Vasquez", "popularity_rank": 11, "tier": "medium", "confidence": "medium", "reason": "Former Orioles farmhand, local hometown media features, standing ovations"},
+    {"name": "Clark Gilmore", "popularity_rank": 12, "tier": "medium", "confidence": "medium", "reason": "Viral one-minute tryout video, Dartmouth/Notre Dame academic background"},
+    {"name": "Vinny Santarsiero", "popularity_rank": 13, "tier": "medium", "confidence": "medium", "reason": "Viral dance clip, local news feature on custom Clowns-branded cleats"},
+    {"name": "Niko Hulsizer", "popularity_rank": 14, "tier": "medium", "confidence": "medium", "reason": "NCAA home run leader (2017), Dodgers draftee; dedicated SI feature"},
+    {"name": "Kirkland Banks", "popularity_rank": 15, "tier": "medium", "confidence": "medium", "reason": "Two-sport college standout at Lamar, multiple regional feature articles"},
+    {"name": "Brett Maddock", "popularity_rank": 16, "tier": "medium", "confidence": "medium", "reason": "'Nurse Brett' storyline, started historic first Clowns game at Kauffman Stadium"},
+    {"name": "Nick Wilson", "popularity_rank": 17, "tier": "medium", "confidence": "medium", "reason": "Viral tryout story (dressed as TMNT's Donatello), Negro Leagues family connection"},
+    {"name": "Chris Burgess", "popularity_rank": 18, "tier": "medium", "confidence": "medium", "reason": "Negro Leagues family lineage gives unique media hook; featured in highlight clips"},
+    {"name": "Bobby Lada", "popularity_rank": 19, "tier": "medium", "confidence": "low", "reason": "Featured in Yahoo Sports round-ups, but no standalone spotlight"},
+    {"name": "Gage Voorhees", "popularity_rank": 20, "tier": "hard", "confidence": "low", "reason": "Modest presence: brief team social post, small personal following"},
+    {"name": "Brian Dansereau", "popularity_rank": 21, "tier": "hard", "confidence": "low", "reason": "Podcast appearance plus routine game-day photo mentions"},
+    {"name": "David Griffin", "popularity_rank": 22, "tier": "hard", "confidence": "low", "reason": "Only routine game-day photo captions; no dedicated feature"},
+    {"name": "Dayan Reinoso", "popularity_rank": 23, "tier": "hard", "confidence": "low", "reason": "Minor league press release plus a first-at-bat home run anecdote"},
+    {"name": "Kobe Robinson", "popularity_rank": 24, "tier": "hard", "confidence": "low", "reason": "Only appears in roster listings; no individual feature or viral moment"},
+    {"name": "Daniel Foster", "popularity_rank": 25, "tier": "hard", "confidence": "low", "reason": "Only a pre-debut announcement post and player-card listing"},
+    {"name": "Andrew Irvine", "popularity_rank": 26, "tier": "hard", "confidence": "low", "reason": "Only local college alumni note (Iowa) and routine game photos"},
+    {"name": "Dale Francis Jr.", "popularity_rank": 27, "tier": "hard", "confidence": "low", "reason": "No confirmed Banana Ball connection found; possible name-match ambiguity"}
+  ],
+  "notes": "Rankings based on volume/nature of public web coverage as of July 2026. Jackie Bradley Jr. and Mo'ne Davis famous independent of Banana Ball."
+}

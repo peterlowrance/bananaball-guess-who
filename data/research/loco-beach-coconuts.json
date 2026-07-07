@@ -1,0 +1,32 @@
+{
+  "team": "Loco Beach Coconuts",
+  "players": [
+    {"name": "Kaden Bowler", "popularity_rank": 1, "tier": "easy", "confidence": "high", "reason": "456K TikTok/135K+ Instagram, viral hoverboard/surfboard hits, news features on his music/social fame"},
+    {"name": "Dalton Mauldin", "popularity_rank": 2, "tier": "easy", "confidence": "high", "reason": "5-year veteran singer/entertainer, 'fan favorite,' viral singing clips carried from Savannah Bananas"},
+    {"name": "Andy Archer", "popularity_rank": 3, "tier": "easy", "confidence": "high", "reason": "Viral 'Thunderstruck' dance (1.5M+ views) and 61-second inning fame as a Savannah Banana"},
+    {"name": "Drake Fontenot", "popularity_rank": 4, "tier": "easy", "confidence": "high", "reason": "2nd overall draft pick, viral between-the-legs trick play, top-pitcher media coverage"},
+    {"name": "Tanner Allen", "popularity_rank": 5, "tier": "easy", "confidence": "high", "reason": "Ex-Marlins prospect, SEC Player of the Year, called 'face of the franchise'"},
+    {"name": "Jordan Brewer", "popularity_rank": 6, "tier": "easy", "confidence": "high", "reason": "Viral surfboard HR celebration, multiple 'Showman' honors, Nike N7 athlete"},
+    {"name": "Denae Benites", "popularity_rank": 7, "tier": "easy", "confidence": "high", "reason": "USA Baseball Women's National Team star, WPBL crossover, viral backflip-catch"},
+    {"name": "Dane Tofteland", "popularity_rank": 8, "tier": "easy", "confidence": "medium", "reason": "'Dancin' Dane' nickname, multiple Showman awards"},
+    {"name": "JD Urso", "popularity_rank": 9, "tier": "easy", "confidence": "medium", "reason": "D2 national champion at UTampa, local TV coverage, trick-play quotes"},
+    {"name": "C.J. Williams", "popularity_rank": 10, "tier": "medium", "confidence": "medium", "reason": "Closer role, featured in game recaps, tied to JD Urso storyline"},
+    {"name": "Peyton Chatagnier", "popularity_rank": 11, "tier": "medium", "confidence": "medium", "reason": "Featured in official highlight clips, Ole Miss/TCU background"},
+    {"name": "Will Ethridge", "popularity_rank": 12, "tier": "medium", "confidence": "medium", "reason": "6'7\" pitcher, 96mph, ex-Rockies prospect, decent coverage"},
+    {"name": "Keegan James", "popularity_rank": 13, "tier": "medium", "confidence": "medium", "reason": "Cousin of MLB All-Star Austin Riley, name-recognition boost"},
+    {"name": "Erik Ostberg", "popularity_rank": 14, "tier": "medium", "confidence": "medium", "reason": "Local hometown news stories, indy ball to Banana Ball path"},
+    {"name": "Ben Parker", "popularity_rank": 15, "tier": "medium", "confidence": "medium", "reason": "William & Mary standout, dedicated local feature, regular game recaps"},
+    {"name": "Ashby Vining", "popularity_rank": 16, "tier": "medium", "confidence": "medium", "reason": "Podcast feature on being drafted, .389 average buzz"},
+    {"name": "Grady Morgan", "popularity_rank": 17, "tier": "medium", "confidence": "medium", "reason": "Underdog story covered by Fresno State media, karaoke personality"},
+    {"name": "Gideon Antle", "popularity_rank": 18, "tier": "medium", "confidence": "low", "reason": "First HR in Coconuts franchise history, recurring recap mentions"},
+    {"name": "Blake Benson", "popularity_rank": 19, "tier": "hard", "confidence": "medium", "reason": "Pitching/dancing combo and backflips, but coverage tied to prior Party Animals stint"},
+    {"name": "Brett Carson", "popularity_rank": 20, "tier": "hard", "confidence": "low", "reason": "'Showman' in one recap, versatile, but limited individual coverage"},
+    {"name": "Sal Jacobo", "popularity_rank": 21, "tier": "hard", "confidence": "low", "reason": "Modest social presence, mainly team game recaps"},
+    {"name": "Kyle Perry", "popularity_rank": 22, "tier": "hard", "confidence": "low", "reason": "Coverage tied to earlier Savannah Bananas signing story"},
+    {"name": "Zach Smith", "popularity_rank": 23, "tier": "hard", "confidence": "low", "reason": "First Coconuts draft pick but minimal individual coverage"},
+    {"name": "Austin Krzeminski", "popularity_rank": 24, "tier": "hard", "confidence": "low", "reason": "Some Bananas-to-Coconuts move coverage, limited standalone recognition"},
+    {"name": "Armani Henderson", "popularity_rank": 25, "tier": "hard", "confidence": "low", "reason": "Local RI signing coverage, little subsequent presence"},
+    {"name": "Joe Filomeno", "popularity_rank": 26, "tier": "hard", "confidence": "low", "reason": "Minimal individual coverage, mostly team recaps"}
+  ],
+  "notes": "Bottom half is speculative (brand-new 2026 additions). Dalton Mauldin and Andy Archer benefit from pre-2026 Savannah Bananas fame."
+}

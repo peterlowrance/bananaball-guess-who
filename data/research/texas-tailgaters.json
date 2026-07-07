@@ -1,0 +1,32 @@
+{
+  "team": "Texas Tailgaters",
+  "players": [
+    {"name": "Jayson Arendt", "popularity_rank": 1, "tier": "easy", "confidence": "high", "reason": "American Idol Golden Ticket, national media (TMZ, Ryan Seacrest), musician/entertainer crossover fame"},
+    {"name": "Jonathan Luders", "popularity_rank": 2, "tier": "easy", "confidence": "high", "reason": "Viral 'Sunshine' unicycle-hitting trick, SI feature, leads league in trick outs"},
+    {"name": "Nick Lopez", "popularity_rank": 3, "tier": "easy", "confidence": "high", "reason": "'One of the most recognizable players in Banana Ball,' All-Star, blue mustache, top hitter"},
+    {"name": "Zach Watson", "popularity_rank": 4, "tier": "easy", "confidence": "high", "reason": "Backflip catch trick play, former LSU star, SI feature, viral shorts"},
+    {"name": "Taj Porter", "popularity_rank": 5, "tier": "easy", "confidence": "high", "reason": "2026 Fan Franchise Pick, catcher/leader, PBS feature, marquee homers"},
+    {"name": "Indiana Stanley", "popularity_rank": 6, "tier": "easy", "confidence": "high", "reason": "2026 Fan Franchise Pick, viral 'catch of the year' on official social media"},
+    {"name": "Kyle Martin", "popularity_rank": 7, "tier": "easy", "confidence": "medium", "reason": "2026 league HR leader, multiple 'Showman' honors, viral El Paso homecoming homer"},
+    {"name": "Chris Clarke", "popularity_rank": 8, "tier": "easy", "confidence": "medium", "reason": "USC/6-year pro, struck out Tyler Toney at Kyle Field before 102K fans, 3rd overall pick"},
+    {"name": "Jordan Barth", "popularity_rank": 9, "tier": "easy", "confidence": "medium", "reason": "Banana Ball Open MVP, .397 rookie avg, jersey retirement back home"},
+    {"name": "Mac Danford", "popularity_rank": 10, "tier": "medium", "confidence": "medium", "reason": "SI feature as power-hitting standout, recurring highlight presence"},
+    {"name": "Jorden Hussein", "popularity_rank": 11, "tier": "medium", "confidence": "medium", "reason": "Texas roots storyline for Kyle Field game, signed merchandise, TikTok feature"},
+    {"name": "Jimmy Lewis", "popularity_rank": 12, "tier": "medium", "confidence": "medium", "reason": "Dodgers 2nd-round pedigree, 'Slim Jim' nickname, Round Rock homecoming"},
+    {"name": "Jose Gonzalez Jr.", "popularity_rank": 13, "tier": "medium", "confidence": "low", "reason": "Indy-ball-to-Banana-Ball feature, modest individual profile"},
+    {"name": "Reese Miller", "popularity_rank": 14, "tier": "medium", "confidence": "medium", "reason": "Drafted closer, strong college stats, Amarillo homecoming, record Kyle Field game"},
+    {"name": "Joe Sperone", "popularity_rank": 15, "tier": "medium", "confidence": "medium", "reason": "Multiple heartfelt Philadelphia-area feature stories, human-interest"},
+    {"name": "Christian Davis", "popularity_rank": 16, "tier": "medium", "confidence": "low", "reason": "Dominant pitcher (11 Ks) in SI feature, little standalone presence"},
+    {"name": "Brett Allen", "popularity_rank": 17, "tier": "medium", "confidence": "low", "reason": "Backflips and fan-connection quotes, modest recognition"},
+    {"name": "Travis Moniot", "popularity_rank": 18, "tier": "medium", "confidence": "low", "reason": "'Cowboy Carpool' podcast/social presence, limited broader fame"},
+    {"name": "Jon Reid", "popularity_rank": 19, "tier": "hard", "confidence": "low", "reason": "'Quiet workhorse' pitcher, local Reno homecoming, low viral signal"},
+    {"name": "Brett Sanchez", "popularity_rank": 20, "tier": "hard", "confidence": "low", "reason": "Limited coverage beyond roster and draft-announcement video"},
+    {"name": "Jose Gutierrez", "popularity_rank": 21, "tier": "hard", "confidence": "low", "reason": "Mainly charity-visit context, little on-field coverage"},
+    {"name": "Taylor Justus", "popularity_rank": 22, "tier": "hard", "confidence": "low", "reason": "Team TikTok clips (dance, 'aura points'), minimal independent coverage"},
+    {"name": "Zach Blankenship", "popularity_rank": 23, "tier": "hard", "confidence": "low", "reason": "Charity visits, 'Bambam' nickname, little broader recognition"},
+    {"name": "Jonathan Hughes", "popularity_rank": 24, "tier": "hard", "confidence": "low", "reason": "Only roster/player-card listings, no distinguishing coverage"},
+    {"name": "Jacob Pipercic", "popularity_rank": 25, "tier": "hard", "confidence": "low", "reason": "Recently signed, minimal coverage beyond signing announcement"},
+    {"name": "Matthew Fletcher", "popularity_rank": 26, "tier": "hard", "confidence": "low", "reason": "Recently added LHP, essentially only a signing announcement"}
+  ],
+  "notes": "No individual follower counts found (team ~220K IG); social signal inferred from media coverage."
+}

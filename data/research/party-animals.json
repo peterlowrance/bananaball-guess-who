@@ -1,0 +1,33 @@
+{
+  "team": "Party Animals",
+  "players": [
+    {"name": "Tanner Thomas", "popularity_rank": 1, "tier": "easy", "confidence": "high", "reason": "Viral 'Tinder Thomas' persona, python walk-up, dancing, heavy TikTok/media coverage"},
+    {"name": "Andy Cosgrove", "popularity_rank": 2, "tier": "easy", "confidence": "high", "reason": "140K+ Instagram, Rookie of the Year, All-Star catcher, Love Island Australia, viral 3-HR game"},
+    {"name": "Jake Skole", "popularity_rank": 3, "tier": "easy", "confidence": "high", "reason": "Former MLB first-round pick, Banana Ball Triple Crown and cycle record holder"},
+    {"name": "Noah Fisher", "popularity_rank": 4, "tier": "easy", "confidence": "high", "reason": "166K Instagram, viral home runs and cinematic walk-ups in official content"},
+    {"name": "Drew Gillespie", "popularity_rank": 5, "tier": "easy", "confidence": "high", "reason": "Team closer, fastest-inning record (44s), ESPN2 highlights, tour headliner"},
+    {"name": "Bryson Bloomer", "popularity_rank": 6, "tier": "easy", "confidence": "high", "reason": "Team captain, home run leader, helped make Party Animals 'household names'"},
+    {"name": "Garett Delano", "popularity_rank": 7, "tier": "easy", "confidence": "high", "reason": "2025 Tour Championship MVP, cowboy hat persona, active YouTube/TikTok"},
+    {"name": "Riyan Rodriguez", "popularity_rank": 8, "tier": "easy", "confidence": "high", "reason": "'The Maniac'/'Sexi-Mexi,' viral splits celebration, pitched at Fenway"},
+    {"name": "Reece Hampton", "popularity_rank": 9, "tier": "easy", "confidence": "medium", "reason": "Banana Ball hits-record holder, historic 5-hit game, trading cards"},
+    {"name": "Ashton Lansdell", "popularity_rank": 10, "tier": "medium", "confidence": "high", "reason": "First woman to start a Banana Ball game; Ole Miss softball/Team USA fame, national media"},
+    {"name": "Bret Helton", "popularity_rank": 11, "tier": "medium", "confidence": "medium", "reason": "First to throw a 9-inning complete game in Banana Ball, hair-donation charity story"},
+    {"name": "Bronson Balholm", "popularity_rank": 12, "tier": "medium", "confidence": "medium", "reason": "Personal website/brand, Little League feature, fan-engagement content"},
+    {"name": "Jason Swan", "popularity_rank": 13, "tier": "medium", "confidence": "medium", "reason": "Frequently in official TikTok/promo content and merchandise"},
+    {"name": "T.J. Reeves", "popularity_rank": 14, "tier": "medium", "confidence": "medium", "reason": "Regular game-recap presence (Yankee Stadium, Indy), less standalone coverage"},
+    {"name": "Chase Achuff", "popularity_rank": 15, "tier": "medium", "confidence": "medium", "reason": "Elite defensive trick plays (88 in 2025), SI profile of core stars"},
+    {"name": "Dalton Ponce", "popularity_rank": 16, "tier": "medium", "confidence": "medium", "reason": "Dance moves and comedic skits on official social accounts"},
+    {"name": "Mike Vavasis", "popularity_rank": 17, "tier": "medium", "confidence": "medium", "reason": "HEAD COACH (not active player) but well-known, 2x champion, feature pieces"},
+    {"name": "John-Howard Bobo", "popularity_rank": 18, "tier": "medium", "confidence": "medium", "reason": "Rapping persona, emotional Yankee Stadium storyline covered nationally"},
+    {"name": "Dustin Baber", "popularity_rank": 19, "tier": "hard", "confidence": "medium", "reason": "Signature beer-chug ritual and green vest, mostly team-produced content"},
+    {"name": "Jake Lialios", "popularity_rank": 20, "tier": "hard", "confidence": "medium", "reason": "Dancing on the mound, recognition mostly within Banana Ball circles"},
+    {"name": "Mark Smith", "popularity_rank": 21, "tier": "hard", "confidence": "low", "reason": "Solid role player, minimal standalone media presence"},
+    {"name": "Brady Kais", "popularity_rank": 22, "tier": "hard", "confidence": "low", "reason": "Regional Wisconsin hometown coverage, limited national recognition"},
+    {"name": "Mike Ballard", "popularity_rank": 23, "tier": "hard", "confidence": "low", "reason": "Game recaps and player cards, little individual coverage"},
+    {"name": "Dylan Porter", "popularity_rank": 24, "tier": "hard", "confidence": "low", "reason": "Pistol-squat pitching move, but partly moved to affiliated ball, reduced visibility"},
+    {"name": "Peter Holden", "popularity_rank": 25, "tier": "hard", "confidence": "low", "reason": "Solid stats (120 ERA+) but minimal feature coverage or buzz"},
+    {"name": "Sean Fluke", "popularity_rank": 26, "tier": "hard", "confidence": "low", "reason": "Local Tampa Bay coverage, little viral content"},
+    {"name": "Nate Tellier", "popularity_rank": 27, "tier": "hard", "confidence": "low", "reason": "Regional/college-alumni coverage, least public-facing recognition"}
+  ],
+  "notes": "Mike Vavasis is the head coach, not an active player. Bryson Bloomer had an unconfirmed Sept 2025 MLB-departure report but still on 2026 roster."
+}

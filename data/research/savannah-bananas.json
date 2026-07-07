@@ -1,0 +1,33 @@
+{
+  "team": "Savannah Bananas",
+  "players": [
+    {"name": "Jackson Olson", "popularity_rank": 1, "tier": "easy", "confidence": "high", "reason": "Most-followed Banana (2M+ TikTok, 1M+ IG), 2026 Dancing with the Stars, dating Maggie Sajak"},
+    {"name": "Kyle Jackson", "popularity_rank": 2, "tier": "easy", "confidence": "high", "reason": "Rookie sensation, 430K+ IG, Dancing with the Stars, viral triple play/backflip catches"},
+    {"name": "RobertAnthony Cruz", "popularity_rank": 3, "tier": "easy", "confidence": "high", "reason": "'Coach RAC' built 2M+ following, K-LOVE Fan Awards winner"},
+    {"name": "Bill LeRoy", "popularity_rank": 4, "tier": "easy", "confidence": "high", "reason": "7-year veteran catcher, 120K+ followers, 'beloved face' of the Bananas"},
+    {"name": "Dakota Albritton", "popularity_rank": 5, "tier": "easy", "confidence": "high", "reason": "'Stilts' the world's tallest pitcher, featured on 60 Minutes, visually iconic"},
+    {"name": "Kelsie Whitmore", "popularity_rank": 6, "tier": "easy", "confidence": "high", "reason": "Historic first woman on roster, ESPN debut at Camden Yards, mainstream coverage"},
+    {"name": "Ryan Cox", "popularity_rank": 7, "tier": "easy", "confidence": "high", "reason": "'Glove Magician,' all-time trick play record holder (500+)"},
+    {"name": "Derek Klena", "popularity_rank": 8, "tier": "easy", "confidence": "high", "reason": "Tony-nominated Broadway star (Wicked, Anastasia), NYT coverage independent of Bananas"},
+    {"name": "Ty Jackson", "popularity_rank": 9, "tier": "easy", "confidence": "medium", "reason": "Viral yellow-mohawk outfielder, 190K+ followers, 8M+ likes, 'webgem machine'"},
+    {"name": "Alex Ziegler", "popularity_rank": 10, "tier": "medium", "confidence": "medium", "reason": "Viral nose/chin-balancing bat tricks, recurring fan-favorite highlights"},
+    {"name": "DR Meadows", "popularity_rank": 11, "tier": "medium", "confidence": "medium", "reason": "Kelly Clarkson Show guest, viral ESPN diving catch, 284K TikTok"},
+    {"name": "Reese Alexiades", "popularity_rank": 12, "tier": "medium", "confidence": "medium", "reason": "Red-cape 'Superman'/anime persona, MVP pedigree, viral home run highlights"},
+    {"name": "Kyle Luigs", "popularity_rank": 13, "tier": "medium", "confidence": "medium", "reason": "'Cowboy Kyle,' 7-year co-captain, fan favorite, 46K IG"},
+    {"name": "Noah Niznik", "popularity_rank": 14, "tier": "medium", "confidence": "medium", "reason": "2024 Rookie of the Year, dugout dancing/shimmy, Busch Stadium feature"},
+    {"name": "Dan Oberst", "popularity_rank": 15, "tier": "medium", "confidence": "medium", "reason": "Multi-year Banana, recurring highlights, official team content features"},
+    {"name": "Danny Hosley", "popularity_rank": 16, "tier": "medium", "confidence": "medium", "reason": "'Danny Do-It-All,' two-way Ohtani-comparison, multiple seasons/profiles"},
+    {"name": "Austin Drury", "popularity_rank": 17, "tier": "medium", "confidence": "low", "reason": "Former Dodgers minor leaguer, active pitcher, moderate regional coverage"},
+    {"name": "Connor Harris", "popularity_rank": 18, "tier": "medium", "confidence": "low", "reason": "Tallest non-stilts player (6'8\"), recent draftee, local buzz"},
+    {"name": "Max Jung-Goldberg", "popularity_rank": 19, "tier": "hard", "confidence": "low", "reason": "Swiss National Team utility, Iowa homecoming, own YouTube but modest reach"},
+    {"name": "Easton Parrish", "popularity_rank": 20, "tier": "hard", "confidence": "low", "reason": "2025 draftee catcher, some viral fan-interaction clips, regional coverage"},
+    {"name": "JT Sokolove", "popularity_rank": 21, "tier": "hard", "confidence": "low", "reason": "2026 rookie designated runner, viral pre-draft backflips, limited ongoing fame"},
+    {"name": "Jacob Bazala", "popularity_rank": 22, "tier": "hard", "confidence": "low", "reason": "2026 rookie pitcher, curly red hair, mostly local draft coverage"},
+    {"name": "Frankie Moscatiello", "popularity_rank": 23, "tier": "hard", "confidence": "low", "reason": "Yankee Stadium homecoming story, limited independent recognition"},
+    {"name": "Trystan Levesque", "popularity_rank": 24, "tier": "hard", "confidence": "low", "reason": "2026 rookie pitcher, mainly Rhode Island local coverage"},
+    {"name": "Bryce Grizzaffi", "popularity_rank": 25, "tier": "hard", "confidence": "low", "reason": "2026 rookie catcher, Louisiana-local human-interest, no notable following"},
+    {"name": "Grant Besser", "popularity_rank": 26, "tier": "hard", "confidence": "low", "reason": "2026 draftee via developmental Visitors, only local/college coverage"},
+    {"name": "Allan Saathoff", "popularity_rank": 27, "tier": "hard", "confidence": "low", "reason": "Minimal independent coverage beyond routine game recaps"}
+  ],
+  "notes": "Several 2026 rookies have only hometown coverage; medium/hard ordering is approximate."
+}
