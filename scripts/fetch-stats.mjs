@@ -47,6 +47,30 @@ async function fetchCategory(category, { career = false } = {}) {
   return rows;
 }
 
+// Fetch each player's detail endpoint to capture stats the bulk leaderboards
+// omit — career FAN (foul-outs-to-fan, a pitching stat) and ER. Concurrency-
+// limited so we don't hammer the API. Returns { player_id -> { fan, er } }.
+async function fetchDetails(playerIds) {
+  const out = {};
+  const CONCURRENCY = 6;
+  let i = 0;
+  async function worker() {
+    while (i < playerIds.length) {
+      const id = playerIds[i++];
+      try {
+        const j = await getJson(`${API}/players/${id}`);
+        const cp = (j.data ?? j).career?.pitching ?? {};
+        out[id] = { fan: cp.fan ?? null, er: cp.er ?? null };
+      } catch {
+        out[id] = { fan: null, er: null };
+      }
+    }
+  }
+  await Promise.all(Array.from({ length: CONCURRENCY }, worker));
+  console.log(`  details: ${Object.keys(out).length} players`);
+  return out;
+}
+
 async function main() {
   console.log(`Fetching Banana Ball stats (season ${SEASON_ID})…`);
   const meta = await getJson(`${API}/meta`).catch(() => ({}));
@@ -58,14 +82,22 @@ async function main() {
     // Career (all-seasons) hitting — the only place b4s/sb/wo are exposed.
     fetchCategory('hitting', { career: true }),
   ]);
+
+  // Per-player details for career FAN/ER (not in any bulk leaderboard). Only
+  // for players present in our season blocks, not all 632 career rows.
+  const seasonIds = [...new Set([...hitting, ...pitching, ...fielding].map((r) => r.player_id))];
+  const details = await fetchDetails(seasonIds);
+
   // Keep just the career-only fields, keyed by player_id, so nothing here can
-  // be mistaken for a 2026 World Tour season stat.
+  // be mistaken for a 2026 World Tour season stat. Merge in FAN/ER from details.
   const career = careerHitting.map((r) => ({
     player_id: r.player_id,
     g: r.g, // career games (for context / qualifiers)
     b4s: r.b4s ?? null,
     sb: r.sb ?? null,
     wo: r.wo ?? null,
+    fan: details[r.player_id]?.fan ?? null,
+    er: details[r.player_id]?.er ?? null,
   }));
 
   const teams = (teamsResp.data ?? teamsResp).map?.((t) => ({

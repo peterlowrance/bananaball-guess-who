@@ -35,15 +35,15 @@
     },
     "act": 1,
     "owned": [
-      "8114dba0-2bbd-4372-a49c-037292948f4f",
       "8a4f17aa-225a-4a93-ab4a-5068c7f5a1aa",
       "96452790-25b3-45a4-9f09-8ef9c9f226f0",
       "c479d2ec-f2f0-44f8-b44c-cc9c3a19bfbf",
       "f0f5c36a-13ab-4162-9876-116fcc2947a8",
       "52612262-cd8b-4790-9fdc-7f7e61882346",
       "e3623692-d5b8-44b6-80b3-3cad1b5e0c57",
-      "fb5f4950-d5a5-4673-8c82-a1267998631f",
-      "e9237c8e-69d0-4213-950a-e68e0e9f5813"
+      "e9237c8e-69d0-4213-950a-e68e0e9f5813",
+      "88d2aa1c-1ddc-4868-9a76-f181574e9f63",
+      "02a9fe9f-5f42-4e99-a668-4f7879c9db20"
     ],
     "cameo": []
   },
@@ -157,7 +157,6 @@
       "006e5461-d832-44cb-bb85-84b15325e404",
       "94df0ae7-1adc-46f2-a343-d6ac6644506c",
       "398e8628-4b2f-4bd0-9eb4-312f1f5be56a",
-      "88d2aa1c-1ddc-4868-9a76-f181574e9f63",
       "e8241b1a-b78e-4244-a240-342e2ae62a53",
       "f3bc22b3-8eaa-46b2-931c-81c11ed99ee7",
       "2c034f9b-d163-46f5-bbef-9bb62d99cfd6"
@@ -185,7 +184,6 @@
       "6ff0c5c2-ff10-411a-ad77-ab97b96be444",
       "9b220a84-f147-491a-b776-93a933a5322c",
       "7730f49d-1f5a-453c-b86b-fadd37e7df33",
-      "4ccf2fb5-f926-44b0-a825-6cf96c87150a",
       "46c83fd3-8f66-4362-b757-8fa7677e5b09",
       "aaced6a8-bbff-4b07-a0d0-e26aa9841439",
       "6c95bae4-8f0f-4c9f-9651-44cfea968107"
@@ -203,7 +201,6 @@
     },
     "act": 2,
     "owned": [
-      "d1162c3c-7635-4c55-9fe3-942e8d33105b",
       "76f08419-71b8-4005-80ae-d552323194e8",
       "b8ad239c-dd58-41da-bcab-c8d44e4488aa",
       "f60747a7-3dac-4565-b6d5-29c11691e3dd",
@@ -240,7 +237,6 @@
     },
     "act": 2,
     "owned": [
-      "02a9fe9f-5f42-4e99-a668-4f7879c9db20",
       "bdd316d8-36fd-416c-bbab-aa8e04cb7962",
       "92b54f33-fbeb-4789-a6f7-a4791a951358"
     ],
@@ -277,12 +273,9 @@
     "act": 3,
     "owned": [
       "b0769181-8182-45d3-a7c3-c0214b1f65e4",
-      "dc21ef79-bb1b-4d6d-948a-f99868505b57",
-      "9cd113a7-40de-48ac-901a-3da2fdb12274",
       "9e597c29-946b-41ba-ab38-a6d4ac737d67",
       "3b9d9d3d-1ccb-4060-9cce-037dd47270da",
       "311d23a6-2f14-4afb-9712-8fb8c49de5d5",
-      "5ccdd009-1b4f-4632-9177-3b0a3835feed",
       "7f7cf80c-b374-4eea-8b6c-f029b686eac7"
     ],
     "cameo": []
@@ -301,14 +294,14 @@
       "e26a80ba-a78f-4603-8459-bce7459d1571",
       "14690c07-a1ed-442e-b7f5-dd73b2c1e175",
       "d9722ca9-6622-43b0-a10c-68db6bf05512",
-      "d9f1ead1-8dda-4e5b-b258-b8fe0b30b64e",
       "b0c2abe3-25e8-4ddb-b48e-58c429ceec36",
       "6e85ac72-8206-4d4a-8ea7-c22643df9a28",
       "fd6869c5-16f5-4fd7-96c8-804c2bcb65d5",
       "d7431514-5f70-4571-bc09-f5fedefc6ee0",
       "93d3a787-52d8-4e89-a151-f78e0bcf5026",
       "f810a2e4-c76b-4e67-b6fd-0f455a265fb5",
-      "807da9ac-ddc2-4e28-8454-f1dd9c893ae3"
+      "807da9ac-ddc2-4e28-8454-f1dd9c893ae3",
+      "a6296804-b684-4479-b439-64a5b5a9aa79"
     ],
     "cameo": []
   },
@@ -323,7 +316,6 @@
     },
     "act": 3,
     "owned": [
-      "a6296804-b684-4479-b439-64a5b5a9aa79",
       "ce776245-00b4-4a13-868d-147d2e576233",
       "0b6b88d2-97a9-44a9-884e-94a7c97780e5",
       "cc49d688-0668-41ec-80bd-ba93e2c6f960",
@@ -333,7 +325,8 @@
       "4562b691-5b76-4928-87a5-f4847c0099b2",
       "3ac97877-a4df-4df1-9599-4520618eb475",
       "a9327361-1d17-45b3-a4ab-d752d34f7877",
-      "cebec04a-ea7b-4443-9286-2dbcc8e718a3"
+      "cebec04a-ea7b-4443-9286-2dbcc8e718a3",
+      "4d9ada9f-59af-4c62-ad10-fffe82f9bf19"
     ],
     "cameo": []
   },
@@ -348,8 +341,6 @@
     },
     "act": 3,
     "owned": [
-      "4d9ada9f-59af-4c62-ad10-fffe82f9bf19",
-      "06374ace-0661-4ebe-8fd5-a6b5fd25af73",
       "b97f6026-36af-4300-9f11-c2cbd84f181f",
       "e4b809c3-fe86-4723-8e05-61717c1243a6"
     ],
@@ -441,7 +432,6 @@
       "92b54f33-fbeb-4789-a6f7-a4791a951358",
       "cd7ff7d4-e956-4cac-9c62-b82be0859d15",
       "48657835-3f61-43dc-b75d-605365365056",
-      "d1162c3c-7635-4c55-9fe3-942e8d33105b",
       "8ec7b470-c78c-41ba-b544-7cecb72a6b6e"
     ]
   },
@@ -532,7 +522,6 @@
     "cameo": [
       "f26e6051-a4fa-4ce7-9a03-f617e275857f",
       "2432cc75-7ed4-4a5d-bd4d-c86e9a976a78",
-      "4ccf2fb5-f926-44b0-a825-6cf96c87150a",
       "7730f49d-1f5a-453c-b86b-fadd37e7df33",
       "d2b18d70-beae-4d92-a7c2-41877f4917d5",
       "ba57f2a9-06da-4a32-bb02-e7cd024e91f0",
@@ -560,7 +549,6 @@
       "7730f49d-1f5a-453c-b86b-fadd37e7df33",
       "fd58f6ab-e50c-46dd-9004-0ca6f307abeb",
       "ddd91fff-fd67-45d6-beb0-8e5dd16b806f",
-      "4ccf2fb5-f926-44b0-a825-6cf96c87150a",
       "f26e6051-a4fa-4ce7-9a03-f617e275857f"
     ]
   },
@@ -582,7 +570,6 @@
     "cameo": [
       "592e613d-6cba-4eda-8c94-9c79498b2b9e",
       "f26e6051-a4fa-4ce7-9a03-f617e275857f",
-      "8114dba0-2bbd-4372-a49c-037292948f4f",
       "78d964c6-3b69-49db-80d2-53540d42ac7e"
     ]
   },
@@ -602,7 +589,6 @@
       "d817d3f2-3d70-4518-95b3-9ccbefd82517"
     ],
     "cameo": [
-      "8114dba0-2bbd-4372-a49c-037292948f4f",
       "0152ecda-db0d-40db-b944-22d7af88c878",
       "cbcf804d-f31c-4b3e-b920-cad81fdef68f",
       "08a1e36b-3e68-4196-aa22-4e6cc6249370",
@@ -633,6 +619,83 @@
       "b7aad21c-a083-4254-b2e2-56f211d3473b",
       "741532bc-f90c-4eb1-b5be-251f72cd7fe0",
       "cc186bf1-2826-46ca-b5c8-e32648c7a284"
+    ]
+  },
+  {
+    "slug": "fan-favorites",
+    "title": "Fan Favorites",
+    "theme": "Career foul-outs-to-fan — the crowd made the play.",
+    "motif": {
+      "kind": "icon",
+      "icon": "star",
+      "accent": "#f43f5e"
+    },
+    "act": 3,
+    "owned": [
+      "dc21ef79-bb1b-4d6d-948a-f99868505b57",
+      "fb5f4950-d5a5-4673-8c82-a1267998631f",
+      "d9f1ead1-8dda-4e5b-b258-b8fe0b30b64e"
+    ],
+    "cameo": [
+      "4be86d44-679d-4d4c-81dc-a7675e7cc41f",
+      "c7c82442-fd40-45d3-93c1-6c4dce82479c",
+      "d42da82d-6311-4e39-8494-8d83ed76a8af",
+      "b7aad21c-a083-4254-b2e2-56f211d3473b",
+      "f0f5c36a-13ab-4162-9876-116fcc2947a8",
+      "45251984-6887-442f-9b4b-ee840355c891",
+      "c479d2ec-f2f0-44f8-b44c-cc9c3a19bfbf"
+    ]
+  },
+  {
+    "slug": "fresh-faces",
+    "title": "Fresh Faces",
+    "theme": "Newest to the league — little career history yet.",
+    "motif": {
+      "kind": "icon",
+      "icon": "sparkles",
+      "accent": "#10b981"
+    },
+    "act": 3,
+    "owned": [
+      "9cd113a7-40de-48ac-901a-3da2fdb12274",
+      "06374ace-0661-4ebe-8fd5-a6b5fd25af73",
+      "5ccdd009-1b4f-4632-9177-3b0a3835feed"
+    ],
+    "cameo": [
+      "b887f19e-bdaf-4389-9dc4-8e3711c16f77",
+      "eddc7762-175d-4b18-8edb-2b3b2b7db61e",
+      "735fa56e-fb9f-4bc7-bed8-b27b0a5cc83b",
+      "9387c2f4-8ae0-4463-9125-534c0f2d6c23",
+      "afeab920-9249-450e-a51e-54d4c4c0753b",
+      "d7431514-5f70-4571-bc09-f5fedefc6ee0",
+      "fd6869c5-16f5-4fd7-96c8-804c2bcb65d5"
+    ]
+  },
+  {
+    "slug": "old-guard",
+    "title": "The Old Guard",
+    "theme": "The most-tenured — hundreds of games behind them.",
+    "motif": {
+      "kind": "icon",
+      "icon": "crown",
+      "accent": "#78716c"
+    },
+    "act": 3,
+    "owned": [
+      "d1162c3c-7635-4c55-9fe3-942e8d33105b",
+      "4ccf2fb5-f926-44b0-a825-6cf96c87150a",
+      "8114dba0-2bbd-4372-a49c-037292948f4f"
+    ],
+    "cameo": [
+      "f26e6051-a4fa-4ce7-9a03-f617e275857f",
+      "592e613d-6cba-4eda-8c94-9c79498b2b9e",
+      "26bf1dff-0893-4395-9a93-f20a984ad18f",
+      "970678e1-e4b2-44b7-beaa-fdee8db567ca",
+      "1a0093de-4440-4e31-a6f2-672743b75ed1",
+      "b7aad21c-a083-4254-b2e2-56f211d3473b",
+      "cbcf804d-f31c-4b3e-b920-cad81fdef68f",
+      "48657835-3f61-43dc-b75d-605365365056",
+      "0152ecda-db0d-40db-b944-22d7af88c878"
     ]
   }
 ]

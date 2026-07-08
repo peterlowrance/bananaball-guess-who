@@ -70,7 +70,7 @@ describe('players-2026 dataset', () => {
     const withCareer = dataset.players.filter((p) => p.career);
     expect(withCareer.length).toBeGreaterThan(140);
     for (const p of withCareer) {
-      for (const k of ['g', 'b4s', 'sb', 'wo'] as const) {
+      for (const k of ['g', 'b4s', 'sb', 'wo', 'fan', 'er'] as const) {
         expect(typeof p.career![k] === 'number' || p.career![k] === null, `${p.name}.career.${k}`).toBe(true);
       }
     }

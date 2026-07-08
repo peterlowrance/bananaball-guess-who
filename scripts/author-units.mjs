@@ -114,6 +114,10 @@ const PERF_OWNED = {
   sprinters: ['Jake Skole', 'Reece Hampton', 'Jason Swan'],
   baseBandits: ['Malachi Mitchell', 'DR Meadows', 'Bryson Bloomer'],
   walkOffs: ['Dan Oberst', 'Eric Jones Jr.', 'Reese Alexiades'],
+  // Experience units — rookie vs veteran, inferred from career-vs-season games.
+  freshFaces: ['Reese Miller', 'Joe Filomeno', 'Peter Holden'],
+  oldGuard: ['Dustin Baber', 'Chase Achuff', 'Tanner Thomas'],
+  fanFavorites: ['Noah Niznik', 'Bret Helton', 'Dalton Ponce'],
 };
 for (const names of Object.values(PERF_OWNED)) reserve(names);
 
@@ -255,6 +259,26 @@ performanceUnit('base-bandits', 'Base Bandits', 'Career stolen bases — the fas
 performanceUnit('walk-off-kings', 'Walk-Off Kings', 'Career walk-offs — they end ballgames.',
   { kind: 'icon', icon: 'crown', accent: '#f59e0b' },
   rank(qCar, (a, b) => (b.career.wo ?? 0) - (a.career.wo ?? 0)), 10, PERF_OWNED.walkOffs);
+
+// Fan Favorites — career foul-outs-to-fan (a pitching quirk); pitchers only.
+performanceUnit('fan-favorites', 'Fan Favorites', 'Career foul-outs-to-fan — the crowd made the play.',
+  { kind: 'icon', icon: 'star', accent: '#f43f5e' },
+  rank((p) => p.career?.fan, (a, b) => (b.career.fan ?? 0) - (a.career.fan ?? 0)), 10, PERF_OWNED.fanFavorites);
+
+// ─── ACT 3 (cont.) — Experience units ──────────────────────────────────────
+// Rookie vs veteran, inferred by comparing CAREER games to this SEASON's games:
+// prior = career.g - seasonG. A near-zero prior means this is essentially their
+// first season (rookie); a large prior means many seasons behind them (veteran).
+// This is a derived signal — the API has no age/debut/rookie field — so the copy
+// says "newest/most-tenured," not a literal rookie flag.
+const seasonG = (p) => Math.max(p.hitting?.g ?? 0, p.pitching?.g ?? 0, p.fielding?.g ?? 0);
+const prior = (p) => (p.career?.g ?? 0) - seasonG(p);
+performanceUnit('fresh-faces', 'Fresh Faces', 'Newest to the league — little career history yet.',
+  { kind: 'icon', icon: 'sparkles', accent: '#10b981' },
+  rank(qCar, (a, b) => prior(a) - prior(b)), 10, PERF_OWNED.freshFaces);
+performanceUnit('old-guard', 'The Old Guard', 'The most-tenured — hundreds of games behind them.',
+  { kind: 'icon', icon: 'crown', accent: '#78716c' },
+  rank(qCar, (a, b) => prior(b) - prior(a)), 10, PERF_OWNED.oldGuard);
 
 // Wild cards — anyone left (the truly obscure), a final grab-bag.
 const leftover = takeAll(() => true);

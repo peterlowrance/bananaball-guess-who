@@ -9923,4424 +9923,5688 @@
       "g": 298,
       "b4s": 93,
       "sb": 17,
-      "wo": 70
+      "wo": 70,
+      "fan": 0,
+      "er": 0
     },
     {
       "player_id": "26bf1dff-0893-4395-9a93-f20a984ad18f",
       "g": 284,
       "b4s": 57,
       "sb": 94,
-      "wo": 82
+      "wo": 82,
+      "fan": 0,
+      "er": 0
     },
     {
       "player_id": "592e613d-6cba-4eda-8c94-9c79498b2b9e",
       "g": 284,
       "b4s": 110,
       "sb": 31,
-      "wo": 55
+      "wo": 55,
+      "fan": 0,
+      "er": 0
     },
     {
       "player_id": "1a0093de-4440-4e31-a6f2-672743b75ed1",
       "g": 279,
       "b4s": 87,
       "sb": 98,
-      "wo": 63
+      "wo": 63,
+      "fan": 0,
+      "er": 0
     },
     {
       "player_id": "b7aad21c-a083-4254-b2e2-56f211d3473b",
       "g": 271,
       "b4s": 58,
       "sb": 35,
-      "wo": 50
+      "wo": 50,
+      "fan": 15,
+      "er": 66
     },
     {
       "player_id": "8114dba0-2bbd-4372-a49c-037292948f4f",
       "g": 270,
       "b4s": 79,
       "sb": 65,
-      "wo": 19
+      "wo": 19,
+      "fan": 0,
+      "er": 0
     },
     {
       "player_id": "48657835-3f61-43dc-b75d-605365365056",
       "g": 268,
       "b4s": 30,
       "sb": 11,
-      "wo": 57
+      "wo": 57,
+      "fan": 0,
+      "er": 0
     },
     {
       "player_id": "cbcf804d-f31c-4b3e-b920-cad81fdef68f",
       "g": 258,
       "b4s": 135,
       "sb": 53,
-      "wo": 20
+      "wo": 20,
+      "fan": 0,
+      "er": 0
     },
     {
       "player_id": "d1162c3c-7635-4c55-9fe3-942e8d33105b",
       "g": 255,
       "b4s": 59,
       "sb": 19,
-      "wo": 12
+      "wo": 12,
+      "fan": 0,
+      "er": 0
     },
     {
       "player_id": "00160466-8a44-4129-aa3b-cdf0e54abd79",
       "g": 253,
       "b4s": 6,
       "sb": 0,
-      "wo": 6
+      "wo": 6,
+      "fan": 3,
+      "er": 31
     },
     {
       "player_id": "0152ecda-db0d-40db-b944-22d7af88c878",
       "g": 251,
       "b4s": 147,
       "sb": 54,
-      "wo": 21
+      "wo": 21,
+      "fan": 0,
+      "er": 0
     },
     {
       "player_id": "970678e1-e4b2-44b7-beaa-fdee8db567ca",
       "g": 244,
       "b4s": 96,
       "sb": 28,
-      "wo": 69
+      "wo": 69,
+      "fan": 0,
+      "er": 0
     },
     {
       "player_id": "08a1e36b-3e68-4196-aa22-4e6cc6249370",
       "g": 241,
       "b4s": 120,
       "sb": 51,
-      "wo": 21
+      "wo": 21,
+      "fan": 0,
+      "er": 0
     },
     {
       "player_id": "d817d3f2-3d70-4518-95b3-9ccbefd82517",
       "g": 235,
       "b4s": 76,
       "sb": 56,
-      "wo": 16
+      "wo": 16,
+      "fan": 0,
+      "er": 0
     },
     {
       "player_id": "4ccf2fb5-f926-44b0-a825-6cf96c87150a",
       "g": 232,
       "b4s": 63,
       "sb": 31,
-      "wo": 11
+      "wo": 11,
+      "fan": 0,
+      "er": 3
     },
     {
       "player_id": "83aa729d-1724-4076-aacc-973d6ee38035",
       "g": 202,
       "b4s": 3,
       "sb": 150,
-      "wo": 11
+      "wo": 11,
+      "fan": 0,
+      "er": 0
     },
     {
       "player_id": "256ce8f8-2021-435c-8e54-9c59052577e4",
       "g": 191,
       "b4s": 64,
       "sb": 33,
-      "wo": 65
+      "wo": 65,
+      "fan": 0,
+      "er": 0
     },
     {
       "player_id": "d2b18d70-beae-4d92-a7c2-41877f4917d5",
       "g": 185,
       "b4s": 14,
       "sb": 0,
-      "wo": 8
+      "wo": 8,
+      "fan": 0,
+      "er": 0
     },
     {
       "player_id": "741532bc-f90c-4eb1-b5be-251f72cd7fe0",
       "g": 182,
       "b4s": 45,
       "sb": 24,
-      "wo": 42
+      "wo": 42,
+      "fan": 1,
+      "er": 8
     },
     {
       "player_id": "22102cc2-9ad5-4c48-a9f0-bd016b38fb13",
       "g": 175,
       "b4s": 62,
       "sb": 10,
-      "wo": 62
+      "wo": 62,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "78d964c6-3b69-49db-80d2-53540d42ac7e",
       "g": 161,
       "b4s": 48,
       "sb": 10,
-      "wo": 7
+      "wo": 7,
+      "fan": 0,
+      "er": 0
     },
     {
       "player_id": "96452790-25b3-45a4-9f09-8ef9c9f226f0",
       "g": 159,
       "b4s": 48,
       "sb": 12,
-      "wo": 10
+      "wo": 10,
+      "fan": 0,
+      "er": 0
     },
     {
       "player_id": "6cbe9606-caf8-4e80-ae3c-63025a639d6b",
       "g": 143,
       "b4s": 13,
       "sb": 13,
-      "wo": 11
+      "wo": 11,
+      "fan": 0,
+      "er": 0
     },
     {
       "player_id": "f7ad99c7-5286-4c69-a6fc-0511cc5c6089",
       "g": 126,
       "b4s": 60,
       "sb": 19,
-      "wo": 27
+      "wo": 27,
+      "fan": 0,
+      "er": 0
     },
     {
       "player_id": "8a4f17aa-225a-4a93-ab4a-5068c7f5a1aa",
       "g": 110,
       "b4s": 57,
       "sb": 6,
-      "wo": 20
+      "wo": 20,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "941463cb-1f12-49a8-bcd2-766f0a6e2345",
       "g": 101,
       "b4s": 22,
       "sb": 21,
-      "wo": 10
+      "wo": 10,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "cc186bf1-2826-46ca-b5c8-e32648c7a284",
       "g": 100,
       "b4s": 26,
       "sb": 14,
-      "wo": 26
+      "wo": 26,
+      "fan": 0,
+      "er": 20
     },
     {
       "player_id": "e9237c8e-69d0-4213-950a-e68e0e9f5813",
       "g": 92,
       "b4s": 29,
       "sb": 6,
-      "wo": 3
+      "wo": 3,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "9b220a84-f147-491a-b776-93a933a5322c",
       "g": 91,
       "b4s": 27,
       "sb": 18,
-      "wo": 10
+      "wo": 10,
+      "fan": 0,
+      "er": 4
     },
     {
       "player_id": "80488762-7c12-4f72-9c68-f3a172e48f79",
       "g": 91,
       "b4s": 9,
       "sb": 0,
-      "wo": 15
+      "wo": 15,
+      "fan": 5,
+      "er": 65
     },
     {
       "player_id": "cc186bf1-2826-46ca-b5c8-e32648c7a284",
       "g": 88,
       "b4s": 25,
       "sb": 4,
-      "wo": 4
+      "wo": 4,
+      "fan": 0,
+      "er": 20
     },
     {
       "player_id": "295441a8-2e67-4f2d-adac-1172aef12137",
       "g": 84,
       "b4s": 22,
       "sb": 17,
-      "wo": 18
+      "wo": 18,
+      "fan": 0,
+      "er": 0
     },
     {
       "player_id": "aba886e3-af5b-4476-a825-21fe5af0c14a",
       "g": 82,
       "b4s": 1,
       "sb": 17,
-      "wo": 1
+      "wo": 1,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "dbc777f2-3a8d-4469-88da-3c1e57546fb6",
       "g": 78,
       "b4s": 15,
       "sb": 22,
-      "wo": 4
+      "wo": 4,
+      "fan": 0,
+      "er": 0
     },
     {
       "player_id": "481b6868-8ee5-4cae-b9bd-4a435d2164fb",
       "g": 77,
       "b4s": 21,
       "sb": 7,
-      "wo": 4
+      "wo": 4,
+      "fan": 0,
+      "er": 0
     },
     {
       "player_id": "06c5b337-e0ee-411c-861f-fa5378947ebe",
       "g": 77,
       "b4s": 27,
       "sb": 4,
-      "wo": 6
+      "wo": 6,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "78d964c6-3b69-49db-80d2-53540d42ac7e",
       "g": 75,
       "b4s": 23,
       "sb": 5,
-      "wo": 10
+      "wo": 10,
+      "fan": 0,
+      "er": 0
     },
     {
       "player_id": "37458251-24a7-4787-b91d-0f24dd3566db",
       "g": 74,
       "b4s": 5,
       "sb": 1,
-      "wo": 0
+      "wo": 0,
+      "fan": 0,
+      "er": 0
     },
     {
       "player_id": "aaced6a8-bbff-4b07-a0d0-e26aa9841439",
       "g": 73,
       "b4s": 11,
       "sb": 6,
-      "wo": 5
+      "wo": 5,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "cd7ff7d4-e956-4cac-9c62-b82be0859d15",
       "g": 73,
       "b4s": 10,
       "sb": 1,
-      "wo": 3
+      "wo": 3,
+      "fan": 0,
+      "er": 0
     },
     {
       "player_id": "dd7f3c45-284c-4ed7-a7dc-ba4eb11b0704",
       "g": 73,
       "b4s": 31,
       "sb": 1,
-      "wo": 11
+      "wo": 11,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "8ec7b470-c78c-41ba-b544-7cecb72a6b6e",
       "g": 73,
       "b4s": 18,
       "sb": 8,
-      "wo": 4
+      "wo": 4,
+      "fan": 0,
+      "er": 0
     },
     {
       "player_id": "2cc2efd5-b638-4c08-993c-c0a680fac9f5",
       "g": 73,
       "b4s": 22,
       "sb": 3,
-      "wo": 7
+      "wo": 7,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "7730f49d-1f5a-453c-b86b-fadd37e7df33",
       "g": 73,
       "b4s": 20,
       "sb": 6,
-      "wo": 7
+      "wo": 7,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "88d2aa1c-1ddc-4868-9a76-f181574e9f63",
       "g": 73,
       "b4s": 11,
       "sb": 1,
-      "wo": 0
+      "wo": 0,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "67eb1e6a-ad0f-4e43-aac5-91d0fb159898",
       "g": 72,
       "b4s": 19,
       "sb": 8,
-      "wo": 6
+      "wo": 6,
+      "fan": 0,
+      "er": 0
     },
     {
       "player_id": "295441a8-2e67-4f2d-adac-1172aef12137",
       "g": 69,
       "b4s": 19,
       "sb": 20,
-      "wo": 6
+      "wo": 6,
+      "fan": 0,
+      "er": 0
     },
     {
       "player_id": "7d6a3b5c-2d7a-417e-a4f6-69ce53dc4e85",
       "g": 69,
       "b4s": 25,
       "sb": 0,
-      "wo": 5
+      "wo": 5,
+      "fan": 0,
+      "er": 0
     },
     {
       "player_id": "54e06824-218f-4aca-b2f4-6a01d351d6bd",
       "g": 59,
       "b4s": 16,
       "sb": 7,
-      "wo": 5
+      "wo": 5,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "358f3832-2058-4b94-bb99-d31618902419",
       "g": 59,
       "b4s": 18,
       "sb": 19,
-      "wo": 4
+      "wo": 4,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "f0f5c36a-13ab-4162-9876-116fcc2947a8",
       "g": 59,
       "b4s": 13,
       "sb": 2,
-      "wo": 0
+      "wo": 0,
+      "fan": 13,
+      "er": 173
     },
     {
       "player_id": "34dd71fd-af40-4ead-b7a9-d032b46bd9f0",
       "g": 58,
       "b4s": 18,
       "sb": 7,
-      "wo": 2
+      "wo": 2,
+      "fan": 0,
+      "er": 0
     },
     {
       "player_id": "53d76d9b-fc4b-4d82-ac83-ef3d9d2d1889",
       "g": 57,
       "b4s": 13,
       "sb": 6,
-      "wo": 6
+      "wo": 6,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "481b6868-8ee5-4cae-b9bd-4a435d2164fb",
       "g": 57,
       "b4s": 13,
       "sb": 14,
-      "wo": 1
+      "wo": 1,
+      "fan": 0,
+      "er": 0
     },
     {
       "player_id": "34dd71fd-af40-4ead-b7a9-d032b46bd9f0",
       "g": 55,
       "b4s": 18,
       "sb": 7,
-      "wo": 0
+      "wo": 0,
+      "fan": 0,
+      "er": 0
     },
     {
       "player_id": "0830224f-bb5c-43c3-98fa-4d8b58b4b2b9",
       "g": 54,
       "b4s": 6,
       "sb": 0,
-      "wo": 2
+      "wo": 2,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "398e8628-4b2f-4bd0-9eb4-312f1f5be56a",
       "g": 53,
       "b4s": 5,
       "sb": 1,
-      "wo": 0
+      "wo": 0,
+      "fan": 0,
+      "er": 0
     },
     {
       "player_id": "c9fbc6ec-5dc0-4dd8-97f6-19739b9e9aed",
       "g": 51,
       "b4s": 7,
       "sb": 3,
-      "wo": 4
+      "wo": 4,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "9aedf49f-3074-4957-b90e-ce37ac36d671",
       "g": 51,
       "b4s": 8,
       "sb": 10,
-      "wo": 0
+      "wo": 0,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "7d6a3b5c-2d7a-417e-a4f6-69ce53dc4e85",
       "g": 46,
       "b4s": 13,
       "sb": 1,
-      "wo": 1
+      "wo": 1,
+      "fan": 0,
+      "er": 0
     },
     {
       "player_id": "decb62cc-9173-415d-9d13-94df42ae1fb0",
       "g": 43,
       "b4s": 5,
       "sb": 4,
-      "wo": 1
+      "wo": 1,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "4892fa87-9922-4644-ae7d-06e711fa8738",
       "g": 42,
       "b4s": 15,
       "sb": 2,
-      "wo": 7
+      "wo": 7,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "ba57f2a9-06da-4a32-bb02-e7cd024e91f0",
       "g": 42,
       "b4s": 9,
       "sb": 5,
-      "wo": 9
+      "wo": 9,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "f6f0c832-d7bd-40c0-a5c3-46c8659e99c1",
       "g": 41,
       "b4s": 25,
       "sb": 1,
-      "wo": 16
+      "wo": 16,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "0bbf1524-171c-41af-a91e-09d8c0f03b04",
       "g": 40,
       "b4s": 18,
       "sb": 0,
-      "wo": 8
+      "wo": 8,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "ed75186d-dbfb-4c09-a887-f0d3482fb253",
       "g": 40,
       "b4s": 14,
       "sb": 3,
-      "wo": 4
+      "wo": 4,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "fd58f6ab-e50c-46dd-9004-0ca6f307abeb",
       "g": 40,
       "b4s": 9,
       "sb": 3,
-      "wo": 8
+      "wo": 8,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "94df0ae7-1adc-46f2-a343-d6ac6644506c",
       "g": 40,
       "b4s": 6,
       "sb": 2,
-      "wo": 7
+      "wo": 7,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "2432cc75-7ed4-4a5d-bd4d-c86e9a976a78",
       "g": 40,
       "b4s": 16,
       "sb": 3,
-      "wo": 3
+      "wo": 3,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "17f5429e-e53a-42f5-9375-e588296bf536",
       "g": 39,
       "b4s": 9,
       "sb": 4,
-      "wo": 1
+      "wo": 1,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "f6f19be4-37d9-4516-9c37-870faada2510",
       "g": 39,
       "b4s": 12,
       "sb": 3,
-      "wo": 6
+      "wo": 6,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "54eb4528-cfe7-47c2-b397-bac8447b6669",
       "g": 39,
       "b4s": 10,
       "sb": 14,
-      "wo": 6
+      "wo": 6,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "9dad4542-88be-41be-b263-3c55a6c16a76",
       "g": 39,
       "b4s": 0,
       "sb": 14,
-      "wo": 0
+      "wo": 0,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "ddd91fff-fd67-45d6-beb0-8e5dd16b806f",
       "g": 39,
       "b4s": 17,
       "sb": 2,
-      "wo": 3
+      "wo": 3,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "76f08419-71b8-4005-80ae-d552323194e8",
       "g": 39,
       "b4s": 30,
       "sb": 1,
-      "wo": 2
+      "wo": 2,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "c04fd869-0906-44ab-ba4d-f7924ca9437c",
       "g": 38,
       "b4s": 23,
       "sb": 8,
-      "wo": 6
+      "wo": 6,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "970678e1-e4b2-44b7-beaa-fdee8db567ca",
       "g": 38,
       "b4s": 17,
       "sb": 3,
-      "wo": 7
+      "wo": 7,
+      "fan": 0,
+      "er": 0
     },
     {
       "player_id": "a1ad5177-067b-4b19-a715-e74f348391d9",
       "g": 38,
       "b4s": 19,
       "sb": 3,
-      "wo": 4
+      "wo": 4,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "b8ad239c-dd58-41da-bcab-c8d44e4488aa",
       "g": 38,
       "b4s": 8,
       "sb": 2,
-      "wo": 5
+      "wo": 5,
+      "fan": 0,
+      "er": 0
     },
     {
       "player_id": "6c95bae4-8f0f-4c9f-9651-44cfea968107",
       "g": 38,
       "b4s": 7,
       "sb": 6,
-      "wo": 3
+      "wo": 3,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "00320f5b-6110-4cec-8ae6-0ac170ab59d8",
       "g": 38,
       "b4s": 14,
       "sb": 0,
-      "wo": 8
+      "wo": 8,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "c9fbc6ec-5dc0-4dd8-97f6-19739b9e9aed",
       "g": 37,
       "b4s": 3,
       "sb": 1,
-      "wo": 0
+      "wo": 0,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "dffa529d-9a4d-4a4d-94fc-a987964ac31a",
       "g": 37,
       "b4s": 10,
       "sb": 0,
-      "wo": 4
+      "wo": 4,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "80488762-7c12-4f72-9c68-f3a172e48f79",
       "g": 37,
       "b4s": 4,
       "sb": 0,
-      "wo": 5
+      "wo": 5,
+      "fan": 5,
+      "er": 65
     },
     {
       "player_id": "bdd316d8-36fd-416c-bbab-aa8e04cb7962",
       "g": 36,
       "b4s": 9,
       "sb": 0,
-      "wo": 6
+      "wo": 6,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "356d7562-0e0c-48be-84ce-478bce04c10b",
       "g": 36,
       "b4s": 7,
       "sb": 4,
-      "wo": 4
+      "wo": 4,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "0190afa9-913a-4294-8969-e85bb16b71b2",
       "g": 36,
       "b4s": 7,
       "sb": 1,
-      "wo": 5
+      "wo": 5,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "ded4362a-a4cb-43cc-a553-db692c063e15",
       "g": 36,
       "b4s": 3,
       "sb": 3,
-      "wo": 3
+      "wo": 3,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "83aa729d-1724-4076-aacc-973d6ee38035",
       "g": 36,
       "b4s": 0,
       "sb": 21,
-      "wo": 0
+      "wo": 0,
+      "fan": 0,
+      "er": 0
     },
     {
       "player_id": "e8241b1a-b78e-4244-a240-342e2ae62a53",
       "g": 35,
       "b4s": 21,
       "sb": 0,
-      "wo": 5
+      "wo": 5,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "6ff0c5c2-ff10-411a-ad77-ab97b96be444",
       "g": 35,
       "b4s": 15,
       "sb": 2,
-      "wo": 1
+      "wo": 1,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "abccbfaf-0009-4858-a170-a4d006b43a99",
       "g": 35,
       "b4s": 7,
       "sb": 3,
-      "wo": 0
+      "wo": 0,
+      "fan": 0,
+      "er": 34
     },
     {
       "player_id": "006e5461-d832-44cb-bb85-84b15325e404",
       "g": 34,
       "b4s": 14,
       "sb": 0,
-      "wo": 2
+      "wo": 2,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "46c83fd3-8f66-4362-b757-8fa7677e5b09",
       "g": 34,
       "b4s": 9,
       "sb": 8,
-      "wo": 1
+      "wo": 1,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "9facfd7d-136e-4bf6-84e5-95d1e8c81bcb",
       "g": 34,
       "b4s": 6,
       "sb": 2,
-      "wo": 1
+      "wo": 1,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "8610a91f-4987-42ed-8dc7-f854a56e159c",
       "g": 34,
       "b4s": 10,
       "sb": 5,
-      "wo": 2
+      "wo": 2,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "38cf7024-fcc0-494e-9b4b-c951af383d16",
       "g": 33,
       "b4s": 8,
       "sb": 7,
-      "wo": 2
+      "wo": 2,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "abccbfaf-0009-4858-a170-a4d006b43a99",
       "g": 33,
       "b4s": 5,
       "sb": 1,
-      "wo": 3
+      "wo": 3,
+      "fan": 0,
+      "er": 34
     },
     {
       "player_id": "54e06824-218f-4aca-b2f4-6a01d351d6bd",
       "g": 33,
       "b4s": 18,
       "sb": 3,
-      "wo": 5
+      "wo": 5,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "a34016f8-f4ec-4600-85a4-f4f6c567317b",
       "g": 33,
       "b4s": 3,
       "sb": 6,
-      "wo": 0
+      "wo": 0,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "5f74cd28-684f-4b9d-9a4c-a8b2a2238222",
       "g": 32,
       "b4s": 10,
       "sb": 1,
-      "wo": 2
+      "wo": 2,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "d5731f6a-25af-48ed-b53d-e241554f6482",
       "g": 31,
       "b4s": 9,
       "sb": 6,
-      "wo": 0
-    },
-    {
-      "player_id": "c796e556-ea21-4f3f-af98-f5fc908676ab",
-      "g": 30,
-      "b4s": 12,
-      "sb": 4,
-      "wo": 4
+      "wo": 0,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "9690473b-ef43-420b-815f-0dd78d6ec36d",
       "g": 30,
       "b4s": 10,
       "sb": 2,
-      "wo": 1
+      "wo": 1,
+      "fan": null,
+      "er": null
+    },
+    {
+      "player_id": "c796e556-ea21-4f3f-af98-f5fc908676ab",
+      "g": 30,
+      "b4s": 12,
+      "sb": 4,
+      "wo": 4,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "92b54f33-fbeb-4789-a6f7-a4791a951358",
       "g": 30,
       "b4s": 10,
       "sb": 4,
-      "wo": 1
+      "wo": 1,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "34dd71fd-af40-4ead-b7a9-d032b46bd9f0",
       "g": 30,
       "b4s": 13,
       "sb": 0,
-      "wo": 5
+      "wo": 5,
+      "fan": 0,
+      "er": 0
     },
     {
       "player_id": "e4d403a0-ca9c-4356-b61a-f471120ffe7c",
       "g": 27,
       "b4s": 0,
       "sb": 17,
-      "wo": 0
+      "wo": 0,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "4be86d44-679d-4d4c-81dc-a7675e7cc41f",
       "g": 26,
       "b4s": 0,
       "sb": 1,
-      "wo": 0
+      "wo": 0,
+      "fan": 25,
+      "er": 226
     },
     {
       "player_id": "2c034f9b-d163-46f5-bbef-9bb62d99cfd6",
       "g": 26,
       "b4s": 0,
       "sb": 13,
-      "wo": 0
+      "wo": 0,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "fb5f4950-d5a5-4673-8c82-a1267998631f",
       "g": 25,
       "b4s": 0,
       "sb": 0,
-      "wo": 0
+      "wo": 0,
+      "fan": 19,
+      "er": 198
     },
     {
       "player_id": "02a9fe9f-5f42-4e99-a668-4f7879c9db20",
       "g": 24,
       "b4s": 2,
       "sb": 0,
-      "wo": 0
+      "wo": 0,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "7ab4d2d5-f86a-40e6-813a-47a9b3df9148",
       "g": 22,
       "b4s": 10,
       "sb": 5,
-      "wo": 0
-    },
-    {
-      "player_id": "1d187c0a-45b5-4228-bf10-85f23062041d",
-      "g": 21,
-      "b4s": 0,
-      "sb": 0,
-      "wo": 0
-    },
-    {
-      "player_id": "4d93b92a-712a-47bb-bc23-31a7403abd27",
-      "g": 21,
-      "b4s": 0,
-      "sb": 0,
-      "wo": 0
+      "wo": 0,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "62714feb-0752-418c-8473-9daf0447579e",
       "g": 21,
       "b4s": 0,
       "sb": 9,
-      "wo": 1
+      "wo": 1,
+      "fan": null,
+      "er": null
+    },
+    {
+      "player_id": "1d187c0a-45b5-4228-bf10-85f23062041d",
+      "g": 21,
+      "b4s": 0,
+      "sb": 0,
+      "wo": 0,
+      "fan": 2,
+      "er": 54
+    },
+    {
+      "player_id": "4d93b92a-712a-47bb-bc23-31a7403abd27",
+      "g": 21,
+      "b4s": 0,
+      "sb": 0,
+      "wo": 0,
+      "fan": 1,
+      "er": 4
     },
     {
       "player_id": "e3623692-d5b8-44b6-80b3-3cad1b5e0c57",
       "g": 21,
       "b4s": 5,
       "sb": 0,
-      "wo": 1
+      "wo": 1,
+      "fan": 0,
+      "er": 0
     },
     {
       "player_id": "7013617c-1f53-4251-accc-d4f4b0904426",
       "g": 20,
       "b4s": 1,
       "sb": 0,
-      "wo": 0
+      "wo": 0,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "bb772594-21c1-477c-ab7c-5faec7582503",
       "g": 19,
       "b4s": 3,
       "sb": 1,
-      "wo": 0
+      "wo": 0,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "4dde5a8c-9f5e-4d57-ae27-968060308e04",
       "g": 19,
       "b4s": 1,
       "sb": 2,
-      "wo": 0
+      "wo": 0,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "67eb1e6a-ad0f-4e43-aac5-91d0fb159898",
       "g": 19,
       "b4s": 3,
       "sb": 5,
-      "wo": 0
+      "wo": 0,
+      "fan": 0,
+      "er": 0
     },
     {
       "player_id": "f3bc22b3-8eaa-46b2-931c-81c11ed99ee7",
       "g": 19,
       "b4s": 3,
       "sb": 0,
-      "wo": 0
+      "wo": 0,
+      "fan": null,
+      "er": null
+    },
+    {
+      "player_id": "6cbe9606-caf8-4e80-ae3c-63025a639d6b",
+      "g": 18,
+      "b4s": 2,
+      "sb": 0,
+      "wo": 0,
+      "fan": 0,
+      "er": 0
     },
     {
       "player_id": "dc21ef79-bb1b-4d6d-948a-f99868505b57",
       "g": 18,
       "b4s": 0,
       "sb": 0,
-      "wo": 0
-    },
-    {
-      "player_id": "6cbe9606-caf8-4e80-ae3c-63025a639d6b",
-      "g": 18,
-      "b4s": 2,
-      "sb": 0,
-      "wo": 0
-    },
-    {
-      "player_id": "1d187c0a-45b5-4228-bf10-85f23062041d",
-      "g": 18,
-      "b4s": 2,
-      "sb": 0,
-      "wo": 0
+      "wo": 0,
+      "fan": 25,
+      "er": 125
     },
     {
       "player_id": "9ecdc540-4fac-4e31-809f-ffa0b1c66702",
       "g": 18,
       "b4s": 7,
       "sb": 3,
-      "wo": 0
+      "wo": 0,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "46f1843f-4ba7-4129-a5e0-0660207b0e6e",
       "g": 18,
       "b4s": 0,
       "sb": 2,
-      "wo": 0
+      "wo": 0,
+      "fan": 5,
+      "er": 116
+    },
+    {
+      "player_id": "1d187c0a-45b5-4228-bf10-85f23062041d",
+      "g": 18,
+      "b4s": 2,
+      "sb": 0,
+      "wo": 0,
+      "fan": 2,
+      "er": 54
     },
     {
       "player_id": "cc484c50-952f-425d-982b-2b6edfe3e877",
       "g": 17,
       "b4s": 1,
       "sb": 0,
-      "wo": 0
-    },
-    {
-      "player_id": "74eca443-cd98-4b8c-b6bc-88e8dbdad84b",
-      "g": 16,
-      "b4s": 2,
-      "sb": 1,
-      "wo": 0
+      "wo": 0,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "bd90e49e-794f-4a3f-83db-645f9249d0a7",
       "g": 16,
       "b4s": 7,
       "sb": 4,
-      "wo": 0
+      "wo": 0,
+      "fan": null,
+      "er": null
+    },
+    {
+      "player_id": "74eca443-cd98-4b8c-b6bc-88e8dbdad84b",
+      "g": 16,
+      "b4s": 2,
+      "sb": 1,
+      "wo": 0,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "1d187c0a-45b5-4228-bf10-85f23062041d",
       "g": 15,
       "b4s": 1,
       "sb": 1,
-      "wo": 0
-    },
-    {
-      "player_id": "a15029f2-1d8e-4799-9b40-1207f5d16dd4",
-      "g": 14,
-      "b4s": 6,
-      "sb": 1,
-      "wo": 0
+      "wo": 0,
+      "fan": 2,
+      "er": 54
     },
     {
       "player_id": "f60747a7-3dac-4565-b6d5-29c11691e3dd",
       "g": 14,
       "b4s": 1,
       "sb": 0,
-      "wo": 0
+      "wo": 0,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "2d0af915-0d04-4173-ad0d-7badb5dab9c7",
       "g": 14,
       "b4s": 5,
       "sb": 0,
-      "wo": 0
+      "wo": 0,
+      "fan": null,
+      "er": null
+    },
+    {
+      "player_id": "a15029f2-1d8e-4799-9b40-1207f5d16dd4",
+      "g": 14,
+      "b4s": 6,
+      "sb": 1,
+      "wo": 0,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "6902e3b7-3602-4cf2-8c02-e8e30e7d9e7f",
       "g": 14,
       "b4s": 4,
       "sb": 2,
-      "wo": 0
-    },
-    {
-      "player_id": "05deb2bf-b1b8-410f-be46-7d07ede8c5c1",
-      "g": 13,
-      "b4s": 2,
-      "sb": 0,
-      "wo": 0
+      "wo": 0,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "056d07b0-8015-470e-af72-f9f3d6fe5c82",
       "g": 13,
       "b4s": 4,
       "sb": 0,
-      "wo": 0
+      "wo": 0,
+      "fan": null,
+      "er": null
     },
     {
-      "player_id": "0152ecda-db0d-40db-b944-22d7af88c878",
-      "g": 12,
-      "b4s": 3,
-      "sb": 2,
-      "wo": 3
+      "player_id": "05deb2bf-b1b8-410f-be46-7d07ede8c5c1",
+      "g": 13,
+      "b4s": 2,
+      "sb": 0,
+      "wo": 0,
+      "fan": 0,
+      "er": 0
     },
     {
       "player_id": "8e29a590-e99d-43da-a3c4-1bd91c168239",
       "g": 12,
       "b4s": 0,
       "sb": 0,
-      "wo": 1
+      "wo": 1,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "d42da82d-6311-4e39-8494-8d83ed76a8af",
       "g": 12,
       "b4s": 0,
       "sb": 0,
-      "wo": 0
+      "wo": 0,
+      "fan": 15,
+      "er": 110
     },
     {
       "player_id": "cbcf804d-f31c-4b3e-b920-cad81fdef68f",
       "g": 12,
       "b4s": 5,
       "sb": 1,
-      "wo": 2
+      "wo": 2,
+      "fan": 0,
+      "er": 0
+    },
+    {
+      "player_id": "0152ecda-db0d-40db-b944-22d7af88c878",
+      "g": 12,
+      "b4s": 3,
+      "sb": 2,
+      "wo": 3,
+      "fan": 0,
+      "er": 0
     },
     {
       "player_id": "813c4d72-9d43-4d75-ac1e-37dca6065335",
       "g": 11,
       "b4s": 1,
       "sb": 4,
-      "wo": 1
-    },
-    {
-      "player_id": "c7c82442-fd40-45d3-93c1-6c4dce82479c",
-      "g": 11,
-      "b4s": 0,
-      "sb": 0,
-      "wo": 0
+      "wo": 1,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "5b91689b-86d2-4ad8-8431-fee3cd61908f",
       "g": 11,
       "b4s": 1,
       "sb": 0,
-      "wo": 0
+      "wo": 0,
+      "fan": null,
+      "er": null
+    },
+    {
+      "player_id": "c7c82442-fd40-45d3-93c1-6c4dce82479c",
+      "g": 11,
+      "b4s": 0,
+      "sb": 0,
+      "wo": 0,
+      "fan": 17,
+      "er": 236
     },
     {
       "player_id": "4d796cfa-1caf-4045-80e2-8ecc65dd2d1f",
       "g": 10,
       "b4s": 0,
       "sb": 0,
-      "wo": 0
+      "wo": 0,
+      "fan": 4,
+      "er": 83
     },
     {
       "player_id": "00055d18-0cac-4bb9-9f6d-3d56014ac3ee",
       "g": 10,
       "b4s": 4,
       "sb": 2,
-      "wo": 0
+      "wo": 0,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "a9327361-1d17-45b3-a4ab-d752d34f7877",
       "g": 9,
       "b4s": 0,
       "sb": 0,
-      "wo": 0
+      "wo": 0,
+      "fan": 4,
+      "er": 36
     },
     {
       "player_id": "8461f3e5-e51f-4da2-b7b2-d1a1071949cd",
       "g": 9,
       "b4s": 3,
       "sb": 0,
-      "wo": 0
-    },
-    {
-      "player_id": "80699aa0-ae06-404a-991c-b75e99a191cf",
-      "g": 9,
-      "b4s": 0,
-      "sb": 0,
-      "wo": 0
+      "wo": 0,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "e9dd6715-93a0-4fca-95cb-9918d2cc1d4c",
       "g": 9,
       "b4s": 0,
       "sb": 0,
-      "wo": 0
+      "wo": 0,
+      "fan": 0,
+      "er": 18
     },
     {
       "player_id": "12a7be17-f027-485d-8db3-b27ef2a8ff2a",
       "g": 9,
       "b4s": 2,
       "sb": 1,
-      "wo": 0
+      "wo": 0,
+      "fan": null,
+      "er": null
+    },
+    {
+      "player_id": "80699aa0-ae06-404a-991c-b75e99a191cf",
+      "g": 9,
+      "b4s": 0,
+      "sb": 0,
+      "wo": 0,
+      "fan": 5,
+      "er": 26
     },
     {
       "player_id": "6845e279-3366-4e5e-bd5e-c3cf9520fa66",
       "g": 8,
       "b4s": 3,
       "sb": 2,
-      "wo": 2
+      "wo": 2,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "4fee0bff-9920-47aa-a198-668b8c319ab9",
       "g": 8,
       "b4s": 0,
       "sb": 0,
-      "wo": 0
+      "wo": 0,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "c479d2ec-f2f0-44f8-b44c-cc9c3a19bfbf",
       "g": 7,
       "b4s": 0,
       "sb": 0,
-      "wo": 0
-    },
-    {
-      "player_id": "80488762-7c12-4f72-9c68-f3a172e48f79",
-      "g": 6,
-      "b4s": 2,
-      "sb": 0,
-      "wo": 0
-    },
-    {
-      "player_id": "8ec7b470-c78c-41ba-b544-7cecb72a6b6e",
-      "g": 6,
-      "b4s": 0,
-      "sb": 3,
-      "wo": 0
-    },
-    {
-      "player_id": "6902e3b7-3602-4cf2-8c02-e8e30e7d9e7f",
-      "g": 6,
-      "b4s": 3,
-      "sb": 5,
-      "wo": 0
+      "wo": 0,
+      "fan": 9,
+      "er": 63
     },
     {
       "player_id": "e3623692-d5b8-44b6-80b3-3cad1b5e0c57",
       "g": 6,
       "b4s": 0,
       "sb": 0,
-      "wo": 0
+      "wo": 0,
+      "fan": 0,
+      "er": 0
     },
     {
       "player_id": "6c95bae4-8f0f-4c9f-9651-44cfea968107",
       "g": 6,
       "b4s": 3,
       "sb": 1,
-      "wo": 0
+      "wo": 0,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "cf3e925c-ac83-4e7b-981d-cb2b075ce18b",
       "g": 6,
       "b4s": 0,
       "sb": 0,
-      "wo": 0
+      "wo": 0,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "8ec7b470-c78c-41ba-b544-7cecb72a6b6e",
       "g": 6,
       "b4s": 0,
       "sb": 0,
-      "wo": 0
+      "wo": 0,
+      "fan": 0,
+      "er": 0
     },
     {
       "player_id": "d9f1ead1-8dda-4e5b-b258-b8fe0b30b64e",
       "g": 6,
       "b4s": 0,
       "sb": 0,
-      "wo": 0
+      "wo": 0,
+      "fan": 9,
+      "er": 79
     },
     {
-      "player_id": "54e06824-218f-4aca-b2f4-6a01d351d6bd",
+      "player_id": "80488762-7c12-4f72-9c68-f3a172e48f79",
       "g": 6,
       "b4s": 2,
-      "sb": 1,
-      "wo": 0
+      "sb": 0,
+      "wo": 0,
+      "fan": 5,
+      "er": 65
     },
     {
-      "player_id": "007f9aca-a5e4-4161-b9cf-35fd0bd7fb70",
+      "player_id": "8ec7b470-c78c-41ba-b544-7cecb72a6b6e",
       "g": 6,
       "b4s": 0,
-      "sb": 0,
-      "wo": 0
+      "sb": 3,
+      "wo": 0,
+      "fan": 0,
+      "er": 0
+    },
+    {
+      "player_id": "6902e3b7-3602-4cf2-8c02-e8e30e7d9e7f",
+      "g": 6,
+      "b4s": 3,
+      "sb": 5,
+      "wo": 0,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "82745f0f-63fb-40d7-8552-c957323a0084",
       "g": 6,
       "b4s": 1,
       "sb": 0,
-      "wo": 1
+      "wo": 1,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "882160b4-4f71-46d5-9b09-3fbe27c83217",
       "g": 6,
       "b4s": 2,
       "sb": 0,
-      "wo": 1
+      "wo": 1,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "941463cb-1f12-49a8-bcd2-766f0a6e2345",
       "g": 6,
       "b4s": 0,
       "sb": 3,
-      "wo": 0
+      "wo": 0,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "6845e279-3366-4e5e-bd5e-c3cf9520fa66",
       "g": 6,
       "b4s": 1,
       "sb": 7,
-      "wo": 0
+      "wo": 0,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "f7ad99c7-5286-4c69-a6fc-0511cc5c6089",
       "g": 6,
       "b4s": 1,
       "sb": 0,
-      "wo": 0
+      "wo": 0,
+      "fan": 0,
+      "er": 0
     },
     {
-      "player_id": "735fa56e-fb9f-4bc7-bed8-b27b0a5cc83b",
-      "g": 5,
-      "b4s": 0,
-      "sb": 0,
-      "wo": 0
-    },
-    {
-      "player_id": "94df0ae7-1adc-46f2-a343-d6ac6644506c",
-      "g": 5,
-      "b4s": 0,
+      "player_id": "54e06824-218f-4aca-b2f4-6a01d351d6bd",
+      "g": 6,
+      "b4s": 2,
       "sb": 1,
-      "wo": 0
+      "wo": 0,
+      "fan": null,
+      "er": null
     },
     {
-      "player_id": "c1a8cd4c-9620-4ce0-bd99-56958e32f4dd",
-      "g": 5,
+      "player_id": "007f9aca-a5e4-4161-b9cf-35fd0bd7fb70",
+      "g": 6,
       "b4s": 0,
       "sb": 0,
-      "wo": 0
-    },
-    {
-      "player_id": "2432cc75-7ed4-4a5d-bd4d-c86e9a976a78",
-      "g": 5,
-      "b4s": 3,
-      "sb": 2,
-      "wo": 0
-    },
-    {
-      "player_id": "c3d6ba33-03a9-48ad-b3f0-67135b4f3318",
-      "g": 5,
-      "b4s": 0,
-      "sb": 0,
-      "wo": 0
+      "wo": 0,
+      "fan": 4,
+      "er": 24
     },
     {
       "player_id": "92b54f33-fbeb-4789-a6f7-a4791a951358",
       "g": 5,
       "b4s": 1,
       "sb": 0,
-      "wo": 0
+      "wo": 0,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "5f74cd28-684f-4b9d-9a4c-a8b2a2238222",
       "g": 5,
       "b4s": 2,
       "sb": 1,
-      "wo": 0
+      "wo": 0,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "fb0f8e80-ed15-447e-a223-06dd2ddb8452",
       "g": 5,
       "b4s": 2,
       "sb": 1,
-      "wo": 1
+      "wo": 1,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "2617126e-2e11-4eb6-9c00-63bfd060ebc0",
       "g": 5,
       "b4s": 1,
       "sb": 2,
-      "wo": 0
+      "wo": 0,
+      "fan": null,
+      "er": null
     },
     {
-      "player_id": "971628df-9b2f-4961-a301-1dd25a34dcf2",
+      "player_id": "735fa56e-fb9f-4bc7-bed8-b27b0a5cc83b",
       "g": 5,
-      "b4s": 1,
+      "b4s": 0,
+      "sb": 0,
+      "wo": 0,
+      "fan": 7,
+      "er": 35
+    },
+    {
+      "player_id": "94df0ae7-1adc-46f2-a343-d6ac6644506c",
+      "g": 5,
+      "b4s": 0,
+      "sb": 1,
+      "wo": 0,
+      "fan": null,
+      "er": null
+    },
+    {
+      "player_id": "c1a8cd4c-9620-4ce0-bd99-56958e32f4dd",
+      "g": 5,
+      "b4s": 0,
+      "sb": 0,
+      "wo": 0,
+      "fan": null,
+      "er": null
+    },
+    {
+      "player_id": "2432cc75-7ed4-4a5d-bd4d-c86e9a976a78",
+      "g": 5,
+      "b4s": 3,
       "sb": 2,
-      "wo": 0
+      "wo": 0,
+      "fan": null,
+      "er": null
     },
     {
-      "player_id": "384aa079-2754-4dca-85d0-e3f1d61146ea",
+      "player_id": "c3d6ba33-03a9-48ad-b3f0-67135b4f3318",
       "g": 5,
       "b4s": 0,
       "sb": 0,
-      "wo": 0
-    },
-    {
-      "player_id": "a329e9c7-7e64-423b-b0cd-e5827f0656b8",
-      "g": 5,
-      "b4s": 0,
-      "sb": 0,
-      "wo": 0
-    },
-    {
-      "player_id": "658412df-e2da-42a8-ba4d-5956a12f43ed",
-      "g": 5,
-      "b4s": 0,
-      "sb": 0,
-      "wo": 0
+      "wo": 0,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "38cf7024-fcc0-494e-9b4b-c951af383d16",
       "g": 5,
       "b4s": 0,
       "sb": 1,
-      "wo": 0
+      "wo": 0,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "4dde5a8c-9f5e-4d57-ae27-968060308e04",
       "g": 5,
       "b4s": 0,
       "sb": 3,
-      "wo": 0
+      "wo": 0,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "b8ad239c-dd58-41da-bcab-c8d44e4488aa",
       "g": 5,
       "b4s": 0,
       "sb": 0,
-      "wo": 0
+      "wo": 0,
+      "fan": 0,
+      "er": 0
     },
     {
       "player_id": "18d9adb9-48f5-445f-a530-8c339fa7863c",
       "g": 5,
       "b4s": 0,
       "sb": 0,
-      "wo": 0
+      "wo": 0,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "0561964e-59b5-4bba-9232-4f26f0143bdf",
       "g": 5,
       "b4s": 0,
       "sb": 0,
-      "wo": 0
+      "wo": 0,
+      "fan": null,
+      "er": null
     },
     {
-      "player_id": "fe3467be-8271-49d7-b526-c70ce2a83420",
-      "g": 4,
-      "b4s": 1,
-      "sb": 1,
-      "wo": 0
-    },
-    {
-      "player_id": "c7c82442-fd40-45d3-93c1-6c4dce82479c",
-      "g": 4,
-      "b4s": 0,
-      "sb": 0,
-      "wo": 0
-    },
-    {
-      "player_id": "432b0fd6-dbbc-4a54-9e30-39fac5c6dcfa",
-      "g": 4,
-      "b4s": 0,
-      "sb": 0,
-      "wo": 0
-    },
-    {
-      "player_id": "cc49d688-0668-41ec-80bd-ba93e2c6f960",
-      "g": 4,
-      "b4s": 0,
-      "sb": 1,
-      "wo": 1
-    },
-    {
-      "player_id": "d7431514-5f70-4571-bc09-f5fedefc6ee0",
-      "g": 4,
-      "b4s": 0,
-      "sb": 0,
-      "wo": 0
-    },
-    {
-      "player_id": "6e92f0f5-8daf-438a-b372-56b14b4e4959",
-      "g": 4,
+      "player_id": "971628df-9b2f-4961-a301-1dd25a34dcf2",
+      "g": 5,
       "b4s": 1,
       "sb": 2,
-      "wo": 2
+      "wo": 0,
+      "fan": null,
+      "er": null
+    },
+    {
+      "player_id": "384aa079-2754-4dca-85d0-e3f1d61146ea",
+      "g": 5,
+      "b4s": 0,
+      "sb": 0,
+      "wo": 0,
+      "fan": 0,
+      "er": 2
+    },
+    {
+      "player_id": "a329e9c7-7e64-423b-b0cd-e5827f0656b8",
+      "g": 5,
+      "b4s": 0,
+      "sb": 0,
+      "wo": 0,
+      "fan": 0,
+      "er": 36
+    },
+    {
+      "player_id": "658412df-e2da-42a8-ba4d-5956a12f43ed",
+      "g": 5,
+      "b4s": 0,
+      "sb": 0,
+      "wo": 0,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "9e04dd35-247a-43a3-b288-b8efd24a83fd",
       "g": 4,
       "b4s": 1,
       "sb": 1,
-      "wo": 4
+      "wo": 4,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "dd7f3c45-284c-4ed7-a7dc-ba4eb11b0704",
       "g": 4,
       "b4s": 0,
       "sb": 0,
-      "wo": 0
+      "wo": 0,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "ab98ca6c-5d4a-4b51-9c92-a07bb7b2a424",
       "g": 4,
       "b4s": 1,
       "sb": 0,
-      "wo": 0
+      "wo": 0,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "70262018-9e5b-4880-a9e8-3c60c6d320fd",
       "g": 4,
       "b4s": 0,
       "sb": 0,
-      "wo": 0
+      "wo": 0,
+      "fan": 8,
+      "er": 76
     },
     {
       "player_id": "4a4c5b80-0234-4fe4-a29a-ff6c7f831186",
       "g": 4,
       "b4s": 1,
       "sb": 0,
-      "wo": 0
+      "wo": 0,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "965d2188-cfc7-4d8f-9a91-7973ece19ea8",
       "g": 4,
       "b4s": 0,
       "sb": 0,
-      "wo": 0
+      "wo": 0,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "9aedf49f-3074-4957-b90e-ce37ac36d671",
       "g": 4,
       "b4s": 0,
       "sb": 3,
-      "wo": 0
+      "wo": 0,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "2117666b-3c7a-4418-b6ad-eb1e3f1018f6",
       "g": 4,
       "b4s": 0,
       "sb": 0,
-      "wo": 0
+      "wo": 0,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "f790131f-e7fd-4ff3-978d-39e1c061e3e9",
       "g": 4,
       "b4s": 2,
       "sb": 1,
-      "wo": 0
+      "wo": 0,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "71b879b9-829a-48a0-849b-46f69ba7f9b2",
       "g": 4,
       "b4s": 0,
       "sb": 1,
-      "wo": 2
+      "wo": 2,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "cebec04a-ea7b-4443-9286-2dbcc8e718a3",
       "g": 4,
       "b4s": 0,
       "sb": 0,
-      "wo": 0
+      "wo": 0,
+      "fan": 2,
+      "er": 18
     },
     {
       "player_id": "d42da82d-6311-4e39-8494-8d83ed76a8af",
       "g": 4,
       "b4s": 0,
       "sb": 0,
-      "wo": 0
+      "wo": 0,
+      "fan": 15,
+      "er": 110
     },
     {
       "player_id": "4efcbdea-4dce-4eaa-861c-ef556082a925",
       "g": 4,
       "b4s": 1,
       "sb": 0,
-      "wo": 0
+      "wo": 0,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "e60fb872-9b3c-4ec5-84db-ab60a6f91026",
       "g": 4,
       "b4s": 2,
       "sb": 0,
-      "wo": 0
+      "wo": 0,
+      "fan": null,
+      "er": null
+    },
+    {
+      "player_id": "f790131f-e7fd-4ff3-978d-39e1c061e3e9",
+      "g": 4,
+      "b4s": 2,
+      "sb": 1,
+      "wo": 0,
+      "fan": null,
+      "er": null
+    },
+    {
+      "player_id": "71b879b9-829a-48a0-849b-46f69ba7f9b2",
+      "g": 4,
+      "b4s": 0,
+      "sb": 1,
+      "wo": 2,
+      "fan": null,
+      "er": null
+    },
+    {
+      "player_id": "cebec04a-ea7b-4443-9286-2dbcc8e718a3",
+      "g": 4,
+      "b4s": 0,
+      "sb": 0,
+      "wo": 0,
+      "fan": 2,
+      "er": 18
+    },
+    {
+      "player_id": "d42da82d-6311-4e39-8494-8d83ed76a8af",
+      "g": 4,
+      "b4s": 0,
+      "sb": 0,
+      "wo": 0,
+      "fan": 15,
+      "er": 110
+    },
+    {
+      "player_id": "4efcbdea-4dce-4eaa-861c-ef556082a925",
+      "g": 4,
+      "b4s": 1,
+      "sb": 0,
+      "wo": 0,
+      "fan": null,
+      "er": null
+    },
+    {
+      "player_id": "e60fb872-9b3c-4ec5-84db-ab60a6f91026",
+      "g": 4,
+      "b4s": 2,
+      "sb": 0,
+      "wo": 0,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "6845e279-3366-4e5e-bd5e-c3cf9520fa66",
       "g": 4,
       "b4s": 2,
       "sb": 0,
-      "wo": 0
+      "wo": 0,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "08a1e36b-3e68-4196-aa22-4e6cc6249370",
       "g": 4,
       "b4s": 3,
       "sb": 1,
-      "wo": 0
+      "wo": 0,
+      "fan": 0,
+      "er": 0
     },
     {
       "player_id": "e67adf88-af54-4c43-ba47-39269f5730cf",
       "g": 4,
       "b4s": 1,
       "sb": 0,
-      "wo": 0
+      "wo": 0,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "f7eb5320-768a-43c4-9c75-f5c5d0ca3135",
       "g": 4,
       "b4s": 0,
       "sb": 0,
-      "wo": 0
+      "wo": 0,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "5c7d33ac-3c81-4763-a22f-ed36f78d9c7b",
       "g": 4,
       "b4s": 0,
       "sb": 0,
-      "wo": 0
+      "wo": 0,
+      "fan": 2,
+      "er": 22
     },
     {
       "player_id": "f810a2e4-c76b-4e67-b6fd-0f455a265fb5",
       "g": 4,
       "b4s": 0,
       "sb": 0,
-      "wo": 0
+      "wo": 0,
+      "fan": 6,
+      "er": 78
     },
     {
       "player_id": "4d9ada9f-59af-4c62-ad10-fffe82f9bf19",
       "g": 4,
       "b4s": 0,
       "sb": 0,
-      "wo": 0
+      "wo": 0,
+      "fan": 0,
+      "er": 15
     },
     {
       "player_id": "d7431514-5f70-4571-bc09-f5fedefc6ee0",
       "g": 4,
       "b4s": 0,
       "sb": 0,
-      "wo": 0
+      "wo": 0,
+      "fan": 1,
+      "er": 20
     },
     {
       "player_id": "dc69a71b-b6c8-488c-9dc5-5da1a755427e",
       "g": 4,
       "b4s": 0,
       "sb": 0,
-      "wo": 0
+      "wo": 0,
+      "fan": 4,
+      "er": 32
     },
     {
       "player_id": "ecf51351-26c7-4201-9fbe-09c9938f2717",
       "g": 4,
       "b4s": 0,
       "sb": 1,
-      "wo": 0
+      "wo": 0,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "25f2611e-0d3f-4ee9-b78d-ba8b5bcf6d4c",
       "g": 4,
       "b4s": 1,
       "sb": 0,
-      "wo": 0
+      "wo": 0,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "2b4d37d4-c83d-4b32-87fa-2cb3ba064742",
       "g": 4,
       "b4s": 0,
       "sb": 0,
-      "wo": 0
+      "wo": 0,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "26be712c-a3c8-4941-9f00-fd3f6b992338",
       "g": 4,
       "b4s": 1,
       "sb": 3,
-      "wo": 0
+      "wo": 0,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "3ac97877-a4df-4df1-9599-4520618eb475",
       "g": 4,
       "b4s": 0,
       "sb": 0,
-      "wo": 0
+      "wo": 0,
+      "fan": 1,
+      "er": 29
     },
     {
       "player_id": "c796e556-ea21-4f3f-af98-f5fc908676ab",
       "g": 4,
       "b4s": 0,
       "sb": 1,
-      "wo": 0
+      "wo": 0,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "50655d71-feef-4d33-8b56-bb4c2859eab6",
       "g": 3,
       "b4s": 0,
       "sb": 0,
-      "wo": 1
+      "wo": 1,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "1d1a97b1-3ae5-4cb7-a821-075b1a0b06c8",
       "g": 3,
       "b4s": 0,
       "sb": 0,
-      "wo": 0
+      "wo": 0,
+      "fan": 2,
+      "er": 30
     },
     {
       "player_id": "f50de306-2a23-4d42-b749-ebceed9e1e43",
       "g": 3,
       "b4s": 0,
       "sb": 0,
-      "wo": 0
+      "wo": 0,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "f8a37e42-054e-42ef-ab54-4ebb00288d97",
       "g": 3,
       "b4s": 3,
       "sb": 0,
-      "wo": 0
+      "wo": 0,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "b7aad21c-a083-4254-b2e2-56f211d3473b",
       "g": 3,
       "b4s": 0,
       "sb": 0,
-      "wo": 0
+      "wo": 0,
+      "fan": 15,
+      "er": 66
     },
     {
       "player_id": "3c610cca-961e-4029-83a0-46be55c9ed31",
       "g": 3,
       "b4s": 1,
       "sb": 0,
-      "wo": 0
+      "wo": 0,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "954dcc31-6fc9-4b91-bb18-1bd49d8f7b01",
       "g": 3,
       "b4s": 1,
       "sb": 0,
-      "wo": 0
+      "wo": 0,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "592e613d-6cba-4eda-8c94-9c79498b2b9e",
       "g": 3,
       "b4s": 0,
       "sb": 0,
-      "wo": 2
+      "wo": 2,
+      "fan": 0,
+      "er": 0
     },
     {
       "player_id": "208348e9-a208-4a08-af23-d6d09965b40a",
       "g": 3,
       "b4s": 2,
       "sb": 0,
-      "wo": 0
+      "wo": 0,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "00055d18-0cac-4bb9-9f6d-3d56014ac3ee",
       "g": 3,
       "b4s": 3,
       "sb": 0,
-      "wo": 0
+      "wo": 0,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "1a0093de-4440-4e31-a6f2-672743b75ed1",
       "g": 3,
       "b4s": 1,
       "sb": 1,
-      "wo": 1
+      "wo": 1,
+      "fan": 0,
+      "er": 0
     },
     {
       "player_id": "3a3138d6-d547-40d1-a4f7-f420cdf7cc28",
       "g": 3,
       "b4s": 0,
       "sb": 0,
-      "wo": 0
+      "wo": 0,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "cbcf804d-f31c-4b3e-b920-cad81fdef68f",
       "g": 3,
       "b4s": 0,
       "sb": 0,
-      "wo": 1
+      "wo": 1,
+      "fan": 0,
+      "er": 0
     },
     {
       "player_id": "53bb4d15-7c15-476a-a73d-0614f56acdd2",
       "g": 3,
       "b4s": 2,
       "sb": 1,
-      "wo": 0
+      "wo": 0,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "9b220a84-f147-491a-b776-93a933a5322c",
       "g": 3,
       "b4s": 0,
       "sb": 0,
-      "wo": 1
+      "wo": 1,
+      "fan": 0,
+      "er": 4
     },
     {
       "player_id": "345d4315-b569-463e-b817-3896c85959bb",
       "g": 3,
       "b4s": 0,
       "sb": 0,
-      "wo": 0
+      "wo": 0,
+      "fan": 1,
+      "er": 22
     },
     {
       "player_id": "26bf1dff-0893-4395-9a93-f20a984ad18f",
       "g": 3,
       "b4s": 1,
       "sb": 0,
-      "wo": 0
+      "wo": 0,
+      "fan": 0,
+      "er": 0
     },
     {
       "player_id": "13d5dde4-f475-4306-b09a-582b9ed15045",
       "g": 3,
       "b4s": 0,
       "sb": 0,
-      "wo": 0
+      "wo": 0,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "e1054ad8-de5e-4e5f-9400-b30d02a6f694",
       "g": 3,
       "b4s": 0,
       "sb": 0,
-      "wo": 1
+      "wo": 1,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "430123f4-f1b2-4226-89bc-8fe7c35ec01f",
       "g": 3,
       "b4s": 1,
       "sb": 2,
-      "wo": 0
+      "wo": 0,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "0a62aba5-4224-4a8b-9f4a-33a8341ba6c4",
       "g": 3,
       "b4s": 0,
       "sb": 0,
-      "wo": 0
+      "wo": 0,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "5ccdd009-1b4f-4632-9177-3b0a3835feed",
       "g": 3,
       "b4s": 0,
       "sb": 0,
-      "wo": 0
+      "wo": 0,
+      "fan": 2,
+      "er": 36
     },
     {
       "player_id": "efc76d18-f17f-4c8a-8e45-7755f7390d98",
       "g": 3,
       "b4s": 1,
       "sb": 0,
-      "wo": 0
+      "wo": 0,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "ba863dcb-7ed8-4bf4-8abb-6bc5c92f4435",
       "g": 3,
       "b4s": 1,
       "sb": 0,
-      "wo": 0
+      "wo": 0,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "52612262-cd8b-4790-9fdc-7f7e61882346",
       "g": 3,
       "b4s": 0,
       "sb": 0,
-      "wo": 0
+      "wo": 0,
+      "fan": 3,
+      "er": 44
     },
     {
       "player_id": "6a5175bc-7949-471a-b983-7d3752406a91",
       "g": 3,
       "b4s": 0,
       "sb": 0,
-      "wo": 0
+      "wo": 0,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "06e01803-167d-489d-949c-eb2dd3458a12",
       "g": 3,
       "b4s": 0,
       "sb": 0,
-      "wo": 0
+      "wo": 0,
+      "fan": 7,
+      "er": 65
     },
     {
       "player_id": "177e7771-1d75-4bf6-a59e-d26a3f61f871",
       "g": 3,
       "b4s": 1,
       "sb": 0,
-      "wo": 1
+      "wo": 1,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "5efbac07-c661-44a9-80cb-cb50e51d0097",
       "g": 3,
       "b4s": 0,
       "sb": 0,
-      "wo": 0
+      "wo": 0,
+      "fan": 7,
+      "er": 64
     },
     {
       "player_id": "6bbe695c-4bf3-4b4c-8c51-4612b2708793",
       "g": 3,
       "b4s": 0,
       "sb": 0,
-      "wo": 0
+      "wo": 0,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "bb772594-21c1-477c-ab7c-5faec7582503",
       "g": 3,
       "b4s": 0,
       "sb": 2,
-      "wo": 0
+      "wo": 0,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "9ecdc540-4fac-4e31-809f-ffa0b1c66702",
       "g": 3,
       "b4s": 1,
       "sb": 0,
-      "wo": 1
+      "wo": 1,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "f26e6051-a4fa-4ce7-9a03-f617e275857f",
       "g": 3,
       "b4s": 3,
       "sb": 0,
-      "wo": 0
+      "wo": 0,
+      "fan": 0,
+      "er": 0
     },
     {
       "player_id": "cb967ba9-3528-4902-be98-e1d7db68be2f",
       "g": 3,
       "b4s": 0,
       "sb": 0,
-      "wo": 0
+      "wo": 0,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "33b3b7cf-97d7-4459-8a77-cc7697292e0f",
       "g": 3,
       "b4s": 1,
       "sb": 0,
-      "wo": 0
+      "wo": 0,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "b9e87463-4be7-4e5c-96b0-307cae4c3bc9",
       "g": 3,
       "b4s": 1,
       "sb": 0,
-      "wo": 0
+      "wo": 0,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "3a3138d6-d547-40d1-a4f7-f420cdf7cc28",
       "g": 3,
       "b4s": 0,
       "sb": 0,
-      "wo": 0
+      "wo": 0,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "83aa729d-1724-4076-aacc-973d6ee38035",
       "g": 3,
       "b4s": 0,
       "sb": 4,
-      "wo": 0
+      "wo": 0,
+      "fan": 0,
+      "er": 0
     },
     {
       "player_id": "882a5891-9d14-46b7-9e3f-b96ce6af7bc7",
       "g": 3,
       "b4s": 4,
       "sb": 0,
-      "wo": 0
+      "wo": 0,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "3752a03c-4c4f-4e50-ae1f-4afc7901078c",
       "g": 3,
       "b4s": 0,
       "sb": 0,
-      "wo": 0
+      "wo": 0,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "d00404ac-e7f0-405f-93ec-0a415981866a",
       "g": 3,
       "b4s": 0,
       "sb": 0,
-      "wo": 0
+      "wo": 0,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "ba01714a-1fac-4aa0-99ea-3502dab1a634",
       "g": 2,
       "b4s": 0,
       "sb": 0,
-      "wo": 0
+      "wo": 0,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "3752a03c-4c4f-4e50-ae1f-4afc7901078c",
       "g": 2,
       "b4s": 0,
       "sb": 0,
-      "wo": 0
+      "wo": 0,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "3aea7f92-7d90-493a-a8ce-9abb53664b2b",
       "g": 2,
       "b4s": 0,
       "sb": 0,
-      "wo": 0
+      "wo": 0,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "e1054ad8-de5e-4e5f-9400-b30d02a6f694",
       "g": 2,
       "b4s": 0,
       "sb": 0,
-      "wo": 0
+      "wo": 0,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "2776a7ed-52f3-4f04-8f5e-8a8fa69f4960",
       "g": 2,
       "b4s": 0,
       "sb": 0,
-      "wo": 0
+      "wo": 0,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "f810a2e4-c76b-4e67-b6fd-0f455a265fb5",
       "g": 2,
       "b4s": 0,
       "sb": 0,
-      "wo": 0
+      "wo": 0,
+      "fan": 6,
+      "er": 78
     },
     {
       "player_id": "8a4f17aa-225a-4a93-ab4a-5068c7f5a1aa",
       "g": 2,
       "b4s": 0,
       "sb": 0,
-      "wo": 0
+      "wo": 0,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "0152ecda-db0d-40db-b944-22d7af88c878",
       "g": 2,
       "b4s": 1,
       "sb": 0,
-      "wo": 0
+      "wo": 0,
+      "fan": 0,
+      "er": 0
     },
     {
       "player_id": "94e91667-364f-4736-95c5-0a494678c401",
       "g": 2,
       "b4s": 0,
       "sb": 2,
-      "wo": 0
+      "wo": 0,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "521989c4-ce1b-45f8-9c60-393662571404",
       "g": 2,
       "b4s": 0,
       "sb": 0,
-      "wo": 0
+      "wo": 0,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "9716c973-8e7c-4588-a6fa-c0195a1b5c71",
       "g": 2,
       "b4s": 0,
       "sb": 1,
-      "wo": 0
+      "wo": 0,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "5d0bab59-bb46-40a6-87da-bd79422ae90b",
       "g": 2,
       "b4s": 0,
       "sb": 0,
-      "wo": 0
+      "wo": 0,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "b0c2abe3-25e8-4ddb-b48e-58c429ceec36",
       "g": 2,
       "b4s": 0,
       "sb": 0,
-      "wo": 0
+      "wo": 0,
+      "fan": 0,
+      "er": 13
     },
     {
       "player_id": "311d23a6-2f14-4afb-9712-8fb8c49de5d5",
       "g": 2,
       "b4s": 0,
       "sb": 0,
-      "wo": 0
+      "wo": 0,
+      "fan": 7,
+      "er": 53
     },
     {
       "player_id": "75096d29-3b3c-423a-b980-746e7df7cc7a",
       "g": 2,
       "b4s": 0,
       "sb": 0,
-      "wo": 0
+      "wo": 0,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "358f3832-2058-4b94-bb99-d31618902419",
       "g": 2,
       "b4s": 1,
       "sb": 1,
-      "wo": 0
+      "wo": 0,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "3882d44e-ec95-40a5-8df8-e164583efcbe",
       "g": 2,
       "b4s": 2,
       "sb": 2,
-      "wo": 0
+      "wo": 0,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "807da9ac-ddc2-4e28-8454-f1dd9c893ae3",
       "g": 2,
       "b4s": 0,
       "sb": 0,
-      "wo": 0
+      "wo": 0,
+      "fan": 5,
+      "er": 77
     },
     {
       "player_id": "8554be99-c96b-45fc-b888-2e0674f47e8e",
       "g": 2,
       "b4s": 1,
       "sb": 0,
-      "wo": 0
+      "wo": 0,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "d236da1d-7773-4768-8a2a-52ace11a8b91",
       "g": 2,
       "b4s": 1,
       "sb": 0,
-      "wo": 0
+      "wo": 0,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "900ac96e-241f-44c9-8d32-4313dd0d2904",
       "g": 2,
       "b4s": 0,
       "sb": 0,
-      "wo": 0
+      "wo": 0,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "56de649b-575b-4e07-b6b6-345b0cd952f1",
       "g": 2,
       "b4s": 0,
       "sb": 0,
-      "wo": 0
+      "wo": 0,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "5e013faa-2bf8-4752-8a6e-52a6b0f3b6dc",
       "g": 2,
       "b4s": 1,
       "sb": 0,
-      "wo": 0
+      "wo": 0,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "e9237c8e-69d0-4213-950a-e68e0e9f5813",
       "g": 2,
       "b4s": 0,
       "sb": 0,
-      "wo": 0
+      "wo": 0,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "662a3336-02f3-4015-a86c-f5763b3ab346",
       "g": 2,
       "b4s": 0,
       "sb": 0,
-      "wo": 0
+      "wo": 0,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "b0e7edc1-da68-4277-840a-8e11335d124c",
       "g": 2,
       "b4s": 0,
       "sb": 1,
-      "wo": 0
+      "wo": 0,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "3128552b-56c5-4d18-8a61-844cf08b6c75",
       "g": 2,
       "b4s": 1,
       "sb": 0,
-      "wo": 0
+      "wo": 0,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "8114dba0-2bbd-4372-a49c-037292948f4f",
       "g": 2,
       "b4s": 1,
       "sb": 0,
-      "wo": 1
+      "wo": 1,
+      "fan": 0,
+      "er": 0
     },
     {
       "player_id": "86bec9e8-c365-4244-a3b7-4aecd69ed794",
       "g": 2,
       "b4s": 0,
       "sb": 0,
-      "wo": 0
+      "wo": 0,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "d817d3f2-3d70-4518-95b3-9ccbefd82517",
       "g": 2,
       "b4s": 1,
       "sb": 1,
-      "wo": 1
+      "wo": 1,
+      "fan": 0,
+      "er": 0
     },
     {
       "player_id": "e4b809c3-fe86-4723-8e05-61717c1243a6",
       "g": 2,
       "b4s": 0,
       "sb": 0,
-      "wo": 0
+      "wo": 0,
+      "fan": 7,
+      "er": 28
     },
     {
       "player_id": "b1668bed-762e-493f-979c-b6849e766e80",
       "g": 2,
       "b4s": 1,
       "sb": 0,
-      "wo": 0
+      "wo": 0,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "c5979669-c311-4af8-80dc-2c41d680ac15",
       "g": 2,
       "b4s": 0,
       "sb": 0,
-      "wo": 0
+      "wo": 0,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "ce1d0ae2-f100-4f3e-9872-f5f6d10fd27c",
       "g": 2,
       "b4s": 0,
       "sb": 0,
-      "wo": 0
+      "wo": 0,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "0360ec47-3290-46a6-98c3-47fd4c3ea752",
       "g": 2,
       "b4s": 0,
       "sb": 0,
-      "wo": 0
+      "wo": 0,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "078cc27c-0db3-438d-8dc8-d71b19dce101",
       "g": 2,
       "b4s": 0,
       "sb": 0,
-      "wo": 0
+      "wo": 0,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "6034b3d0-a339-4161-8a95-a3f70a911f45",
       "g": 2,
       "b4s": 0,
       "sb": 1,
-      "wo": 0
+      "wo": 0,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "371aa553-7bbe-4bad-9a98-a4893cb1bd02",
       "g": 2,
       "b4s": 0,
       "sb": 0,
-      "wo": 0
+      "wo": 0,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "bd90e49e-794f-4a3f-83db-645f9249d0a7",
       "g": 2,
       "b4s": 1,
       "sb": 0,
-      "wo": 0
+      "wo": 0,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "00160466-8a44-4129-aa3b-cdf0e54abd79",
       "g": 2,
       "b4s": 0,
       "sb": 0,
-      "wo": 0
+      "wo": 0,
+      "fan": 3,
+      "er": 31
     },
     {
       "player_id": "8e395559-80e8-4c2d-9aba-d32a238868c1",
       "g": 2,
       "b4s": 0,
       "sb": 0,
-      "wo": 0
+      "wo": 0,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "ac4051d8-1ff8-482d-9537-579a4108cc57",
       "g": 2,
       "b4s": 0,
       "sb": 0,
-      "wo": 0
+      "wo": 0,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "9b89172f-227a-4ae3-ae67-7fa1365f5e11",
       "g": 2,
       "b4s": 1,
       "sb": 1,
-      "wo": 0
+      "wo": 0,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "ee456e4a-10be-48a7-8271-bbb0ffdbd6be",
       "g": 2,
       "b4s": 0,
       "sb": 0,
-      "wo": 0
+      "wo": 0,
+      "fan": 1,
+      "er": 11
     },
     {
       "player_id": "acabac69-7a3a-4d4d-ab81-f1abfd33f793",
       "g": 2,
       "b4s": 0,
       "sb": 0,
-      "wo": 0
+      "wo": 0,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "9c4119df-eb35-4e01-8003-397d2975b427",
       "g": 2,
       "b4s": 0,
       "sb": 0,
-      "wo": 0
+      "wo": 0,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "627f2cd0-76ef-4e61-ab28-80b5878227da",
       "g": 2,
       "b4s": 1,
       "sb": 0,
-      "wo": 0
+      "wo": 0,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "2d0af915-0d04-4173-ad0d-7badb5dab9c7",
       "g": 2,
       "b4s": 1,
       "sb": 0,
-      "wo": 0
+      "wo": 0,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "741532bc-f90c-4eb1-b5be-251f72cd7fe0",
       "g": 2,
       "b4s": 1,
       "sb": 0,
-      "wo": 0
+      "wo": 0,
+      "fan": 1,
+      "er": 8
     },
     {
       "player_id": "78d964c6-3b69-49db-80d2-53540d42ac7e",
       "g": 2,
       "b4s": 0,
       "sb": 0,
-      "wo": 0
+      "wo": 0,
+      "fan": 0,
+      "er": 0
     },
     {
       "player_id": "84182a75-b926-443e-8bf1-eeae4fadd504",
       "g": 2,
       "b4s": 0,
       "sb": 0,
-      "wo": 0
+      "wo": 0,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "8a4f17aa-225a-4a93-ab4a-5068c7f5a1aa",
       "g": 2,
       "b4s": 1,
       "sb": 0,
-      "wo": 0
+      "wo": 0,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "f491be8c-9487-4173-8007-b0df05608b61",
       "g": 2,
       "b4s": 0,
       "sb": 0,
-      "wo": 0
+      "wo": 0,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "b0769181-8182-45d3-a7c3-c0214b1f65e4",
       "g": 2,
       "b4s": 0,
       "sb": 0,
-      "wo": 0
+      "wo": 0,
+      "fan": 3,
+      "er": 29
     },
     {
       "player_id": "6e85ac72-8206-4d4a-8ea7-c22643df9a28",
       "g": 2,
       "b4s": 0,
       "sb": 0,
-      "wo": 0
+      "wo": 0,
+      "fan": 4,
+      "er": 35
     },
     {
       "player_id": "06c5b337-e0ee-411c-861f-fa5378947ebe",
       "g": 2,
       "b4s": 0,
       "sb": 0,
-      "wo": 0
+      "wo": 0,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "0b6b88d2-97a9-44a9-884e-94a7c97780e5",
       "g": 2,
       "b4s": 0,
       "sb": 0,
-      "wo": 0
+      "wo": 0,
+      "fan": 1,
+      "er": 14
     },
     {
       "player_id": "16507873-7883-44ce-9400-dae4526ac56e",
       "g": 2,
       "b4s": 0,
       "sb": 0,
-      "wo": 0
+      "wo": 0,
+      "fan": 0,
+      "er": 26
     },
     {
       "player_id": "e8244fc9-4cfb-4649-aab8-7ef46866cd4c",
       "g": 2,
       "b4s": 1,
       "sb": 0,
-      "wo": 0
+      "wo": 0,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "45251984-6887-442f-9b4b-ee840355c891",
       "g": 2,
       "b4s": 0,
       "sb": 0,
-      "wo": 0
+      "wo": 0,
+      "fan": 12,
+      "er": 107
     },
     {
       "player_id": "4897a5b0-b8af-4c54-9337-0ffa61370c3b",
       "g": 2,
       "b4s": 0,
       "sb": 0,
-      "wo": 0
+      "wo": 0,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "d2b18d70-beae-4d92-a7c2-41877f4917d5",
       "g": 2,
       "b4s": 2,
       "sb": 0,
-      "wo": 0
+      "wo": 0,
+      "fan": 0,
+      "er": 0
     },
     {
       "player_id": "99081635-e71c-4b43-b562-fd6e3e203f54",
       "g": 2,
       "b4s": 0,
       "sb": 0,
-      "wo": 0
+      "wo": 0,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "312f346e-6e2a-43a0-af8a-5485f1690f5a",
       "g": 2,
       "b4s": 3,
       "sb": 0,
-      "wo": 0
+      "wo": 0,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "7ab4d2d5-f86a-40e6-813a-47a9b3df9148",
       "g": 2,
       "b4s": 0,
       "sb": 1,
-      "wo": 0
+      "wo": 0,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "3962b0e7-8632-447e-976b-f4113a22613c",
       "g": 2,
       "b4s": 1,
       "sb": 1,
-      "wo": 0
+      "wo": 0,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "c4837d78-d537-41c0-9f1f-cc30b4374039",
       "g": 2,
       "b4s": 0,
       "sb": 0,
-      "wo": 0
+      "wo": 0,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "3db946b3-c063-4b7d-9f25-2a81b214b08d",
       "g": 2,
       "b4s": 2,
       "sb": 0,
-      "wo": 0
+      "wo": 0,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "4a3bc555-372e-4fb3-979a-a7ded57fdd44",
       "g": 2,
       "b4s": 0,
       "sb": 0,
-      "wo": 0
+      "wo": 0,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "d2f82077-18e3-4c23-b114-cac832c2b9d1",
       "g": 2,
       "b4s": 1,
       "sb": 0,
-      "wo": 0
+      "wo": 0,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "07875a55-38fd-4e64-846e-ea381f708c5d",
       "g": 2,
       "b4s": 1,
       "sb": 0,
-      "wo": 0
+      "wo": 0,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "2aba731d-0781-4280-9cee-ef32e2c5b78b",
       "g": 2,
       "b4s": 0,
       "sb": 0,
-      "wo": 0
+      "wo": 0,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "fb47819a-33d4-4d4e-969f-256f36926539",
       "g": 2,
       "b4s": 0,
       "sb": 2,
-      "wo": 0
+      "wo": 0,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "bd90e49e-794f-4a3f-83db-645f9249d0a7",
       "g": 2,
       "b4s": 0,
       "sb": 0,
-      "wo": 1
+      "wo": 1,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "398e8628-4b2f-4bd0-9eb4-312f1f5be56a",
       "g": 2,
       "b4s": 1,
       "sb": 0,
-      "wo": 0
+      "wo": 0,
+      "fan": 0,
+      "er": 0
     },
     {
       "player_id": "3f7599f5-ba74-480c-806b-8d61a8c23184",
       "g": 2,
       "b4s": 1,
       "sb": 0,
-      "wo": 0
+      "wo": 0,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "ce776245-00b4-4a13-868d-147d2e576233",
       "g": 2,
       "b4s": 0,
       "sb": 0,
-      "wo": 0
+      "wo": 0,
+      "fan": 1,
+      "er": 34
     },
     {
       "player_id": "968a6ea9-732a-4fae-947b-b51631e0b049",
       "g": 2,
       "b4s": 0,
       "sb": 0,
-      "wo": 0
+      "wo": 0,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "5b1562aa-94c7-4b98-9b6d-f96a5d1a214b",
       "g": 2,
       "b4s": 1,
       "sb": 0,
-      "wo": 0
+      "wo": 0,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "616d1f24-f105-435a-9262-3ddc33eefd72",
       "g": 2,
       "b4s": 0,
       "sb": 0,
-      "wo": 0
+      "wo": 0,
+      "fan": 1,
+      "er": 26
     },
     {
       "player_id": "f7ad99c7-5286-4c69-a6fc-0511cc5c6089",
       "g": 2,
       "b4s": 2,
       "sb": 0,
-      "wo": 0
+      "wo": 0,
+      "fan": 0,
+      "er": 0
     },
     {
       "player_id": "b42a473e-b41d-4058-b87c-8e4e936c6c52",
       "g": 2,
       "b4s": 0,
       "sb": 0,
-      "wo": 0
+      "wo": 0,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "08a1e36b-3e68-4196-aa22-4e6cc6249370",
       "g": 2,
       "b4s": 2,
       "sb": 0,
-      "wo": 0
+      "wo": 0,
+      "fan": 0,
+      "er": 0
     },
     {
       "player_id": "1b03f588-1185-4227-a686-2d61203d549c",
       "g": 2,
       "b4s": 0,
       "sb": 0,
-      "wo": 0
+      "wo": 0,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "41be978d-b7bb-4279-be79-f1a165f25a6c",
       "g": 2,
       "b4s": 0,
       "sb": 0,
-      "wo": 0
+      "wo": 0,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "b4fc084c-edb4-47dd-8cdc-cb79a5babba0",
       "g": 1,
       "b4s": 0,
       "sb": 0,
-      "wo": 0
+      "wo": 0,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "fd685731-a6ba-4229-bbed-5d750f7eea91",
       "g": 1,
       "b4s": 0,
       "sb": 0,
-      "wo": 0
+      "wo": 0,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "78d964c6-3b69-49db-80d2-53540d42ac7e",
       "g": 1,
       "b4s": 0,
       "sb": 0,
-      "wo": 0
+      "wo": 0,
+      "fan": 0,
+      "er": 0
     },
     {
       "player_id": "83e48d80-6a27-4f52-81fb-00e512325c8f",
       "g": 1,
       "b4s": 0,
       "sb": 0,
-      "wo": 0
+      "wo": 0,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "422930f2-d25d-49ce-b08f-2324365dbc82",
       "g": 1,
       "b4s": 0,
       "sb": 0,
-      "wo": 0
+      "wo": 0,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "8919e201-b8dc-4b90-ab9d-9aa30c0f431a",
       "g": 1,
       "b4s": 0,
       "sb": 0,
-      "wo": 0
+      "wo": 0,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "d0791b83-2aaa-4b1c-82a0-6587136cade3",
       "g": 1,
       "b4s": 0,
       "sb": 0,
-      "wo": 0
+      "wo": 0,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "d703df4b-fff1-4856-8332-600a9b82875a",
       "g": 1,
       "b4s": 0,
       "sb": 0,
-      "wo": 0
+      "wo": 0,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "09ef68c1-0030-4270-88fa-84c16ebe9537",
       "g": 1,
       "b4s": 0,
       "sb": 0,
-      "wo": 0
+      "wo": 0,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "db74d735-d0c6-4493-bdec-0eb31c9c1d6e",
       "g": 1,
       "b4s": 0,
       "sb": 0,
-      "wo": 0
+      "wo": 0,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "54e06824-218f-4aca-b2f4-6a01d351d6bd",
       "g": 1,
       "b4s": 0,
       "sb": 0,
-      "wo": 0
+      "wo": 0,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "14d12c4a-5a0f-4dbd-908b-8df688df9a77",
       "g": 1,
       "b4s": 0,
       "sb": 0,
-      "wo": 0
+      "wo": 0,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "9cb70cb6-af97-4dfd-9991-a82dd6fbbe75",
       "g": 1,
       "b4s": 0,
       "sb": 0,
-      "wo": 0
+      "wo": 0,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "5c7dc637-942b-4c90-bccb-e6640d8739c1",
       "g": 1,
       "b4s": 1,
       "sb": 0,
-      "wo": 0
+      "wo": 0,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "e79f9176-a713-484b-babc-42e1462fe8f9",
       "g": 1,
       "b4s": 0,
       "sb": 0,
-      "wo": 0
+      "wo": 0,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "62866f02-257f-4298-9bec-c736e9263309",
       "g": 1,
       "b4s": 1,
       "sb": 0,
-      "wo": 0
+      "wo": 0,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "23afbfa0-b2c8-43e6-888f-8ac6f293f34e",
       "g": 1,
       "b4s": 0,
       "sb": 0,
-      "wo": 0
+      "wo": 0,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "ef5fb650-eea2-4e44-8710-995a21eb7f70",
       "g": 1,
       "b4s": 0,
       "sb": 2,
-      "wo": 0
+      "wo": 0,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "f4381843-d983-411b-a419-446ad8bcc7a8",
       "g": 1,
       "b4s": 0,
       "sb": 0,
-      "wo": 0
+      "wo": 0,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "afeab920-9249-450e-a51e-54d4c4c0753b",
       "g": 1,
       "b4s": 0,
       "sb": 0,
-      "wo": 0
+      "wo": 0,
+      "fan": 0,
+      "er": 15
     },
     {
       "player_id": "6e759468-9bd3-493b-8bdc-c92b095a24e5",
       "g": 1,
       "b4s": 0,
       "sb": 0,
-      "wo": 0
+      "wo": 0,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "2d8b7830-16f2-415e-bf5d-11be3fe024fe",
       "g": 1,
       "b4s": 0,
       "sb": 0,
-      "wo": 0
+      "wo": 0,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "b51ce01c-c829-4a9b-9c22-fb0b37fe9051",
       "g": 1,
       "b4s": 0,
       "sb": 0,
-      "wo": 0
+      "wo": 0,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "35573914-2a9b-49ce-bb8f-7de7da2020a8",
       "g": 1,
       "b4s": 1,
       "sb": 0,
-      "wo": 0
+      "wo": 0,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "ba77df2d-ea2f-4e45-bc48-d658fb28db18",
       "g": 1,
       "b4s": 0,
       "sb": 0,
-      "wo": 0
+      "wo": 0,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "37fc2c64-07bb-456e-9634-81aa71081f43",
       "g": 1,
       "b4s": 0,
       "sb": 0,
-      "wo": 0
+      "wo": 0,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "80699aa0-ae06-404a-991c-b75e99a191cf",
       "g": 1,
       "b4s": 0,
       "sb": 0,
-      "wo": 0
+      "wo": 0,
+      "fan": 5,
+      "er": 26
     },
     {
       "player_id": "3b9d9d3d-1ccb-4060-9cce-037dd47270da",
       "g": 1,
       "b4s": 0,
       "sb": 0,
-      "wo": 0
+      "wo": 0,
+      "fan": 1,
+      "er": 9
     },
     {
       "player_id": "48657835-3f61-43dc-b75d-605365365056",
       "g": 1,
       "b4s": 0,
       "sb": 0,
-      "wo": 0
+      "wo": 0,
+      "fan": 0,
+      "er": 0
     },
     {
       "player_id": "d1bf715e-fe05-4cf6-8191-57873e064345",
       "g": 1,
       "b4s": 0,
       "sb": 0,
-      "wo": 0
+      "wo": 0,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "8fc2e127-6b84-449d-b55b-0bb258122919",
       "g": 1,
       "b4s": 0,
       "sb": 0,
-      "wo": 1
+      "wo": 1,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "06374ace-0661-4ebe-8fd5-a6b5fd25af73",
       "g": 1,
       "b4s": 0,
       "sb": 0,
-      "wo": 0
+      "wo": 0,
+      "fan": 0,
+      "er": 13
     },
     {
       "player_id": "0b38ec20-e449-46d6-adb8-892bda3c7f37",
       "g": 1,
       "b4s": 0,
       "sb": 0,
-      "wo": 0
+      "wo": 0,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "152da670-e56a-4dd5-a8f8-f7d83b86a614",
       "g": 1,
       "b4s": 0,
       "sb": 0,
-      "wo": 0
+      "wo": 0,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "e239d04a-3d15-43fd-8b24-6bef8b5bf80d",
       "g": 1,
       "b4s": 0,
       "sb": 0,
-      "wo": 0
+      "wo": 0,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "9cfd92fb-b5ac-40c5-9266-417fd12b8fe2",
       "g": 1,
       "b4s": 0,
       "sb": 0,
-      "wo": 0
+      "wo": 0,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "65473ea7-1cec-4674-b634-fea66003f8ca",
       "g": 1,
       "b4s": 0,
       "sb": 0,
-      "wo": 0
+      "wo": 0,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "f02f6a5a-a88b-48cb-9ebe-cf5130949870",
       "g": 1,
       "b4s": 0,
       "sb": 0,
-      "wo": 0
+      "wo": 0,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "a9f32bbb-f877-4f58-865b-bad35c33ec6b",
       "g": 1,
       "b4s": 0,
       "sb": 0,
-      "wo": 0
+      "wo": 0,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "6a4c6e2d-5355-4844-8f18-b0d8fdffbc5d",
       "g": 1,
       "b4s": 1,
       "sb": 0,
-      "wo": 0
+      "wo": 0,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "28e2810e-5901-48d1-9729-5176c40e7d28",
       "g": 1,
       "b4s": 0,
       "sb": 0,
-      "wo": 0
+      "wo": 0,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "baae0f2e-ca4b-4b9d-9d73-40457eb162e0",
       "g": 1,
       "b4s": 0,
       "sb": 0,
-      "wo": 0
+      "wo": 0,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "78e8f487-37f9-4a85-8f24-cca1aafce86a",
       "g": 1,
       "b4s": 0,
       "sb": 0,
-      "wo": 0
+      "wo": 0,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "c7ceaf1c-ac58-43b3-8bc8-43f98815829c",
       "g": 1,
       "b4s": 0,
       "sb": 0,
-      "wo": 0
+      "wo": 0,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "4502ce61-c552-4259-b01e-cbd484fe9593",
       "g": 1,
       "b4s": 0,
       "sb": 0,
-      "wo": 0
+      "wo": 0,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "cd7ff7d4-e956-4cac-9c62-b82be0859d15",
       "g": 1,
       "b4s": 0,
       "sb": 0,
-      "wo": 0
+      "wo": 0,
+      "fan": 0,
+      "er": 0
     },
     {
       "player_id": "8a739047-9019-4498-81f6-6ba5e69c7303",
       "g": 1,
       "b4s": 1,
       "sb": 0,
-      "wo": 0
+      "wo": 0,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "4dc13a2d-3916-4cf9-aabc-5e19eac96914",
       "g": 1,
       "b4s": 0,
       "sb": 0,
-      "wo": 0
+      "wo": 0,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "d78331bf-ec41-4e9e-b6f4-631345ee4f2a",
       "g": 1,
       "b4s": 0,
       "sb": 0,
-      "wo": 0
+      "wo": 0,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "526db0c7-21b9-4dec-ada3-b13f8dfd09e0",
       "g": 1,
       "b4s": 1,
       "sb": 1,
-      "wo": 0
+      "wo": 0,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "dcb0666e-f3b9-4457-b185-6f0675be8724",
       "g": 1,
       "b4s": 0,
       "sb": 1,
-      "wo": 0
+      "wo": 0,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "98aaae0c-ed02-4169-bee2-0a93e284f6b9",
       "g": 1,
       "b4s": 0,
       "sb": 0,
-      "wo": 0
+      "wo": 0,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "1738a490-d767-491e-909d-271c410dc98d",
       "g": 1,
       "b4s": 0,
       "sb": 0,
-      "wo": 0
+      "wo": 0,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "1f41158f-efdc-428c-b4a8-87f52c37afde",
       "g": 1,
       "b4s": 0,
       "sb": 0,
-      "wo": 0
+      "wo": 0,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "a334094c-3c51-4fd5-8f29-c79f5313b8b2",
       "g": 1,
       "b4s": 0,
       "sb": 0,
-      "wo": 2
+      "wo": 2,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "24364533-0c09-4358-94a5-e854d7ae24c3",
       "g": 1,
       "b4s": 0,
       "sb": 0,
-      "wo": 0
+      "wo": 0,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "f0afd749-24fc-431c-827d-0ba6fb7a7035",
       "g": 1,
       "b4s": 0,
       "sb": 0,
-      "wo": 0
+      "wo": 0,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "6b1d03e8-e600-4535-bef5-46b7d5d9327b",
       "g": 1,
       "b4s": 0,
       "sb": 0,
-      "wo": 0
+      "wo": 0,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "6ff27edc-42d8-4e2b-af44-42393a0fc955",
       "g": 1,
       "b4s": 0,
       "sb": 0,
-      "wo": 0
+      "wo": 0,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "f9cba98b-7c65-4779-9557-72ee6e4299d1",
       "g": 1,
       "b4s": 0,
       "sb": 0,
-      "wo": 0
+      "wo": 0,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "b887f19e-bdaf-4389-9dc4-8e3711c16f77",
       "g": 1,
       "b4s": 0,
       "sb": 0,
-      "wo": 0
+      "wo": 0,
+      "fan": 0,
+      "er": 12
     },
     {
       "player_id": "755bcb64-2fd2-4385-920e-74d9e5f2d566",
       "g": 1,
       "b4s": 0,
       "sb": 0,
-      "wo": 0
+      "wo": 0,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "363f3b4d-475e-49db-94f2-751762dcbaee",
       "g": 1,
       "b4s": 0,
       "sb": 0,
-      "wo": 0
+      "wo": 0,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "7980c294-2e63-4c8e-87c0-ae268a663d7e",
       "g": 1,
       "b4s": 0,
       "sb": 1,
-      "wo": 0
+      "wo": 0,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "c4818480-6207-463a-bf81-dcf58921efc5",
       "g": 1,
       "b4s": 0,
       "sb": 0,
-      "wo": 0
+      "wo": 0,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "3d1ede93-2ec8-4168-9500-eec74ab1439b",
       "g": 1,
       "b4s": 0,
       "sb": 0,
-      "wo": 0
+      "wo": 0,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "45251984-6887-442f-9b4b-ee840355c891",
       "g": 1,
       "b4s": 0,
       "sb": 0,
-      "wo": 0
+      "wo": 0,
+      "fan": 12,
+      "er": 107
     },
     {
       "player_id": "8bb6ec6c-86da-45e8-8dde-739a005ed1a8",
       "g": 1,
       "b4s": 0,
       "sb": 0,
-      "wo": 0
+      "wo": 0,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "489f171d-8dc1-49cb-8c99-f496989c7160",
       "g": 1,
       "b4s": 0,
       "sb": 0,
-      "wo": 0
+      "wo": 0,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "01fee8c1-b52a-421d-bf06-196aa5235c3f",
       "g": 1,
       "b4s": 0,
       "sb": 2,
-      "wo": 0
+      "wo": 0,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "06e85079-8063-4964-8a6d-698b84e06a1a",
       "g": 1,
       "b4s": 0,
       "sb": 0,
-      "wo": 0
+      "wo": 0,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "96452790-25b3-45a4-9f09-8ef9c9f226f0",
       "g": 1,
       "b4s": 0,
       "sb": 0,
-      "wo": 0
+      "wo": 0,
+      "fan": 0,
+      "er": 0
     },
     {
       "player_id": "53840ab6-db50-45bb-b708-2cfd76bb805e",
       "g": 1,
       "b4s": 0,
       "sb": 0,
-      "wo": 0
+      "wo": 0,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "0cd9a5be-9047-4866-880a-e666596ec2c3",
       "g": 1,
       "b4s": 0,
       "sb": 0,
-      "wo": 0
+      "wo": 0,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "995762cd-9c8c-4996-b6dc-70a1a9e721a1",
       "g": 1,
       "b4s": 0,
       "sb": 0,
-      "wo": 0
+      "wo": 0,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "9e597c29-946b-41ba-ab38-a6d4ac737d67",
       "g": 1,
       "b4s": 0,
       "sb": 0,
-      "wo": 0
+      "wo": 0,
+      "fan": 5,
+      "er": 34
     },
     {
       "player_id": "e99a9941-e3b3-4f4d-a84c-ff58fcfd25ea",
       "g": 1,
       "b4s": 0,
       "sb": 0,
-      "wo": 0
+      "wo": 0,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "a372fcb8-fc71-4f4a-9a5e-df070aa72339",
       "g": 1,
       "b4s": 0,
       "sb": 0,
-      "wo": 0
+      "wo": 0,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "256ce8f8-2021-435c-8e54-9c59052577e4",
       "g": 1,
       "b4s": 0,
       "sb": 0,
-      "wo": 0
+      "wo": 0,
+      "fan": 0,
+      "er": 0
     },
     {
       "player_id": "f162d4db-e409-4277-9191-23573ab66e7a",
       "g": 1,
       "b4s": 0,
       "sb": 0,
-      "wo": 0
+      "wo": 0,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "6bfe1721-e020-4927-83de-3d9f4fdbdaf4",
       "g": 1,
       "b4s": 0,
       "sb": 0,
-      "wo": 0
+      "wo": 0,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "2aa5977b-8623-49da-8f1b-ff7841bc54ee",
       "g": 1,
       "b4s": 0,
       "sb": 1,
-      "wo": 0
+      "wo": 0,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "31dddf64-ecce-4c31-b70d-4c3373409726",
       "g": 1,
       "b4s": 0,
       "sb": 0,
-      "wo": 0
+      "wo": 0,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "7594a11b-edf9-45fa-b163-5c282d467d4e",
       "g": 1,
       "b4s": 0,
       "sb": 0,
-      "wo": 0
+      "wo": 0,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "36bc27fd-b40f-42dc-8858-6bfbb943a901",
       "g": 1,
       "b4s": 0,
       "sb": 0,
-      "wo": 0
+      "wo": 0,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "bc2ebe52-dd09-4caa-961a-0626ea4d04f0",
       "g": 1,
       "b4s": 1,
       "sb": 0,
-      "wo": 0
+      "wo": 0,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "3f231449-7bcc-4fab-bc0c-191d8f1c64b2",
       "g": 1,
       "b4s": 0,
       "sb": 0,
-      "wo": 0
+      "wo": 0,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "ca88fbf0-71fc-4702-befb-c582315eef94",
       "g": 1,
       "b4s": 0,
       "sb": 0,
-      "wo": 0
+      "wo": 0,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "872046fa-6270-4503-b73c-3f2c32a50e4d",
       "g": 1,
       "b4s": 0,
       "sb": 1,
-      "wo": 0
+      "wo": 0,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "4565c36a-13ca-4afb-a200-61fc1b780526",
       "g": 1,
       "b4s": 0,
       "sb": 0,
-      "wo": 0
+      "wo": 0,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "8e09813b-0f84-4b82-90d8-b49d169074f0",
       "g": 1,
       "b4s": 0,
       "sb": 0,
-      "wo": 0
+      "wo": 0,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "d35d1486-080e-4a5f-999f-c9130910d92e",
       "g": 1,
       "b4s": 0,
       "sb": 0,
-      "wo": 0
+      "wo": 0,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "9387c2f4-8ae0-4463-9125-534c0f2d6c23",
       "g": 1,
       "b4s": 0,
       "sb": 0,
-      "wo": 0
+      "wo": 0,
+      "fan": 3,
+      "er": 14
     },
     {
       "player_id": "4e548ef1-bd3d-434d-89ce-150475109d98",
       "g": 1,
       "b4s": 0,
       "sb": 0,
-      "wo": 0
+      "wo": 0,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "53a08af1-925c-4315-9894-1adff2760b18",
       "g": 1,
       "b4s": 0,
       "sb": 0,
-      "wo": 0
+      "wo": 0,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "0e02d4dd-5ab1-4b3d-8e2e-2c4759738aa3",
       "g": 1,
       "b4s": 0,
       "sb": 0,
-      "wo": 0
+      "wo": 0,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "5a529f63-8370-4d76-92db-7746d657bfb3",
       "g": 1,
       "b4s": 0,
       "sb": 0,
-      "wo": 0
+      "wo": 0,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "e5b23f3c-051b-4019-a8b7-307715f350f6",
       "g": 1,
       "b4s": 0,
       "sb": 0,
-      "wo": 0
+      "wo": 0,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "9ecdc540-4fac-4e31-809f-ffa0b1c66702",
       "g": 1,
       "b4s": 0,
       "sb": 0,
-      "wo": 0
+      "wo": 0,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "ec3a2470-c930-444b-ac29-5cea1439442b",
       "g": 1,
       "b4s": 0,
       "sb": 0,
-      "wo": 0
+      "wo": 0,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "a4c0ee00-3d54-45bb-b086-299521bd92e9",
       "g": 1,
       "b4s": 0,
       "sb": 0,
-      "wo": 0
+      "wo": 0,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "25be5d27-43e9-4f1d-ad2a-7c7f729f8f48",
       "g": 1,
       "b4s": 0,
       "sb": 1,
-      "wo": 0
+      "wo": 0,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "2b027ce5-ef4b-475b-8735-24e37815b3da",
       "g": 1,
       "b4s": 1,
       "sb": 0,
-      "wo": 0
+      "wo": 0,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "b2a85285-e980-4e4f-8eaf-cf7743ea71dd",
       "g": 1,
       "b4s": 0,
       "sb": 0,
-      "wo": 0
+      "wo": 0,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "3320dcc3-fc70-4318-9b10-0b9bde4fb3e0",
       "g": 1,
       "b4s": 0,
       "sb": 1,
-      "wo": 0
+      "wo": 0,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "fb4f5d76-8f0a-4814-a3a1-f64d25a6767f",
       "g": 1,
       "b4s": 0,
       "sb": 0,
-      "wo": 0
+      "wo": 0,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "b982b2b3-076f-4f9e-aa11-6c2b1702de3f",
       "g": 1,
       "b4s": 0,
       "sb": 0,
-      "wo": 0
+      "wo": 0,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "765b21f4-89cf-43ce-93d2-f4ca7bee66be",
       "g": 1,
       "b4s": 0,
       "sb": 0,
-      "wo": 0
+      "wo": 0,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "c66eeafa-a01f-427c-a0b5-6140cb015818",
       "g": 1,
       "b4s": 1,
       "sb": 0,
-      "wo": 0
+      "wo": 0,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "82d475d8-d3e9-4969-bc2e-3fee39c1ca8d",
       "g": 1,
       "b4s": 0,
       "sb": 1,
-      "wo": 0
+      "wo": 0,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "40572c8d-a786-43f7-87de-585240318bd0",
       "g": 1,
       "b4s": 0,
       "sb": 0,
-      "wo": 0
+      "wo": 0,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "882160b4-4f71-46d5-9b09-3fbe27c83217",
       "g": 1,
       "b4s": 0,
       "sb": 0,
-      "wo": 0
+      "wo": 0,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "04818a56-8f19-4ef6-bf35-575329c4cae1",
       "g": 1,
       "b4s": 0,
       "sb": 0,
-      "wo": 0
+      "wo": 0,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "d9722ca9-6622-43b0-a10c-68db6bf05512",
       "g": 1,
       "b4s": 0,
       "sb": 0,
-      "wo": 0
+      "wo": 0,
+      "fan": 2,
+      "er": 19
     },
     {
       "player_id": "0faea63b-4464-4303-aa68-aa644a6a2cff",
       "g": 1,
       "b4s": 0,
       "sb": 0,
-      "wo": 0
+      "wo": 0,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "5b4cea36-c462-459d-94a9-c1ba2a268dd5",
       "g": 1,
       "b4s": 0,
       "sb": 0,
-      "wo": 0
+      "wo": 0,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "1a502e2d-67d8-4bfd-99bb-3f055b061003",
       "g": 1,
       "b4s": 0,
       "sb": 0,
-      "wo": 0
+      "wo": 0,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "9f296695-369b-45f4-895f-979457aeb8ff",
       "g": 1,
       "b4s": 0,
       "sb": 0,
-      "wo": 0
+      "wo": 0,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "619f40bf-2be0-4a5f-9ffc-faee1791ba70",
       "g": 1,
       "b4s": 0,
       "sb": 0,
-      "wo": 0
+      "wo": 0,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "219d5be7-31ce-4ecb-a6f4-49c9328feb27",
       "g": 1,
       "b4s": 0,
       "sb": 1,
-      "wo": 0
+      "wo": 0,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "a56d0ee9-eade-406b-b1bf-64ec9e36f13e",
       "g": 1,
       "b4s": 0,
       "sb": 0,
-      "wo": 1
+      "wo": 1,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "f336b7e3-acb5-4786-9db5-78bc429f652e",
       "g": 1,
       "b4s": 0,
       "sb": 0,
-      "wo": 0
+      "wo": 0,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "6cbe9606-caf8-4e80-ae3c-63025a639d6b",
       "g": 1,
       "b4s": 1,
       "sb": 0,
-      "wo": 0
+      "wo": 0,
+      "fan": 0,
+      "er": 0
     },
     {
       "player_id": "b4a8b16d-8ca9-46e1-b621-830e58ee5702",
       "g": 1,
       "b4s": 0,
       "sb": 0,
-      "wo": 0
+      "wo": 0,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "73586061-2338-45e4-a403-44ae61cadb1c",
       "g": 1,
       "b4s": 0,
       "sb": 0,
-      "wo": 0
+      "wo": 0,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "b9edda75-d6ae-4e4f-a985-de26cc49f211",
       "g": 1,
       "b4s": 0,
       "sb": 0,
-      "wo": 0
+      "wo": 0,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "7730f49d-1f5a-453c-b86b-fadd37e7df33",
       "g": 1,
       "b4s": 0,
       "sb": 1,
-      "wo": 0
+      "wo": 0,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "7f7cf80c-b374-4eea-8b6c-f029b686eac7",
       "g": 1,
       "b4s": 0,
       "sb": 0,
-      "wo": 0
+      "wo": 0,
+      "fan": 1,
+      "er": 10
     },
     {
       "player_id": "3a43339c-655f-4979-8381-096691fe2ce5",
       "g": 1,
       "b4s": 0,
       "sb": 0,
-      "wo": 0
+      "wo": 0,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "c706e9dc-2af0-4bd3-9bfc-42f96e860fdf",
       "g": 1,
       "b4s": 0,
       "sb": 0,
-      "wo": 0
+      "wo": 0,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "40bff776-d10c-466a-9b5c-3fb3dc8df1fd",
       "g": 1,
       "b4s": 0,
       "sb": 0,
-      "wo": 0
+      "wo": 0,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "8896a622-918f-43d2-8823-63b240ed5b51",
       "g": 1,
       "b4s": 0,
       "sb": 0,
-      "wo": 0
+      "wo": 0,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "47cf4348-c1de-4e56-a32b-4e56a2701522",
       "g": 1,
       "b4s": 0,
       "sb": 0,
-      "wo": 0
+      "wo": 0,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "00320f5b-6110-4cec-8ae6-0ac170ab59d8",
       "g": 1,
       "b4s": 0,
       "sb": 0,
-      "wo": 0
+      "wo": 0,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "d5af3c36-7940-4caa-a8f9-e8e6897a48a7",
       "g": 1,
       "b4s": 0,
       "sb": 0,
-      "wo": 0
+      "wo": 0,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "941463cb-1f12-49a8-bcd2-766f0a6e2345",
       "g": 1,
       "b4s": 0,
       "sb": 1,
-      "wo": 0
+      "wo": 0,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "970678e1-e4b2-44b7-beaa-fdee8db567ca",
       "g": 1,
       "b4s": 0,
       "sb": 0,
-      "wo": 0
+      "wo": 0,
+      "fan": 0,
+      "er": 0
     },
     {
       "player_id": "13acad48-4fdb-4547-b5c9-46b0639b6e37",
       "g": 1,
       "b4s": 0,
       "sb": 0,
-      "wo": 0
+      "wo": 0,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "5c44f6e7-7735-4ac1-91c1-ba70e63f9255",
       "g": 1,
       "b4s": 0,
       "sb": 0,
-      "wo": 0
+      "wo": 0,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "1bb59528-29d2-4ca4-9e1b-406d29d5fadb",
       "g": 1,
       "b4s": 0,
       "sb": 0,
-      "wo": 0
+      "wo": 0,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "a7c61e77-9a65-48b2-97d1-acbcd2014064",
       "g": 1,
       "b4s": 0,
       "sb": 0,
-      "wo": 0
+      "wo": 0,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "6902e3b7-3602-4cf2-8c02-e8e30e7d9e7f",
       "g": 1,
       "b4s": 0,
       "sb": 0,
-      "wo": 0
+      "wo": 0,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "f3e84fe0-3978-4d00-a70f-c41fca45180e",
       "g": 1,
       "b4s": 0,
       "sb": 0,
-      "wo": 0
+      "wo": 0,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "942691c2-be77-4465-beb0-d332158eb19e",
       "g": 1,
       "b4s": 0,
       "sb": 0,
-      "wo": 0
+      "wo": 0,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "50654a5d-4dfa-4b29-8df9-ff4c3f495b42",
       "g": 1,
       "b4s": 0,
       "sb": 0,
-      "wo": 0
+      "wo": 0,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "db0bc70f-f7f6-4923-b68f-ae778b47f4da",
       "g": 1,
       "b4s": 0,
       "sb": 0,
-      "wo": 0
+      "wo": 0,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "e70923ea-ae72-4ebb-9058-681fd2dcf934",
       "g": 1,
       "b4s": 0,
       "sb": 0,
-      "wo": 0
+      "wo": 0,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "a10b4c52-0095-408d-97c5-f102a8a9a0c7",
       "g": 1,
       "b4s": 0,
       "sb": 0,
-      "wo": 0
+      "wo": 0,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "22a9790c-e0f9-4cf9-a809-2e8b7ae8cb4d",
       "g": 1,
       "b4s": 0,
       "sb": 0,
-      "wo": 0
+      "wo": 0,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "eeef1aa3-b463-4e3a-979a-e55562c100ad",
       "g": 1,
       "b4s": 0,
       "sb": 0,
-      "wo": 0
+      "wo": 0,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "a80c3a2b-d273-440e-bc05-cfcb0be68352",
       "g": 1,
       "b4s": 0,
       "sb": 0,
-      "wo": 0
+      "wo": 0,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "f4030880-a31f-4ee5-8f5f-6980bcf203b1",
       "g": 1,
       "b4s": 0,
       "sb": 0,
-      "wo": 1
+      "wo": 1,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "afb4e587-31e6-44b2-9e0c-541f1659dba0",
       "g": 1,
       "b4s": 1,
       "sb": 0,
-      "wo": 0
+      "wo": 0,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "6d72fce1-eff2-4288-b029-0d99e5300531",
       "g": 1,
       "b4s": 0,
       "sb": 0,
-      "wo": 0
+      "wo": 0,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "b518c04b-45fa-467f-9968-135ca4b36014",
       "g": 1,
       "b4s": 2,
       "sb": 0,
-      "wo": 0
+      "wo": 0,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "fd6869c5-16f5-4fd7-96c8-804c2bcb65d5",
       "g": 1,
       "b4s": 0,
       "sb": 0,
-      "wo": 0
+      "wo": 0,
+      "fan": 2,
+      "er": 19
     },
     {
       "player_id": "3783021c-98b6-42a8-ab47-39c57e438842",
       "g": 1,
       "b4s": 1,
       "sb": 0,
-      "wo": 0
+      "wo": 0,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "c14c40b0-5e69-454d-b392-7f72eeef0b34",
       "g": 1,
       "b4s": 0,
       "sb": 0,
-      "wo": 0
+      "wo": 0,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "3b213943-f245-4b87-9a7c-0b7912f0b98d",
       "g": 1,
       "b4s": 0,
       "sb": 0,
-      "wo": 0
+      "wo": 0,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "481c02ab-6bcd-446d-892e-64badf2369a5",
       "g": 1,
       "b4s": 0,
       "sb": 0,
-      "wo": 0
+      "wo": 0,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "4d93b92a-712a-47bb-bc23-31a7403abd27",
       "g": 1,
       "b4s": 0,
       "sb": 0,
-      "wo": 0
+      "wo": 0,
+      "fan": 1,
+      "er": 4
     },
     {
       "player_id": "060f49a9-41f8-41ed-b8c0-c96abce9f822",
       "g": 1,
       "b4s": 0,
       "sb": 0,
-      "wo": 0
+      "wo": 0,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "d723ab96-2fef-4ebf-917b-92c680931529",
       "g": 1,
       "b4s": 0,
       "sb": 0,
-      "wo": 0
+      "wo": 0,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "50655d71-feef-4d33-8b56-bb4c2859eab6",
       "g": 1,
       "b4s": 1,
       "sb": 0,
-      "wo": 0
+      "wo": 0,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "14e2dbdc-1c34-4297-a06c-6e49c1148f9b",
       "g": 1,
       "b4s": 0,
       "sb": 0,
-      "wo": 0
+      "wo": 0,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "e220d033-4b4d-47af-b255-d3b6abf11832",
       "g": 1,
       "b4s": 0,
       "sb": 0,
-      "wo": 0
+      "wo": 0,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "9cd113a7-40de-48ac-901a-3da2fdb12274",
       "g": 1,
       "b4s": 0,
       "sb": 0,
-      "wo": 0
+      "wo": 0,
+      "fan": 1,
+      "er": 19
     },
     {
       "player_id": "e7eb0acb-e698-46b3-8590-5b6f501db5c8",
       "g": 1,
       "b4s": 0,
       "sb": 0,
-      "wo": 0
+      "wo": 0,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "a156a79c-e15d-4e02-93bb-05777ff8ca57",
       "g": 1,
       "b4s": 0,
       "sb": 0,
-      "wo": 0
+      "wo": 0,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "62d0dc67-399d-49a8-b895-f622de21861e",
       "g": 1,
       "b4s": 0,
       "sb": 0,
-      "wo": 0
+      "wo": 0,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "242ed5f4-6406-473e-9076-4e049bc11d9c",
       "g": 1,
       "b4s": 0,
       "sb": 0,
-      "wo": 0
+      "wo": 0,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "a98791c6-a008-4c17-bafa-3ce28a39650d",
       "g": 1,
       "b4s": 1,
       "sb": 0,
-      "wo": 0
+      "wo": 0,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "69b0c18b-a43b-4cc7-b48a-8630c23aae8c",
       "g": 1,
       "b4s": 0,
       "sb": 0,
-      "wo": 0
+      "wo": 0,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "2865a8bc-5720-4523-897e-2fd6b99d61aa",
       "g": 1,
       "b4s": 1,
       "sb": 1,
-      "wo": 0
+      "wo": 0,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "3042ab2a-da25-45a8-87ad-e43b752dfa91",
       "g": 1,
       "b4s": 1,
       "sb": 2,
-      "wo": 1
+      "wo": 1,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "f891172e-6a0a-4545-ac5c-596263553c76",
       "g": 1,
       "b4s": 0,
       "sb": 1,
-      "wo": 0
+      "wo": 0,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "b79fafff-c9f8-463e-9b70-70a280d8ddd4",
       "g": 1,
       "b4s": 0,
       "sb": 0,
-      "wo": 0
+      "wo": 0,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "fedf7d97-2bb0-48a3-acc7-33f66e59a532",
       "g": 1,
       "b4s": 0,
       "sb": 0,
-      "wo": 0
+      "wo": 0,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "c1ffc962-9180-4834-9316-3e03c0ea1d38",
       "g": 1,
       "b4s": 0,
       "sb": 0,
-      "wo": 0
+      "wo": 0,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "3c1a8e82-42a2-4643-ad7d-3627e2cd69db",
       "g": 1,
       "b4s": 0,
       "sb": 0,
-      "wo": 0
+      "wo": 0,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "c7ca376d-0fb8-49c6-b3c1-f5b346dd16c3",
       "g": 1,
       "b4s": 0,
       "sb": 0,
-      "wo": 0
+      "wo": 0,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "8508aa54-82a8-4428-b895-04766a3a16aa",
       "g": 1,
       "b4s": 0,
       "sb": 0,
-      "wo": 0
+      "wo": 0,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "43cc7541-4817-40c2-bff1-e3e5ffb97c2c",
       "g": 1,
       "b4s": 0,
       "sb": 0,
-      "wo": 0
+      "wo": 0,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "cd110581-12af-4683-94e0-7eb627313369",
       "g": 1,
       "b4s": 0,
       "sb": 1,
-      "wo": 0
+      "wo": 0,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "d221c915-985b-4f1a-a3b0-c06a7a7c9f89",
       "g": 1,
       "b4s": 0,
       "sb": 0,
-      "wo": 0
+      "wo": 0,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "90076177-6d08-4173-9966-073f379a6a19",
       "g": 1,
       "b4s": 0,
       "sb": 1,
-      "wo": 0
+      "wo": 0,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "953ffce6-d398-469c-aa1a-0e3408dbc6cf",
       "g": 1,
       "b4s": 0,
       "sb": 0,
-      "wo": 0
+      "wo": 0,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "98558715-d579-4022-b564-33b5b13d03a2",
       "g": 1,
       "b4s": 1,
       "sb": 1,
-      "wo": 0
+      "wo": 0,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "e239d04a-3d15-43fd-8b24-6bef8b5bf80d",
       "g": 1,
       "b4s": 0,
       "sb": 0,
-      "wo": 0
+      "wo": 0,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "5d62e544-6335-42a9-b499-e5a1f9cd6072",
       "g": 1,
       "b4s": 0,
       "sb": 0,
-      "wo": 0
+      "wo": 0,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "1da154a2-c07b-4074-9ea0-b360d7880d7a",
       "g": 1,
       "b4s": 0,
       "sb": 0,
-      "wo": 0
+      "wo": 0,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "f074ea82-4faf-427c-a8ca-05f7aa14b37d",
       "g": 1,
       "b4s": 0,
       "sb": 0,
-      "wo": 0
+      "wo": 0,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "aab87786-6c69-4b2d-820d-5e01ca500353",
       "g": 1,
       "b4s": 0,
       "sb": 0,
-      "wo": 0
+      "wo": 0,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "f5acba4e-bf88-4a69-a439-5f1edd59ff29",
       "g": 1,
       "b4s": 0,
       "sb": 0,
-      "wo": 0
+      "wo": 0,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "b0c6e92b-8645-48f8-b0b0-06324446c104",
       "g": 1,
       "b4s": 0,
       "sb": 0,
-      "wo": 0
+      "wo": 0,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "311d23a6-2f14-4afb-9712-8fb8c49de5d5",
       "g": 1,
       "b4s": 0,
       "sb": 0,
-      "wo": 0
+      "wo": 0,
+      "fan": 7,
+      "er": 53
     },
     {
       "player_id": "f95e01c2-b301-4101-974a-255340a2ec73",
       "g": 1,
       "b4s": 0,
       "sb": 0,
-      "wo": 0
+      "wo": 0,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "755bcb64-2fd2-4385-920e-74d9e5f2d566",
       "g": 1,
       "b4s": 0,
       "sb": 0,
-      "wo": 0
+      "wo": 0,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "bb35050c-1e34-4908-aa3c-ae1e14bda0a6",
       "g": 1,
       "b4s": 0,
       "sb": 0,
-      "wo": 0
+      "wo": 0,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "791ebd18-e588-4adc-b9c7-045e7ce75ae4",
       "g": 1,
       "b4s": 0,
       "sb": 0,
-      "wo": 0
+      "wo": 0,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "8114dba0-2bbd-4372-a49c-037292948f4f",
       "g": 1,
       "b4s": 0,
       "sb": 0,
-      "wo": 0
+      "wo": 0,
+      "fan": 0,
+      "er": 0
     },
     {
       "player_id": "3cfa05da-40e9-488f-8c3f-2c65378c0856",
       "g": 1,
       "b4s": 1,
       "sb": 0,
-      "wo": 0
+      "wo": 0,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "c9b56d7d-3837-4df6-a4ff-5360cf089083",
       "g": 1,
       "b4s": 0,
       "sb": 0,
-      "wo": 0
+      "wo": 0,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "cd7ff7d4-e956-4cac-9c62-b82be0859d15",
       "g": 1,
       "b4s": 1,
       "sb": 0,
-      "wo": 1
+      "wo": 1,
+      "fan": 0,
+      "er": 0
     },
     {
       "player_id": "8b65f6d6-b4bb-482b-bda1-bd9657239d81",
       "g": 1,
       "b4s": 0,
       "sb": 0,
-      "wo": 0
+      "wo": 0,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "92575b15-427f-40c9-a28d-3ace4b3356d3",
       "g": 1,
       "b4s": 0,
       "sb": 0,
-      "wo": 0
+      "wo": 0,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "d806ed76-15d5-452f-8283-0432d689ef61",
       "g": 1,
       "b4s": 0,
       "sb": 0,
-      "wo": 0
+      "wo": 0,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "95d8b4af-d6d8-4fa0-bd0f-56ed3fd5f015",
       "g": 1,
       "b4s": 0,
       "sb": 0,
-      "wo": 0
+      "wo": 0,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "537c2b6e-5e99-470a-8757-a7e828ffa700",
       "g": 1,
       "b4s": 0,
       "sb": 0,
-      "wo": 0
+      "wo": 0,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "0c63d4bf-1e2f-496d-9eb2-a47df920a865",
       "g": 1,
       "b4s": 1,
       "sb": 0,
-      "wo": 0
+      "wo": 0,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "dd5f2a43-d960-4d52-8f3d-9e11bbaa6cdb",
       "g": 1,
       "b4s": 0,
       "sb": 0,
-      "wo": 0
+      "wo": 0,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "5830cc3d-3bcb-42df-8ae8-063a914ec033",
       "g": 1,
       "b4s": 0,
       "sb": 0,
-      "wo": 0
+      "wo": 0,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "9e597c29-946b-41ba-ab38-a6d4ac737d67",
       "g": 1,
       "b4s": 0,
       "sb": 0,
-      "wo": 0
+      "wo": 0,
+      "fan": 5,
+      "er": 34
     },
     {
       "player_id": "1fb34d03-10c3-4de7-b709-58182b4f5e22",
       "g": 1,
       "b4s": 0,
       "sb": 0,
-      "wo": 0
+      "wo": 0,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "673f55c6-a938-42d5-a990-f3e8f3d8f6de",
       "g": 1,
       "b4s": 0,
       "sb": 0,
-      "wo": 0
+      "wo": 0,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "2554bf3e-29f6-4d66-9375-6a955747b3e7",
       "g": 1,
       "b4s": 0,
       "sb": 0,
-      "wo": 0
+      "wo": 0,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "aae2747d-d6b7-486e-8535-aa8026593d04",
       "g": 1,
       "b4s": 1,
       "sb": 0,
-      "wo": 0
+      "wo": 0,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "2a0613f6-5786-4b57-a3f3-ac6a6c60d57f",
       "g": 1,
       "b4s": 0,
       "sb": 0,
-      "wo": 0
+      "wo": 0,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "b1105504-bba4-4a90-af9d-726a46323b37",
       "g": 1,
       "b4s": 0,
       "sb": 0,
-      "wo": 0
+      "wo": 0,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "fae285fc-4e8f-48b3-8c43-6d11f3ca2c1b",
       "g": 1,
       "b4s": 0,
       "sb": 0,
-      "wo": 0
+      "wo": 0,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "756ea051-9c76-4af5-bbcc-c567a14687e7",
       "g": 1,
       "b4s": 0,
       "sb": 0,
-      "wo": 0
+      "wo": 0,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "3670c2fb-849e-4ef6-9f69-8430cfd988cf",
       "g": 1,
       "b4s": 0,
       "sb": 0,
-      "wo": 0
+      "wo": 0,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "86bec9e8-c365-4244-a3b7-4aecd69ed794",
       "g": 1,
       "b4s": 1,
       "sb": 0,
-      "wo": 0
+      "wo": 0,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "4562b691-5b76-4928-87a5-f4847c0099b2",
       "g": 1,
       "b4s": 0,
       "sb": 0,
-      "wo": 0
+      "wo": 0,
+      "fan": 3,
+      "er": 7
     },
     {
       "player_id": "cde665ce-48ff-437c-b10f-15bc56e5e6b7",
       "g": 1,
       "b4s": 1,
       "sb": 0,
-      "wo": 0
+      "wo": 0,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "8d93a7e2-2283-4d3d-9df3-3bc3a55fd35e",
       "g": 1,
       "b4s": 0,
       "sb": 0,
-      "wo": 0
+      "wo": 0,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "4e4783e2-ec9e-41c3-9b5d-7207e721a70d",
       "g": 1,
       "b4s": 0,
       "sb": 0,
-      "wo": 0
+      "wo": 0,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "d817d3f2-3d70-4518-95b3-9ccbefd82517",
       "g": 1,
       "b4s": 0,
       "sb": 0,
-      "wo": 0
+      "wo": 0,
+      "fan": 0,
+      "er": 0
     },
     {
       "player_id": "53845c93-4f9d-4b83-b886-f1f4f79271a6",
       "g": 1,
       "b4s": 0,
       "sb": 1,
-      "wo": 0
+      "wo": 0,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "0cdabdd1-baab-4532-a836-5d9aa97ab693",
       "g": 1,
       "b4s": 1,
       "sb": 0,
-      "wo": 0
+      "wo": 0,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "dd7f3c45-284c-4ed7-a7dc-ba4eb11b0704",
       "g": 1,
       "b4s": 0,
       "sb": 0,
-      "wo": 0
+      "wo": 0,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "9a99b3f1-fc6e-48cf-b038-f4af67b79c16",
       "g": 1,
       "b4s": 0,
       "sb": 0,
-      "wo": 0
+      "wo": 0,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "2101adbd-e92a-49d6-bbd1-0113e34a4d0c",
       "g": 1,
       "b4s": 0,
       "sb": 1,
-      "wo": 0
+      "wo": 0,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "a4aa54ef-284d-4121-a8e8-224d769a766a",
       "g": 1,
       "b4s": 0,
       "sb": 0,
-      "wo": 0
+      "wo": 0,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "6c34ff0f-6c19-4e43-9ff8-877a10e6fb59",
       "g": 1,
       "b4s": 0,
       "sb": 0,
-      "wo": 0
+      "wo": 0,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "f6f2d107-d4d8-457d-807f-7417b2a042ea",
       "g": 1,
       "b4s": 0,
       "sb": 0,
-      "wo": 0
+      "wo": 0,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "b169a88a-f418-44fd-bae1-04e3047ced4e",
       "g": 1,
       "b4s": 0,
       "sb": 0,
-      "wo": 0
+      "wo": 0,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "70262018-9e5b-4880-a9e8-3c60c6d320fd",
       "g": 1,
       "b4s": 0,
       "sb": 0,
-      "wo": 0
+      "wo": 0,
+      "fan": 8,
+      "er": 76
     },
     {
       "player_id": "323abe42-de99-4c54-b73b-aa95448ecf7e",
       "g": 1,
       "b4s": 0,
       "sb": 0,
-      "wo": 0
+      "wo": 0,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "b97f6026-36af-4300-9f11-c2cbd84f181f",
       "g": 1,
       "b4s": 0,
       "sb": 0,
-      "wo": 0
+      "wo": 0,
+      "fan": 0,
+      "er": 15
     },
     {
       "player_id": "75c1d4ea-d2fa-4c28-a71c-9eecc6455f27",
       "g": 1,
       "b4s": 0,
       "sb": 0,
-      "wo": 0
+      "wo": 0,
+      "fan": 0,
+      "er": 13
     },
     {
       "player_id": "36f1f025-b330-4b5d-86a5-abe0671d953b",
       "g": 1,
       "b4s": 0,
       "sb": 0,
-      "wo": 0
+      "wo": 0,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "7bdf9f59-4fe8-47d7-b375-16a91c9b8147",
       "g": 1,
       "b4s": 0,
       "sb": 0,
-      "wo": 0
+      "wo": 0,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "c642674b-9ce4-4ec8-b33d-d5b143088673",
       "g": 1,
       "b4s": 0,
       "sb": 0,
-      "wo": 0
+      "wo": 0,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "4680bebc-acfc-4c62-817f-10af460e965d",
       "g": 1,
       "b4s": 0,
       "sb": 0,
-      "wo": 0
+      "wo": 0,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "4be86d44-679d-4d4c-81dc-a7675e7cc41f",
       "g": 1,
       "b4s": 0,
       "sb": 0,
-      "wo": 0
+      "wo": 0,
+      "fan": 25,
+      "er": 226
     },
     {
       "player_id": "0368d595-12cf-4a02-b773-34f89fd5baed",
       "g": 1,
       "b4s": 0,
       "sb": 0,
-      "wo": 0
+      "wo": 0,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "93d3a787-52d8-4e89-a151-f78e0bcf5026",
       "g": 1,
       "b4s": 0,
       "sb": 0,
-      "wo": 0
+      "wo": 0,
+      "fan": 0,
+      "er": 17
     },
     {
       "player_id": "4ec9595f-ee9e-4fc5-8d27-3368fbab817c",
       "g": 1,
       "b4s": 0,
       "sb": 0,
-      "wo": 0
+      "wo": 0,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "07bc22c9-b063-4355-9a0a-ce2e2216c5c7",
       "g": 1,
       "b4s": 0,
       "sb": 0,
-      "wo": 0
+      "wo": 0,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "d8478ec2-b379-49a8-bc59-797b1ad27576",
       "g": 1,
       "b4s": 0,
       "sb": 0,
-      "wo": 0
+      "wo": 0,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "53bb4d15-7c15-476a-a73d-0614f56acdd2",
       "g": 1,
       "b4s": 0,
       "sb": 0,
-      "wo": 0
+      "wo": 0,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "0e0a9aad-0f7e-4a02-bd73-9cee64d53d92",
       "g": 1,
       "b4s": 0,
       "sb": 0,
-      "wo": 0
+      "wo": 0,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "e5d2f68d-e185-4456-90e5-f66be7133257",
       "g": 1,
       "b4s": 0,
       "sb": 0,
-      "wo": 0
+      "wo": 0,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "219d5be7-31ce-4ecb-a6f4-49c9328feb27",
       "g": 1,
       "b4s": 0,
       "sb": 0,
-      "wo": 0
+      "wo": 0,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "a56d0ee9-eade-406b-b1bf-64ec9e36f13e",
       "g": 1,
       "b4s": 0,
       "sb": 0,
-      "wo": 0
+      "wo": 0,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "6845e279-3366-4e5e-bd5e-c3cf9520fa66",
       "g": 1,
       "b4s": 0,
       "sb": 2,
-      "wo": 0
+      "wo": 0,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "f2dae20b-0b2d-44c7-a0a9-8973657c4731",
       "g": 1,
       "b4s": 0,
       "sb": 0,
-      "wo": 0
+      "wo": 0,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "71dbaa4e-a0b5-49c6-88a2-3e6f006fe008",
       "g": 1,
       "b4s": 1,
       "sb": 0,
-      "wo": 0
+      "wo": 0,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "37458251-24a7-4787-b91d-0f24dd3566db",
       "g": 1,
       "b4s": 0,
       "sb": 0,
-      "wo": 0
+      "wo": 0,
+      "fan": 0,
+      "er": 0
     },
     {
       "player_id": "c6f5dd7f-2f73-4171-9048-8e12d3025cbc",
       "g": 1,
       "b4s": 1,
       "sb": 0,
-      "wo": 0
+      "wo": 0,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "40a4a4c9-5a00-421a-a285-5c287789c6ed",
       "g": 1,
       "b4s": 0,
       "sb": 0,
-      "wo": 0
+      "wo": 0,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "cf242932-f2ea-4d78-9b29-8ffbf7b678e4",
       "g": 1,
       "b4s": 0,
       "sb": 0,
-      "wo": 0
+      "wo": 0,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "8e9a7a4d-dca7-446b-8c05-bb864003c686",
       "g": 1,
       "b4s": 0,
       "sb": 0,
-      "wo": 0
+      "wo": 0,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "4ccf2fb5-f926-44b0-a825-6cf96c87150a",
       "g": 1,
       "b4s": 0,
       "sb": 0,
-      "wo": 0
+      "wo": 0,
+      "fan": 0,
+      "er": 3
     },
     {
       "player_id": "4fee0bff-9920-47aa-a198-668b8c319ab9",
       "g": 1,
       "b4s": 0,
       "sb": 0,
-      "wo": 0
+      "wo": 0,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "d9a59257-7500-4cec-b8f2-5494888e79e5",
       "g": 1,
       "b4s": 1,
       "sb": 0,
-      "wo": 0
+      "wo": 0,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "96db0c7b-0bf2-468d-8565-bab813ee1521",
       "g": 1,
       "b4s": 0,
       "sb": 0,
-      "wo": 0
+      "wo": 0,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "53bb4d15-7c15-476a-a73d-0614f56acdd2",
       "g": 1,
       "b4s": 0,
       "sb": 0,
-      "wo": 0
+      "wo": 0,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "e655cce2-3f8b-4819-9f29-6f13b6c16d90",
       "g": 1,
       "b4s": 0,
       "sb": 0,
-      "wo": 0
+      "wo": 0,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "9facfd7d-136e-4bf6-84e5-95d1e8c81bcb",
       "g": 1,
       "b4s": 0,
       "sb": 0,
-      "wo": 0
+      "wo": 0,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "61b80e44-dc4c-45f5-8021-9eeb1bcc1da5",
       "g": 1,
       "b4s": 0,
       "sb": 0,
-      "wo": 0
+      "wo": 0,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "21af9656-1a7c-4af2-8585-f8c259f51c86",
       "g": 1,
       "b4s": 0,
       "sb": 0,
-      "wo": 0
+      "wo": 0,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "eddc7762-175d-4b18-8edb-2b3b2b7db61e",
       "g": 1,
       "b4s": 0,
       "sb": 0,
-      "wo": 0
+      "wo": 0,
+      "fan": 1,
+      "er": 17
     },
     {
       "player_id": "a6296804-b684-4479-b439-64a5b5a9aa79",
       "g": 1,
       "b4s": 0,
       "sb": 0,
-      "wo": 0
+      "wo": 0,
+      "fan": 0,
+      "er": 6
     },
     {
       "player_id": "ac8b5ab0-2fad-40fe-ade3-7604ad99f4fc",
       "g": 1,
       "b4s": 0,
       "sb": 0,
-      "wo": 0
+      "wo": 0,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "b4a8b16d-8ca9-46e1-b621-830e58ee5702",
       "g": 1,
       "b4s": 0,
       "sb": 0,
-      "wo": 0
+      "wo": 0,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "73586061-2338-45e4-a403-44ae61cadb1c",
       "g": 1,
       "b4s": 0,
       "sb": 0,
-      "wo": 0
+      "wo": 0,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "fd68136a-2e59-4c5c-92a5-ba07ae13d72f",
       "g": 1,
       "b4s": 0,
       "sb": 0,
-      "wo": 0
+      "wo": 0,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "ba01714a-1fac-4aa0-99ea-3502dab1a634",
       "g": 1,
       "b4s": 0,
       "sb": 0,
-      "wo": 0
+      "wo": 0,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "be2020a9-4d9c-4f9e-93af-b6fe2fe54fe2",
       "g": 1,
       "b4s": 0,
       "sb": 0,
-      "wo": 0
+      "wo": 0,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "8ec7b470-c78c-41ba-b544-7cecb72a6b6e",
       "g": 1,
       "b4s": 0,
       "sb": 0,
-      "wo": 0
+      "wo": 0,
+      "fan": 0,
+      "er": 0
     },
     {
       "player_id": "4cd3fb65-d8a6-4b0e-b341-a6b1b26e8f7a",
       "g": 1,
       "b4s": 0,
       "sb": 0,
-      "wo": 0
+      "wo": 0,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "058fba28-50d8-4da3-8f79-2b28c011329b",
       "g": 1,
       "b4s": 0,
       "sb": 0,
-      "wo": 0
+      "wo": 0,
+      "fan": null,
+      "er": null
     },
     {
       "player_id": "d6a1a07e-ed63-4990-a277-1247c4fe6868",
       "g": 1,
       "b4s": 0,
       "sb": 0,
-      "wo": 0
+      "wo": 0,
+      "fan": null,
+      "er": null
     }
   ]
 }

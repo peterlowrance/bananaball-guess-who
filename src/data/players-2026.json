@@ -94,7 +94,9 @@
         "g": 5,
         "b4s": 0,
         "sb": 0,
-        "wo": 0
+        "wo": 0,
+        "fan": 7,
+        "er": 35
       },
       "difficulty": "easy",
       "popularity_rank": 1,
@@ -145,10 +147,12 @@
         "trick_play_rate": "0%"
       },
       "career": {
-        "g": 16,
+        "g": 20,
         "b4s": 0,
         "sb": 0,
-        "wo": 0
+        "wo": 0,
+        "fan": 15,
+        "er": 110
       },
       "difficulty": "easy",
       "popularity_rank": 2,
@@ -191,7 +195,9 @@
         "g": 39,
         "b4s": 12,
         "sb": 3,
-        "wo": 6
+        "wo": 6,
+        "fan": null,
+        "er": null
       },
       "difficulty": "easy",
       "popularity_rank": 3,
@@ -234,7 +240,9 @@
         "g": 153,
         "b4s": 41,
         "sb": 37,
-        "wo": 24
+        "wo": 24,
+        "fan": 0,
+        "er": 0
       },
       "difficulty": "easy",
       "popularity_rank": 4,
@@ -277,7 +285,9 @@
         "g": 239,
         "b4s": 71,
         "sb": 15,
-        "wo": 17
+        "wo": 17,
+        "fan": 0,
+        "er": 0
       },
       "difficulty": "easy",
       "popularity_rank": 5,
@@ -380,7 +390,9 @@
         "g": 5,
         "b4s": 0,
         "sb": 0,
-        "wo": 0
+        "wo": 0,
+        "fan": 8,
+        "er": 76
       },
       "difficulty": "easy",
       "popularity_rank": 7,
@@ -431,10 +443,12 @@
         "trick_play_rate": "10%"
       },
       "career": {
-        "g": 15,
+        "g": 11,
         "b4s": 0,
         "sb": 0,
-        "wo": 0
+        "wo": 0,
+        "fan": 17,
+        "er": 236
       },
       "difficulty": "easy",
       "popularity_rank": 8,
@@ -488,7 +502,9 @@
         "g": 188,
         "b4s": 51,
         "sb": 18,
-        "wo": 30
+        "wo": 30,
+        "fan": 0,
+        "er": 20
       },
       "difficulty": "medium",
       "popularity_rank": 9,
@@ -531,7 +547,9 @@
         "g": 13,
         "b4s": 2,
         "sb": 0,
-        "wo": 0
+        "wo": 0,
+        "fan": 0,
+        "er": 0
       },
       "difficulty": "medium",
       "popularity_rank": 10,
@@ -585,7 +603,9 @@
         "g": 3,
         "b4s": 0,
         "sb": 0,
-        "wo": 0
+        "wo": 0,
+        "fan": 7,
+        "er": 64
       },
       "difficulty": "medium",
       "popularity_rank": 11,
@@ -635,12 +655,7 @@
         "tpm": 1,
         "trick_play_rate": "10%"
       },
-      "career": {
-        "g": 4,
-        "b4s": 0,
-        "sb": 0,
-        "wo": 0
-      },
+      "career": null,
       "difficulty": "medium",
       "popularity_rank": 12,
       "popularity_confidence": "medium",
@@ -682,7 +697,9 @@
         "g": 94,
         "b4s": 27,
         "sb": 18,
-        "wo": 11
+        "wo": 11,
+        "fan": 0,
+        "er": 4
       },
       "difficulty": "medium",
       "popularity_rank": 13,
@@ -725,7 +742,9 @@
         "g": 283,
         "b4s": 113,
         "sb": 31,
-        "wo": 76
+        "wo": 76,
+        "fan": 0,
+        "er": 0
       },
       "difficulty": "medium",
       "popularity_rank": 14,
@@ -768,7 +787,9 @@
         "g": 74,
         "b4s": 20,
         "sb": 7,
-        "wo": 7
+        "wo": 7,
+        "fan": null,
+        "er": null
       },
       "difficulty": "medium",
       "popularity_rank": 15,
@@ -811,7 +832,9 @@
         "g": 55,
         "b4s": 6,
         "sb": 1,
-        "wo": 0
+        "wo": 0,
+        "fan": 0,
+        "er": 0
       },
       "difficulty": "medium",
       "popularity_rank": 16,
@@ -865,7 +888,9 @@
         "g": 2,
         "b4s": 0,
         "sb": 0,
-        "wo": 0
+        "wo": 0,
+        "fan": 4,
+        "er": 35
       },
       "difficulty": "medium",
       "popularity_rank": 17,
@@ -908,7 +933,9 @@
         "g": 73,
         "b4s": 11,
         "sb": 6,
-        "wo": 5
+        "wo": 5,
+        "fan": null,
+        "er": null
       },
       "difficulty": "medium",
       "popularity_rank": 18,
@@ -951,7 +978,9 @@
         "g": 43,
         "b4s": 8,
         "sb": 2,
-        "wo": 5
+        "wo": 5,
+        "fan": 0,
+        "er": 0
       },
       "difficulty": "hard",
       "popularity_rank": 19,
@@ -994,7 +1023,9 @@
         "g": 36,
         "b4s": 9,
         "sb": 0,
-        "wo": 6
+        "wo": 6,
+        "fan": null,
+        "er": null
       },
       "difficulty": "hard",
       "popularity_rank": 20,
@@ -1048,7 +1079,9 @@
         "g": 1,
         "b4s": 0,
         "sb": 0,
-        "wo": 0
+        "wo": 0,
+        "fan": 0,
+        "er": 6
       },
       "difficulty": "hard",
       "popularity_rank": 21,
@@ -1091,7 +1124,9 @@
         "g": 78,
         "b4s": 15,
         "sb": 22,
-        "wo": 4
+        "wo": 4,
+        "fan": 0,
+        "er": 0
       },
       "difficulty": "hard",
       "popularity_rank": 22,
@@ -1134,7 +1169,9 @@
         "g": 99,
         "b4s": 36,
         "sb": 11,
-        "wo": 10
+        "wo": 10,
+        "fan": null,
+        "er": null
       },
       "difficulty": "hard",
       "popularity_rank": 23,
@@ -1188,7 +1225,9 @@
         "g": 2,
         "b4s": 0,
         "sb": 0,
-        "wo": 0
+        "wo": 0,
+        "fan": 1,
+        "er": 26
       },
       "difficulty": "hard",
       "popularity_rank": 24,
@@ -1242,7 +1281,9 @@
         "g": 9,
         "b4s": 0,
         "sb": 0,
-        "wo": 0
+        "wo": 0,
+        "fan": 4,
+        "er": 36
       },
       "difficulty": "hard",
       "popularity_rank": 25,
@@ -1285,7 +1326,9 @@
         "g": 39,
         "b4s": 17,
         "sb": 2,
-        "wo": 3
+        "wo": 3,
+        "fan": null,
+        "er": null
       },
       "difficulty": "easy",
       "popularity_rank": 1,
@@ -1338,7 +1381,9 @@
         "g": 5,
         "b4s": 0,
         "sb": 0,
-        "wo": 0
+        "wo": 0,
+        "fan": 0,
+        "er": 2
       },
       "difficulty": "easy",
       "popularity_rank": 2,
@@ -1391,7 +1436,9 @@
         "g": 134,
         "b4s": 15,
         "sb": 0,
-        "wo": 20
+        "wo": 20,
+        "fan": 5,
+        "er": 65
       },
       "difficulty": "easy",
       "popularity_rank": 3,
@@ -1490,7 +1537,9 @@
         "g": 54,
         "b4s": 3,
         "sb": 1,
-        "wo": 0
+        "wo": 0,
+        "fan": 2,
+        "er": 54
       },
       "difficulty": "easy",
       "popularity_rank": 5,
@@ -1532,7 +1581,9 @@
         "g": 39,
         "b4s": 9,
         "sb": 4,
-        "wo": 1
+        "wo": 1,
+        "fan": null,
+        "er": null
       },
       "difficulty": "easy",
       "popularity_rank": 6,
@@ -1574,7 +1625,9 @@
         "g": 143,
         "b4s": 49,
         "sb": 14,
-        "wo": 7
+        "wo": 7,
+        "fan": 0,
+        "er": 0
       },
       "difficulty": "easy",
       "popularity_rank": 7,
@@ -1627,7 +1680,9 @@
         "g": 22,
         "b4s": 0,
         "sb": 0,
-        "wo": 0
+        "wo": 0,
+        "fan": 1,
+        "er": 4
       },
       "difficulty": "easy",
       "popularity_rank": 8,
@@ -1669,7 +1724,9 @@
         "g": 241,
         "b4s": 3,
         "sb": 175,
-        "wo": 11
+        "wo": 11,
+        "fan": 0,
+        "er": 0
       },
       "difficulty": "easy",
       "popularity_rank": 9,
@@ -1711,7 +1768,9 @@
         "g": 34,
         "b4s": 10,
         "sb": 5,
-        "wo": 2
+        "wo": 2,
+        "fan": null,
+        "er": null
       },
       "difficulty": "medium",
       "popularity_rank": 10,
@@ -1753,7 +1812,9 @@
         "g": 35,
         "b4s": 15,
         "sb": 2,
-        "wo": 1
+        "wo": 1,
+        "fan": null,
+        "er": null
       },
       "difficulty": "medium",
       "popularity_rank": 11,
@@ -1806,7 +1867,9 @@
         "g": 3,
         "b4s": 0,
         "sb": 0,
-        "wo": 0
+        "wo": 0,
+        "fan": 1,
+        "er": 22
       },
       "difficulty": "medium",
       "popularity_rank": 12,
@@ -1859,7 +1922,9 @@
         "g": 1,
         "b4s": 0,
         "sb": 0,
-        "wo": 0
+        "wo": 0,
+        "fan": 0,
+        "er": 13
       },
       "difficulty": "medium",
       "popularity_rank": 13,
@@ -1901,7 +1966,9 @@
         "g": 38,
         "b4s": 19,
         "sb": 3,
-        "wo": 4
+        "wo": 4,
+        "fan": null,
+        "er": null
       },
       "difficulty": "medium",
       "popularity_rank": 14,
@@ -1943,7 +2010,9 @@
         "g": 34,
         "b4s": 9,
         "sb": 8,
-        "wo": 1
+        "wo": 1,
+        "fan": null,
+        "er": null
       },
       "difficulty": "medium",
       "popularity_rank": 15,
@@ -1996,7 +2065,9 @@
         "g": 1,
         "b4s": 0,
         "sb": 0,
-        "wo": 0
+        "wo": 0,
+        "fan": 2,
+        "er": 19
       },
       "difficulty": "medium",
       "popularity_rank": 16,
@@ -2049,7 +2120,9 @@
         "g": 1,
         "b4s": 0,
         "sb": 0,
-        "wo": 0
+        "wo": 0,
+        "fan": 3,
+        "er": 14
       },
       "difficulty": "medium",
       "popularity_rank": 17,
@@ -2091,7 +2164,9 @@
         "g": 35,
         "b4s": 21,
         "sb": 0,
-        "wo": 5
+        "wo": 5,
+        "fan": null,
+        "er": null
       },
       "difficulty": "medium",
       "popularity_rank": 18,
@@ -2133,7 +2208,9 @@
         "g": 39,
         "b4s": 10,
         "sb": 14,
-        "wo": 6
+        "wo": 6,
+        "fan": null,
+        "er": null
       },
       "difficulty": "medium",
       "popularity_rank": 19,
@@ -2186,7 +2263,9 @@
         "g": 6,
         "b4s": 0,
         "sb": 0,
-        "wo": 0
+        "wo": 0,
+        "fan": 6,
+        "er": 78
       },
       "difficulty": "hard",
       "popularity_rank": 20,
@@ -2228,7 +2307,9 @@
         "g": 35,
         "b4s": 11,
         "sb": 4,
-        "wo": 1
+        "wo": 1,
+        "fan": null,
+        "er": null
       },
       "difficulty": "hard",
       "popularity_rank": 21,
@@ -2281,7 +2362,9 @@
         "g": 5,
         "b4s": 0,
         "sb": 0,
-        "wo": 0
+        "wo": 0,
+        "fan": 0,
+        "er": 36
       },
       "difficulty": "hard",
       "popularity_rank": 22,
@@ -2330,12 +2413,7 @@
         "tpm": 0,
         "trick_play_rate": "0%"
       },
-      "career": {
-        "g": 4,
-        "b4s": 0,
-        "sb": 1,
-        "wo": 1
-      },
+      "career": null,
       "difficulty": "hard",
       "popularity_rank": 23,
       "popularity_confidence": "low",
@@ -2387,7 +2465,9 @@
         "g": 1,
         "b4s": 0,
         "sb": 0,
-        "wo": 0
+        "wo": 0,
+        "fan": 3,
+        "er": 7
       },
       "difficulty": "hard",
       "popularity_rank": 24,
@@ -2440,7 +2520,9 @@
         "g": 4,
         "b4s": 0,
         "sb": 0,
-        "wo": 0
+        "wo": 0,
+        "fan": 1,
+        "er": 29
       },
       "difficulty": "hard",
       "popularity_rank": 25,
@@ -2490,10 +2572,12 @@
         "trick_play_rate": "20%"
       },
       "career": {
-        "g": 4,
+        "g": 8,
         "b4s": 0,
         "sb": 0,
-        "wo": 0
+        "wo": 0,
+        "fan": 2,
+        "er": 18
       },
       "difficulty": "hard",
       "popularity_rank": 26,
@@ -2535,7 +2619,9 @@
         "g": 37,
         "b4s": 10,
         "sb": 0,
-        "wo": 4
+        "wo": 4,
+        "fan": null,
+        "er": null
       },
       "difficulty": "hard",
       "popularity_rank": 27,
@@ -2577,7 +2663,9 @@
         "g": 20,
         "b4s": 1,
         "sb": 0,
-        "wo": 0
+        "wo": 0,
+        "fan": null,
+        "er": null
       },
       "difficulty": "easy",
       "popularity_rank": 1,
@@ -2619,7 +2707,9 @@
         "g": 162,
         "b4s": 16,
         "sb": 13,
-        "wo": 11
+        "wo": 11,
+        "fan": 0,
+        "er": 0
       },
       "difficulty": "easy",
       "popularity_rank": 2,
@@ -2672,7 +2762,9 @@
         "g": 3,
         "b4s": 0,
         "sb": 0,
-        "wo": 0
+        "wo": 0,
+        "fan": 12,
+        "er": 107
       },
       "difficulty": "easy",
       "popularity_rank": 3,
@@ -2725,7 +2817,9 @@
         "g": 3,
         "b4s": 0,
         "sb": 0,
-        "wo": 0
+        "wo": 0,
+        "fan": 2,
+        "er": 30
       },
       "difficulty": "easy",
       "popularity_rank": 4,
@@ -2767,7 +2861,9 @@
         "g": 40,
         "b4s": 9,
         "sb": 3,
-        "wo": 8
+        "wo": 8,
+        "fan": null,
+        "er": null
       },
       "difficulty": "easy",
       "popularity_rank": 5,
@@ -2809,7 +2905,9 @@
         "g": 45,
         "b4s": 19,
         "sb": 5,
-        "wo": 3
+        "wo": 3,
+        "fan": null,
+        "er": null
       },
       "difficulty": "easy",
       "popularity_rank": 6,
@@ -2851,7 +2949,9 @@
         "g": 17,
         "b4s": 1,
         "sb": 0,
-        "wo": 0
+        "wo": 0,
+        "fan": null,
+        "er": null
       },
       "difficulty": "easy",
       "popularity_rank": 7,
@@ -2893,7 +2993,9 @@
         "g": 40,
         "b4s": 18,
         "sb": 0,
-        "wo": 8
+        "wo": 8,
+        "fan": null,
+        "er": null
       },
       "difficulty": "easy",
       "popularity_rank": 8,
@@ -2935,7 +3037,9 @@
         "g": 34,
         "b4s": 12,
         "sb": 5,
-        "wo": 4
+        "wo": 4,
+        "fan": null,
+        "er": null
       },
       "difficulty": "easy",
       "popularity_rank": 9,
@@ -2988,7 +3092,9 @@
         "g": 1,
         "b4s": 0,
         "sb": 0,
-        "wo": 0
+        "wo": 0,
+        "fan": 0,
+        "er": 12
       },
       "difficulty": "medium",
       "popularity_rank": 10,
@@ -3030,7 +3136,9 @@
         "g": 38,
         "b4s": 8,
         "sb": 8,
-        "wo": 2
+        "wo": 2,
+        "fan": null,
+        "er": null
       },
       "difficulty": "medium",
       "popularity_rank": 11,
@@ -3083,7 +3191,9 @@
         "g": 4,
         "b4s": 0,
         "sb": 0,
-        "wo": 0
+        "wo": 0,
+        "fan": 2,
+        "er": 22
       },
       "difficulty": "medium",
       "popularity_rank": 12,
@@ -3173,7 +3283,9 @@
         "g": 34,
         "b4s": 14,
         "sb": 0,
-        "wo": 2
+        "wo": 2,
+        "fan": null,
+        "er": null
       },
       "difficulty": "medium",
       "popularity_rank": 14,
@@ -3215,7 +3327,9 @@
         "g": 38,
         "b4s": 23,
         "sb": 8,
-        "wo": 6
+        "wo": 6,
+        "fan": null,
+        "er": null
       },
       "difficulty": "medium",
       "popularity_rank": 15,
@@ -3257,7 +3371,9 @@
         "g": 45,
         "b4s": 6,
         "sb": 3,
-        "wo": 7
+        "wo": 7,
+        "fan": null,
+        "er": null
       },
       "difficulty": "medium",
       "popularity_rank": 16,
@@ -3299,7 +3415,9 @@
         "g": 37,
         "b4s": 12,
         "sb": 2,
-        "wo": 2
+        "wo": 2,
+        "fan": null,
+        "er": null
       },
       "difficulty": "medium",
       "popularity_rank": 17,
@@ -3341,7 +3459,9 @@
         "g": 40,
         "b4s": 14,
         "sb": 3,
-        "wo": 4
+        "wo": 4,
+        "fan": null,
+        "er": null
       },
       "difficulty": "medium",
       "popularity_rank": 18,
@@ -3391,10 +3511,12 @@
         "trick_play_rate": "20%"
       },
       "career": {
-        "g": 8,
+        "g": 4,
         "b4s": 0,
         "sb": 0,
-        "wo": 0
+        "wo": 0,
+        "fan": 1,
+        "er": 20
       },
       "difficulty": "hard",
       "popularity_rank": 19,
@@ -3447,7 +3569,9 @@
         "g": 68,
         "b4s": 12,
         "sb": 4,
-        "wo": 3
+        "wo": 3,
+        "fan": 0,
+        "er": 34
       },
       "difficulty": "hard",
       "popularity_rank": 20,
@@ -3489,7 +3613,9 @@
         "g": 88,
         "b4s": 10,
         "sb": 4,
-        "wo": 4
+        "wo": 4,
+        "fan": null,
+        "er": null
       },
       "difficulty": "hard",
       "popularity_rank": 21,
@@ -3542,7 +3668,9 @@
         "g": 2,
         "b4s": 0,
         "sb": 0,
-        "wo": 0
+        "wo": 0,
+        "fan": 5,
+        "er": 34
       },
       "difficulty": "hard",
       "popularity_rank": 22,
@@ -3595,7 +3723,9 @@
         "g": 1,
         "b4s": 0,
         "sb": 0,
-        "wo": 0
+        "wo": 0,
+        "fan": 1,
+        "er": 17
       },
       "difficulty": "hard",
       "popularity_rank": 23,
@@ -3648,7 +3778,9 @@
         "g": 3,
         "b4s": 0,
         "sb": 0,
-        "wo": 0
+        "wo": 0,
+        "fan": 7,
+        "er": 53
       },
       "difficulty": "hard",
       "popularity_rank": 24,
@@ -3690,7 +3822,9 @@
         "g": 39,
         "b4s": 0,
         "sb": 14,
-        "wo": 0
+        "wo": 0,
+        "fan": null,
+        "er": null
       },
       "difficulty": "hard",
       "popularity_rank": 25,
@@ -3743,7 +3877,9 @@
         "g": 1,
         "b4s": 0,
         "sb": 0,
-        "wo": 0
+        "wo": 0,
+        "fan": 0,
+        "er": 13
       },
       "difficulty": "hard",
       "popularity_rank": 26,
@@ -3785,7 +3921,9 @@
         "g": 273,
         "b4s": 80,
         "sb": 65,
-        "wo": 20
+        "wo": 20,
+        "fan": 0,
+        "er": 0
       },
       "difficulty": "easy",
       "popularity_rank": 1,
@@ -3828,7 +3966,9 @@
         "g": 114,
         "b4s": 58,
         "sb": 6,
-        "wo": 20
+        "wo": 20,
+        "fan": null,
+        "er": null
       },
       "difficulty": "easy",
       "popularity_rank": 2,
@@ -3871,7 +4011,9 @@
         "g": 265,
         "b4s": 151,
         "sb": 56,
-        "wo": 24
+        "wo": 24,
+        "fan": 0,
+        "er": 0
       },
       "difficulty": "easy",
       "popularity_rank": 3,
@@ -3914,7 +4056,9 @@
         "g": 160,
         "b4s": 48,
         "sb": 12,
-        "wo": 10
+        "wo": 10,
+        "fan": 0,
+        "er": 0
       },
       "difficulty": "easy",
       "popularity_rank": 4,
@@ -3968,7 +4112,9 @@
         "g": 7,
         "b4s": 0,
         "sb": 0,
-        "wo": 0
+        "wo": 0,
+        "fan": 9,
+        "er": 63
       },
       "difficulty": "easy",
       "popularity_rank": 5,
@@ -4011,7 +4157,9 @@
         "g": 238,
         "b4s": 77,
         "sb": 57,
-        "wo": 17
+        "wo": 17,
+        "fan": 0,
+        "er": 0
       },
       "difficulty": "easy",
       "popularity_rank": 6,
@@ -4065,7 +4213,9 @@
         "g": 59,
         "b4s": 13,
         "sb": 2,
-        "wo": 0
+        "wo": 0,
+        "fan": 13,
+        "er": 173
       },
       "difficulty": "easy",
       "popularity_rank": 7,
@@ -4119,7 +4269,9 @@
         "g": 3,
         "b4s": 0,
         "sb": 0,
-        "wo": 0
+        "wo": 0,
+        "fan": 3,
+        "er": 44
       },
       "difficulty": "easy",
       "popularity_rank": 8,
@@ -4162,7 +4314,9 @@
         "g": 273,
         "b4s": 140,
         "sb": 54,
-        "wo": 23
+        "wo": 23,
+        "fan": 0,
+        "er": 0
       },
       "difficulty": "easy",
       "popularity_rank": 9,
@@ -4205,7 +4359,9 @@
         "g": 27,
         "b4s": 5,
         "sb": 0,
-        "wo": 1
+        "wo": 1,
+        "fan": 0,
+        "er": 0
       },
       "difficulty": "medium",
       "popularity_rank": 10,
@@ -4259,7 +4415,9 @@
         "g": 25,
         "b4s": 0,
         "sb": 0,
-        "wo": 0
+        "wo": 0,
+        "fan": 19,
+        "er": 198
       },
       "difficulty": "medium",
       "popularity_rank": 11,
@@ -4302,7 +4460,9 @@
         "g": 94,
         "b4s": 29,
         "sb": 6,
-        "wo": 3
+        "wo": 3,
+        "fan": null,
+        "er": null
       },
       "difficulty": "medium",
       "popularity_rank": 12,
@@ -4345,7 +4505,9 @@
         "g": 247,
         "b4s": 125,
         "sb": 52,
-        "wo": 21
+        "wo": 21,
+        "fan": 0,
+        "er": 0
       },
       "difficulty": "medium",
       "popularity_rank": 13,
@@ -4388,7 +4550,9 @@
         "g": 36,
         "b4s": 7,
         "sb": 1,
-        "wo": 5
+        "wo": 5,
+        "fan": null,
+        "er": null
       },
       "difficulty": "medium",
       "popularity_rank": 14,
@@ -4442,7 +4606,9 @@
         "g": 233,
         "b4s": 63,
         "sb": 31,
-        "wo": 11
+        "wo": 11,
+        "fan": 0,
+        "er": 3
       },
       "difficulty": "medium",
       "popularity_rank": 15,
@@ -4496,7 +4662,9 @@
         "g": 6,
         "b4s": 0,
         "sb": 0,
-        "wo": 0
+        "wo": 0,
+        "fan": 9,
+        "er": 79
       },
       "difficulty": "medium",
       "popularity_rank": 16,
@@ -4539,7 +4707,9 @@
         "g": 73,
         "b4s": 11,
         "sb": 1,
-        "wo": 0
+        "wo": 0,
+        "fan": null,
+        "er": null
       },
       "difficulty": "medium",
       "popularity_rank": 17,
@@ -4582,7 +4752,9 @@
         "g": 24,
         "b4s": 2,
         "sb": 0,
-        "wo": 0
+        "wo": 0,
+        "fan": null,
+        "er": null
       },
       "difficulty": "medium",
       "popularity_rank": 18,
@@ -4625,7 +4797,9 @@
         "g": 255,
         "b4s": 59,
         "sb": 19,
-        "wo": 12
+        "wo": 12,
+        "fan": 0,
+        "er": 0
       },
       "difficulty": "hard",
       "popularity_rank": 19,
@@ -4679,7 +4853,9 @@
         "g": 2,
         "b4s": 0,
         "sb": 0,
-        "wo": 0
+        "wo": 0,
+        "fan": 5,
+        "er": 77
       },
       "difficulty": "hard",
       "popularity_rank": 20,
@@ -4722,7 +4898,9 @@
         "g": 82,
         "b4s": 1,
         "sb": 17,
-        "wo": 1
+        "wo": 1,
+        "fan": null,
+        "er": null
       },
       "difficulty": "hard",
       "popularity_rank": 21,
@@ -4776,7 +4954,9 @@
         "g": 2,
         "b4s": 0,
         "sb": 0,
-        "wo": 0
+        "wo": 0,
+        "fan": 1,
+        "er": 34
       },
       "difficulty": "hard",
       "popularity_rank": 22,
@@ -4819,7 +4999,9 @@
         "g": 39,
         "b4s": 14,
         "sb": 0,
-        "wo": 8
+        "wo": 8,
+        "fan": null,
+        "er": null
       },
       "difficulty": "hard",
       "popularity_rank": 23,
@@ -4873,7 +5055,9 @@
         "g": 10,
         "b4s": 0,
         "sb": 0,
-        "wo": 0
+        "wo": 0,
+        "fan": 4,
+        "er": 83
       },
       "difficulty": "hard",
       "popularity_rank": 24,
@@ -4927,7 +5111,9 @@
         "g": 3,
         "b4s": 0,
         "sb": 0,
-        "wo": 0
+        "wo": 0,
+        "fan": 2,
+        "er": 36
       },
       "difficulty": "hard",
       "popularity_rank": 25,
@@ -4981,7 +5167,9 @@
         "g": 18,
         "b4s": 0,
         "sb": 2,
-        "wo": 0
+        "wo": 0,
+        "fan": 5,
+        "er": 116
       },
       "difficulty": "hard",
       "popularity_rank": 26,
@@ -5035,7 +5223,9 @@
         "g": 2,
         "b4s": 0,
         "sb": 0,
-        "wo": 0
+        "wo": 0,
+        "fan": 7,
+        "er": 28
       },
       "difficulty": "hard",
       "popularity_rank": 27,
@@ -5078,7 +5268,9 @@
         "g": 269,
         "b4s": 30,
         "sb": 11,
-        "wo": 57
+        "wo": 57,
+        "fan": 0,
+        "er": 0
       },
       "difficulty": "easy",
       "popularity_rank": 1,
@@ -5121,7 +5313,9 @@
         "g": 134,
         "b4s": 63,
         "sb": 19,
-        "wo": 27
+        "wo": 27,
+        "fan": 0,
+        "er": 0
       },
       "difficulty": "easy",
       "popularity_rank": 2,
@@ -5164,7 +5358,9 @@
         "g": 184,
         "b4s": 46,
         "sb": 24,
-        "wo": 42
+        "wo": 42,
+        "fan": 1,
+        "er": 8
       },
       "difficulty": "easy",
       "popularity_rank": 3,
@@ -5207,7 +5403,9 @@
         "g": 287,
         "b4s": 110,
         "sb": 31,
-        "wo": 57
+        "wo": 57,
+        "fan": 0,
+        "er": 0
       },
       "difficulty": "easy",
       "popularity_rank": 4,
@@ -5261,7 +5459,9 @@
         "g": 255,
         "b4s": 6,
         "sb": 0,
-        "wo": 6
+        "wo": 6,
+        "fan": 3,
+        "er": 31
       },
       "difficulty": "easy",
       "popularity_rank": 5,
@@ -5315,7 +5515,9 @@
         "g": 1,
         "b4s": 0,
         "sb": 0,
-        "wo": 0
+        "wo": 0,
+        "fan": 0,
+        "er": 15
       },
       "difficulty": "easy",
       "popularity_rank": 6,
@@ -5358,7 +5560,9 @@
         "g": 301,
         "b4s": 96,
         "sb": 17,
-        "wo": 70
+        "wo": 70,
+        "fan": 0,
+        "er": 0
       },
       "difficulty": "easy",
       "popularity_rank": 7,
@@ -5450,7 +5654,9 @@
         "g": 108,
         "b4s": 22,
         "sb": 25,
-        "wo": 10
+        "wo": 10,
+        "fan": null,
+        "er": null
       },
       "difficulty": "easy",
       "popularity_rank": 9,
@@ -5493,7 +5699,9 @@
         "g": 187,
         "b4s": 16,
         "sb": 0,
-        "wo": 8
+        "wo": 8,
+        "fan": 0,
+        "er": 0
       },
       "difficulty": "medium",
       "popularity_rank": 10,
@@ -5536,7 +5744,9 @@
         "g": 282,
         "b4s": 88,
         "sb": 99,
-        "wo": 64
+        "wo": 64,
+        "fan": 0,
+        "er": 0
       },
       "difficulty": "medium",
       "popularity_rank": 11,
@@ -5579,7 +5789,9 @@
         "g": 192,
         "b4s": 64,
         "sb": 33,
-        "wo": 65
+        "wo": 65,
+        "fan": 0,
+        "er": 0
       },
       "difficulty": "medium",
       "popularity_rank": 12,
@@ -5633,7 +5845,9 @@
         "g": 27,
         "b4s": 0,
         "sb": 1,
-        "wo": 0
+        "wo": 0,
+        "fan": 25,
+        "er": 226
       },
       "difficulty": "medium",
       "popularity_rank": 13,
@@ -5687,7 +5901,9 @@
         "g": 18,
         "b4s": 0,
         "sb": 0,
-        "wo": 0
+        "wo": 0,
+        "fan": 25,
+        "er": 125
       },
       "difficulty": "medium",
       "popularity_rank": 14,
@@ -5730,7 +5946,9 @@
         "g": 287,
         "b4s": 58,
         "sb": 94,
-        "wo": 82
+        "wo": 82,
+        "fan": 0,
+        "er": 0
       },
       "difficulty": "medium",
       "popularity_rank": 15,
@@ -5784,7 +6002,9 @@
         "g": 274,
         "b4s": 58,
         "sb": 35,
-        "wo": 50
+        "wo": 50,
+        "fan": 15,
+        "er": 66
       },
       "difficulty": "medium",
       "popularity_rank": 16,
@@ -5838,7 +6058,9 @@
         "g": 6,
         "b4s": 0,
         "sb": 0,
-        "wo": 0
+        "wo": 0,
+        "fan": 4,
+        "er": 24
       },
       "difficulty": "medium",
       "popularity_rank": 17,
@@ -5892,7 +6114,9 @@
         "g": 1,
         "b4s": 0,
         "sb": 0,
-        "wo": 0
+        "wo": 0,
+        "fan": 2,
+        "er": 19
       },
       "difficulty": "medium",
       "popularity_rank": 18,
@@ -5935,7 +6159,9 @@
         "g": 39,
         "b4s": 30,
         "sb": 1,
-        "wo": 2
+        "wo": 2,
+        "fan": null,
+        "er": null
       },
       "difficulty": "hard",
       "popularity_rank": 19,
@@ -5978,7 +6204,9 @@
         "g": 19,
         "b4s": 3,
         "sb": 0,
-        "wo": 0
+        "wo": 0,
+        "fan": null,
+        "er": null
       },
       "difficulty": "hard",
       "popularity_rank": 20,
@@ -6021,7 +6249,9 @@
         "g": 21,
         "b4s": 0,
         "sb": 9,
-        "wo": 1
+        "wo": 1,
+        "fan": null,
+        "er": null
       },
       "difficulty": "hard",
       "popularity_rank": 21,
@@ -6075,7 +6305,9 @@
         "g": 2,
         "b4s": 0,
         "sb": 0,
-        "wo": 0
+        "wo": 0,
+        "fan": 1,
+        "er": 14
       },
       "difficulty": "hard",
       "popularity_rank": 22,
@@ -6129,7 +6361,9 @@
         "g": 1,
         "b4s": 0,
         "sb": 0,
-        "wo": 0
+        "wo": 0,
+        "fan": 1,
+        "er": 9
       },
       "difficulty": "hard",
       "popularity_rank": 23,
@@ -6183,7 +6417,9 @@
         "g": 2,
         "b4s": 0,
         "sb": 0,
-        "wo": 0
+        "wo": 0,
+        "fan": 1,
+        "er": 11
       },
       "difficulty": "hard",
       "popularity_rank": 24,
@@ -6226,7 +6462,9 @@
         "g": 26,
         "b4s": 0,
         "sb": 13,
-        "wo": 0
+        "wo": 0,
+        "fan": null,
+        "er": null
       },
       "difficulty": "hard",
       "popularity_rank": 25,
@@ -6280,7 +6518,9 @@
         "g": 4,
         "b4s": 0,
         "sb": 0,
-        "wo": 0
+        "wo": 0,
+        "fan": 0,
+        "er": 15
       },
       "difficulty": "hard",
       "popularity_rank": 26,
@@ -6334,7 +6574,9 @@
         "g": 1,
         "b4s": 0,
         "sb": 0,
-        "wo": 0
+        "wo": 0,
+        "fan": 1,
+        "er": 10
       },
       "difficulty": "hard",
       "popularity_rank": 27,
@@ -6377,7 +6619,9 @@
         "g": 75,
         "b4s": 11,
         "sb": 1,
-        "wo": 4
+        "wo": 4,
+        "fan": 0,
+        "er": 0
       },
       "difficulty": "easy",
       "popularity_rank": 1,
@@ -6419,7 +6663,9 @@
         "g": 75,
         "b4s": 5,
         "sb": 1,
-        "wo": 0
+        "wo": 0,
+        "fan": 0,
+        "er": 0
       },
       "difficulty": "easy",
       "popularity_rank": 2,
@@ -6461,7 +6707,9 @@
         "g": 79,
         "b4s": 27,
         "sb": 4,
-        "wo": 6
+        "wo": 6,
+        "fan": null,
+        "er": null
       },
       "difficulty": "easy",
       "popularity_rank": 3,
@@ -6503,7 +6751,9 @@
         "g": 91,
         "b4s": 22,
         "sb": 13,
-        "wo": 6
+        "wo": 6,
+        "fan": 0,
+        "er": 0
       },
       "difficulty": "easy",
       "popularity_rank": 4,
@@ -6545,7 +6795,9 @@
         "g": 115,
         "b4s": 38,
         "sb": 1,
-        "wo": 6
+        "wo": 6,
+        "fan": 0,
+        "er": 0
       },
       "difficulty": "easy",
       "popularity_rank": 5,
@@ -6587,7 +6839,9 @@
         "g": 86,
         "b4s": 18,
         "sb": 11,
-        "wo": 4
+        "wo": 4,
+        "fan": 0,
+        "er": 0
       },
       "difficulty": "easy",
       "popularity_rank": 6,
@@ -6629,7 +6883,9 @@
         "g": 41,
         "b4s": 25,
         "sb": 1,
-        "wo": 16
+        "wo": 16,
+        "fan": null,
+        "er": null
       },
       "difficulty": "easy",
       "popularity_rank": 7,
@@ -6682,7 +6938,9 @@
         "g": 9,
         "b4s": 0,
         "sb": 0,
-        "wo": 0
+        "wo": 0,
+        "fan": 0,
+        "er": 18
       },
       "difficulty": "easy",
       "popularity_rank": 8,
@@ -6724,7 +6982,9 @@
         "g": 42,
         "b4s": 9,
         "sb": 5,
-        "wo": 9
+        "wo": 9,
+        "fan": null,
+        "er": null
       },
       "difficulty": "easy",
       "popularity_rank": 9,
@@ -6766,7 +7026,9 @@
         "g": 73,
         "b4s": 22,
         "sb": 3,
-        "wo": 7
+        "wo": 7,
+        "fan": null,
+        "er": null
       },
       "difficulty": "medium",
       "popularity_rank": 10,
@@ -6808,7 +7070,9 @@
         "g": 134,
         "b4s": 34,
         "sb": 21,
-        "wo": 5
+        "wo": 5,
+        "fan": 0,
+        "er": 0
       },
       "difficulty": "medium",
       "popularity_rank": 11,
@@ -6861,7 +7125,9 @@
         "g": 2,
         "b4s": 0,
         "sb": 0,
-        "wo": 0
+        "wo": 0,
+        "fan": 3,
+        "er": 29
       },
       "difficulty": "medium",
       "popularity_rank": 12,
@@ -6903,7 +7169,9 @@
         "g": 42,
         "b4s": 15,
         "sb": 2,
-        "wo": 7
+        "wo": 7,
+        "fan": null,
+        "er": null
       },
       "difficulty": "medium",
       "popularity_rank": 13,
@@ -6956,7 +7224,9 @@
         "g": 1,
         "b4s": 0,
         "sb": 0,
-        "wo": 0
+        "wo": 0,
+        "fan": 1,
+        "er": 19
       },
       "difficulty": "medium",
       "popularity_rank": 14,
@@ -7057,7 +7327,9 @@
         "g": 3,
         "b4s": 0,
         "sb": 0,
-        "wo": 0
+        "wo": 0,
+        "fan": 7,
+        "er": 65
       },
       "difficulty": "medium",
       "popularity_rank": 16,
@@ -7110,7 +7382,9 @@
         "g": 2,
         "b4s": 0,
         "sb": 0,
-        "wo": 0
+        "wo": 0,
+        "fan": 0,
+        "er": 13
       },
       "difficulty": "medium",
       "popularity_rank": 17,
@@ -7152,7 +7426,9 @@
         "g": 44,
         "b4s": 10,
         "sb": 7,
-        "wo": 3
+        "wo": 3,
+        "fan": null,
+        "er": null
       },
       "difficulty": "medium",
       "popularity_rank": 18,
@@ -7205,7 +7481,9 @@
         "g": 1,
         "b4s": 0,
         "sb": 0,
-        "wo": 0
+        "wo": 0,
+        "fan": 0,
+        "er": 17
       },
       "difficulty": "hard",
       "popularity_rank": 19,
@@ -7258,7 +7536,9 @@
         "g": 10,
         "b4s": 0,
         "sb": 0,
-        "wo": 0
+        "wo": 0,
+        "fan": 5,
+        "er": 26
       },
       "difficulty": "hard",
       "popularity_rank": 20,
@@ -7300,7 +7580,9 @@
         "g": 14,
         "b4s": 1,
         "sb": 0,
-        "wo": 0
+        "wo": 0,
+        "fan": null,
+        "er": null
       },
       "difficulty": "hard",
       "popularity_rank": 21,
@@ -7342,7 +7624,9 @@
         "g": 78,
         "b4s": 31,
         "sb": 1,
-        "wo": 11
+        "wo": 11,
+        "fan": null,
+        "er": null
       },
       "difficulty": "hard",
       "popularity_rank": 22,
@@ -7395,7 +7679,9 @@
         "g": 4,
         "b4s": 0,
         "sb": 0,
-        "wo": 0
+        "wo": 0,
+        "fan": 4,
+        "er": 32
       },
       "difficulty": "hard",
       "popularity_rank": 23,
@@ -7448,7 +7734,9 @@
         "g": 2,
         "b4s": 0,
         "sb": 0,
-        "wo": 0
+        "wo": 0,
+        "fan": 0,
+        "er": 26
       },
       "difficulty": "hard",
       "popularity_rank": 24,
@@ -7490,7 +7778,9 @@
         "g": 27,
         "b4s": 0,
         "sb": 17,
-        "wo": 0
+        "wo": 0,
+        "fan": null,
+        "er": null
       },
       "difficulty": "hard",
       "popularity_rank": 25,
@@ -7543,7 +7833,9 @@
         "g": 1,
         "b4s": 0,
         "sb": 0,
-        "wo": 0
+        "wo": 0,
+        "fan": 0,
+        "er": 15
       },
       "difficulty": "hard",
       "popularity_rank": 26,

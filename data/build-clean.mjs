@@ -76,11 +76,15 @@ ingest(raw.fielding, 'fielding');
 // several rows. SUM them per player_id for a true career total.
 const careerTotals = {};
 for (const c of raw.career ?? []) {
-  const t = (careerTotals[c.player_id] ??= { g: 0, b4s: 0, sb: 0, wo: 0 });
+  const t = (careerTotals[c.player_id] ??= { g: 0, b4s: 0, sb: 0, wo: 0, fan: null, er: null });
   t.g += c.g ?? 0;
   t.b4s += c.b4s ?? 0;
   t.sb += c.sb ?? 0;
   t.wo += c.wo ?? 0;
+  // fan/er come pre-aggregated from the per-player detail endpoint (same on
+  // every stint row for a player) — take the value, don't sum.
+  if (c.fan != null) t.fan = c.fan;
+  if (c.er != null) t.er = c.er;
 }
 for (const [id, t] of Object.entries(careerTotals)) {
   if (byId[id]) byId[id].career = t;

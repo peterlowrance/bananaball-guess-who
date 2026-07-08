@@ -35,6 +35,8 @@ export interface CareerStats {
   b4s: number | null; // ball-four sprints (took off instead of walking)
   sb: number | null; // stolen bases
   wo: number | null; // walk-offs
+  fan: number | null; // foul-outs-to-fan induced (pitching; null if never pitched)
+  er: number | null; // career earned runs allowed (pitching)
 }
 
 export interface FieldingStats {
