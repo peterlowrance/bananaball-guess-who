@@ -25,7 +25,7 @@ for (const t of raw.teams) {
   };
 }
 
-// Merge hitting + pitching per player_id
+// Merge hitting + pitching + fielding per player_id
 const byId = {};
 function ingest(rows, kind) {
   for (const r of rows) {
@@ -41,22 +41,32 @@ function ingest(rows, kind) {
         image_url: r.image?.url ?? null,
         hitting: null,
         pitching: null,
+        fielding: null,
       };
     }
     const p = byId[r.player_id];
     if (kind === 'hitting') {
       p.hitting = { g: r.g, ab: r.ab, r: r.r, h: r.h, rbi: r.rbi, hr: r.hr, avg: r.avg_display, ops: r.ops_display };
-    } else {
-      // pitching fields — keep whatever exists
+    } else if (kind === 'pitching') {
+      // Source codes: k = strikeouts, saves = saves, gs = games started.
       p.pitching = {
-        g: r.g ?? null, w: r.w ?? null, l: r.l ?? null, sv: r.sv ?? null,
-        ip: r.ip_display ?? r.ip ?? null, so: r.so ?? null, era: r.era_display ?? null,
+        g: r.g ?? null, gs: r.gs ?? null, w: r.w ?? null, l: r.l ?? null, sv: r.saves ?? null,
+        ip: r.ip_display ?? (r.ip != null ? String(r.ip) : null), so: r.k ?? null,
+        era: r.era_display ?? null, runs_allowed: r.runs_allowed ?? null, hits_allowed: r.hits_allowed ?? null,
+      };
+    } else {
+      // fielding — e = errors, tpo = trick_play_outs, tpm = trick_plays_missed.
+      p.fielding = {
+        g: r.g ?? null, e: r.e ?? null, air_outs: r.air_outs ?? null, ground_outs: r.ground_outs ?? null,
+        tpo: r.trick_play_outs ?? null, tpm: r.trick_plays_missed ?? null,
+        trick_play_rate: r.trick_play_rate_display ?? null,
       };
     }
   }
 }
 ingest(raw.hitting, 'hitting');
 ingest(raw.pitching, 'pitching');
+ingest(raw.fielding, 'fielding');
 
 // Filter to 6 core teams, and drop one-off celebrity guest players
 let players = Object.values(byId).filter(

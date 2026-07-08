@@ -15,11 +15,11 @@ export function LessonScreen() {
   const isQuiz = sp.get('mode') === 'quiz';
   const navigate = useNavigate();
 
-  const focusTeams = useStore((s) => s.profile.settings.focusTeams);
-  const unit = curriculumUnits(focusTeams).find((u) => u.key === unitId);
+  const unit = curriculumUnits().find((u) => u.key === unitId);
 
   const runner = useLessonSession({
     unitPlayerIds: unit?.playerIds ?? [],
+    cameoIds: unit?.cameoIds ?? [],
     attempt,
     reviewOnly: isQuiz,
     length: isQuiz ? 15 : 12,

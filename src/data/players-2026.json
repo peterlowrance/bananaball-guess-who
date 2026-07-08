@@ -71,12 +71,24 @@
       },
       "pitching": {
         "g": 18,
+        "gs": 0,
         "w": 1,
         "l": 2,
-        "sv": null,
+        "sv": 1,
         "ip": "23.2",
-        "so": null,
-        "era": "7.61"
+        "so": 15,
+        "era": "7.61",
+        "runs_allowed": 20,
+        "hits_allowed": 31
+      },
+      "fielding": {
+        "g": 18,
+        "e": 0,
+        "air_outs": 0,
+        "ground_outs": 0,
+        "tpo": 1,
+        "tpm": 0,
+        "trick_play_rate": "10%"
       },
       "difficulty": "easy",
       "popularity_rank": 1,
@@ -107,12 +119,24 @@
       },
       "pitching": {
         "g": 13,
+        "gs": 0,
         "w": 0,
         "l": 0,
-        "sv": null,
+        "sv": 0,
         "ip": "17.2",
-        "so": null,
-        "era": "10.70"
+        "so": 16,
+        "era": "10.70",
+        "runs_allowed": 29,
+        "hits_allowed": 29
+      },
+      "fielding": {
+        "g": 15,
+        "e": 1,
+        "air_outs": 0,
+        "ground_outs": 0,
+        "tpo": 0,
+        "tpm": 0,
+        "trick_play_rate": "0%"
       },
       "difficulty": "easy",
       "popularity_rank": 2,
@@ -142,6 +166,15 @@
         "ops": "1.043"
       },
       "pitching": null,
+      "fielding": {
+        "g": 26,
+        "e": 2,
+        "air_outs": 18,
+        "ground_outs": 17,
+        "tpo": 4,
+        "tpm": 0,
+        "trick_play_rate": "20%"
+      },
       "difficulty": "easy",
       "popularity_rank": 3,
       "popularity_confidence": "high",
@@ -170,6 +203,15 @@
         "ops": ".723"
       },
       "pitching": null,
+      "fielding": {
+        "g": 24,
+        "e": 0,
+        "air_outs": 9,
+        "ground_outs": 6,
+        "tpo": 9,
+        "tpm": 2,
+        "trick_play_rate": "40%"
+      },
       "difficulty": "easy",
       "popularity_rank": 4,
       "popularity_confidence": "high",
@@ -198,6 +240,15 @@
         "ops": ".877"
       },
       "pitching": null,
+      "fielding": {
+        "g": 26,
+        "e": 0,
+        "air_outs": 34,
+        "ground_outs": 22,
+        "tpo": 0,
+        "tpm": 0,
+        "trick_play_rate": "0%"
+      },
       "difficulty": "easy",
       "popularity_rank": 5,
       "popularity_confidence": "high",
@@ -227,12 +278,24 @@
       },
       "pitching": {
         "g": 17,
+        "gs": 0,
         "w": 2,
         "l": 2,
-        "sv": null,
+        "sv": 5,
         "ip": "17",
-        "so": null,
-        "era": "4.76"
+        "so": 15,
+        "era": "4.76",
+        "runs_allowed": 10,
+        "hits_allowed": 16
+      },
+      "fielding": {
+        "g": 17,
+        "e": 0,
+        "air_outs": 0,
+        "ground_outs": 0,
+        "tpo": 0,
+        "tpm": 0,
+        "trick_play_rate": "0%"
       },
       "difficulty": "easy",
       "popularity_rank": 6,
@@ -263,12 +326,24 @@
       },
       "pitching": {
         "g": 5,
+        "gs": 0,
         "w": 0,
         "l": 1,
-        "sv": null,
+        "sv": 0,
         "ip": "1.2",
-        "so": null,
-        "era": "54.00"
+        "so": 2,
+        "era": "54.00",
+        "runs_allowed": 11,
+        "hits_allowed": 9
+      },
+      "fielding": {
+        "g": 5,
+        "e": 0,
+        "air_outs": 0,
+        "ground_outs": 0,
+        "tpo": 0,
+        "tpm": 0,
+        "trick_play_rate": "0%"
       },
       "difficulty": "easy",
       "popularity_rank": 7,
@@ -299,12 +374,24 @@
       },
       "pitching": {
         "g": 12,
+        "gs": 11,
         "w": 2,
         "l": 1,
-        "sv": null,
+        "sv": 0,
         "ip": "38.1",
-        "so": null,
-        "era": "7.28"
+        "so": 33,
+        "era": "7.28",
+        "runs_allowed": 33,
+        "hits_allowed": 43
+      },
+      "fielding": {
+        "g": 12,
+        "e": 1,
+        "air_outs": 0,
+        "ground_outs": 0,
+        "tpo": 1,
+        "tpm": 0,
+        "trick_play_rate": "10%"
       },
       "difficulty": "easy",
       "popularity_rank": 8,
@@ -335,12 +422,24 @@
       },
       "pitching": {
         "g": 1,
+        "gs": 0,
         "w": 0,
         "l": 0,
-        "sv": null,
+        "sv": 0,
         "ip": "0.2",
-        "so": null,
-        "era": "40.50"
+        "so": 0,
+        "era": "40.50",
+        "runs_allowed": 5,
+        "hits_allowed": 2
+      },
+      "fielding": {
+        "g": 23,
+        "e": 0,
+        "air_outs": 12,
+        "ground_outs": 9,
+        "tpo": 0,
+        "tpm": 0,
+        "trick_play_rate": "0%"
       },
       "difficulty": "medium",
       "popularity_rank": 9,
@@ -370,6 +469,15 @@
         "ops": ".500"
       },
       "pitching": null,
+      "fielding": {
+        "g": 2,
+        "e": 0,
+        "air_outs": 1,
+        "ground_outs": 0,
+        "tpo": 0,
+        "tpm": 0,
+        "trick_play_rate": "0%"
+      },
       "difficulty": "medium",
       "popularity_rank": 10,
       "popularity_confidence": "high",
@@ -399,12 +507,24 @@
       },
       "pitching": {
         "g": 12,
+        "gs": 8,
         "w": 2,
         "l": 4,
-        "sv": null,
+        "sv": 0,
         "ip": "36.2",
-        "so": null,
-        "era": "6.14"
+        "so": 35,
+        "era": "6.14",
+        "runs_allowed": 37,
+        "hits_allowed": 44
+      },
+      "fielding": {
+        "g": 12,
+        "e": 1,
+        "air_outs": 0,
+        "ground_outs": 0,
+        "tpo": 0,
+        "tpm": 0,
+        "trick_play_rate": "0%"
       },
       "difficulty": "medium",
       "popularity_rank": 11,
@@ -435,12 +555,24 @@
       },
       "pitching": {
         "g": 11,
+        "gs": 7,
         "w": 1,
         "l": 2,
-        "sv": null,
+        "sv": 0,
         "ip": "25.1",
-        "so": null,
-        "era": "10.66"
+        "so": 21,
+        "era": "10.66",
+        "runs_allowed": 34,
+        "hits_allowed": 33
+      },
+      "fielding": {
+        "g": 11,
+        "e": 0,
+        "air_outs": 0,
+        "ground_outs": 0,
+        "tpo": 1,
+        "tpm": 1,
+        "trick_play_rate": "10%"
       },
       "difficulty": "medium",
       "popularity_rank": 12,
@@ -470,6 +602,15 @@
         "ops": ".789"
       },
       "pitching": null,
+      "fielding": {
+        "g": 26,
+        "e": 1,
+        "air_outs": 25,
+        "ground_outs": 23,
+        "tpo": 29,
+        "tpm": 2,
+        "trick_play_rate": "1.1%"
+      },
       "difficulty": "medium",
       "popularity_rank": 13,
       "popularity_confidence": "medium",
@@ -498,6 +639,15 @@
         "ops": ".721"
       },
       "pitching": null,
+      "fielding": {
+        "g": 25,
+        "e": 3,
+        "air_outs": 21,
+        "ground_outs": 25,
+        "tpo": 11,
+        "tpm": 0,
+        "trick_play_rate": "40%"
+      },
       "difficulty": "medium",
       "popularity_rank": 14,
       "popularity_confidence": "medium",
@@ -526,6 +676,15 @@
         "ops": "1.068"
       },
       "pitching": null,
+      "fielding": {
+        "g": 26,
+        "e": 5,
+        "air_outs": 22,
+        "ground_outs": 13,
+        "tpo": 44,
+        "tpm": 2,
+        "trick_play_rate": "1.7%"
+      },
       "difficulty": "medium",
       "popularity_rank": 15,
       "popularity_confidence": "medium",
@@ -554,6 +713,15 @@
         "ops": ".100"
       },
       "pitching": null,
+      "fielding": {
+        "g": 12,
+        "e": 2,
+        "air_outs": 1,
+        "ground_outs": 2,
+        "tpo": 0,
+        "tpm": 0,
+        "trick_play_rate": "0%"
+      },
       "difficulty": "medium",
       "popularity_rank": 16,
       "popularity_confidence": "medium",
@@ -583,12 +751,24 @@
       },
       "pitching": {
         "g": 12,
+        "gs": 0,
         "w": 0,
         "l": 1,
-        "sv": null,
+        "sv": 0,
         "ip": "6.2",
-        "so": null,
-        "era": "9.45"
+        "so": 6,
+        "era": "9.45",
+        "runs_allowed": 7,
+        "hits_allowed": 8
+      },
+      "fielding": {
+        "g": 12,
+        "e": 0,
+        "air_outs": 0,
+        "ground_outs": 0,
+        "tpo": 0,
+        "tpm": 0,
+        "trick_play_rate": "0%"
       },
       "difficulty": "medium",
       "popularity_rank": 17,
@@ -618,6 +798,15 @@
         "ops": ".824"
       },
       "pitching": null,
+      "fielding": {
+        "g": 26,
+        "e": 3,
+        "air_outs": 20,
+        "ground_outs": 18,
+        "tpo": 32,
+        "tpm": 8,
+        "trick_play_rate": "1.2%"
+      },
       "difficulty": "medium",
       "popularity_rank": 18,
       "popularity_confidence": "low",
@@ -646,6 +835,15 @@
         "ops": ".849"
       },
       "pitching": null,
+      "fielding": {
+        "g": 26,
+        "e": 3,
+        "air_outs": 26,
+        "ground_outs": 18,
+        "tpo": 38,
+        "tpm": 2,
+        "trick_play_rate": "1.5%"
+      },
       "difficulty": "hard",
       "popularity_rank": 19,
       "popularity_confidence": "low",
@@ -674,6 +872,15 @@
         "ops": ".828"
       },
       "pitching": null,
+      "fielding": {
+        "g": 24,
+        "e": 1,
+        "air_outs": 13,
+        "ground_outs": 12,
+        "tpo": 13,
+        "tpm": 3,
+        "trick_play_rate": "50%"
+      },
       "difficulty": "hard",
       "popularity_rank": 20,
       "popularity_confidence": "low",
@@ -703,12 +910,24 @@
       },
       "pitching": {
         "g": 8,
+        "gs": 0,
         "w": 0,
         "l": 0,
-        "sv": null,
+        "sv": 0,
         "ip": "6.2",
-        "so": null,
-        "era": "4.05"
+        "so": 7,
+        "era": "4.05",
+        "runs_allowed": 5,
+        "hits_allowed": 13
+      },
+      "fielding": {
+        "g": 8,
+        "e": 0,
+        "air_outs": 0,
+        "ground_outs": 0,
+        "tpo": 1,
+        "tpm": 0,
+        "trick_play_rate": "10%"
       },
       "difficulty": "hard",
       "popularity_rank": 21,
@@ -738,6 +957,15 @@
         "ops": "1.033"
       },
       "pitching": null,
+      "fielding": {
+        "g": 26,
+        "e": 0,
+        "air_outs": 3,
+        "ground_outs": 2,
+        "tpo": 17,
+        "tpm": 4,
+        "trick_play_rate": "70%"
+      },
       "difficulty": "hard",
       "popularity_rank": 22,
       "popularity_confidence": "low",
@@ -766,6 +994,15 @@
         "ops": ".628"
       },
       "pitching": null,
+      "fielding": {
+        "g": 20,
+        "e": 1,
+        "air_outs": 19,
+        "ground_outs": 19,
+        "tpo": 17,
+        "tpm": 3,
+        "trick_play_rate": "80%"
+      },
       "difficulty": "hard",
       "popularity_rank": 23,
       "popularity_confidence": "low",
@@ -795,12 +1032,24 @@
       },
       "pitching": {
         "g": 9,
+        "gs": 0,
         "w": 0,
         "l": 1,
-        "sv": null,
+        "sv": 0,
         "ip": "10",
-        "so": null,
-        "era": "1.80"
+        "so": 8,
+        "era": "1.80",
+        "runs_allowed": 10,
+        "hits_allowed": 6
+      },
+      "fielding": {
+        "g": 9,
+        "e": 0,
+        "air_outs": 0,
+        "ground_outs": 0,
+        "tpo": 0,
+        "tpm": 0,
+        "trick_play_rate": "0%"
       },
       "difficulty": "hard",
       "popularity_rank": 24,
@@ -831,12 +1080,24 @@
       },
       "pitching": {
         "g": 14,
+        "gs": 0,
         "w": 3,
         "l": 1,
-        "sv": null,
+        "sv": 0,
         "ip": "24.2",
-        "so": null,
-        "era": "5.11"
+        "so": 20,
+        "era": "5.11",
+        "runs_allowed": 17,
+        "hits_allowed": 26
+      },
+      "fielding": {
+        "g": 16,
+        "e": 1,
+        "air_outs": 0,
+        "ground_outs": 0,
+        "tpo": 1,
+        "tpm": 0,
+        "trick_play_rate": "10%"
       },
       "difficulty": "hard",
       "popularity_rank": 25,
@@ -866,6 +1127,15 @@
         "ops": "1.067"
       },
       "pitching": null,
+      "fielding": {
+        "g": 26,
+        "e": 4,
+        "air_outs": 29,
+        "ground_outs": 18,
+        "tpo": 11,
+        "tpm": 4,
+        "trick_play_rate": "40%"
+      },
       "difficulty": "easy",
       "popularity_rank": 1,
       "popularity_confidence": "high",
@@ -894,12 +1164,24 @@
       },
       "pitching": {
         "g": 7,
+        "gs": 0,
         "w": 0,
         "l": 1,
-        "sv": null,
+        "sv": 0,
         "ip": "2",
-        "so": null,
-        "era": "13.50"
+        "so": 0,
+        "era": "13.50",
+        "runs_allowed": 3,
+        "hits_allowed": 4
+      },
+      "fielding": {
+        "g": 7,
+        "e": 0,
+        "air_outs": 0,
+        "ground_outs": 0,
+        "tpo": 0,
+        "tpm": 0,
+        "trick_play_rate": "0%"
       },
       "difficulty": "easy",
       "popularity_rank": 2,
@@ -929,12 +1211,24 @@
       },
       "pitching": {
         "g": 3,
+        "gs": 3,
         "w": 0,
         "l": 2,
-        "sv": null,
+        "sv": 0,
         "ip": "4.2",
-        "so": null,
-        "era": "27.00"
+        "so": 4,
+        "era": "27.00",
+        "runs_allowed": 14,
+        "hits_allowed": 9
+      },
+      "fielding": {
+        "g": 24,
+        "e": 1,
+        "air_outs": 25,
+        "ground_outs": 16,
+        "tpo": 22,
+        "tpm": 5,
+        "trick_play_rate": "90%"
       },
       "difficulty": "easy",
       "popularity_rank": 3,
@@ -964,12 +1258,24 @@
       },
       "pitching": {
         "g": 5,
+        "gs": 0,
         "w": 0,
         "l": 0,
-        "sv": null,
+        "sv": 0,
         "ip": "1.2",
-        "so": null,
-        "era": "5.40"
+        "so": 0,
+        "era": "5.40",
+        "runs_allowed": 1,
+        "hits_allowed": 1
+      },
+      "fielding": {
+        "g": 5,
+        "e": 0,
+        "air_outs": 0,
+        "ground_outs": 0,
+        "tpo": 0,
+        "tpm": 0,
+        "trick_play_rate": "0%"
       },
       "difficulty": "easy",
       "popularity_rank": 4,
@@ -997,12 +1303,24 @@
       },
       "pitching": {
         "g": 8,
+        "gs": 0,
         "w": 1,
         "l": 0,
-        "sv": null,
+        "sv": 0,
         "ip": "6.1",
-        "so": null,
-        "era": "9.95"
+        "so": 2,
+        "era": "9.95",
+        "runs_allowed": 8,
+        "hits_allowed": 10
+      },
+      "fielding": {
+        "g": 17,
+        "e": 1,
+        "air_outs": 0,
+        "ground_outs": 0,
+        "tpo": 11,
+        "tpm": 1,
+        "trick_play_rate": "60%"
       },
       "difficulty": "easy",
       "popularity_rank": 5,
@@ -1031,6 +1349,15 @@
         "ops": ".980"
       },
       "pitching": null,
+      "fielding": {
+        "g": 26,
+        "e": 1,
+        "air_outs": 21,
+        "ground_outs": 15,
+        "tpo": 18,
+        "tpm": 4,
+        "trick_play_rate": "70%"
+      },
       "difficulty": "easy",
       "popularity_rank": 6,
       "popularity_confidence": "high",
@@ -1058,6 +1385,15 @@
         "ops": "1.043"
       },
       "pitching": null,
+      "fielding": {
+        "g": 17,
+        "e": 1,
+        "air_outs": 13,
+        "ground_outs": 15,
+        "tpo": 0,
+        "tpm": 0,
+        "trick_play_rate": "0%"
+      },
       "difficulty": "easy",
       "popularity_rank": 7,
       "popularity_confidence": "high",
@@ -1086,12 +1422,24 @@
       },
       "pitching": {
         "g": 10,
+        "gs": 0,
         "w": 2,
         "l": 0,
-        "sv": null,
+        "sv": 0,
         "ip": "2.1",
-        "so": null,
-        "era": "23.14"
+        "so": 3,
+        "era": "23.14",
+        "runs_allowed": 6,
+        "hits_allowed": 2
+      },
+      "fielding": {
+        "g": 22,
+        "e": 0,
+        "air_outs": 3,
+        "ground_outs": 1,
+        "tpo": 0,
+        "tpm": 0,
+        "trick_play_rate": "0%"
       },
       "difficulty": "easy",
       "popularity_rank": 8,
@@ -1120,6 +1468,15 @@
         "ops": "—"
       },
       "pitching": null,
+      "fielding": {
+        "g": 24,
+        "e": 0,
+        "air_outs": 0,
+        "ground_outs": 0,
+        "tpo": 0,
+        "tpm": 0,
+        "trick_play_rate": "0%"
+      },
       "difficulty": "easy",
       "popularity_rank": 9,
       "popularity_confidence": "high",
@@ -1147,6 +1504,15 @@
         "ops": ".879"
       },
       "pitching": null,
+      "fielding": {
+        "g": 26,
+        "e": 2,
+        "air_outs": 31,
+        "ground_outs": 23,
+        "tpo": 10,
+        "tpm": 4,
+        "trick_play_rate": "40%"
+      },
       "difficulty": "medium",
       "popularity_rank": 10,
       "popularity_confidence": "medium",
@@ -1174,6 +1540,15 @@
         "ops": ".846"
       },
       "pitching": null,
+      "fielding": {
+        "g": 24,
+        "e": 3,
+        "air_outs": 19,
+        "ground_outs": 10,
+        "tpo": 15,
+        "tpm": 3,
+        "trick_play_rate": "60%"
+      },
       "difficulty": "medium",
       "popularity_rank": 11,
       "popularity_confidence": "medium",
@@ -1202,12 +1577,24 @@
       },
       "pitching": {
         "g": 12,
+        "gs": 0,
         "w": 0,
         "l": 0,
-        "sv": null,
+        "sv": 0,
         "ip": "13",
-        "so": null,
-        "era": "13.85"
+        "so": 7,
+        "era": "13.85",
+        "runs_allowed": 23,
+        "hits_allowed": 25
+      },
+      "fielding": {
+        "g": 13,
+        "e": 0,
+        "air_outs": 0,
+        "ground_outs": 0,
+        "tpo": 2,
+        "tpm": 0,
+        "trick_play_rate": "20%"
       },
       "difficulty": "medium",
       "popularity_rank": 12,
@@ -1237,12 +1624,24 @@
       },
       "pitching": {
         "g": 12,
+        "gs": 0,
         "w": 0,
         "l": 1,
-        "sv": null,
+        "sv": 0,
         "ip": "9",
-        "so": null,
-        "era": "13.00"
+        "so": 4,
+        "era": "13.00",
+        "runs_allowed": 19,
+        "hits_allowed": 14
+      },
+      "fielding": {
+        "g": 12,
+        "e": 1,
+        "air_outs": 0,
+        "ground_outs": 0,
+        "tpo": 0,
+        "tpm": 0,
+        "trick_play_rate": "0%"
       },
       "difficulty": "medium",
       "popularity_rank": 13,
@@ -1271,6 +1670,15 @@
         "ops": ".905"
       },
       "pitching": null,
+      "fielding": {
+        "g": 25,
+        "e": 0,
+        "air_outs": 20,
+        "ground_outs": 14,
+        "tpo": 7,
+        "tpm": 1,
+        "trick_play_rate": "30%"
+      },
       "difficulty": "medium",
       "popularity_rank": 14,
       "popularity_confidence": "medium",
@@ -1298,6 +1706,15 @@
         "ops": ".715"
       },
       "pitching": null,
+      "fielding": {
+        "g": 25,
+        "e": 1,
+        "air_outs": 19,
+        "ground_outs": 9,
+        "tpo": 8,
+        "tpm": 4,
+        "trick_play_rate": "30%"
+      },
       "difficulty": "medium",
       "popularity_rank": 15,
       "popularity_confidence": "medium",
@@ -1326,12 +1743,24 @@
       },
       "pitching": {
         "g": 12,
+        "gs": 3,
         "w": 1,
         "l": 0,
-        "sv": null,
+        "sv": 1,
         "ip": "18.1",
-        "so": null,
-        "era": "5.40"
+        "so": 12,
+        "era": "5.40",
+        "runs_allowed": 15,
+        "hits_allowed": 22
+      },
+      "fielding": {
+        "g": 12,
+        "e": 0,
+        "air_outs": 0,
+        "ground_outs": 0,
+        "tpo": 1,
+        "tpm": 0,
+        "trick_play_rate": "10%"
       },
       "difficulty": "medium",
       "popularity_rank": 16,
@@ -1361,12 +1790,24 @@
       },
       "pitching": {
         "g": 14,
+        "gs": 2,
         "w": 3,
         "l": 3,
-        "sv": null,
+        "sv": 1,
         "ip": "24",
-        "so": null,
-        "era": "2.25"
+        "so": 24,
+        "era": "2.25",
+        "runs_allowed": 11,
+        "hits_allowed": 25
+      },
+      "fielding": {
+        "g": 14,
+        "e": 0,
+        "air_outs": 0,
+        "ground_outs": 0,
+        "tpo": 1,
+        "tpm": 0,
+        "trick_play_rate": "10%"
       },
       "difficulty": "medium",
       "popularity_rank": 17,
@@ -1395,6 +1836,15 @@
         "ops": ".942"
       },
       "pitching": null,
+      "fielding": {
+        "g": 23,
+        "e": 1,
+        "air_outs": 20,
+        "ground_outs": 13,
+        "tpo": 1,
+        "tpm": 0,
+        "trick_play_rate": "0%"
+      },
       "difficulty": "medium",
       "popularity_rank": 18,
       "popularity_confidence": "medium",
@@ -1422,6 +1872,15 @@
         "ops": ".927"
       },
       "pitching": null,
+      "fielding": {
+        "g": 26,
+        "e": 7,
+        "air_outs": 31,
+        "ground_outs": 16,
+        "tpo": 40,
+        "tpm": 6,
+        "trick_play_rate": "1.5%"
+      },
       "difficulty": "medium",
       "popularity_rank": 19,
       "popularity_confidence": "low",
@@ -1450,12 +1909,24 @@
       },
       "pitching": {
         "g": 13,
+        "gs": 2,
         "w": 1,
         "l": 3,
-        "sv": null,
+        "sv": 3,
         "ip": "21.2",
-        "so": null,
-        "era": "9.97"
+        "so": 9,
+        "era": "9.97",
+        "runs_allowed": 31,
+        "hits_allowed": 33
+      },
+      "fielding": {
+        "g": 13,
+        "e": 1,
+        "air_outs": 0,
+        "ground_outs": 0,
+        "tpo": 1,
+        "tpm": 0,
+        "trick_play_rate": "10%"
       },
       "difficulty": "hard",
       "popularity_rank": 20,
@@ -1484,6 +1955,15 @@
         "ops": ".533"
       },
       "pitching": null,
+      "fielding": {
+        "g": 20,
+        "e": 0,
+        "air_outs": 13,
+        "ground_outs": 7,
+        "tpo": 7,
+        "tpm": 2,
+        "trick_play_rate": "30%"
+      },
       "difficulty": "hard",
       "popularity_rank": 21,
       "popularity_confidence": "low",
@@ -1512,12 +1992,24 @@
       },
       "pitching": {
         "g": 11,
+        "gs": 10,
         "w": 0,
         "l": 3,
-        "sv": null,
+        "sv": 0,
         "ip": "37.1",
-        "so": null,
-        "era": "4.58"
+        "so": 26,
+        "era": "4.58",
+        "runs_allowed": 25,
+        "hits_allowed": 45
+      },
+      "fielding": {
+        "g": 11,
+        "e": 0,
+        "air_outs": 0,
+        "ground_outs": 0,
+        "tpo": 1,
+        "tpm": 0,
+        "trick_play_rate": "10%"
       },
       "difficulty": "hard",
       "popularity_rank": 22,
@@ -1547,12 +2039,24 @@
       },
       "pitching": {
         "g": 10,
+        "gs": 0,
         "w": 1,
         "l": 0,
-        "sv": null,
+        "sv": 1,
         "ip": "10",
-        "so": null,
-        "era": "6.30"
+        "so": 9,
+        "era": "6.30",
+        "runs_allowed": 9,
+        "hits_allowed": 11
+      },
+      "fielding": {
+        "g": 15,
+        "e": 0,
+        "air_outs": 3,
+        "ground_outs": 1,
+        "tpo": 0,
+        "tpm": 0,
+        "trick_play_rate": "0%"
       },
       "difficulty": "hard",
       "popularity_rank": 23,
@@ -1582,12 +2086,24 @@
       },
       "pitching": {
         "g": 11,
+        "gs": 0,
         "w": 0,
         "l": 0,
-        "sv": null,
+        "sv": 0,
         "ip": "10.1",
-        "so": null,
-        "era": "6.10"
+        "so": 6,
+        "era": "6.10",
+        "runs_allowed": 10,
+        "hits_allowed": 16
+      },
+      "fielding": {
+        "g": 12,
+        "e": 0,
+        "air_outs": 0,
+        "ground_outs": 0,
+        "tpo": 0,
+        "tpm": 0,
+        "trick_play_rate": "0%"
       },
       "difficulty": "hard",
       "popularity_rank": 24,
@@ -1617,12 +2133,24 @@
       },
       "pitching": {
         "g": 12,
+        "gs": 6,
         "w": 1,
         "l": 1,
-        "sv": null,
+        "sv": 0,
         "ip": "22.2",
-        "so": null,
-        "era": "6.75"
+        "so": 16,
+        "era": "6.75",
+        "runs_allowed": 29,
+        "hits_allowed": 28
+      },
+      "fielding": {
+        "g": 12,
+        "e": 0,
+        "air_outs": 0,
+        "ground_outs": 0,
+        "tpo": 3,
+        "tpm": 0,
+        "trick_play_rate": "30%"
       },
       "difficulty": "hard",
       "popularity_rank": 25,
@@ -1652,12 +2180,24 @@
       },
       "pitching": {
         "g": 11,
+        "gs": 0,
         "w": 0,
         "l": 2,
-        "sv": null,
+        "sv": 0,
         "ip": "7.1",
-        "so": null,
-        "era": "20.86"
+        "so": 5,
+        "era": "20.86",
+        "runs_allowed": 21,
+        "hits_allowed": 19
+      },
+      "fielding": {
+        "g": 12,
+        "e": 0,
+        "air_outs": 0,
+        "ground_outs": 0,
+        "tpo": 2,
+        "tpm": 0,
+        "trick_play_rate": "20%"
       },
       "difficulty": "hard",
       "popularity_rank": 26,
@@ -1686,6 +2226,15 @@
         "ops": ".966"
       },
       "pitching": null,
+      "fielding": {
+        "g": 24,
+        "e": 0,
+        "air_outs": 14,
+        "ground_outs": 13,
+        "tpo": 3,
+        "tpm": 0,
+        "trick_play_rate": "10%"
+      },
       "difficulty": "hard",
       "popularity_rank": 27,
       "popularity_confidence": "low",
@@ -1713,6 +2262,15 @@
         "ops": ".522"
       },
       "pitching": null,
+      "fielding": {
+        "g": 13,
+        "e": 0,
+        "air_outs": 1,
+        "ground_outs": 4,
+        "tpo": 0,
+        "tpm": 0,
+        "trick_play_rate": "0%"
+      },
       "difficulty": "easy",
       "popularity_rank": 1,
       "popularity_confidence": "high",
@@ -1740,6 +2298,15 @@
         "ops": ".536"
       },
       "pitching": null,
+      "fielding": {
+        "g": 17,
+        "e": 1,
+        "air_outs": 5,
+        "ground_outs": 3,
+        "tpo": 2,
+        "tpm": 0,
+        "trick_play_rate": "10%"
+      },
       "difficulty": "easy",
       "popularity_rank": 2,
       "popularity_confidence": "high",
@@ -1768,12 +2335,24 @@
       },
       "pitching": {
         "g": 11,
+        "gs": 6,
         "w": 1,
         "l": 0,
-        "sv": null,
+        "sv": 0,
         "ip": "26.1",
-        "so": null,
-        "era": "4.78"
+        "so": 16,
+        "era": "4.78",
+        "runs_allowed": 18,
+        "hits_allowed": 33
+      },
+      "fielding": {
+        "g": 11,
+        "e": 0,
+        "air_outs": 0,
+        "ground_outs": 0,
+        "tpo": 1,
+        "tpm": 0,
+        "trick_play_rate": "10%"
       },
       "difficulty": "easy",
       "popularity_rank": 3,
@@ -1803,12 +2382,24 @@
       },
       "pitching": {
         "g": 12,
+        "gs": 8,
         "w": 0,
         "l": 0,
-        "sv": null,
+        "sv": 0,
         "ip": "37.2",
-        "so": null,
-        "era": "4.78"
+        "so": 22,
+        "era": "4.78",
+        "runs_allowed": 25,
+        "hits_allowed": 54
+      },
+      "fielding": {
+        "g": 12,
+        "e": 1,
+        "air_outs": 0,
+        "ground_outs": 0,
+        "tpo": 2,
+        "tpm": 0,
+        "trick_play_rate": "20%"
       },
       "difficulty": "easy",
       "popularity_rank": 4,
@@ -1837,6 +2428,15 @@
         "ops": "1.036"
       },
       "pitching": null,
+      "fielding": {
+        "g": 27,
+        "e": 5,
+        "air_outs": 25,
+        "ground_outs": 32,
+        "tpo": 4,
+        "tpm": 3,
+        "trick_play_rate": "10%"
+      },
       "difficulty": "easy",
       "popularity_rank": 5,
       "popularity_confidence": "high",
@@ -1864,6 +2464,15 @@
         "ops": ".965"
       },
       "pitching": null,
+      "fielding": {
+        "g": 27,
+        "e": 3,
+        "air_outs": 36,
+        "ground_outs": 14,
+        "tpo": 51,
+        "tpm": 5,
+        "trick_play_rate": "1.9%"
+      },
       "difficulty": "easy",
       "popularity_rank": 6,
       "popularity_confidence": "high",
@@ -1891,6 +2500,15 @@
         "ops": ".364"
       },
       "pitching": null,
+      "fielding": {
+        "g": 12,
+        "e": 0,
+        "air_outs": 3,
+        "ground_outs": 2,
+        "tpo": 0,
+        "tpm": 0,
+        "trick_play_rate": "0%"
+      },
       "difficulty": "easy",
       "popularity_rank": 7,
       "popularity_confidence": "high",
@@ -1918,6 +2536,15 @@
         "ops": "1.094"
       },
       "pitching": null,
+      "fielding": {
+        "g": 27,
+        "e": 7,
+        "air_outs": 20,
+        "ground_outs": 18,
+        "tpo": 9,
+        "tpm": 0,
+        "trick_play_rate": "30%"
+      },
       "difficulty": "easy",
       "popularity_rank": 8,
       "popularity_confidence": "medium",
@@ -1945,6 +2572,15 @@
         "ops": ".801"
       },
       "pitching": null,
+      "fielding": {
+        "g": 18,
+        "e": 0,
+        "air_outs": 4,
+        "ground_outs": 8,
+        "tpo": 13,
+        "tpm": 1,
+        "trick_play_rate": "70%"
+      },
       "difficulty": "easy",
       "popularity_rank": 9,
       "popularity_confidence": "medium",
@@ -1973,12 +2609,24 @@
       },
       "pitching": {
         "g": 22,
+        "gs": 0,
         "w": 4,
         "l": 5,
-        "sv": null,
+        "sv": 7,
         "ip": "22.1",
-        "so": null,
-        "era": "3.22"
+        "so": 23,
+        "era": "3.22",
+        "runs_allowed": 14,
+        "hits_allowed": 21
+      },
+      "fielding": {
+        "g": 23,
+        "e": 0,
+        "air_outs": 0,
+        "ground_outs": 0,
+        "tpo": 1,
+        "tpm": 0,
+        "trick_play_rate": "0%"
       },
       "difficulty": "medium",
       "popularity_rank": 10,
@@ -2007,6 +2655,15 @@
         "ops": ".549"
       },
       "pitching": null,
+      "fielding": {
+        "g": 23,
+        "e": 6,
+        "air_outs": 25,
+        "ground_outs": 10,
+        "tpo": 39,
+        "tpm": 2,
+        "trick_play_rate": "1.7%"
+      },
       "difficulty": "medium",
       "popularity_rank": 11,
       "popularity_confidence": "medium",
@@ -2035,12 +2692,24 @@
       },
       "pitching": {
         "g": 10,
+        "gs": 6,
         "w": 1,
         "l": 0,
-        "sv": null,
+        "sv": 0,
         "ip": "22.2",
-        "so": null,
-        "era": "5.56"
+        "so": 22,
+        "era": "5.56",
+        "runs_allowed": 27,
+        "hits_allowed": 34
+      },
+      "fielding": {
+        "g": 11,
+        "e": 1,
+        "air_outs": 0,
+        "ground_outs": 0,
+        "tpo": 1,
+        "tpm": 0,
+        "trick_play_rate": "10%"
       },
       "difficulty": "medium",
       "popularity_rank": 12,
@@ -2070,12 +2739,24 @@
       },
       "pitching": {
         "g": 13,
+        "gs": 0,
         "w": 1,
         "l": 2,
-        "sv": null,
+        "sv": 0,
         "ip": "12",
-        "so": null,
-        "era": "7.50"
+        "so": 12,
+        "era": "7.50",
+        "runs_allowed": 17,
+        "hits_allowed": 13
+      },
+      "fielding": {
+        "g": 13,
+        "e": 0,
+        "air_outs": 0,
+        "ground_outs": 0,
+        "tpo": 0,
+        "tpm": 0,
+        "trick_play_rate": "0%"
       },
       "difficulty": "medium",
       "popularity_rank": 13,
@@ -2104,6 +2785,15 @@
         "ops": ".686"
       },
       "pitching": null,
+      "fielding": {
+        "g": 27,
+        "e": 1,
+        "air_outs": 42,
+        "ground_outs": 12,
+        "tpo": 0,
+        "tpm": 0,
+        "trick_play_rate": "0%"
+      },
       "difficulty": "medium",
       "popularity_rank": 14,
       "popularity_confidence": "medium",
@@ -2131,6 +2821,15 @@
         "ops": "1.054"
       },
       "pitching": null,
+      "fielding": {
+        "g": 25,
+        "e": 0,
+        "air_outs": 28,
+        "ground_outs": 17,
+        "tpo": 10,
+        "tpm": 1,
+        "trick_play_rate": "40%"
+      },
       "difficulty": "medium",
       "popularity_rank": 15,
       "popularity_confidence": "medium",
@@ -2158,6 +2857,15 @@
         "ops": ".811"
       },
       "pitching": null,
+      "fielding": {
+        "g": 27,
+        "e": 3,
+        "air_outs": 27,
+        "ground_outs": 28,
+        "tpo": 1,
+        "tpm": 0,
+        "trick_play_rate": "0%"
+      },
       "difficulty": "medium",
       "popularity_rank": 16,
       "popularity_confidence": "medium",
@@ -2185,6 +2893,15 @@
         "ops": ".585"
       },
       "pitching": null,
+      "fielding": {
+        "g": 20,
+        "e": 0,
+        "air_outs": 16,
+        "ground_outs": 4,
+        "tpo": 2,
+        "tpm": 0,
+        "trick_play_rate": "10%"
+      },
       "difficulty": "medium",
       "popularity_rank": 17,
       "popularity_confidence": "medium",
@@ -2212,6 +2929,15 @@
         "ops": "1.067"
       },
       "pitching": null,
+      "fielding": {
+        "g": 27,
+        "e": 1,
+        "air_outs": 28,
+        "ground_outs": 12,
+        "tpo": 9,
+        "tpm": 2,
+        "trick_play_rate": "30%"
+      },
       "difficulty": "medium",
       "popularity_rank": 18,
       "popularity_confidence": "low",
@@ -2240,12 +2966,24 @@
       },
       "pitching": {
         "g": 15,
+        "gs": 0,
         "w": 3,
         "l": 1,
-        "sv": null,
+        "sv": 0,
         "ip": "16.1",
-        "so": null,
-        "era": "4.96"
+        "so": 11,
+        "era": "4.96",
+        "runs_allowed": 11,
+        "hits_allowed": 23
+      },
+      "fielding": {
+        "g": 16,
+        "e": 0,
+        "air_outs": 0,
+        "ground_outs": 0,
+        "tpo": 3,
+        "tpm": 0,
+        "trick_play_rate": "20%"
       },
       "difficulty": "hard",
       "popularity_rank": 19,
@@ -2275,12 +3013,24 @@
       },
       "pitching": {
         "g": 9,
+        "gs": 0,
         "w": 1,
         "l": 0,
-        "sv": null,
+        "sv": 0,
         "ip": "9",
-        "so": null,
-        "era": "12.00"
+        "so": 5,
+        "era": "12.00",
+        "runs_allowed": 14,
+        "hits_allowed": 16
+      },
+      "fielding": {
+        "g": 24,
+        "e": 0,
+        "air_outs": 9,
+        "ground_outs": 10,
+        "tpo": 0,
+        "tpm": 0,
+        "trick_play_rate": "0%"
       },
       "difficulty": "hard",
       "popularity_rank": 20,
@@ -2309,6 +3059,15 @@
         "ops": ".595"
       },
       "pitching": null,
+      "fielding": {
+        "g": 25,
+        "e": 3,
+        "air_outs": 9,
+        "ground_outs": 7,
+        "tpo": 55,
+        "tpm": 5,
+        "trick_play_rate": "2.2%"
+      },
       "difficulty": "hard",
       "popularity_rank": 21,
       "popularity_confidence": "low",
@@ -2337,12 +3096,24 @@
       },
       "pitching": {
         "g": 12,
+        "gs": 0,
         "w": 0,
         "l": 2,
-        "sv": null,
+        "sv": 0,
         "ip": "16",
-        "so": null,
-        "era": "3.38"
+        "so": 8,
+        "era": "3.38",
+        "runs_allowed": 10,
+        "hits_allowed": 15
+      },
+      "fielding": {
+        "g": 12,
+        "e": 0,
+        "air_outs": 0,
+        "ground_outs": 0,
+        "tpo": 1,
+        "tpm": 0,
+        "trick_play_rate": "10%"
       },
       "difficulty": "hard",
       "popularity_rank": 22,
@@ -2372,12 +3143,24 @@
       },
       "pitching": {
         "g": 14,
+        "gs": 0,
         "w": 0,
         "l": 1,
-        "sv": null,
+        "sv": 1,
         "ip": "9.2",
-        "so": null,
-        "era": "13.03"
+        "so": 10,
+        "era": "13.03",
+        "runs_allowed": 23,
+        "hits_allowed": 21
+      },
+      "fielding": {
+        "g": 15,
+        "e": 1,
+        "air_outs": 0,
+        "ground_outs": 0,
+        "tpo": 0,
+        "tpm": 0,
+        "trick_play_rate": "0%"
       },
       "difficulty": "hard",
       "popularity_rank": 23,
@@ -2407,12 +3190,24 @@
       },
       "pitching": {
         "g": 8,
+        "gs": 7,
         "w": 1,
         "l": 2,
-        "sv": null,
+        "sv": 0,
         "ip": "16",
-        "so": null,
-        "era": "8.44"
+        "so": 8,
+        "era": "8.44",
+        "runs_allowed": 18,
+        "hits_allowed": 28
+      },
+      "fielding": {
+        "g": 8,
+        "e": 0,
+        "air_outs": 0,
+        "ground_outs": 0,
+        "tpo": 1,
+        "tpm": 0,
+        "trick_play_rate": "10%"
       },
       "difficulty": "hard",
       "popularity_rank": 24,
@@ -2441,6 +3236,15 @@
         "ops": "—"
       },
       "pitching": null,
+      "fielding": {
+        "g": 27,
+        "e": 0,
+        "air_outs": 0,
+        "ground_outs": 0,
+        "tpo": 0,
+        "tpm": 0,
+        "trick_play_rate": "0%"
+      },
       "difficulty": "hard",
       "popularity_rank": 25,
       "popularity_confidence": "low",
@@ -2469,12 +3273,24 @@
       },
       "pitching": {
         "g": 15,
+        "gs": 0,
         "w": 2,
         "l": 0,
-        "sv": null,
+        "sv": 0,
         "ip": "15.1",
-        "so": null,
-        "era": "5.87"
+        "so": 13,
+        "era": "5.87",
+        "runs_allowed": 13,
+        "hits_allowed": 15
+      },
+      "fielding": {
+        "g": 15,
+        "e": 0,
+        "air_outs": 0,
+        "ground_outs": 0,
+        "tpo": 1,
+        "tpm": 0,
+        "trick_play_rate": "10%"
       },
       "difficulty": "hard",
       "popularity_rank": 26,
@@ -2503,6 +3319,15 @@
         "ops": ".967"
       },
       "pitching": null,
+      "fielding": {
+        "g": 26,
+        "e": 0,
+        "air_outs": 17,
+        "ground_outs": 12,
+        "tpo": 2,
+        "tpm": 0,
+        "trick_play_rate": "10%"
+      },
       "difficulty": "easy",
       "popularity_rank": 1,
       "popularity_confidence": "high",
@@ -2531,6 +3356,15 @@
         "ops": ".745"
       },
       "pitching": null,
+      "fielding": {
+        "g": 25,
+        "e": 1,
+        "air_outs": 26,
+        "ground_outs": 22,
+        "tpo": 1,
+        "tpm": 0,
+        "trick_play_rate": "0%"
+      },
       "difficulty": "easy",
       "popularity_rank": 2,
       "popularity_confidence": "high",
@@ -2559,6 +3393,15 @@
         "ops": "1.109"
       },
       "pitching": null,
+      "fielding": {
+        "g": 26,
+        "e": 1,
+        "air_outs": 20,
+        "ground_outs": 17,
+        "tpo": 16,
+        "tpm": 4,
+        "trick_play_rate": "60%"
+      },
       "difficulty": "easy",
       "popularity_rank": 3,
       "popularity_confidence": "high",
@@ -2587,6 +3430,15 @@
         "ops": ".610"
       },
       "pitching": null,
+      "fielding": {
+        "g": 19,
+        "e": 0,
+        "air_outs": 12,
+        "ground_outs": 7,
+        "tpo": 10,
+        "tpm": 0,
+        "trick_play_rate": "50%"
+      },
       "difficulty": "easy",
       "popularity_rank": 4,
       "popularity_confidence": "high",
@@ -2616,12 +3468,24 @@
       },
       "pitching": {
         "g": 17,
+        "gs": 1,
         "w": 1,
         "l": 3,
-        "sv": null,
+        "sv": 2,
         "ip": "19.1",
-        "so": null,
-        "era": "6.52"
+        "so": 12,
+        "era": "6.52",
+        "runs_allowed": 16,
+        "hits_allowed": 26
+      },
+      "fielding": {
+        "g": 17,
+        "e": 0,
+        "air_outs": 0,
+        "ground_outs": 0,
+        "tpo": 0,
+        "tpm": 0,
+        "trick_play_rate": "0%"
       },
       "difficulty": "easy",
       "popularity_rank": 5,
@@ -2651,6 +3515,15 @@
         "ops": ".644"
       },
       "pitching": null,
+      "fielding": {
+        "g": 24,
+        "e": 3,
+        "air_outs": 17,
+        "ground_outs": 9,
+        "tpo": 25,
+        "tpm": 6,
+        "trick_play_rate": "100%"
+      },
       "difficulty": "easy",
       "popularity_rank": 6,
       "popularity_confidence": "high",
@@ -2680,12 +3553,24 @@
       },
       "pitching": {
         "g": 12,
+        "gs": 12,
         "w": 2,
         "l": 0,
-        "sv": null,
+        "sv": 0,
         "ip": "47.2",
-        "so": null,
-        "era": "6.23"
+        "so": 37,
+        "era": "6.23",
+        "runs_allowed": 37,
+        "hits_allowed": 63
+      },
+      "fielding": {
+        "g": 13,
+        "e": 0,
+        "air_outs": 0,
+        "ground_outs": 0,
+        "tpo": 2,
+        "tpm": 0,
+        "trick_play_rate": "20%"
       },
       "difficulty": "easy",
       "popularity_rank": 7,
@@ -2716,12 +3601,24 @@
       },
       "pitching": {
         "g": 10,
+        "gs": 0,
         "w": 0,
         "l": 0,
-        "sv": null,
+        "sv": 0,
         "ip": "9",
-        "so": null,
-        "era": "10.00"
+        "so": 7,
+        "era": "10.00",
+        "runs_allowed": 11,
+        "hits_allowed": 10
+      },
+      "fielding": {
+        "g": 10,
+        "e": 0,
+        "air_outs": 0,
+        "ground_outs": 0,
+        "tpo": 1,
+        "tpm": 0,
+        "trick_play_rate": "10%"
       },
       "difficulty": "easy",
       "popularity_rank": 8,
@@ -2751,6 +3648,15 @@
         "ops": ".693"
       },
       "pitching": null,
+      "fielding": {
+        "g": 26,
+        "e": 2,
+        "air_outs": 34,
+        "ground_outs": 14,
+        "tpo": 29,
+        "tpm": 3,
+        "trick_play_rate": "1.1%"
+      },
       "difficulty": "easy",
       "popularity_rank": 9,
       "popularity_confidence": "medium",
@@ -2779,6 +3685,15 @@
         "ops": ".455"
       },
       "pitching": null,
+      "fielding": {
+        "g": 11,
+        "e": 0,
+        "air_outs": 2,
+        "ground_outs": 0,
+        "tpo": 1,
+        "tpm": 1,
+        "trick_play_rate": "10%"
+      },
       "difficulty": "medium",
       "popularity_rank": 10,
       "popularity_confidence": "high",
@@ -2808,12 +3723,24 @@
       },
       "pitching": {
         "g": 12,
+        "gs": 10,
         "w": 2,
         "l": 1,
-        "sv": null,
+        "sv": 0,
         "ip": "45",
-        "so": null,
-        "era": "5.80"
+        "so": 19,
+        "era": "5.80",
+        "runs_allowed": 38,
+        "hits_allowed": 59
+      },
+      "fielding": {
+        "g": 12,
+        "e": 1,
+        "air_outs": 0,
+        "ground_outs": 0,
+        "tpo": 1,
+        "tpm": 0,
+        "trick_play_rate": "10%"
       },
       "difficulty": "medium",
       "popularity_rank": 11,
@@ -2843,6 +3770,15 @@
         "ops": ".812"
       },
       "pitching": null,
+      "fielding": {
+        "g": 16,
+        "e": 3,
+        "air_outs": 9,
+        "ground_outs": 14,
+        "tpo": 0,
+        "tpm": 0,
+        "trick_play_rate": "0%"
+      },
       "difficulty": "medium",
       "popularity_rank": 12,
       "popularity_confidence": "medium",
@@ -2871,6 +3807,15 @@
         "ops": ".890"
       },
       "pitching": null,
+      "fielding": {
+        "g": 26,
+        "e": 4,
+        "air_outs": 26,
+        "ground_outs": 20,
+        "tpo": 22,
+        "tpm": 6,
+        "trick_play_rate": "80%"
+      },
       "difficulty": "medium",
       "popularity_rank": 13,
       "popularity_confidence": "medium",
@@ -2899,6 +3844,15 @@
         "ops": "1.200"
       },
       "pitching": null,
+      "fielding": {
+        "g": 21,
+        "e": 0,
+        "air_outs": 14,
+        "ground_outs": 13,
+        "tpo": 1,
+        "tpm": 4,
+        "trick_play_rate": "0%"
+      },
       "difficulty": "medium",
       "popularity_rank": 14,
       "popularity_confidence": "medium",
@@ -2928,12 +3882,24 @@
       },
       "pitching": {
         "g": 2,
+        "gs": 0,
         "w": 0,
         "l": 0,
-        "sv": null,
+        "sv": 0,
         "ip": "1.1",
-        "so": null,
-        "era": "0.00"
+        "so": 0,
+        "era": "0.00",
+        "runs_allowed": 2,
+        "hits_allowed": 2
+      },
+      "fielding": {
+        "g": 24,
+        "e": 4,
+        "air_outs": 23,
+        "ground_outs": 24,
+        "tpo": 50,
+        "tpm": 2,
+        "trick_play_rate": "2.1%"
       },
       "difficulty": "medium",
       "popularity_rank": 15,
@@ -2964,12 +3930,24 @@
       },
       "pitching": {
         "g": 11,
+        "gs": 1,
         "w": 0,
         "l": 3,
-        "sv": null,
+        "sv": 0,
         "ip": "17",
-        "so": null,
-        "era": "10.59"
+        "so": 19,
+        "era": "10.59",
+        "runs_allowed": 29,
+        "hits_allowed": 36
+      },
+      "fielding": {
+        "g": 11,
+        "e": 0,
+        "air_outs": 0,
+        "ground_outs": 0,
+        "tpo": 3,
+        "tpm": 0,
+        "trick_play_rate": "30%"
       },
       "difficulty": "medium",
       "popularity_rank": 16,
@@ -2999,6 +3977,15 @@
         "ops": ".000"
       },
       "pitching": null,
+      "fielding": {
+        "g": 1,
+        "e": 0,
+        "air_outs": 0,
+        "ground_outs": 0,
+        "tpo": 0,
+        "tpm": 0,
+        "trick_play_rate": "0%"
+      },
       "difficulty": "medium",
       "popularity_rank": 17,
       "popularity_confidence": "medium",
@@ -3027,6 +4014,15 @@
         "ops": ".393"
       },
       "pitching": null,
+      "fielding": {
+        "g": 17,
+        "e": 0,
+        "air_outs": 1,
+        "ground_outs": 3,
+        "tpo": 3,
+        "tpm": 0,
+        "trick_play_rate": "20%"
+      },
       "difficulty": "medium",
       "popularity_rank": 18,
       "popularity_confidence": "medium",
@@ -3055,6 +4051,15 @@
         "ops": ".558"
       },
       "pitching": null,
+      "fielding": {
+        "g": 23,
+        "e": 3,
+        "air_outs": 15,
+        "ground_outs": 11,
+        "tpo": 30,
+        "tpm": 2,
+        "trick_play_rate": "1.3%"
+      },
       "difficulty": "hard",
       "popularity_rank": 19,
       "popularity_confidence": "medium",
@@ -3084,12 +4089,24 @@
       },
       "pitching": {
         "g": 10,
+        "gs": 0,
         "w": 0,
         "l": 0,
-        "sv": null,
+        "sv": 0,
         "ip": "8.1",
-        "so": null,
-        "era": "9.72"
+        "so": 8,
+        "era": "9.72",
+        "runs_allowed": 10,
+        "hits_allowed": 14
+      },
+      "fielding": {
+        "g": 10,
+        "e": 0,
+        "air_outs": 0,
+        "ground_outs": 0,
+        "tpo": 0,
+        "tpm": 0,
+        "trick_play_rate": "0%"
       },
       "difficulty": "hard",
       "popularity_rank": 20,
@@ -3119,6 +4136,15 @@
         "ops": "2.000"
       },
       "pitching": null,
+      "fielding": {
+        "g": 26,
+        "e": 0,
+        "air_outs": 0,
+        "ground_outs": 0,
+        "tpo": 0,
+        "tpm": 0,
+        "trick_play_rate": "0%"
+      },
       "difficulty": "hard",
       "popularity_rank": 21,
       "popularity_confidence": "low",
@@ -3148,12 +4174,24 @@
       },
       "pitching": {
         "g": 7,
+        "gs": 0,
         "w": 0,
         "l": 0,
-        "sv": null,
+        "sv": 0,
         "ip": "7",
-        "so": null,
-        "era": "10.29"
+        "so": 0,
+        "era": "10.29",
+        "runs_allowed": 8,
+        "hits_allowed": 6
+      },
+      "fielding": {
+        "g": 7,
+        "e": 0,
+        "air_outs": 0,
+        "ground_outs": 0,
+        "tpo": 0,
+        "tpm": 0,
+        "trick_play_rate": "0%"
       },
       "difficulty": "hard",
       "popularity_rank": 22,
@@ -3183,6 +4221,15 @@
         "ops": ".890"
       },
       "pitching": null,
+      "fielding": {
+        "g": 25,
+        "e": 0,
+        "air_outs": 22,
+        "ground_outs": 17,
+        "tpo": 16,
+        "tpm": 2,
+        "trick_play_rate": "60%"
+      },
       "difficulty": "hard",
       "popularity_rank": 23,
       "popularity_confidence": "low",
@@ -3212,12 +4259,24 @@
       },
       "pitching": {
         "g": 14,
+        "gs": 0,
         "w": 2,
         "l": 2,
-        "sv": null,
+        "sv": 1,
         "ip": "15",
-        "so": null,
-        "era": "6.60"
+        "so": 18,
+        "era": "6.60",
+        "runs_allowed": 14,
+        "hits_allowed": 15
+      },
+      "fielding": {
+        "g": 15,
+        "e": 0,
+        "air_outs": 0,
+        "ground_outs": 0,
+        "tpo": 3,
+        "tpm": 0,
+        "trick_play_rate": "20%"
       },
       "difficulty": "hard",
       "popularity_rank": 24,
@@ -3248,12 +4307,24 @@
       },
       "pitching": {
         "g": 16,
+        "gs": 0,
         "w": 3,
         "l": 4,
-        "sv": null,
+        "sv": 1,
         "ip": "15",
-        "so": null,
-        "era": "6.60"
+        "so": 13,
+        "era": "6.60",
+        "runs_allowed": 14,
+        "hits_allowed": 23
+      },
+      "fielding": {
+        "g": 16,
+        "e": 0,
+        "air_outs": 0,
+        "ground_outs": 0,
+        "tpo": 0,
+        "tpm": 0,
+        "trick_play_rate": "0%"
       },
       "difficulty": "hard",
       "popularity_rank": 25,
@@ -3284,12 +4355,24 @@
       },
       "pitching": {
         "g": 13,
+        "gs": 1,
         "w": 0,
         "l": 1,
-        "sv": null,
+        "sv": 0,
         "ip": "13",
-        "so": null,
-        "era": "7.62"
+        "so": 4,
+        "era": "7.62",
+        "runs_allowed": 17,
+        "hits_allowed": 13
+      },
+      "fielding": {
+        "g": 15,
+        "e": 0,
+        "air_outs": 0,
+        "ground_outs": 0,
+        "tpo": 1,
+        "tpm": 0,
+        "trick_play_rate": "10%"
       },
       "difficulty": "hard",
       "popularity_rank": 26,
@@ -3320,12 +4403,24 @@
       },
       "pitching": {
         "g": 10,
+        "gs": 1,
         "w": 2,
         "l": 0,
-        "sv": null,
+        "sv": 0,
         "ip": "12.1",
-        "so": null,
-        "era": "6.57"
+        "so": 8,
+        "era": "6.57",
+        "runs_allowed": 19,
+        "hits_allowed": 13
+      },
+      "fielding": {
+        "g": 10,
+        "e": 0,
+        "air_outs": 0,
+        "ground_outs": 0,
+        "tpo": 2,
+        "tpm": 1,
+        "trick_play_rate": "20%"
       },
       "difficulty": "hard",
       "popularity_rank": 27,
@@ -3355,6 +4450,15 @@
         "ops": ".474"
       },
       "pitching": null,
+      "fielding": {
+        "g": 24,
+        "e": 0,
+        "air_outs": 21,
+        "ground_outs": 24,
+        "tpo": 15,
+        "tpm": 5,
+        "trick_play_rate": "60%"
+      },
       "difficulty": "easy",
       "popularity_rank": 1,
       "popularity_confidence": "high",
@@ -3383,6 +4487,15 @@
         "ops": "1.071"
       },
       "pitching": null,
+      "fielding": {
+        "g": 24,
+        "e": 2,
+        "air_outs": 25,
+        "ground_outs": 10,
+        "tpo": 38,
+        "tpm": 7,
+        "trick_play_rate": "1.6%"
+      },
       "difficulty": "easy",
       "popularity_rank": 2,
       "popularity_confidence": "high",
@@ -3411,6 +4524,15 @@
         "ops": ".837"
       },
       "pitching": null,
+      "fielding": {
+        "g": 25,
+        "e": 1,
+        "air_outs": 20,
+        "ground_outs": 32,
+        "tpo": 13,
+        "tpm": 3,
+        "trick_play_rate": "50%"
+      },
       "difficulty": "easy",
       "popularity_rank": 3,
       "popularity_confidence": "high",
@@ -3439,6 +4561,15 @@
         "ops": ".991"
       },
       "pitching": null,
+      "fielding": {
+        "g": 23,
+        "e": 2,
+        "air_outs": 20,
+        "ground_outs": 14,
+        "tpo": 1,
+        "tpm": 1,
+        "trick_play_rate": "0%"
+      },
       "difficulty": "easy",
       "popularity_rank": 4,
       "popularity_confidence": "high",
@@ -3468,12 +4599,24 @@
       },
       "pitching": {
         "g": 9,
+        "gs": 0,
         "w": 0,
         "l": 0,
-        "sv": null,
+        "sv": 0,
         "ip": "2.2",
-        "so": null,
-        "era": "16.88"
+        "so": 0,
+        "era": "16.88",
+        "runs_allowed": 5,
+        "hits_allowed": 5
+      },
+      "fielding": {
+        "g": 21,
+        "e": 0,
+        "air_outs": 2,
+        "ground_outs": 4,
+        "tpo": 0,
+        "tpm": 0,
+        "trick_play_rate": "0%"
       },
       "difficulty": "easy",
       "popularity_rank": 5,
@@ -3504,12 +4647,24 @@
       },
       "pitching": {
         "g": 14,
+        "gs": 0,
         "w": 0,
         "l": 0,
-        "sv": null,
+        "sv": 0,
         "ip": "6.1",
-        "so": null,
-        "era": "4.26"
+        "so": 5,
+        "era": "4.26",
+        "runs_allowed": 3,
+        "hits_allowed": 3
+      },
+      "fielding": {
+        "g": 14,
+        "e": 0,
+        "air_outs": 0,
+        "ground_outs": 0,
+        "tpo": 0,
+        "tpm": 0,
+        "trick_play_rate": "0%"
       },
       "difficulty": "easy",
       "popularity_rank": 6,
@@ -3539,6 +4694,15 @@
         "ops": ".786"
       },
       "pitching": null,
+      "fielding": {
+        "g": 25,
+        "e": 4,
+        "air_outs": 15,
+        "ground_outs": 13,
+        "tpo": 55,
+        "tpm": 6,
+        "trick_play_rate": "2.2%"
+      },
       "difficulty": "easy",
       "popularity_rank": 7,
       "popularity_confidence": "high",
@@ -3568,12 +4732,24 @@
       },
       "pitching": {
         "g": 10,
+        "gs": 0,
         "w": 1,
         "l": 0,
-        "sv": null,
+        "sv": 0,
         "ip": "2.1",
-        "so": null,
-        "era": "19.29"
+        "so": 1,
+        "era": "19.29",
+        "runs_allowed": 5,
+        "hits_allowed": 3
+      },
+      "fielding": {
+        "g": 10,
+        "e": 0,
+        "air_outs": 0,
+        "ground_outs": 0,
+        "tpo": 0,
+        "tpm": 0,
+        "trick_play_rate": "0%"
       },
       "difficulty": "easy",
       "popularity_rank": 8,
@@ -3603,6 +4779,15 @@
         "ops": ".767"
       },
       "pitching": null,
+      "fielding": {
+        "g": 23,
+        "e": 1,
+        "air_outs": 17,
+        "ground_outs": 9,
+        "tpo": 5,
+        "tpm": 0,
+        "trick_play_rate": "20%"
+      },
       "difficulty": "easy",
       "popularity_rank": 9,
       "popularity_confidence": "medium",
@@ -3631,6 +4816,15 @@
         "ops": ".000"
       },
       "pitching": null,
+      "fielding": {
+        "g": 24,
+        "e": 0,
+        "air_outs": 1,
+        "ground_outs": 0,
+        "tpo": 44,
+        "tpm": 4,
+        "trick_play_rate": "1.8%"
+      },
       "difficulty": "medium",
       "popularity_rank": 10,
       "popularity_confidence": "medium",
@@ -3659,6 +4853,15 @@
         "ops": ".856"
       },
       "pitching": null,
+      "fielding": {
+        "g": 25,
+        "e": 0,
+        "air_outs": 21,
+        "ground_outs": 20,
+        "tpo": 34,
+        "tpm": 1,
+        "trick_play_rate": "1.4%"
+      },
       "difficulty": "medium",
       "popularity_rank": 11,
       "popularity_confidence": "medium",
@@ -3687,6 +4890,15 @@
         "ops": ".831"
       },
       "pitching": null,
+      "fielding": {
+        "g": 25,
+        "e": 0,
+        "air_outs": 25,
+        "ground_outs": 15,
+        "tpo": 29,
+        "tpm": 1,
+        "trick_play_rate": "1.2%"
+      },
       "difficulty": "medium",
       "popularity_rank": 12,
       "popularity_confidence": "medium",
@@ -3716,12 +4928,24 @@
       },
       "pitching": {
         "g": 10,
+        "gs": 1,
         "w": 1,
         "l": 1,
-        "sv": null,
+        "sv": 0,
         "ip": "14.2",
-        "so": null,
-        "era": "7.98"
+        "so": 14,
+        "era": "7.98",
+        "runs_allowed": 18,
+        "hits_allowed": 22
+      },
+      "fielding": {
+        "g": 11,
+        "e": 0,
+        "air_outs": 0,
+        "ground_outs": 0,
+        "tpo": 0,
+        "tpm": 0,
+        "trick_play_rate": "0%"
       },
       "difficulty": "medium",
       "popularity_rank": 13,
@@ -3752,12 +4976,24 @@
       },
       "pitching": {
         "g": 10,
+        "gs": 10,
         "w": 2,
         "l": 2,
-        "sv": null,
+        "sv": 0,
         "ip": "27.1",
-        "so": null,
-        "era": "3.62"
+        "so": 23,
+        "era": "3.62",
+        "runs_allowed": 16,
+        "hits_allowed": 31
+      },
+      "fielding": {
+        "g": 10,
+        "e": 1,
+        "air_outs": 0,
+        "ground_outs": 0,
+        "tpo": 0,
+        "tpm": 0,
+        "trick_play_rate": "0%"
       },
       "difficulty": "medium",
       "popularity_rank": 14,
@@ -3787,6 +5023,15 @@
         "ops": "1.020"
       },
       "pitching": null,
+      "fielding": {
+        "g": 25,
+        "e": 0,
+        "air_outs": 23,
+        "ground_outs": 21,
+        "tpo": 0,
+        "tpm": 0,
+        "trick_play_rate": "0%"
+      },
       "difficulty": "medium",
       "popularity_rank": 15,
       "popularity_confidence": "medium",
@@ -3816,12 +5061,24 @@
       },
       "pitching": {
         "g": 18,
+        "gs": 0,
         "w": 5,
         "l": 1,
-        "sv": null,
+        "sv": 8,
         "ip": "18.2",
-        "so": null,
-        "era": "0.48"
+        "so": 24,
+        "era": "0.48",
+        "runs_allowed": 2,
+        "hits_allowed": 18
+      },
+      "fielding": {
+        "g": 24,
+        "e": 0,
+        "air_outs": 12,
+        "ground_outs": 7,
+        "tpo": 3,
+        "tpm": 1,
+        "trick_play_rate": "10%"
       },
       "difficulty": "medium",
       "popularity_rank": 16,
@@ -3852,12 +5109,24 @@
       },
       "pitching": {
         "g": 12,
+        "gs": 11,
         "w": 4,
         "l": 2,
-        "sv": null,
+        "sv": 0,
         "ip": "41",
-        "so": null,
-        "era": "3.51"
+        "so": 42,
+        "era": "3.51",
+        "runs_allowed": 22,
+        "hits_allowed": 49
+      },
+      "fielding": {
+        "g": 12,
+        "e": 1,
+        "air_outs": 0,
+        "ground_outs": 0,
+        "tpo": 2,
+        "tpm": 1,
+        "trick_play_rate": "20%"
       },
       "difficulty": "medium",
       "popularity_rank": 17,
@@ -3888,12 +5157,24 @@
       },
       "pitching": {
         "g": 13,
+        "gs": 2,
         "w": 1,
         "l": 1,
-        "sv": null,
+        "sv": 0,
         "ip": "16",
-        "so": null,
-        "era": "9.56"
+        "so": 11,
+        "era": "9.56",
+        "runs_allowed": 19,
+        "hits_allowed": 27
+      },
+      "fielding": {
+        "g": 13,
+        "e": 0,
+        "air_outs": 0,
+        "ground_outs": 0,
+        "tpo": 0,
+        "tpm": 0,
+        "trick_play_rate": "0%"
       },
       "difficulty": "medium",
       "popularity_rank": 18,
@@ -3923,6 +5204,15 @@
         "ops": ".854"
       },
       "pitching": null,
+      "fielding": {
+        "g": 25,
+        "e": 1,
+        "air_outs": 14,
+        "ground_outs": 15,
+        "tpo": 3,
+        "tpm": 1,
+        "trick_play_rate": "10%"
+      },
       "difficulty": "hard",
       "popularity_rank": 19,
       "popularity_confidence": "low",
@@ -3951,6 +5241,15 @@
         "ops": "1.050"
       },
       "pitching": null,
+      "fielding": {
+        "g": 11,
+        "e": 0,
+        "air_outs": 2,
+        "ground_outs": 1,
+        "tpo": 0,
+        "tpm": 0,
+        "trick_play_rate": "0%"
+      },
       "difficulty": "hard",
       "popularity_rank": 20,
       "popularity_confidence": "low",
@@ -3979,6 +5278,15 @@
         "ops": "—"
       },
       "pitching": null,
+      "fielding": {
+        "g": 10,
+        "e": 0,
+        "air_outs": 0,
+        "ground_outs": 0,
+        "tpo": 0,
+        "tpm": 0,
+        "trick_play_rate": "0%"
+      },
       "difficulty": "hard",
       "popularity_rank": 21,
       "popularity_confidence": "low",
@@ -4008,12 +5316,24 @@
       },
       "pitching": {
         "g": 14,
+        "gs": 0,
         "w": 0,
         "l": 1,
-        "sv": null,
+        "sv": 0,
         "ip": "20",
-        "so": null,
-        "era": "5.40"
+        "so": 21,
+        "era": "5.40",
+        "runs_allowed": 18,
+        "hits_allowed": 20
+      },
+      "fielding": {
+        "g": 14,
+        "e": 1,
+        "air_outs": 0,
+        "ground_outs": 0,
+        "tpo": 0,
+        "tpm": 0,
+        "trick_play_rate": "0%"
       },
       "difficulty": "hard",
       "popularity_rank": 22,
@@ -4044,12 +5364,24 @@
       },
       "pitching": {
         "g": 9,
+        "gs": 0,
         "w": 1,
         "l": 0,
-        "sv": null,
+        "sv": 0,
         "ip": "8",
-        "so": null,
-        "era": "6.75"
+        "so": 13,
+        "era": "6.75",
+        "runs_allowed": 12,
+        "hits_allowed": 9
+      },
+      "fielding": {
+        "g": 10,
+        "e": 2,
+        "air_outs": 0,
+        "ground_outs": 0,
+        "tpo": 0,
+        "tpm": 0,
+        "trick_play_rate": "0%"
       },
       "difficulty": "hard",
       "popularity_rank": 23,
@@ -4080,12 +5412,24 @@
       },
       "pitching": {
         "g": 13,
+        "gs": 1,
         "w": 1,
         "l": 0,
-        "sv": null,
+        "sv": 0,
         "ip": "19.2",
-        "so": null,
-        "era": "3.20"
+        "so": 13,
+        "era": "3.20",
+        "runs_allowed": 10,
+        "hits_allowed": 21
+      },
+      "fielding": {
+        "g": 14,
+        "e": 0,
+        "air_outs": 0,
+        "ground_outs": 0,
+        "tpo": 1,
+        "tpm": 0,
+        "trick_play_rate": "10%"
       },
       "difficulty": "hard",
       "popularity_rank": 24,
@@ -4115,6 +5459,15 @@
         "ops": ".750"
       },
       "pitching": null,
+      "fielding": {
+        "g": 19,
+        "e": 0,
+        "air_outs": 1,
+        "ground_outs": 0,
+        "tpo": 0,
+        "tpm": 0,
+        "trick_play_rate": "0%"
+      },
       "difficulty": "hard",
       "popularity_rank": 25,
       "popularity_confidence": "low",
@@ -4144,12 +5497,24 @@
       },
       "pitching": {
         "g": 12,
+        "gs": 0,
         "w": 0,
         "l": 1,
-        "sv": null,
+        "sv": 1,
         "ip": "13",
-        "so": null,
-        "era": "10.38"
+        "so": 9,
+        "era": "10.38",
+        "runs_allowed": 16,
+        "hits_allowed": 20
+      },
+      "fielding": {
+        "g": 14,
+        "e": 0,
+        "air_outs": 0,
+        "ground_outs": 0,
+        "tpo": 2,
+        "tpm": 0,
+        "trick_play_rate": "10%"
       },
       "difficulty": "hard",
       "popularity_rank": 26,
@@ -4180,12 +5545,24 @@
       },
       "pitching": {
         "g": 8,
+        "gs": 0,
         "w": 0,
         "l": 0,
-        "sv": null,
+        "sv": 0,
         "ip": "9.1",
-        "so": null,
-        "era": "7.71"
+        "so": 11,
+        "era": "7.71",
+        "runs_allowed": 10,
+        "hits_allowed": 11
+      },
+      "fielding": {
+        "g": 10,
+        "e": 0,
+        "air_outs": 0,
+        "ground_outs": 0,
+        "tpo": 1,
+        "tpm": 0,
+        "trick_play_rate": "10%"
       },
       "difficulty": "hard",
       "popularity_rank": 27,
@@ -4215,6 +5592,15 @@
         "ops": ".454"
       },
       "pitching": null,
+      "fielding": {
+        "g": 25,
+        "e": 0,
+        "air_outs": 13,
+        "ground_outs": 7,
+        "tpo": 2,
+        "tpm": 2,
+        "trick_play_rate": "10%"
+      },
       "difficulty": "easy",
       "popularity_rank": 1,
       "popularity_confidence": "high",
@@ -4242,6 +5628,15 @@
         "ops": ".742"
       },
       "pitching": null,
+      "fielding": {
+        "g": 26,
+        "e": 4,
+        "air_outs": 5,
+        "ground_outs": 2,
+        "tpo": 96,
+        "tpm": 2,
+        "trick_play_rate": "3.7%"
+      },
       "difficulty": "easy",
       "popularity_rank": 2,
       "popularity_confidence": "high",
@@ -4269,6 +5664,15 @@
         "ops": ".791"
       },
       "pitching": null,
+      "fielding": {
+        "g": 26,
+        "e": 0,
+        "air_outs": 26,
+        "ground_outs": 24,
+        "tpo": 0,
+        "tpm": 0,
+        "trick_play_rate": "0%"
+      },
       "difficulty": "easy",
       "popularity_rank": 3,
       "popularity_confidence": "high",
@@ -4296,6 +5700,15 @@
         "ops": ".880"
       },
       "pitching": null,
+      "fielding": {
+        "g": 21,
+        "e": 0,
+        "air_outs": 22,
+        "ground_outs": 9,
+        "tpo": 10,
+        "tpm": 3,
+        "trick_play_rate": "50%"
+      },
       "difficulty": "easy",
       "popularity_rank": 4,
       "popularity_confidence": "high",
@@ -4323,6 +5736,15 @@
         "ops": ".754"
       },
       "pitching": null,
+      "fielding": {
+        "g": 25,
+        "e": 3,
+        "air_outs": 13,
+        "ground_outs": 14,
+        "tpo": 2,
+        "tpm": 0,
+        "trick_play_rate": "10%"
+      },
       "difficulty": "easy",
       "popularity_rank": 5,
       "popularity_confidence": "high",
@@ -4350,6 +5772,15 @@
         "ops": ".714"
       },
       "pitching": null,
+      "fielding": {
+        "g": 26,
+        "e": 2,
+        "air_outs": 25,
+        "ground_outs": 6,
+        "tpo": 34,
+        "tpm": 1,
+        "trick_play_rate": "1.3%"
+      },
       "difficulty": "easy",
       "popularity_rank": 6,
       "popularity_confidence": "high",
@@ -4377,6 +5808,15 @@
         "ops": "1.297"
       },
       "pitching": null,
+      "fielding": {
+        "g": 26,
+        "e": 0,
+        "air_outs": 27,
+        "ground_outs": 12,
+        "tpo": 6,
+        "tpm": 0,
+        "trick_play_rate": "20%"
+      },
       "difficulty": "easy",
       "popularity_rank": 7,
       "popularity_confidence": "medium",
@@ -4405,12 +5845,24 @@
       },
       "pitching": {
         "g": 11,
+        "gs": 11,
         "w": 3,
         "l": 1,
-        "sv": null,
+        "sv": 0,
         "ip": "39.1",
-        "so": null,
-        "era": "2.06"
+        "so": 42,
+        "era": "2.06",
+        "runs_allowed": 20,
+        "hits_allowed": 36
+      },
+      "fielding": {
+        "g": 11,
+        "e": 0,
+        "air_outs": 0,
+        "ground_outs": 0,
+        "tpo": 5,
+        "tpm": 2,
+        "trick_play_rate": "50%"
       },
       "difficulty": "easy",
       "popularity_rank": 8,
@@ -4439,6 +5891,15 @@
         "ops": "1.044"
       },
       "pitching": null,
+      "fielding": {
+        "g": 26,
+        "e": 1,
+        "air_outs": 17,
+        "ground_outs": 20,
+        "tpo": 44,
+        "tpm": 9,
+        "trick_play_rate": "1.7%"
+      },
       "difficulty": "easy",
       "popularity_rank": 9,
       "popularity_confidence": "medium",
@@ -4466,6 +5927,15 @@
         "ops": ".694"
       },
       "pitching": null,
+      "fielding": {
+        "g": 24,
+        "e": 1,
+        "air_outs": 16,
+        "ground_outs": 14,
+        "tpo": 12,
+        "tpm": 1,
+        "trick_play_rate": "50%"
+      },
       "difficulty": "medium",
       "popularity_rank": 10,
       "popularity_confidence": "medium",
@@ -4493,6 +5963,15 @@
         "ops": ".732"
       },
       "pitching": null,
+      "fielding": {
+        "g": 26,
+        "e": 2,
+        "air_outs": 16,
+        "ground_outs": 13,
+        "tpo": 71,
+        "tpm": 8,
+        "trick_play_rate": "2.7%"
+      },
       "difficulty": "medium",
       "popularity_rank": 11,
       "popularity_confidence": "medium",
@@ -4521,12 +6000,24 @@
       },
       "pitching": {
         "g": 11,
+        "gs": 0,
         "w": 0,
         "l": 0,
-        "sv": null,
+        "sv": 0,
         "ip": "9.1",
-        "so": null,
-        "era": "12.54"
+        "so": 5,
+        "era": "12.54",
+        "runs_allowed": 18,
+        "hits_allowed": 17
+      },
+      "fielding": {
+        "g": 11,
+        "e": 0,
+        "air_outs": 0,
+        "ground_outs": 0,
+        "tpo": 0,
+        "tpm": 0,
+        "trick_play_rate": "0%"
       },
       "difficulty": "medium",
       "popularity_rank": 12,
@@ -4555,6 +6046,15 @@
         "ops": ".989"
       },
       "pitching": null,
+      "fielding": {
+        "g": 26,
+        "e": 2,
+        "air_outs": 23,
+        "ground_outs": 13,
+        "tpo": 16,
+        "tpm": 0,
+        "trick_play_rate": "60%"
+      },
       "difficulty": "medium",
       "popularity_rank": 13,
       "popularity_confidence": "low",
@@ -4583,12 +6083,24 @@
       },
       "pitching": {
         "g": 21,
+        "gs": 0,
         "w": 4,
         "l": 6,
-        "sv": null,
+        "sv": 9,
         "ip": "20.1",
-        "so": null,
-        "era": "5.75"
+        "so": 22,
+        "era": "5.75",
+        "runs_allowed": 16,
+        "hits_allowed": 18
+      },
+      "fielding": {
+        "g": 21,
+        "e": 1,
+        "air_outs": 0,
+        "ground_outs": 0,
+        "tpo": 0,
+        "tpm": 0,
+        "trick_play_rate": "0%"
       },
       "difficulty": "medium",
       "popularity_rank": 14,
@@ -4618,12 +6130,24 @@
       },
       "pitching": {
         "g": 12,
+        "gs": 0,
         "w": 0,
         "l": 0,
-        "sv": null,
+        "sv": 0,
         "ip": "10",
-        "so": null,
-        "era": "9.00"
+        "so": 3,
+        "era": "9.00",
+        "runs_allowed": 11,
+        "hits_allowed": 16
+      },
+      "fielding": {
+        "g": 13,
+        "e": 0,
+        "air_outs": 0,
+        "ground_outs": 0,
+        "tpo": 0,
+        "tpm": 0,
+        "trick_play_rate": "0%"
       },
       "difficulty": "medium",
       "popularity_rank": 15,
@@ -4653,12 +6177,24 @@
       },
       "pitching": {
         "g": 12,
+        "gs": 9,
         "w": 5,
         "l": 1,
-        "sv": null,
+        "sv": 0,
         "ip": "46.1",
-        "so": null,
-        "era": "3.88"
+        "so": 21,
+        "era": "3.88",
+        "runs_allowed": 27,
+        "hits_allowed": 49
+      },
+      "fielding": {
+        "g": 12,
+        "e": 0,
+        "air_outs": 0,
+        "ground_outs": 0,
+        "tpo": 2,
+        "tpm": 1,
+        "trick_play_rate": "20%"
       },
       "difficulty": "medium",
       "popularity_rank": 16,
@@ -4688,12 +6224,24 @@
       },
       "pitching": {
         "g": 11,
+        "gs": 0,
         "w": 0,
         "l": 0,
-        "sv": null,
+        "sv": 0,
         "ip": "11",
-        "so": null,
-        "era": "11.45"
+        "so": 8,
+        "era": "11.45",
+        "runs_allowed": 20,
+        "hits_allowed": 15
+      },
+      "fielding": {
+        "g": 11,
+        "e": 0,
+        "air_outs": 0,
+        "ground_outs": 0,
+        "tpo": 2,
+        "tpm": 0,
+        "trick_play_rate": "20%"
       },
       "difficulty": "medium",
       "popularity_rank": 17,
@@ -4722,6 +6270,15 @@
         "ops": ".700"
       },
       "pitching": null,
+      "fielding": {
+        "g": 4,
+        "e": 0,
+        "air_outs": 5,
+        "ground_outs": 2,
+        "tpo": 5,
+        "tpm": 1,
+        "trick_play_rate": "1.3%"
+      },
       "difficulty": "medium",
       "popularity_rank": 18,
       "popularity_confidence": "low",
@@ -4750,12 +6307,24 @@
       },
       "pitching": {
         "g": 5,
+        "gs": 0,
         "w": 0,
         "l": 0,
-        "sv": null,
+        "sv": 0,
         "ip": "6",
-        "so": null,
-        "era": "12.00"
+        "so": 6,
+        "era": "12.00",
+        "runs_allowed": 8,
+        "hits_allowed": 8
+      },
+      "fielding": {
+        "g": 5,
+        "e": 0,
+        "air_outs": 0,
+        "ground_outs": 0,
+        "tpo": 0,
+        "tpm": 0,
+        "trick_play_rate": "0%"
       },
       "difficulty": "hard",
       "popularity_rank": 19,
@@ -4785,12 +6354,24 @@
       },
       "pitching": {
         "g": 12,
+        "gs": 4,
         "w": 2,
         "l": 1,
-        "sv": null,
+        "sv": 0,
         "ip": "41",
-        "so": null,
-        "era": "2.41"
+        "so": 41,
+        "era": "2.41",
+        "runs_allowed": 19,
+        "hits_allowed": 39
+      },
+      "fielding": {
+        "g": 13,
+        "e": 0,
+        "air_outs": 0,
+        "ground_outs": 0,
+        "tpo": 6,
+        "tpm": 0,
+        "trick_play_rate": "50%"
       },
       "difficulty": "hard",
       "popularity_rank": 20,
@@ -4819,6 +6400,15 @@
         "ops": ".929"
       },
       "pitching": null,
+      "fielding": {
+        "g": 8,
+        "e": 0,
+        "air_outs": 0,
+        "ground_outs": 1,
+        "tpo": 0,
+        "tpm": 0,
+        "trick_play_rate": "0%"
+      },
       "difficulty": "hard",
       "popularity_rank": 21,
       "popularity_confidence": "low",
@@ -4846,6 +6436,15 @@
         "ops": "1.217"
       },
       "pitching": null,
+      "fielding": {
+        "g": 24,
+        "e": 3,
+        "air_outs": 12,
+        "ground_outs": 14,
+        "tpo": 37,
+        "tpm": 3,
+        "trick_play_rate": "1.5%"
+      },
       "difficulty": "hard",
       "popularity_rank": 22,
       "popularity_confidence": "low",
@@ -4874,12 +6473,24 @@
       },
       "pitching": {
         "g": 7,
+        "gs": 0,
         "w": 0,
         "l": 0,
-        "sv": null,
+        "sv": 0,
         "ip": "4.2",
-        "so": null,
-        "era": "9.64"
+        "so": 0,
+        "era": "9.64",
+        "runs_allowed": 5,
+        "hits_allowed": 3
+      },
+      "fielding": {
+        "g": 7,
+        "e": 0,
+        "air_outs": 0,
+        "ground_outs": 0,
+        "tpo": 0,
+        "tpm": 0,
+        "trick_play_rate": "0%"
       },
       "difficulty": "hard",
       "popularity_rank": 23,
@@ -4909,12 +6520,24 @@
       },
       "pitching": {
         "g": 12,
+        "gs": 2,
         "w": 1,
         "l": 1,
-        "sv": null,
+        "sv": 0,
         "ip": "21",
-        "so": null,
-        "era": "5.57"
+        "so": 17,
+        "era": "5.57",
+        "runs_allowed": 18,
+        "hits_allowed": 29
+      },
+      "fielding": {
+        "g": 13,
+        "e": 0,
+        "air_outs": 0,
+        "ground_outs": 0,
+        "tpo": 0,
+        "tpm": 0,
+        "trick_play_rate": "0%"
       },
       "difficulty": "hard",
       "popularity_rank": 24,
@@ -4943,6 +6566,15 @@
         "ops": "1.667"
       },
       "pitching": null,
+      "fielding": {
+        "g": 19,
+        "e": 0,
+        "air_outs": 0,
+        "ground_outs": 0,
+        "tpo": 0,
+        "tpm": 0,
+        "trick_play_rate": "0%"
+      },
       "difficulty": "hard",
       "popularity_rank": 25,
       "popularity_confidence": "low",
@@ -4971,12 +6603,24 @@
       },
       "pitching": {
         "g": 10,
+        "gs": 0,
         "w": 0,
         "l": 1,
-        "sv": null,
+        "sv": 0,
         "ip": "7.2",
-        "so": null,
-        "era": "15.26"
+        "so": 5,
+        "era": "15.26",
+        "runs_allowed": 15,
+        "hits_allowed": 19
+      },
+      "fielding": {
+        "g": 10,
+        "e": 1,
+        "air_outs": 0,
+        "ground_outs": 0,
+        "tpo": 0,
+        "tpm": 0,
+        "trick_play_rate": "0%"
       },
       "difficulty": "hard",
       "popularity_rank": 26,

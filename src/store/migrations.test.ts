@@ -8,7 +8,6 @@ describe('migrations', () => {
     expect(s.version).toBe(SCHEMA_VERSION);
     expect(s.players).toEqual({});
     expect(s.profile.totalXp).toBe(0);
-    expect(s.profile.settings.focusTeams).toEqual([]);
     expect(s.profile.settings.sound).toBe(true);
     expect(s.path.units).toEqual({});
   });
@@ -24,7 +23,23 @@ describe('migrations', () => {
   it('migrates a version-0 (no version field) payload up to current', () => {
     const s = migrate({ players: { p1: { box: 3 } } } as unknown);
     expect(s.version).toBe(SCHEMA_VERSION);
-    expect(s.players.p1).toBeDefined();
+  });
+
+  it('1 -> 2 is a full reset (curriculum was redefined)', () => {
+    // A v1 payload with real progress is intentionally wiped: unit keys and
+    // membership changed, so old path/SRS state can't be remapped.
+    const v1 = {
+      version: 1,
+      players: { p1: { box: 4 } },
+      profile: { totalXp: 5000, onboarded: true },
+      path: { units: { u_old: { lessonsDone: 2, quizPassed: true, legendary: false } }, checkpointsPassed: [1] },
+    };
+    const s = migrate(v1 as unknown);
+    expect(s.version).toBe(SCHEMA_VERSION);
+    expect(s.players).toEqual({});
+    expect(s.profile.totalXp).toBe(0);
+    expect(s.path.units).toEqual({});
+    expect(s.path.checkpointsPassed).toEqual([]);
   });
 
   it('returns fresh state for non-object input', () => {

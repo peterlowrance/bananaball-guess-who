@@ -17,12 +17,25 @@ export interface HittingStats {
 
 export interface PitchingStats {
   g: number | null;
+  gs: number | null;
   w: number | null;
   l: number | null;
   sv: number | null;
   ip: string | null;
-  so: number | null;
+  so: number | null; // strikeouts (source field: k)
   era: string | null;
+  runs_allowed: number | null;
+  hits_allowed: number | null;
+}
+
+export interface FieldingStats {
+  g: number | null;
+  e: number | null; // errors
+  air_outs: number | null;
+  ground_outs: number | null;
+  tpo: number | null; // trick play outs
+  tpm: number | null; // trick plays missed
+  trick_play_rate: string | null; // e.g. "3.7%"
 }
 
 export interface Team {
@@ -51,6 +64,7 @@ export interface Player {
   images: string[];
   hitting: HittingStats | null;
   pitching: PitchingStats | null;
+  fielding: FieldingStats | null;
   difficulty: Difficulty;
   popularity_rank: number | null;
   popularity_confidence: Confidence;

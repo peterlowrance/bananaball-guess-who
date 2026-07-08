@@ -9,9 +9,8 @@ import { RotateCw, Target } from 'lucide-react';
 import { useState } from 'react';
 
 export function PracticeScreen() {
-  const focusTeams = useStore((s) => s.profile.settings.focusTeams);
   const srs = useStore((s) => s.players);
-  const due = dueCount(srs, focusTeams);
+  const due = dueCount(srs);
   const introduced = introducedCount(srs);
   const [selected, setSelected] = useState<Set<string>>(new Set());
 

@@ -140,9 +140,8 @@ describe('store actions', () => {
   });
 
   it('settings patch merges', () => {
-    useStore.getState().setSettings({ focusTeams: ['Firefighters'], dark: true });
+    useStore.getState().setSettings({ dark: true });
     const st = useStore.getState().profile.settings;
-    expect(st.focusTeams).toEqual(['Firefighters']);
     expect(st.dark).toBe(true);
     expect(st.sound).toBe(true); // untouched
   });
