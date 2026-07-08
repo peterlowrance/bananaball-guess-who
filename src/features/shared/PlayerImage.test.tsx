@@ -1,6 +1,6 @@
-import { describe, it, expect, afterEach } from 'vitest';
-import { render, screen, fireEvent, cleanup } from '@testing-library/react';
-import { PlayerImage } from './PlayerImage';
+import { describe, it, expect, afterEach, vi } from 'vitest';
+import { render, screen, fireEvent, cleanup, act } from '@testing-library/react';
+import { PlayerImage, isImageBroken } from './PlayerImage';
 import type { Player } from '../../data/types';
 
 afterEach(cleanup);
@@ -81,5 +81,40 @@ describe('PlayerImage', () => {
     // Now the initials avatar shows and no <img> remains.
     expect(screen.queryByRole('img')).toBeNull();
     expect(screen.getByLabelText('Test Player').tagName).not.toBe('IMG');
+  });
+
+  // Regression: a single-photo player whose image is merely SLOW must never be
+  // downgraded to the initials avatar. This is the Chris Clarke / "JB #6" bug —
+  // valid Tailgaters photos that lost a 4s cold-load race were permanently
+  // shown as initials for the rest of the session.
+  it('keeps waiting on a slow single photo and shows it when it finally loads', () => {
+    vi.useFakeTimers();
+    try {
+      const p = makePlayer({
+        player_id: 'slow-single',
+        images: ['https://slow.example/only.jpg'],
+        image_url: 'https://slow.example/only.jpg',
+      });
+      render(<PlayerImage player={p} />);
+      // Even after a long delay with no load event, the <img> is still mounted
+      // (skeleton showing) — NOT swapped to the avatar.
+      act(() => vi.advanceTimersByTime(30_000));
+      const img = screen.getByAltText('Test Player');
+      expect(img.tagName).toBe('IMG');
+      expect(screen.queryByLabelText('Test Player')).toBeNull(); // no avatar yet
+      // A late load still wins.
+      fireEvent.load(img);
+      expect((screen.getByAltText('Test Player') as HTMLImageElement).className).not.toContain('opacity-0');
+    } finally {
+      vi.useRealTimers();
+    }
+  });
+
+  it('does not mark a player broken for the session just because a photo was slow', () => {
+    // A slow load leaves the player OUT of the no-photo set, so photo questions
+    // remain eligible for them.
+    const p = makePlayer({ player_id: 'not-broken', images: ['https://x.example/a.jpg'], image_url: 'https://x.example/a.jpg' });
+    render(<PlayerImage player={p} />);
+    expect(isImageBroken('not-broken')).toBe(false);
   });
 });

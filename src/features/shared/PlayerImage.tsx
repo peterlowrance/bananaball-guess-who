@@ -1,26 +1,26 @@
-import { useEffect, useRef, useState } from 'react';
+import { useEffect, useState } from 'react';
 import type { Player } from '../../data/types';
 import { players as allPlayers } from '../../data/dataset';
 import { teamThemeSlug } from '../../lib/theme';
 
-// Reports which player images have failed this session so the session builder
-// can avoid photo questions for them (plan §3.9). Module-level so it survives
-// component remounts within a session.
-const brokenImages = new Set<string>();
-
-// Players with no verified photo from any source (e.g. the Clowns' mascot
-// "Peanuts The Elephant") are broken up front, so the session builder never
-// asks a photo-target question we can't illustrate — it renders the initials
-// avatar instead of flashing a broken image.
+// Players the session builder should not pose a *photo* question about, because
+// we have no image we can render for them (plan §3.9). This is now decided from
+// the dataset, NOT from runtime load failures: a photo that merely loads slowly
+// must never poison this set (that bug made valid players like single-photo
+// Tailgaters show the initials avatar after one cold-load race). Only players
+// with zero verified photos from any source (e.g. the Clowns' mascot "Peanuts
+// The Elephant", whose stats URL is an HTML placeholder we strip at build time)
+// land here.
+const noPhotoPlayers = new Set<string>();
 for (const p of allPlayers) {
   const hasPhoto = (p.images?.length ?? 0) > 0 || !!p.image_url;
-  if (!hasPhoto) brokenImages.add(p.player_id);
+  if (!hasPhoto) noPhotoPlayers.add(p.player_id);
 }
 export function isImageBroken(playerId: string): boolean {
-  return brokenImages.has(playerId);
+  return noPhotoPlayers.has(playerId);
 }
 export function brokenImageIds(): ReadonlySet<string> {
-  return brokenImages;
+  return noPhotoPlayers;
 }
 
 interface Props {
@@ -59,46 +59,38 @@ export function PlayerImage({ player, size = 120, className = '', rounded = 'rou
   const photos = photosFor(player);
   // Stable per-player starting offset so the roster shows a mix of shots.
   const startAt = photos.length > 1 ? hashStr(player.player_id) % photos.length : 0;
-  // attempt indexes into `photos` (rotated by startAt); advances on failure.
+  // attempt indexes into `photos` (rotated by startAt); advances on a real error.
   const [attempt, setAttempt] = useState(0);
-  const [status, setStatus] = useState<'loading' | 'ok' | 'error'>(
-    photos.length === 0 || isImageBroken(player.player_id) ? 'error' : 'loading',
-  );
-  const timer = useRef<number | undefined>(undefined);
+  const [loaded, setLoaded] = useState(false);
+  // We give up (show the initials avatar) only when the player has NO photos, or
+  // when every photo has produced a genuine load error. A slow load is NOT a
+  // failure — we keep the <img> mounted and let a late onLoad win. There is no
+  // timer here on purpose: the old 4s timeout raced valid images and, for
+  // single-photo players, permanently flipped them to the avatar for the whole
+  // session. The browser's own onError is the only "broken" signal we trust.
+  const [exhausted, setExhausted] = useState(false);
 
   const src = photos.length ? photos[(startAt + attempt) % photos.length] : undefined;
-  const triedAll = attempt >= photos.length - 1;
 
   // Reset when the player changes (component is often reused across questions).
   useEffect(() => {
     setAttempt(0);
-    setStatus(photos.length === 0 || isImageBroken(player.player_id) ? 'error' : 'loading');
-    // eslint-disable-next-line react-hooks/exhaustive-deps
+    setLoaded(false);
+    setExhausted(false);
   }, [player.player_id]);
 
-  // Advance to the next photo, or give up (mark broken) once all are exhausted.
-  const fail = () => {
-    window.clearTimeout(timer.current);
-    if (triedAll) {
-      brokenImages.add(player.player_id);
-      setStatus('error');
+  const onError = () => {
+    setLoaded(false);
+    if (attempt >= photos.length - 1) {
+      setExhausted(true); // every photo failed -> fall back to initials
     } else {
-      setAttempt((a) => a + 1);
-      setStatus('loading');
+      setAttempt((a) => a + 1); // try the next photo
     }
   };
 
-  useEffect(() => {
-    if (status !== 'loading') return;
-    // 4s timeout -> treat this photo as broken (slow/blocked hotlink)
-    timer.current = window.setTimeout(fail, 4000);
-    return () => window.clearTimeout(timer.current);
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [status, attempt, player.player_id]);
-
   const box = { width: size, height: size } as const;
 
-  if (status === 'error') {
+  if (photos.length === 0 || isImageBroken(player.player_id) || exhausted) {
     return (
       <InitialsAvatar player={player} size={size} className={className} rounded={rounded} />
     );
@@ -106,23 +98,20 @@ export function PlayerImage({ player, size = 120, className = '', rounded = 'rou
 
   return (
     <div className={`relative ${className}`} style={box}>
-      {status === 'loading' && (
+      {!loaded && (
         <div className={`absolute inset-0 animate-pulse bg-[var(--team-soft)] ${rounded}`} />
       )}
       <img
-        // key on the attempt so a fallback swap actually reloads the element
-        key={attempt}
+        // key on the src so swapping to a fallback photo actually reloads
+        key={src}
         src={src}
         alt={player.name}
         width={size}
         height={size}
         loading="lazy"
-        onLoad={() => {
-          window.clearTimeout(timer.current);
-          setStatus('ok');
-        }}
-        onError={fail}
-        className={`h-full w-full object-cover ${rounded} ${status === 'ok' ? '' : 'opacity-0'}`}
+        onLoad={() => setLoaded(true)}
+        onError={onError}
+        className={`h-full w-full object-cover ${rounded} ${loaded ? '' : 'opacity-0'}`}
       />
     </div>
   );

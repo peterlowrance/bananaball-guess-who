@@ -12,6 +12,14 @@
 // stats headshot. The photos are full-uniform shots, which is fine: the app
 // already hides the photo on the "which team?" question, so the uniform can't
 // give the answer away.
+//
+// Multi-season photos were investigated at the API level and ruled out. The
+// stats site is a Vue app backed by https://thebananaball.com/stats/api/stats;
+// its player endpoint (players/{slug}?season_id=…) returns profile.image. Passing
+// different season_ids (2023/2024/2025/2026 World Tours) for several veterans
+// (Bill LeRoy, Dakota Albritton, Jackson Olson) returns the SAME image.id every
+// time — the system stores one canonical headshot per player, keyed to the
+// player, not the season. So there is no per-season photo variety to harvest.
 import { writeFileSync } from 'node:fs';
 
 // Decode the handful of HTML entities WP puts in post titles (e.g. a curly
