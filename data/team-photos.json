@@ -1,0 +1,382 @@
+{
+  "source": "official team WordPress sites (wp/v2 player | player-card, _embed featuredmedia)",
+  "fetched_note": "Regenerate with: node scripts/fetch-team-photos.mjs",
+  "teams": [
+    "Party Animals",
+    "Savannah Bananas",
+    "Firefighters"
+  ],
+  "counts": {
+    "Party Animals": 29,
+    "Savannah Bananas": 32,
+    "Firefighters": 29
+  },
+  "photos": {
+    "Party Animals": {
+      "ashton lansdell": {
+        "name": "Ashton Lansdell",
+        "url": "https://i0.wp.com/thepartyanimals.com/wp-content/uploads/2026/01/01.23.2026-Party-Animals-Studio-Media-Day129-scaled.jpg?fit=819%2C1024&quality=89&ssl=1"
+      },
+      "johnhoward bobo": {
+        "name": "John-Howard BObo",
+        "url": "https://i0.wp.com/thepartyanimals.com/wp-content/uploads/2026/01/01.23.2026-Party-Animals-Studio-Media-Day117-scaled.jpg?fit=819%2C1024&quality=89&ssl=1"
+      },
+      "anthony coromato": {
+        "name": "Anthony Coromato",
+        "url": "https://i0.wp.com/thepartyanimals.com/wp-content/uploads/2026/01/01.23.2026-Party-Animals-Studio-Media-Day276-scaled.jpg?fit=819%2C1024&quality=89&ssl=1"
+      },
+      "thomas simoneaux": {
+        "name": "Thomas Simoneaux",
+        "url": "https://i0.wp.com/thepartyanimals.com/wp-content/uploads/2026/01/01.23.2026-Party-Animals-Studio-Media-Day237-scaled.jpg?fit=819%2C1024&quality=89&ssl=1"
+      },
+      "mike vavasis": {
+        "name": "Mike Vavasis",
+        "url": "https://i0.wp.com/thepartyanimals.com/wp-content/uploads/2026/01/01.23.2026-Party-Animals-Studio-Media-Day225-scaled.jpg?fit=1024%2C683&quality=89&ssl=1"
+      },
+      "bronson balholm": {
+        "name": "Bronson Balholm",
+        "url": "https://i0.wp.com/thepartyanimals.com/wp-content/uploads/2026/01/01.23.2026-Party-Animals-Studio-Media-Day25-scaled.jpg?fit=819%2C1024&quality=89&ssl=1"
+      },
+      "tj reeves": {
+        "name": "TJ Reeves",
+        "url": "https://i0.wp.com/thepartyanimals.com/wp-content/uploads/2026/01/01.23.2026-Party-Animals-Studio-Media-Day95-scaled.jpg?fit=1024%2C683&quality=89&ssl=1"
+      },
+      "michael ballard": {
+        "name": "Michael Ballard",
+        "url": "https://i0.wp.com/thepartyanimals.com/wp-content/uploads/2026/01/01.23.2026-Party-Animals-Studio-Media-Day72-scaled.jpg?fit=819%2C1024&quality=89&ssl=1"
+      },
+      "dylan porter": {
+        "name": "Dylan Porter",
+        "url": "https://i0.wp.com/thepartyanimals.com/wp-content/uploads/2026/01/01.23.2026-Party-Animals-Studio-Media-Day165-scaled.jpg?fit=819%2C1024&quality=89&ssl=1"
+      },
+      "sean fluke": {
+        "name": "Sean Fluke",
+        "url": "https://i0.wp.com/thepartyanimals.com/wp-content/uploads/2026/01/01.23.2026-Party-Animals-Studio-Media-Day389-scaled.jpg?fit=819%2C1024&quality=89&ssl=1"
+      },
+      "nate tellier": {
+        "name": "Nate Tellier",
+        "url": "https://i0.wp.com/thepartyanimals.com/wp-content/uploads/2026/01/01.23.2026-Party-Animals-Studio-Media-Day633-scaled.jpg?fit=819%2C1024&quality=89&ssl=1"
+      },
+      "brady kais": {
+        "name": "Brady Kais",
+        "url": "https://i0.wp.com/thepartyanimals.com/wp-content/uploads/2026/01/01.23.2026-Party-Animals-Studio-Media-Day481-scaled.jpg?fit=819%2C1024&quality=89&ssl=1"
+      },
+      "dustin baber": {
+        "name": "Dustin Baber",
+        "url": "https://i0.wp.com/thepartyanimals.com/wp-content/uploads/2026/01/01.23.2026-Party-Animals-Studio-Media-Day3-scaled.jpg?fit=819%2C1024&quality=89&ssl=1"
+      },
+      "peter holden": {
+        "name": "Peter Holden",
+        "url": "https://i0.wp.com/thepartyanimals.com/wp-content/uploads/2026/01/01.23.2026-Party-Animals-Studio-Media-Day654-scaled.jpg?fit=819%2C1024&quality=89&ssl=1"
+      },
+      "bryson bloomer": {
+        "name": "Bryson Bloomer",
+        "url": "https://i0.wp.com/thepartyanimals.com/wp-content/uploads/2026/01/01.23.2026-Party-Animals-Studio-Media-Day269-scaled.jpg?fit=819%2C1024&quality=89&ssl=1"
+      },
+      "andy cosgrove": {
+        "name": "Andy Cosgrove",
+        "url": "https://i0.wp.com/thepartyanimals.com/wp-content/uploads/2026/01/01.23.2026-Party-Animals-Studio-Media-Day337-scaled.jpg?fit=819%2C1024&quality=89&ssl=1"
+      },
+      "drew gillespie": {
+        "name": "Drew Gillespie",
+        "url": "https://i0.wp.com/thepartyanimals.com/wp-content/uploads/2026/01/01.23.2026-Party-Animals-Studio-Media-Day366-scaled.jpg?fit=819%2C1024&quality=89&ssl=1"
+      },
+      "bret helton": {
+        "name": "Bret Helton",
+        "url": "https://i0.wp.com/thepartyanimals.com/wp-content/uploads/2026/01/01.23.2026-Party-Animals-Studio-Media-Day455-scaled.jpg?fit=819%2C1024&quality=89&ssl=1"
+      },
+      "jason swan": {
+        "name": "Jason Swan",
+        "url": "https://i0.wp.com/thepartyanimals.com/wp-content/uploads/2026/01/01.23.2026-Party-Animals-Studio-Media-Day614-scaled.jpg?fit=819%2C1024&quality=89&ssl=1"
+      },
+      "jake skole": {
+        "name": "Jake Skole",
+        "url": "https://i0.wp.com/thepartyanimals.com/wp-content/uploads/2026/01/01.23.2026-Party-Animals-Studio-Media-Day430-scaled.jpg?fit=819%2C1024&quality=89&ssl=1"
+      },
+      "reece hampton": {
+        "name": "Reece Hampton",
+        "url": "https://i0.wp.com/thepartyanimals.com/wp-content/uploads/2026/01/01.23.2026-Party-Animals-Studio-Media-Day189-scaled.jpg?fit=819%2C1024&quality=89&ssl=1"
+      },
+      "garett delano": {
+        "name": "Garett Delano",
+        "url": "https://i0.wp.com/thepartyanimals.com/wp-content/uploads/2026/01/01.23.2026-Party-Animals-Studio-Media-Day413-scaled.jpg?fit=819%2C1024&quality=89&ssl=1"
+      },
+      "mark smith": {
+        "name": "Mark Smith",
+        "url": "https://i0.wp.com/thepartyanimals.com/wp-content/uploads/2026/01/ID0A9783-scaled.jpg?fit=819%2C1024&quality=89&ssl=1"
+      },
+      "tanner thomas": {
+        "name": "Tanner Thomas",
+        "url": "https://i0.wp.com/thepartyanimals.com/wp-content/uploads/2026/01/01.23.2026-Party-Animals-Studio-Media-Day552-scaled.jpg?fit=819%2C1024&quality=89&ssl=1"
+      },
+      "chase achuff": {
+        "name": "Chase Achuff",
+        "url": "https://i0.wp.com/thepartyanimals.com/wp-content/uploads/2026/01/01.23.2026-Party-Animals-Studio-Media-Day311-scaled.jpg?fit=1024%2C683&quality=89&ssl=1"
+      },
+      "noah fisher": {
+        "name": "Noah Fisher",
+        "url": "https://i0.wp.com/thepartyanimals.com/wp-content/uploads/2026/01/01.23.2026-Party-Animals-Studio-Media-Day564-scaled.jpg?fit=819%2C1024&quality=89&ssl=1"
+      },
+      "dalton ponce": {
+        "name": "Dalton Ponce",
+        "url": "https://i0.wp.com/thepartyanimals.com/wp-content/uploads/2026/01/01.23.2026-Party-Animals-Studio-Media-Day49-scaled.jpg?fit=819%2C1024&quality=89&ssl=1"
+      },
+      "riyan rodriguez": {
+        "name": "Riyan Rodriguez",
+        "url": "https://i0.wp.com/thepartyanimals.com/wp-content/uploads/2026/01/01.23.2026-Party-Animals-Studio-Media-Day586-scaled.jpg?fit=1024%2C683&quality=89&ssl=1"
+      },
+      "jake lialios": {
+        "name": "Jake Lialios",
+        "url": "https://i0.wp.com/thepartyanimals.com/wp-content/uploads/2026/01/01.23.2026-Party-Animals-Studio-Media-Day504-scaled.jpg?fit=819%2C1024&quality=89&ssl=1"
+      }
+    },
+    "Savannah Bananas": {
+      "kelsie whitmore": {
+        "name": "Kelsie Whitmore",
+        "url": "https://thesavannahbananas.com/wp-content/uploads/2026/05/03.27.2026-Anaheim05709.jpg?resize=819,1024"
+      },
+      "ryan kellogg": {
+        "name": "Ryan Kellogg",
+        "url": "https://thesavannahbananas.com/wp-content/uploads/2026/02/01.23.2026-Savannah-Bananas-Media-Day-Studio350.jpg?resize=819,1024"
+      },
+      "derek klena": {
+        "name": "Derek Klena",
+        "url": "https://thesavannahbananas.com/wp-content/uploads/2025/11/01.23.2026-Savannah-Bananas-Media-Day-Studio120.jpg?resize=819,1024"
+      },
+      "reginald horton": {
+        "name": "Reginald Horton",
+        "url": "https://thesavannahbananas.com/wp-content/uploads/2025/12/01.23.2026-Savannah-Bananas-Media-Day-Studio395.jpg?resize=1024,683"
+      },
+      "bryce stober": {
+        "name": "Bryce Stober",
+        "url": "https://thesavannahbananas.com/wp-content/uploads/2025/12/01.23.2026-Savannah-Bananas-Media-Day-Studio323.jpg?resize=819,1024"
+      },
+      "adam virant": {
+        "name": "Adam Virant",
+        "url": "https://thesavannahbananas.com/wp-content/uploads/2025/12/01.23.2026-Savannah-Bananas-Media-Day-Studio269.jpg?resize=819,1024"
+      },
+      "tyler gillum": {
+        "name": "Tyler Gillum",
+        "url": "https://thesavannahbananas.com/wp-content/uploads/2025/12/01.23.2026-Savannah-Bananas-Media-Day-Studio385.jpg?resize=1024,683"
+      },
+      "jt sokolove": {
+        "name": "JT Sokolove",
+        "url": "https://thesavannahbananas.com/wp-content/uploads/2025/11/01.23.2026-Savannah-Bananas-Media-Day-Studio185.jpg?resize=1024,683"
+      },
+      "frankie moscatiello": {
+        "name": "Frankie Moscatiello",
+        "url": "https://thesavannahbananas.com/wp-content/uploads/2025/11/01.23.2026-Savannah-Bananas-Media-Day-Studio717.jpg?resize=819,1024"
+      },
+      "easton parrish": {
+        "name": "Easton Parrish",
+        "url": "https://thesavannahbananas.com/wp-content/uploads/2025/11/01.23.2026-Savannah-Bananas-Media-Day-Studio766.jpg?resize=819,1024"
+      },
+      "connor harris": {
+        "name": "Connor Harris",
+        "url": "https://thesavannahbananas.com/wp-content/uploads/2025/11/01.23.2026-Savannah-Bananas-Media-Day-Studio203.jpg?resize=819,1024"
+      },
+      "allan saathoff": {
+        "name": "Allan Saathoff",
+        "url": "https://thesavannahbananas.com/wp-content/uploads/2025/11/01.23.2026-Savannah-Bananas-Media-Day-Studio408.jpg?resize=819,1024"
+      },
+      "jacob bazala": {
+        "name": "Jacob Bazala",
+        "url": "https://thesavannahbananas.com/wp-content/uploads/2025/11/01.23.2026-Savannah-Bananas-Media-Day-Studio311.jpg?resize=819,1024"
+      },
+      "bryce grizzaffi": {
+        "name": "Bryce Grizzaffi",
+        "url": "https://thesavannahbananas.com/wp-content/uploads/2025/11/01.23.2026-Savannah-Bananas-Media-Day-Studio12.jpg?resize=819,1024"
+      },
+      "trystan levesque": {
+        "name": "Trystan Levesque",
+        "url": "https://thesavannahbananas.com/wp-content/uploads/2025/11/01.23.2026-Savannah-Bananas-Media-Day-Studio162.jpg?resize=819,1024"
+      },
+      "grant besser": {
+        "name": "Grant Besser",
+        "url": "https://thesavannahbananas.com/wp-content/uploads/2025/11/01.23.2026-Savannah-Bananas-Media-Day-Studio142.jpg?resize=819,1024"
+      },
+      "austin drury": {
+        "name": "Austin Drury",
+        "url": "https://thesavannahbananas.com/wp-content/uploads/2025/11/01.23.2026-Savannah-Bananas-Media-Day-Studio54.jpg?resize=819,1024"
+      },
+      "max junggoldberg": {
+        "name": "Max Jung-goldberg",
+        "url": "https://thesavannahbananas.com/wp-content/uploads/2025/11/01.23.2026-Savannah-Bananas-Media-Day-Studio722.jpg?resize=819,1024"
+      },
+      "ty jackson": {
+        "name": "Ty Jackson",
+        "url": "https://thesavannahbananas.com/wp-content/uploads/2025/11/01.23.2026-Savannah-Bananas-Media-Day-Studio252.jpg?resize=819,1024"
+      },
+      "reese alexiades": {
+        "name": "Reese Alexiades",
+        "url": "https://thesavannahbananas.com/wp-content/uploads/2025/11/01.23.2026-Savannah-Bananas-Media-Day-Studio599.jpg?resize=819,1024"
+      },
+      "danny hosley": {
+        "name": "Danny Hosley",
+        "url": "https://thesavannahbananas.com/wp-content/uploads/2025/11/01.23.2026-Savannah-Bananas-Media-Day-Studio262.jpg?resize=819,1024"
+      },
+      "dr meadows": {
+        "name": "DR Meadows",
+        "url": "https://thesavannahbananas.com/wp-content/uploads/2025/11/01.23.2026-Savannah-Bananas-Media-Day-Studio440.jpg?resize=819,1024"
+      },
+      "dan oberst": {
+        "name": "Dan Oberst",
+        "url": "https://thesavannahbananas.com/wp-content/uploads/2025/11/01.23.2026-Savannah-Bananas-Media-Day-Studio216.jpg?resize=819,1024"
+      },
+      "ryan cox": {
+        "name": "Ryan Cox",
+        "url": "https://thesavannahbananas.com/wp-content/uploads/2025/11/01.23.2026-Savannah-Bananas-Media-Day-Studio615.jpg?resize=819,1024"
+      },
+      "bill leroy": {
+        "name": "Bill Leroy",
+        "url": "https://thesavannahbananas.com/wp-content/uploads/2025/11/01.23.2026-Savannah-Bananas-Media-Day-Studio464.jpg?resize=819,1024"
+      },
+      "kj jackson": {
+        "name": "KJ Jackson",
+        "url": "https://thesavannahbananas.com/wp-content/uploads/2024/12/01.23.2026-Savannah-Bananas-Media-Day-Studio644.jpg?resize=819,1024"
+      },
+      "noah niznik": {
+        "name": "Noah Niznik",
+        "url": "https://thesavannahbananas.com/wp-content/uploads/2024/02/01.23.2026-Savannah-Bananas-Media-Day-Studio681.jpg?resize=819,1024"
+      },
+      "robertanthony cruz": {
+        "name": "RobertAnthony Cruz",
+        "url": "https://thesavannahbananas.com/wp-content/uploads/2024/02/01.23.2026-Savannah-Bananas-Media-Day-Studio78.jpg?resize=819,1024"
+      },
+      "alex ziegler": {
+        "name": "Alex Ziegler",
+        "url": "https://thesavannahbananas.com/wp-content/uploads/2024/02/01.23.2026-Savannah-Bananas-Media-Day-Studio526.jpg?resize=819,1024"
+      },
+      "stilts": {
+        "name": "Stilts",
+        "url": "https://thesavannahbananas.com/wp-content/uploads/2024/02/01.23.2026-Savannah-Bananas-Media-Day-Studio102.jpg?resize=1024,819"
+      },
+      "jackson olson": {
+        "name": "Jackson Olson",
+        "url": "https://thesavannahbananas.com/wp-content/uploads/2024/02/01.23.2026-Savannah-Bananas-Media-Day-Studio492.jpg?resize=819,1024"
+      },
+      "kyle luigs": {
+        "name": "Kyle Luigs",
+        "url": "https://thesavannahbananas.com/wp-content/uploads/2024/02/01.23.2026-Savannah-Bananas-Media-Day-Studio560.jpg?resize=819,1024"
+      }
+    },
+    "Firefighters": {
+      "brian trepanier": {
+        "name": "Brian Trepanier",
+        "url": "https://i0.wp.com/thefirefighters.com/wp-content/uploads/2026/05/04.26.2026-Greenville10165-scaled.jpg?fit=819%2C1024&quality=89&ssl=1"
+      },
+      "blake morgan": {
+        "name": "Blake Morgan",
+        "url": "https://i0.wp.com/thefirefighters.com/wp-content/uploads/2025/11/ID0A0520-scaled.jpg?fit=819%2C1024&quality=89&ssl=1"
+      },
+      "tyner hughes": {
+        "name": "Tyner Hughes",
+        "url": "https://i0.wp.com/thefirefighters.com/wp-content/uploads/2025/11/ID0A9651-scaled.jpg?fit=819%2C1024&quality=89&ssl=1"
+      },
+      "darrien mcdowell": {
+        "name": "Darrien McDowell",
+        "url": "https://i0.wp.com/thefirefighters.com/wp-content/uploads/2025/11/ID0A1023-scaled.jpg?fit=819%2C1024&quality=89&ssl=1"
+      },
+      "mason maxwell": {
+        "name": "Mason Maxwell",
+        "url": "https://i0.wp.com/thefirefighters.com/wp-content/uploads/2025/11/ID0A0623-scaled.jpg?fit=1024%2C683&quality=89&ssl=1"
+      },
+      "dakota mcfadden": {
+        "name": "Dakota McFadden",
+        "url": "https://i0.wp.com/thefirefighters.com/wp-content/uploads/2025/11/ID0A1115-scaled.jpg?fit=819%2C1024&quality=89&ssl=1"
+      },
+      "zack phillips": {
+        "name": "Zack Phillips",
+        "url": "https://i0.wp.com/thefirefighters.com/wp-content/uploads/2025/11/20260123_Media-Day_Firefighters-Jerseys-CC1A7092-scaled-e1769729609258.jpg?fit=683%2C1024&quality=89&ssl=1"
+      },
+      "gavon wray": {
+        "name": "Ga’von Wray",
+        "url": "https://i0.wp.com/thefirefighters.com/wp-content/uploads/2025/11/ID0A9318-scaled.jpg?fit=819%2C1024&quality=89&ssl=1"
+      },
+      "lamar sparks": {
+        "name": "Lamar Sparks",
+        "url": "https://i0.wp.com/thefirefighters.com/wp-content/uploads/2025/11/ID0A9078-scaled.jpg?fit=819%2C1024&quality=89&ssl=1"
+      },
+      "armando becerra": {
+        "name": "Armando Becerra",
+        "url": "https://i0.wp.com/thefirefighters.com/wp-content/uploads/2025/11/ID0A0073-2-scaled.jpg?fit=819%2C1024&quality=89&ssl=1"
+      },
+      "jared donalson": {
+        "name": "Jared Donalson",
+        "url": "https://i0.wp.com/thefirefighters.com/wp-content/uploads/2025/11/ID0A9833-scaled.jpg?fit=819%2C1024&quality=89&ssl=1"
+      },
+      "eric jones jr": {
+        "name": "Eric Jones Jr.",
+        "url": "https://i0.wp.com/thefirefighters.com/wp-content/uploads/2025/11/ID0A3783-scaled.jpg?fit=819%2C1024&quality=89&ssl=1"
+      },
+      "liam spence": {
+        "name": "Liam Spence",
+        "url": "https://i0.wp.com/thefirefighters.com/wp-content/uploads/2025/11/ID0A1623-scaled.jpg?fit=819%2C1024&quality=89&ssl=1"
+      },
+      "ben dum": {
+        "name": "Ben Dum",
+        "url": "https://i0.wp.com/thefirefighters.com/wp-content/uploads/2025/11/ID0A2829-scaled.jpg?fit=819%2C1024&quality=89&ssl=1"
+      },
+      "johnny hummel": {
+        "name": "Johnny Hummel",
+        "url": "https://i0.wp.com/thefirefighters.com/wp-content/uploads/2025/11/ID0A9147-scaled.jpg?fit=819%2C1024&quality=89&ssl=1"
+      },
+      "austin temple": {
+        "name": "Austin Temple",
+        "url": "https://i0.wp.com/thefirefighters.com/wp-content/uploads/2025/11/ID0A3987-scaled.jpg?fit=819%2C1024&quality=89&ssl=1"
+      },
+      "dalton cornett": {
+        "name": "Dalton Cornett",
+        "url": "https://i0.wp.com/thefirefighters.com/wp-content/uploads/2025/11/ID0A9508-scaled.jpg?fit=819%2C1024&quality=89&ssl=1"
+      },
+      "bradford webb": {
+        "name": "Bradford Webb",
+        "url": "https://i0.wp.com/thefirefighters.com/wp-content/uploads/2025/11/ID0A2215-scaled.jpg?fit=819%2C1024&quality=89&ssl=1"
+      },
+      "logan lacey": {
+        "name": "Logan Lacey",
+        "url": "https://i0.wp.com/thefirefighters.com/wp-content/uploads/2025/11/ID0A0174-scaled.jpg?fit=819%2C1024&quality=89&ssl=1"
+      },
+      "ron franklin jr": {
+        "name": "Ron Franklin Jr.",
+        "url": "https://i0.wp.com/thefirefighters.com/wp-content/uploads/2025/11/ID0A8702-scaled.jpg?fit=819%2C1024&quality=89&ssl=1"
+      },
+      "drew yniesta": {
+        "name": "Drew Yniesta",
+        "url": "https://i0.wp.com/thefirefighters.com/wp-content/uploads/2025/04/ID0A4547-scaled.jpg?fit=819%2C1024&quality=89&ssl=1"
+      },
+      "zachary bridges": {
+        "name": "Zachary Bridges",
+        "url": "https://i0.wp.com/thefirefighters.com/wp-content/uploads/2025/11/ID0A0760-scaled.jpg?fit=819%2C1024&quality=89&ssl=1"
+      },
+      "val perez": {
+        "name": "Val Perez",
+        "url": "https://i0.wp.com/thefirefighters.com/wp-content/uploads/2025/04/ID0A4954-scaled.jpg?fit=819%2C1024&quality=89&ssl=1"
+      },
+      "south trimble": {
+        "name": "South Trimble",
+        "url": "https://i0.wp.com/thefirefighters.com/wp-content/uploads/2025/11/ID0A3340-scaled.jpg?fit=819%2C1024&quality=89&ssl=1"
+      },
+      "marshall shill": {
+        "name": "Marshall Shill",
+        "url": "https://i0.wp.com/thefirefighters.com/wp-content/uploads/2025/11/ID0A3065-scaled.jpg?fit=819%2C1024&quality=89&ssl=1"
+      },
+      "caden green": {
+        "name": "Caden Green",
+        "url": "https://i0.wp.com/thefirefighters.com/wp-content/uploads/2025/11/ID0A9594-scaled.jpg?fit=819%2C1024&quality=89&ssl=1"
+      },
+      "corey pye": {
+        "name": "Corey Pye",
+        "url": "https://i0.wp.com/thefirefighters.com/wp-content/uploads/2025/04/ID0A4347-scaled.jpg?fit=819%2C1024&quality=89&ssl=1"
+      },
+      "christian dearman": {
+        "name": "Christian Dearman",
+        "url": "https://i0.wp.com/thefirefighters.com/wp-content/uploads/2025/11/ID0A1851-scaled.jpg?fit=819%2C1024&quality=89&ssl=1"
+      },
+      "noah bridges": {
+        "name": "Noah Bridges",
+        "url": "https://i0.wp.com/thefirefighters.com/wp-content/uploads/2025/11/ID0A1067-scaled.jpg?fit=819%2C1024&quality=89&ssl=1"
+      }
+    }
+  }
+}

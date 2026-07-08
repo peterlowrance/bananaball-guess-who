@@ -7,7 +7,9 @@ const warmed = new Set<string>();
 
 /** Preload a batch of player headshots. Resolves when all settle (or timeout). */
 export function preloadPlayerImages(players: readonly Player[], timeoutMs = 5000): Promise<void> {
-  const urls = players.map((p) => p.image_url).filter((u) => !warmed.has(u));
+  const urls = players
+    .flatMap((p) => (p.images?.length ? p.images : p.image_url ? [p.image_url] : []))
+    .filter((u): u is string => !!u && !warmed.has(u));
   if (urls.length === 0) return Promise.resolve();
   return new Promise((resolve) => {
     let remaining = urls.length;

@@ -102,6 +102,98 @@ if (unmatched.length) {
   unmatched.forEach((u) => console.log('   -', u));
 }
 
+// ─── Player images: build a filtered, multi-source images[] per player ───────
+// Two problems this solves:
+//  1. A few stats "photos" (e.g. the Clowns mascot "Peanuts The Elephant") are
+//     served from thebananaball.com/stats with a .webp extension but actually
+//     return an HTML placeholder page (content-type text/html), which the app
+//     renders as a broken image before falling back to initials. We HEAD-check
+//     every stats URL and drop any that isn't really an image.
+//  2. Three teams (Party Animals, Savannah, Firefighters) publish official
+//     media-day photos per player; adding them gives the app photo VARIETY.
+//     data/team-photos.json is produced by scripts/fetch-team-photos.mjs.
+
+// Decode WP HTML entities + normalize for name matching (mirror of the fetch script).
+function decodeEntities(s) {
+  return String(s)
+    .replace(/&#(\d+);/g, (_, n) => String.fromCodePoint(Number(n)))
+    .replace(/&#x([0-9a-f]+);/gi, (_, n) => String.fromCodePoint(parseInt(n, 16)))
+    .replace(/&amp;/g, '&').replace(/&quot;/g, '"').replace(/&#0?39;|&apos;/g, "'");
+}
+function normName(s) {
+  return decodeEntities(s).toLowerCase().normalize('NFKD')
+    .replace(/[^a-z0-9\s]/g, '').replace(/\s+/g, ' ').trim();
+}
+
+// Nickname-only or shortened team-site titles that normalization can't reconcile
+// with the stats-API display name. Keyed by normalized dataset name -> the team
+// site's normalized name. Keep this tiny and obvious.
+const NAME_ALIASES = {
+  'mike ballard': 'michael ballard',
+  'kyle jackson': 'kj jackson',
+  'dakota albritton': 'stilts',
+};
+
+let teamPhotos = { photos: {} };
+try {
+  teamPhotos = JSON.parse(readFileSync(new URL('./team-photos.json', import.meta.url)));
+} catch {
+  console.log('\n⚠️  data/team-photos.json missing — run `node scripts/fetch-team-photos.mjs`. Photos will be stats-only.');
+}
+
+// Is a URL a real image (200 + image/* content-type)? Guards against the
+// HTML-placeholder .webp URLs. Fails closed (treats errors as not-an-image only
+// after a real network failure — see caller, which keeps the URL if the check
+// itself errors so a flaky network doesn't strip everyone's photo).
+async function isRealImage(url) {
+  if (!url) return false;
+  try {
+    const res = await fetch(url, { method: 'HEAD', headers: { 'user-agent': 'Mozilla/5.0 (bbgw-dataset-sync)' } });
+    if (!res.ok) return false;
+    const ct = res.headers.get('content-type') || '';
+    return ct.startsWith('image/');
+  } catch {
+    return null; // unknown — network error, not a definitive "not an image"
+  }
+}
+
+let droppedStats = 0;
+let mediaAdded = 0;
+const noPhotoAtAll = [];
+for (const p of players) {
+  const images = [];
+
+  // 1. Validate the stats headshot.
+  const statsOk = await isRealImage(p.image_url);
+  if (p.image_url && statsOk !== false) {
+    // keep on true OR null (network-unknown); only drop on a definitive false
+    images.push(p.image_url);
+    if (statsOk === null) console.log(`   (network-unknown, kept) ${p.name}: ${p.image_url}`);
+  } else if (p.image_url) {
+    droppedStats++;
+    console.log(`   dropped non-image stats URL: ${p.name} (${p.team_name})`);
+  }
+
+  // 2. Append the official media-day photo when we can match it by name.
+  const teamMap = teamPhotos.photos?.[p.team_name] || {};
+  const key = normName(p.name);
+  const hit = teamMap[key] || teamMap[NAME_ALIASES[key]];
+  if (hit?.url && !images.includes(hit.url)) {
+    images.push(hit.url);
+    mediaAdded++;
+  }
+
+  p.images = images;
+  // image_url stays as the primary (first available) for backward compatibility.
+  p.image_url = images[0] ?? null;
+  if (images.length === 0) noPhotoAtAll.push(`${p.name} (${p.team_name})`);
+}
+console.log(`\nImages: dropped ${droppedStats} non-image stats URL(s), added ${mediaAdded} media-day photo(s).`);
+if (noPhotoAtAll.length) {
+  console.log(`⚠️  ${noPhotoAtAll.length} player(s) have NO real photo from any source (will render the initials avatar):`);
+  noPhotoAtAll.forEach((n) => console.log('   -', n));
+}
+
 // Final sort: team, then popularity rank (most famous first), nulls last
 players.sort(
   (a, b) =>

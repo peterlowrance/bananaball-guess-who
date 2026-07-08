@@ -41,7 +41,14 @@ export interface Player {
   team_name: string;
   jersey_number: number;
   position_label: string;
-  image_url: string;
+  /** Primary image (first entry of `images`), or null if the player has no real
+   *  photo from any source. Kept for backward compatibility. */
+  image_url: string | null;
+  /** All verified official photos for this player, most-canonical first:
+   *  the neutral stats headshot, then any official media-day photo. Filtered so
+   *  every entry is a real image (HTML-placeholder URLs are removed at build
+   *  time). May be empty — the UI falls back to a team-colored initials avatar. */
+  images: string[];
   hitting: HittingStats | null;
   pitching: PitchingStats | null;
   difficulty: Difficulty;

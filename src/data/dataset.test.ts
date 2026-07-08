@@ -14,10 +14,31 @@ describe('players-2026 dataset', () => {
       expect(p.player_id).toBeTruthy();
       expect(p.name).toBeTruthy();
       expect(p.team_name).toBeTruthy();
-      expect(p.image_url).toMatch(/^https:\/\/thebananaball\.com\/stats\/players\/.+\.webp$/);
+      // images[] holds verified photos (stats headshot and/or official media-day
+      // shot); it may be empty for a player with no real photo anywhere (e.g. a
+      // mascot). Every entry must be an https image URL, and image_url mirrors
+      // the first entry (or null when empty).
+      expect(Array.isArray(p.images)).toBe(true);
+      for (const url of p.images) {
+        expect(url).toMatch(/^https:\/\/.+/);
+      }
+      expect(p.image_url).toBe(p.images[0] ?? null);
       expect(['easy', 'medium', 'hard']).toContain(p.difficulty);
       expect(typeof p.jersey_number).toBe('number');
     }
+  });
+
+  it('all but a tiny number of players have at least one photo', () => {
+    const noPhoto = dataset.players.filter((p) => p.images.length === 0);
+    // Only genuine no-photo cases (mascots) may lack an image; keep this tight
+    // so a pipeline regression that strips everyone's photos fails loudly.
+    expect(noPhoto.length).toBeLessThanOrEqual(2);
+  });
+
+  it('adds official media-day photo variety for the three teams that publish it', () => {
+    const withTwo = dataset.players.filter((p) => p.images.length >= 2);
+    // ~79 players across Party Animals / Savannah / Firefighters get a 2nd shot.
+    expect(withTwo.length).toBeGreaterThan(60);
   });
 
   it('has no duplicate player ids or display names', () => {
