@@ -37,13 +37,13 @@
     "owned": [
       "8114dba0-2bbd-4372-a49c-037292948f4f",
       "8a4f17aa-225a-4a93-ab4a-5068c7f5a1aa",
-      "0152ecda-db0d-40db-b944-22d7af88c878",
       "96452790-25b3-45a4-9f09-8ef9c9f226f0",
       "c479d2ec-f2f0-44f8-b44c-cc9c3a19bfbf",
-      "d817d3f2-3d70-4518-95b3-9ccbefd82517",
       "f0f5c36a-13ab-4162-9876-116fcc2947a8",
       "52612262-cd8b-4790-9fdc-7f7e61882346",
-      "cbcf804d-f31c-4b3e-b920-cad81fdef68f"
+      "e3623692-d5b8-44b6-80b3-3cad1b5e0c57",
+      "fb5f4950-d5a5-4673-8c82-a1267998631f",
+      "e9237c8e-69d0-4213-950a-e68e0e9f5813"
     ],
     "cameo": []
   },
@@ -139,7 +139,7 @@
       "17f5429e-e53a-42f5-9375-e588296bf536",
       "34dd71fd-af40-4ead-b7a9-d032b46bd9f0",
       "4d93b92a-712a-47bb-bc23-31a7403abd27",
-      "83aa729d-1724-4076-aacc-973d6ee38035"
+      "8610a91f-4987-42ed-8dc7-f854a56e159c"
     ],
     "cameo": []
   },
@@ -154,7 +154,6 @@
     },
     "act": 2,
     "owned": [
-      "e9237c8e-69d0-4213-950a-e68e0e9f5813",
       "006e5461-d832-44cb-bb85-84b15325e404",
       "94df0ae7-1adc-46f2-a343-d6ac6644506c",
       "398e8628-4b2f-4bd0-9eb4-312f1f5be56a",
@@ -184,13 +183,12 @@
     "act": 2,
     "owned": [
       "6ff0c5c2-ff10-411a-ad77-ab97b96be444",
-      "08a1e36b-3e68-4196-aa22-4e6cc6249370",
       "9b220a84-f147-491a-b776-93a933a5322c",
-      "970678e1-e4b2-44b7-beaa-fdee8db567ca",
       "7730f49d-1f5a-453c-b86b-fadd37e7df33",
       "4ccf2fb5-f926-44b0-a825-6cf96c87150a",
       "46c83fd3-8f66-4362-b757-8fa7677e5b09",
-      "aaced6a8-bbff-4b07-a0d0-e26aa9841439"
+      "aaced6a8-bbff-4b07-a0d0-e26aa9841439",
+      "6c95bae4-8f0f-4c9f-9651-44cfea968107"
     ],
     "cameo": []
   },
@@ -205,7 +203,6 @@
     },
     "act": 2,
     "owned": [
-      "6c95bae4-8f0f-4c9f-9651-44cfea968107",
       "d1162c3c-7635-4c55-9fe3-942e8d33105b",
       "76f08419-71b8-4005-80ae-d552323194e8",
       "b8ad239c-dd58-41da-bcab-c8d44e4488aa",
@@ -226,11 +223,9 @@
     },
     "act": 2,
     "owned": [
-      "8610a91f-4987-42ed-8dc7-f854a56e159c",
-      "1a0093de-4440-4e31-a6f2-672743b75ed1",
-      "256ce8f8-2021-435c-8e54-9c59052577e4",
       "4892fa87-9922-4644-ae7d-06e711fa8738",
-      "a1ad5177-067b-4b19-a715-e74f348391d9"
+      "a1ad5177-067b-4b19-a715-e74f348391d9",
+      "ed75186d-dbfb-4c09-a887-f0d3482fb253"
     ],
     "cameo": []
   },
@@ -245,7 +240,6 @@
     },
     "act": 2,
     "owned": [
-      "ed75186d-dbfb-4c09-a887-f0d3482fb253",
       "02a9fe9f-5f42-4e99-a668-4f7879c9db20",
       "bdd316d8-36fd-416c-bbab-aa8e04cb7962",
       "92b54f33-fbeb-4789-a6f7-a4791a951358"
@@ -263,8 +257,6 @@
     },
     "act": 2,
     "owned": [
-      "e3623692-d5b8-44b6-80b3-3cad1b5e0c57",
-      "26bf1dff-0893-4395-9a93-f20a984ad18f",
       "abccbfaf-0009-4858-a170-a4d006b43a99",
       "aba886e3-af5b-4476-a825-21fe5af0c14a",
       "dbc777f2-3a8d-4469-88da-3c1e57546fb6",
@@ -374,7 +366,6 @@
     },
     "act": 3,
     "owned": [
-      "fb5f4950-d5a5-4673-8c82-a1267998631f",
       "432b0fd6-dbbc-4a54-9e30-39fac5c6dcfa",
       "06e01803-167d-489d-949c-eb2dd3458a12",
       "80699aa0-ae06-404a-991c-b75e99a191cf",
@@ -428,8 +419,7 @@
       "a1ad5177-067b-4b19-a715-e74f348391d9",
       "8610a91f-4987-42ed-8dc7-f854a56e159c",
       "741532bc-f90c-4eb1-b5be-251f72cd7fe0",
-      "ddd91fff-fd67-45d6-beb0-8e5dd16b806f",
-      "26bf1dff-0893-4395-9a93-f20a984ad18f"
+      "ddd91fff-fd67-45d6-beb0-8e5dd16b806f"
     ]
   },
   {
@@ -570,9 +560,79 @@
       "7730f49d-1f5a-453c-b86b-fadd37e7df33",
       "fd58f6ab-e50c-46dd-9004-0ca6f307abeb",
       "ddd91fff-fd67-45d6-beb0-8e5dd16b806f",
-      "08a1e36b-3e68-4196-aa22-4e6cc6249370",
       "4ccf2fb5-f926-44b0-a825-6cf96c87150a",
       "f26e6051-a4fa-4ce7-9a03-f617e275857f"
+    ]
+  },
+  {
+    "slug": "sprinters",
+    "title": "The Sprinters",
+    "theme": "Career Ball-Four Sprints — took off instead of walking.",
+    "motif": {
+      "kind": "icon",
+      "icon": "rabbit",
+      "accent": "#14b8a6"
+    },
+    "act": 3,
+    "owned": [
+      "0152ecda-db0d-40db-b944-22d7af88c878",
+      "cbcf804d-f31c-4b3e-b920-cad81fdef68f",
+      "08a1e36b-3e68-4196-aa22-4e6cc6249370"
+    ],
+    "cameo": [
+      "592e613d-6cba-4eda-8c94-9c79498b2b9e",
+      "f26e6051-a4fa-4ce7-9a03-f617e275857f",
+      "8114dba0-2bbd-4372-a49c-037292948f4f",
+      "78d964c6-3b69-49db-80d2-53540d42ac7e"
+    ]
+  },
+  {
+    "slug": "base-bandits",
+    "title": "Base Bandits",
+    "theme": "Career stolen bases — the fastest larcenists.",
+    "motif": {
+      "kind": "icon",
+      "icon": "zap",
+      "accent": "#0ea5e9"
+    },
+    "act": 3,
+    "owned": [
+      "83aa729d-1724-4076-aacc-973d6ee38035",
+      "1a0093de-4440-4e31-a6f2-672743b75ed1",
+      "d817d3f2-3d70-4518-95b3-9ccbefd82517"
+    ],
+    "cameo": [
+      "8114dba0-2bbd-4372-a49c-037292948f4f",
+      "0152ecda-db0d-40db-b944-22d7af88c878",
+      "cbcf804d-f31c-4b3e-b920-cad81fdef68f",
+      "08a1e36b-3e68-4196-aa22-4e6cc6249370",
+      "295441a8-2e67-4f2d-adac-1172aef12137",
+      "b7aad21c-a083-4254-b2e2-56f211d3473b"
+    ]
+  },
+  {
+    "slug": "walk-off-kings",
+    "title": "Walk-Off Kings",
+    "theme": "Career walk-offs — they end ballgames.",
+    "motif": {
+      "kind": "icon",
+      "icon": "crown",
+      "accent": "#f59e0b"
+    },
+    "act": 3,
+    "owned": [
+      "26bf1dff-0893-4395-9a93-f20a984ad18f",
+      "970678e1-e4b2-44b7-beaa-fdee8db567ca",
+      "256ce8f8-2021-435c-8e54-9c59052577e4"
+    ],
+    "cameo": [
+      "f26e6051-a4fa-4ce7-9a03-f617e275857f",
+      "1a0093de-4440-4e31-a6f2-672743b75ed1",
+      "48657835-3f61-43dc-b75d-605365365056",
+      "592e613d-6cba-4eda-8c94-9c79498b2b9e",
+      "b7aad21c-a083-4254-b2e2-56f211d3473b",
+      "741532bc-f90c-4eb1-b5be-251f72cd7fe0",
+      "cc186bf1-2826-46ca-b5c8-e32648c7a284"
     ]
   }
 ]

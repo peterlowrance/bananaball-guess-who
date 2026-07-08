@@ -27,18 +27,23 @@ async function getJson(url) {
 }
 
 /** Fetch every page of a player-stats category. */
-async function fetchCategory(category) {
+// Fetch every page of a player-stats category. Pass { career: true } to omit
+// season_id — that returns the all-seasons AGGREGATE, which carries extra
+// columns the season-scoped slice drops (b4s, sb, wo). Career rows span all
+// players/seasons (~632); we merge only the fields we want, keyed by player_id.
+async function fetchCategory(category, { career = false } = {}) {
   const rows = [];
   let page = 1;
   let lastPage = 1;
   do {
-    const url = `${API}/players/${category}?season_id=${SEASON_ID}&per_page=100&page=${page}&count_total=1&sort=g&direction=desc`;
+    const season = career ? '' : `season_id=${SEASON_ID}&`;
+    const url = `${API}/players/${category}?${season}per_page=100&page=${page}&count_total=1&sort=g&direction=desc`;
     const j = await getJson(url);
     rows.push(...(j.data ?? []));
     lastPage = j.meta?.pagination?.last_page ?? page;
     page += 1;
   } while (page <= lastPage);
-  console.log(`  ${category}: ${rows.length} rows`);
+  console.log(`  ${career ? 'career ' : ''}${category}: ${rows.length} rows`);
   return rows;
 }
 
@@ -46,11 +51,22 @@ async function main() {
   console.log(`Fetching Banana Ball stats (season ${SEASON_ID})…`);
   const meta = await getJson(`${API}/meta`).catch(() => ({}));
   const teamsResp = await getJson(`${API}/teams?season_id=${SEASON_ID}`).catch(() => ({ data: [] }));
-  const [hitting, pitching, fielding] = await Promise.all([
+  const [hitting, pitching, fielding, careerHitting] = await Promise.all([
     fetchCategory('hitting'),
     fetchCategory('pitching'),
     fetchCategory('fielding'),
+    // Career (all-seasons) hitting — the only place b4s/sb/wo are exposed.
+    fetchCategory('hitting', { career: true }),
   ]);
+  // Keep just the career-only fields, keyed by player_id, so nothing here can
+  // be mistaken for a 2026 World Tour season stat.
+  const career = careerHitting.map((r) => ({
+    player_id: r.player_id,
+    g: r.g, // career games (for context / qualifiers)
+    b4s: r.b4s ?? null,
+    sb: r.sb ?? null,
+    wo: r.wo ?? null,
+  }));
 
   const teams = (teamsResp.data ?? teamsResp).map?.((t) => ({
     team_id: t.team_id,
@@ -67,13 +83,14 @@ async function main() {
     hitting,
     pitching,
     fielding,
+    career,
   };
 
   const dir = new URL('../data/raw/', import.meta.url);
   mkdirSync(dir, { recursive: true });
   const dest = new URL('bananaball-2026-worldtour-raw.json', dir);
   writeFileSync(dest, JSON.stringify(out, null, 2));
-  console.log(`Wrote ${dest.pathname} (${hitting.length}H / ${pitching.length}P / ${fielding.length}F)`);
+  console.log(`Wrote ${dest.pathname} (${hitting.length}H / ${pitching.length}P / ${fielding.length}F / ${career.length} career)`);
 }
 
 main().catch((e) => {

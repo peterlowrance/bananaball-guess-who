@@ -42,6 +42,7 @@ function ingest(rows, kind) {
         hitting: null,
         pitching: null,
         fielding: null,
+        career: null,
       };
     }
     const p = byId[r.player_id];
@@ -67,6 +68,23 @@ function ingest(rows, kind) {
 ingest(raw.hitting, 'hitting');
 ingest(raw.pitching, 'pitching');
 ingest(raw.fielding, 'fielding');
+
+// Merge CAREER-only stats (all-seasons aggregate). Kept in a distinct `career`
+// block so these totals are never confused with the 2026 World Tour season
+// stats above. Source exposes b4s/sb/wo only in the no-season aggregate, and
+// returns one row per (player, team-stint) — so a player who changed teams has
+// several rows. SUM them per player_id for a true career total.
+const careerTotals = {};
+for (const c of raw.career ?? []) {
+  const t = (careerTotals[c.player_id] ??= { g: 0, b4s: 0, sb: 0, wo: 0 });
+  t.g += c.g ?? 0;
+  t.b4s += c.b4s ?? 0;
+  t.sb += c.sb ?? 0;
+  t.wo += c.wo ?? 0;
+}
+for (const [id, t] of Object.entries(careerTotals)) {
+  if (byId[id]) byId[id].career = t;
+}
 
 // Filter to 6 core teams, and drop one-off celebrity guest players
 let players = Object.values(byId).filter(

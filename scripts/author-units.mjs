@@ -109,6 +109,11 @@ const PERF_OWNED = {
   battingPractice: ['Clark Gilmore', 'Zach Smith', 'Vinny Santarsiero'],
   trickPlay: ['Jonathan Luders', 'Jorden Hussein', 'Sal Jacobo'],
   butterfingers: ['Bobby Lada', 'Dane Tofteland', 'Peyton Chatagnier'],
+  // Career-stat units (B4S / SB / WO). Cores chosen from the career leaders
+  // who aren't already Act-1 team stars.
+  sprinters: ['Jake Skole', 'Reece Hampton', 'Jason Swan'],
+  baseBandits: ['Malachi Mitchell', 'DR Meadows', 'Bryson Bloomer'],
+  walkOffs: ['Dan Oberst', 'Eric Jones Jr.', 'Reese Alexiades'],
 };
 for (const names of Object.values(PERF_OWNED)) reserve(names);
 
@@ -235,6 +240,21 @@ performanceUnit('trick-play-artists', 'Trick-Play Artists',
 performanceUnit('butterfingers', 'Butterfingers', 'Most errors — the glove betrayed them.',
   { kind: 'icon', icon: 'shield', accent: '#ef4444' },
   rank((p) => p.fielding, (a, b) => (b.fielding.e ?? 0) - (a.fielding.e ?? 0)), 9, PERF_OWNED.butterfingers);
+
+// ─── ACT 3 (cont.) — CAREER-stat units ─────────────────────────────────────
+// These rank on CAREER totals (all-seasons), the only place the Banana-Ball-
+// only stats B4S / SB / WO are exposed. The theme copy says "career" so they
+// aren't mistaken for the season stats used everywhere else.
+const qCar = (p) => p.career; // has a career block
+performanceUnit('sprinters', 'The Sprinters', 'Career Ball-Four Sprints — took off instead of walking.',
+  { kind: 'icon', icon: 'rabbit', accent: '#14b8a6' },
+  rank(qCar, (a, b) => (b.career.b4s ?? 0) - (a.career.b4s ?? 0)), 10, PERF_OWNED.sprinters);
+performanceUnit('base-bandits', 'Base Bandits', 'Career stolen bases — the fastest larcenists.',
+  { kind: 'icon', icon: 'zap', accent: '#0ea5e9' },
+  rank(qCar, (a, b) => (b.career.sb ?? 0) - (a.career.sb ?? 0)), 10, PERF_OWNED.baseBandits);
+performanceUnit('walk-off-kings', 'Walk-Off Kings', 'Career walk-offs — they end ballgames.',
+  { kind: 'icon', icon: 'crown', accent: '#f59e0b' },
+  rank(qCar, (a, b) => (b.career.wo ?? 0) - (a.career.wo ?? 0)), 10, PERF_OWNED.walkOffs);
 
 // Wild cards — anyone left (the truly obscure), a final grab-bag.
 const leftover = takeAll(() => true);

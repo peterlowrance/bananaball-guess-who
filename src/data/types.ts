@@ -28,6 +28,15 @@ export interface PitchingStats {
   hits_allowed: number | null;
 }
 
+/** Career (all-seasons) totals for the Banana-Ball-only stats the season slice
+ *  doesn't expose. NOT season-scoped — these are lifetime totals. */
+export interface CareerStats {
+  g: number | null; // career games
+  b4s: number | null; // ball-four sprints (took off instead of walking)
+  sb: number | null; // stolen bases
+  wo: number | null; // walk-offs
+}
+
 export interface FieldingStats {
   g: number | null;
   e: number | null; // errors
@@ -65,6 +74,8 @@ export interface Player {
   hitting: HittingStats | null;
   pitching: PitchingStats | null;
   fielding: FieldingStats | null;
+  /** Career (all-seasons) B4S/SB/WO totals — not season-scoped. */
+  career: CareerStats | null;
   difficulty: Difficulty;
   popularity_rank: number | null;
   popularity_confidence: Confidence;

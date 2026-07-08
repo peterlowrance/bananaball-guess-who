@@ -63,6 +63,19 @@ describe('players-2026 dataset', () => {
     }
   });
 
+  it('carries a distinct career block (B4S/SB/WO) for most players', () => {
+    // Career totals live in their own block so they are never confused with the
+    // season-scoped hitting/pitching/fielding stats. Most (not all — brand-new
+    // players have no career history) should have it.
+    const withCareer = dataset.players.filter((p) => p.career);
+    expect(withCareer.length).toBeGreaterThan(140);
+    for (const p of withCareer) {
+      for (const k of ['g', 'b4s', 'sb', 'wo'] as const) {
+        expect(typeof p.career![k] === 'number' || p.career![k] === null, `${p.name}.career.${k}`).toBe(true);
+      }
+    }
+  });
+
   it('pitchers carry strikeouts (so) and the extra pitching fields', () => {
     const pitchers = dataset.players.filter((p) => p.pitching);
     expect(pitchers.length).toBeGreaterThan(50);

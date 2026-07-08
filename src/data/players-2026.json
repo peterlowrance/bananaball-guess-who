@@ -90,6 +90,12 @@
         "tpm": 0,
         "trick_play_rate": "10%"
       },
+      "career": {
+        "g": 5,
+        "b4s": 0,
+        "sb": 0,
+        "wo": 0
+      },
       "difficulty": "easy",
       "popularity_rank": 1,
       "popularity_confidence": "high",
@@ -138,6 +144,12 @@
         "tpm": 0,
         "trick_play_rate": "0%"
       },
+      "career": {
+        "g": 16,
+        "b4s": 0,
+        "sb": 0,
+        "wo": 0
+      },
       "difficulty": "easy",
       "popularity_rank": 2,
       "popularity_confidence": "high",
@@ -174,6 +186,12 @@
         "tpo": 4,
         "tpm": 0,
         "trick_play_rate": "20%"
+      },
+      "career": {
+        "g": 39,
+        "b4s": 12,
+        "sb": 3,
+        "wo": 6
       },
       "difficulty": "easy",
       "popularity_rank": 3,
@@ -212,6 +230,12 @@
         "tpm": 2,
         "trick_play_rate": "40%"
       },
+      "career": {
+        "g": 153,
+        "b4s": 41,
+        "sb": 37,
+        "wo": 24
+      },
       "difficulty": "easy",
       "popularity_rank": 4,
       "popularity_confidence": "high",
@@ -248,6 +272,12 @@
         "tpo": 0,
         "tpm": 0,
         "trick_play_rate": "0%"
+      },
+      "career": {
+        "g": 239,
+        "b4s": 71,
+        "sb": 15,
+        "wo": 17
       },
       "difficulty": "easy",
       "popularity_rank": 5,
@@ -297,6 +327,7 @@
         "tpm": 0,
         "trick_play_rate": "0%"
       },
+      "career": null,
       "difficulty": "easy",
       "popularity_rank": 6,
       "popularity_confidence": "high",
@@ -344,6 +375,12 @@
         "tpo": 0,
         "tpm": 0,
         "trick_play_rate": "0%"
+      },
+      "career": {
+        "g": 5,
+        "b4s": 0,
+        "sb": 0,
+        "wo": 0
       },
       "difficulty": "easy",
       "popularity_rank": 7,
@@ -393,6 +430,12 @@
         "tpm": 0,
         "trick_play_rate": "10%"
       },
+      "career": {
+        "g": 15,
+        "b4s": 0,
+        "sb": 0,
+        "wo": 0
+      },
       "difficulty": "easy",
       "popularity_rank": 8,
       "popularity_confidence": "high",
@@ -441,6 +484,12 @@
         "tpm": 0,
         "trick_play_rate": "0%"
       },
+      "career": {
+        "g": 188,
+        "b4s": 51,
+        "sb": 18,
+        "wo": 30
+      },
       "difficulty": "medium",
       "popularity_rank": 9,
       "popularity_confidence": "high",
@@ -477,6 +526,12 @@
         "tpo": 0,
         "tpm": 0,
         "trick_play_rate": "0%"
+      },
+      "career": {
+        "g": 13,
+        "b4s": 2,
+        "sb": 0,
+        "wo": 0
       },
       "difficulty": "medium",
       "popularity_rank": 10,
@@ -526,6 +581,12 @@
         "tpm": 0,
         "trick_play_rate": "0%"
       },
+      "career": {
+        "g": 3,
+        "b4s": 0,
+        "sb": 0,
+        "wo": 0
+      },
       "difficulty": "medium",
       "popularity_rank": 11,
       "popularity_confidence": "medium",
@@ -574,6 +635,12 @@
         "tpm": 1,
         "trick_play_rate": "10%"
       },
+      "career": {
+        "g": 4,
+        "b4s": 0,
+        "sb": 0,
+        "wo": 0
+      },
       "difficulty": "medium",
       "popularity_rank": 12,
       "popularity_confidence": "medium",
@@ -610,6 +677,12 @@
         "tpo": 29,
         "tpm": 2,
         "trick_play_rate": "1.1%"
+      },
+      "career": {
+        "g": 94,
+        "b4s": 27,
+        "sb": 18,
+        "wo": 11
       },
       "difficulty": "medium",
       "popularity_rank": 13,
@@ -648,6 +721,12 @@
         "tpm": 0,
         "trick_play_rate": "40%"
       },
+      "career": {
+        "g": 283,
+        "b4s": 113,
+        "sb": 31,
+        "wo": 76
+      },
       "difficulty": "medium",
       "popularity_rank": 14,
       "popularity_confidence": "medium",
@@ -685,6 +764,12 @@
         "tpm": 2,
         "trick_play_rate": "1.7%"
       },
+      "career": {
+        "g": 74,
+        "b4s": 20,
+        "sb": 7,
+        "wo": 7
+      },
       "difficulty": "medium",
       "popularity_rank": 15,
       "popularity_confidence": "medium",
@@ -721,6 +806,12 @@
         "tpo": 0,
         "tpm": 0,
         "trick_play_rate": "0%"
+      },
+      "career": {
+        "g": 55,
+        "b4s": 6,
+        "sb": 1,
+        "wo": 0
       },
       "difficulty": "medium",
       "popularity_rank": 16,
@@ -770,6 +861,12 @@
         "tpm": 0,
         "trick_play_rate": "0%"
       },
+      "career": {
+        "g": 2,
+        "b4s": 0,
+        "sb": 0,
+        "wo": 0
+      },
       "difficulty": "medium",
       "popularity_rank": 17,
       "popularity_confidence": "medium",
@@ -806,6 +903,12 @@
         "tpo": 32,
         "tpm": 8,
         "trick_play_rate": "1.2%"
+      },
+      "career": {
+        "g": 73,
+        "b4s": 11,
+        "sb": 6,
+        "wo": 5
       },
       "difficulty": "medium",
       "popularity_rank": 18,
@@ -844,6 +947,12 @@
         "tpm": 2,
         "trick_play_rate": "1.5%"
       },
+      "career": {
+        "g": 43,
+        "b4s": 8,
+        "sb": 2,
+        "wo": 5
+      },
       "difficulty": "hard",
       "popularity_rank": 19,
       "popularity_confidence": "low",
@@ -880,6 +989,12 @@
         "tpo": 13,
         "tpm": 3,
         "trick_play_rate": "50%"
+      },
+      "career": {
+        "g": 36,
+        "b4s": 9,
+        "sb": 0,
+        "wo": 6
       },
       "difficulty": "hard",
       "popularity_rank": 20,
@@ -929,6 +1044,12 @@
         "tpm": 0,
         "trick_play_rate": "10%"
       },
+      "career": {
+        "g": 1,
+        "b4s": 0,
+        "sb": 0,
+        "wo": 0
+      },
       "difficulty": "hard",
       "popularity_rank": 21,
       "popularity_confidence": "low",
@@ -966,6 +1087,12 @@
         "tpm": 4,
         "trick_play_rate": "70%"
       },
+      "career": {
+        "g": 78,
+        "b4s": 15,
+        "sb": 22,
+        "wo": 4
+      },
       "difficulty": "hard",
       "popularity_rank": 22,
       "popularity_confidence": "low",
@@ -1002,6 +1129,12 @@
         "tpo": 17,
         "tpm": 3,
         "trick_play_rate": "80%"
+      },
+      "career": {
+        "g": 99,
+        "b4s": 36,
+        "sb": 11,
+        "wo": 10
       },
       "difficulty": "hard",
       "popularity_rank": 23,
@@ -1051,6 +1184,12 @@
         "tpm": 0,
         "trick_play_rate": "0%"
       },
+      "career": {
+        "g": 2,
+        "b4s": 0,
+        "sb": 0,
+        "wo": 0
+      },
       "difficulty": "hard",
       "popularity_rank": 24,
       "popularity_confidence": "low",
@@ -1099,6 +1238,12 @@
         "tpm": 0,
         "trick_play_rate": "10%"
       },
+      "career": {
+        "g": 9,
+        "b4s": 0,
+        "sb": 0,
+        "wo": 0
+      },
       "difficulty": "hard",
       "popularity_rank": 25,
       "popularity_confidence": "low",
@@ -1135,6 +1280,12 @@
         "tpo": 11,
         "tpm": 4,
         "trick_play_rate": "40%"
+      },
+      "career": {
+        "g": 39,
+        "b4s": 17,
+        "sb": 2,
+        "wo": 3
       },
       "difficulty": "easy",
       "popularity_rank": 1,
@@ -1183,6 +1334,12 @@
         "tpm": 0,
         "trick_play_rate": "0%"
       },
+      "career": {
+        "g": 5,
+        "b4s": 0,
+        "sb": 0,
+        "wo": 0
+      },
       "difficulty": "easy",
       "popularity_rank": 2,
       "popularity_confidence": "high",
@@ -1229,6 +1386,12 @@
         "tpo": 22,
         "tpm": 5,
         "trick_play_rate": "90%"
+      },
+      "career": {
+        "g": 134,
+        "b4s": 15,
+        "sb": 0,
+        "wo": 20
       },
       "difficulty": "easy",
       "popularity_rank": 3,
@@ -1277,6 +1440,7 @@
         "tpm": 0,
         "trick_play_rate": "0%"
       },
+      "career": null,
       "difficulty": "easy",
       "popularity_rank": 4,
       "popularity_confidence": "high",
@@ -1322,6 +1486,12 @@
         "tpm": 1,
         "trick_play_rate": "60%"
       },
+      "career": {
+        "g": 54,
+        "b4s": 3,
+        "sb": 1,
+        "wo": 0
+      },
       "difficulty": "easy",
       "popularity_rank": 5,
       "popularity_confidence": "high",
@@ -1358,6 +1528,12 @@
         "tpm": 4,
         "trick_play_rate": "70%"
       },
+      "career": {
+        "g": 39,
+        "b4s": 9,
+        "sb": 4,
+        "wo": 1
+      },
       "difficulty": "easy",
       "popularity_rank": 6,
       "popularity_confidence": "high",
@@ -1393,6 +1569,12 @@
         "tpo": 0,
         "tpm": 0,
         "trick_play_rate": "0%"
+      },
+      "career": {
+        "g": 143,
+        "b4s": 49,
+        "sb": 14,
+        "wo": 7
       },
       "difficulty": "easy",
       "popularity_rank": 7,
@@ -1441,6 +1623,12 @@
         "tpm": 0,
         "trick_play_rate": "0%"
       },
+      "career": {
+        "g": 22,
+        "b4s": 0,
+        "sb": 0,
+        "wo": 0
+      },
       "difficulty": "easy",
       "popularity_rank": 8,
       "popularity_confidence": "high",
@@ -1476,6 +1664,12 @@
         "tpo": 0,
         "tpm": 0,
         "trick_play_rate": "0%"
+      },
+      "career": {
+        "g": 241,
+        "b4s": 3,
+        "sb": 175,
+        "wo": 11
       },
       "difficulty": "easy",
       "popularity_rank": 9,
@@ -1513,6 +1707,12 @@
         "tpm": 4,
         "trick_play_rate": "40%"
       },
+      "career": {
+        "g": 34,
+        "b4s": 10,
+        "sb": 5,
+        "wo": 2
+      },
       "difficulty": "medium",
       "popularity_rank": 10,
       "popularity_confidence": "medium",
@@ -1548,6 +1748,12 @@
         "tpo": 15,
         "tpm": 3,
         "trick_play_rate": "60%"
+      },
+      "career": {
+        "g": 35,
+        "b4s": 15,
+        "sb": 2,
+        "wo": 1
       },
       "difficulty": "medium",
       "popularity_rank": 11,
@@ -1596,6 +1802,12 @@
         "tpm": 0,
         "trick_play_rate": "20%"
       },
+      "career": {
+        "g": 3,
+        "b4s": 0,
+        "sb": 0,
+        "wo": 0
+      },
       "difficulty": "medium",
       "popularity_rank": 12,
       "popularity_confidence": "medium",
@@ -1643,6 +1855,12 @@
         "tpm": 0,
         "trick_play_rate": "0%"
       },
+      "career": {
+        "g": 1,
+        "b4s": 0,
+        "sb": 0,
+        "wo": 0
+      },
       "difficulty": "medium",
       "popularity_rank": 13,
       "popularity_confidence": "medium",
@@ -1679,6 +1897,12 @@
         "tpm": 1,
         "trick_play_rate": "30%"
       },
+      "career": {
+        "g": 38,
+        "b4s": 19,
+        "sb": 3,
+        "wo": 4
+      },
       "difficulty": "medium",
       "popularity_rank": 14,
       "popularity_confidence": "medium",
@@ -1714,6 +1938,12 @@
         "tpo": 8,
         "tpm": 4,
         "trick_play_rate": "30%"
+      },
+      "career": {
+        "g": 34,
+        "b4s": 9,
+        "sb": 8,
+        "wo": 1
       },
       "difficulty": "medium",
       "popularity_rank": 15,
@@ -1762,6 +1992,12 @@
         "tpm": 0,
         "trick_play_rate": "10%"
       },
+      "career": {
+        "g": 1,
+        "b4s": 0,
+        "sb": 0,
+        "wo": 0
+      },
       "difficulty": "medium",
       "popularity_rank": 16,
       "popularity_confidence": "medium",
@@ -1809,6 +2045,12 @@
         "tpm": 0,
         "trick_play_rate": "10%"
       },
+      "career": {
+        "g": 1,
+        "b4s": 0,
+        "sb": 0,
+        "wo": 0
+      },
       "difficulty": "medium",
       "popularity_rank": 17,
       "popularity_confidence": "medium",
@@ -1845,6 +2087,12 @@
         "tpm": 0,
         "trick_play_rate": "0%"
       },
+      "career": {
+        "g": 35,
+        "b4s": 21,
+        "sb": 0,
+        "wo": 5
+      },
       "difficulty": "medium",
       "popularity_rank": 18,
       "popularity_confidence": "medium",
@@ -1880,6 +2128,12 @@
         "tpo": 40,
         "tpm": 6,
         "trick_play_rate": "1.5%"
+      },
+      "career": {
+        "g": 39,
+        "b4s": 10,
+        "sb": 14,
+        "wo": 6
       },
       "difficulty": "medium",
       "popularity_rank": 19,
@@ -1928,6 +2182,12 @@
         "tpm": 0,
         "trick_play_rate": "10%"
       },
+      "career": {
+        "g": 6,
+        "b4s": 0,
+        "sb": 0,
+        "wo": 0
+      },
       "difficulty": "hard",
       "popularity_rank": 20,
       "popularity_confidence": "low",
@@ -1963,6 +2223,12 @@
         "tpo": 7,
         "tpm": 2,
         "trick_play_rate": "30%"
+      },
+      "career": {
+        "g": 35,
+        "b4s": 11,
+        "sb": 4,
+        "wo": 1
       },
       "difficulty": "hard",
       "popularity_rank": 21,
@@ -2011,6 +2277,12 @@
         "tpm": 0,
         "trick_play_rate": "10%"
       },
+      "career": {
+        "g": 5,
+        "b4s": 0,
+        "sb": 0,
+        "wo": 0
+      },
       "difficulty": "hard",
       "popularity_rank": 22,
       "popularity_confidence": "low",
@@ -2057,6 +2329,12 @@
         "tpo": 0,
         "tpm": 0,
         "trick_play_rate": "0%"
+      },
+      "career": {
+        "g": 4,
+        "b4s": 0,
+        "sb": 1,
+        "wo": 1
       },
       "difficulty": "hard",
       "popularity_rank": 23,
@@ -2105,6 +2383,12 @@
         "tpm": 0,
         "trick_play_rate": "0%"
       },
+      "career": {
+        "g": 1,
+        "b4s": 0,
+        "sb": 0,
+        "wo": 0
+      },
       "difficulty": "hard",
       "popularity_rank": 24,
       "popularity_confidence": "low",
@@ -2151,6 +2435,12 @@
         "tpo": 3,
         "tpm": 0,
         "trick_play_rate": "30%"
+      },
+      "career": {
+        "g": 4,
+        "b4s": 0,
+        "sb": 0,
+        "wo": 0
       },
       "difficulty": "hard",
       "popularity_rank": 25,
@@ -2199,6 +2489,12 @@
         "tpm": 0,
         "trick_play_rate": "20%"
       },
+      "career": {
+        "g": 4,
+        "b4s": 0,
+        "sb": 0,
+        "wo": 0
+      },
       "difficulty": "hard",
       "popularity_rank": 26,
       "popularity_confidence": "low",
@@ -2234,6 +2530,12 @@
         "tpo": 3,
         "tpm": 0,
         "trick_play_rate": "10%"
+      },
+      "career": {
+        "g": 37,
+        "b4s": 10,
+        "sb": 0,
+        "wo": 4
       },
       "difficulty": "hard",
       "popularity_rank": 27,
@@ -2271,6 +2573,12 @@
         "tpm": 0,
         "trick_play_rate": "0%"
       },
+      "career": {
+        "g": 20,
+        "b4s": 1,
+        "sb": 0,
+        "wo": 0
+      },
       "difficulty": "easy",
       "popularity_rank": 1,
       "popularity_confidence": "high",
@@ -2306,6 +2614,12 @@
         "tpo": 2,
         "tpm": 0,
         "trick_play_rate": "10%"
+      },
+      "career": {
+        "g": 162,
+        "b4s": 16,
+        "sb": 13,
+        "wo": 11
       },
       "difficulty": "easy",
       "popularity_rank": 2,
@@ -2354,6 +2668,12 @@
         "tpm": 0,
         "trick_play_rate": "10%"
       },
+      "career": {
+        "g": 3,
+        "b4s": 0,
+        "sb": 0,
+        "wo": 0
+      },
       "difficulty": "easy",
       "popularity_rank": 3,
       "popularity_confidence": "high",
@@ -2401,6 +2721,12 @@
         "tpm": 0,
         "trick_play_rate": "20%"
       },
+      "career": {
+        "g": 3,
+        "b4s": 0,
+        "sb": 0,
+        "wo": 0
+      },
       "difficulty": "easy",
       "popularity_rank": 4,
       "popularity_confidence": "high",
@@ -2436,6 +2762,12 @@
         "tpo": 4,
         "tpm": 3,
         "trick_play_rate": "10%"
+      },
+      "career": {
+        "g": 40,
+        "b4s": 9,
+        "sb": 3,
+        "wo": 8
       },
       "difficulty": "easy",
       "popularity_rank": 5,
@@ -2473,6 +2805,12 @@
         "tpm": 5,
         "trick_play_rate": "1.9%"
       },
+      "career": {
+        "g": 45,
+        "b4s": 19,
+        "sb": 5,
+        "wo": 3
+      },
       "difficulty": "easy",
       "popularity_rank": 6,
       "popularity_confidence": "high",
@@ -2508,6 +2846,12 @@
         "tpo": 0,
         "tpm": 0,
         "trick_play_rate": "0%"
+      },
+      "career": {
+        "g": 17,
+        "b4s": 1,
+        "sb": 0,
+        "wo": 0
       },
       "difficulty": "easy",
       "popularity_rank": 7,
@@ -2545,6 +2889,12 @@
         "tpm": 0,
         "trick_play_rate": "30%"
       },
+      "career": {
+        "g": 40,
+        "b4s": 18,
+        "sb": 0,
+        "wo": 8
+      },
       "difficulty": "easy",
       "popularity_rank": 8,
       "popularity_confidence": "medium",
@@ -2580,6 +2930,12 @@
         "tpo": 13,
         "tpm": 1,
         "trick_play_rate": "70%"
+      },
+      "career": {
+        "g": 34,
+        "b4s": 12,
+        "sb": 5,
+        "wo": 4
       },
       "difficulty": "easy",
       "popularity_rank": 9,
@@ -2628,6 +2984,12 @@
         "tpm": 0,
         "trick_play_rate": "0%"
       },
+      "career": {
+        "g": 1,
+        "b4s": 0,
+        "sb": 0,
+        "wo": 0
+      },
       "difficulty": "medium",
       "popularity_rank": 10,
       "popularity_confidence": "medium",
@@ -2663,6 +3025,12 @@
         "tpo": 39,
         "tpm": 2,
         "trick_play_rate": "1.7%"
+      },
+      "career": {
+        "g": 38,
+        "b4s": 8,
+        "sb": 8,
+        "wo": 2
       },
       "difficulty": "medium",
       "popularity_rank": 11,
@@ -2711,6 +3079,12 @@
         "tpm": 0,
         "trick_play_rate": "10%"
       },
+      "career": {
+        "g": 4,
+        "b4s": 0,
+        "sb": 0,
+        "wo": 0
+      },
       "difficulty": "medium",
       "popularity_rank": 12,
       "popularity_confidence": "medium",
@@ -2758,6 +3132,7 @@
         "tpm": 0,
         "trick_play_rate": "0%"
       },
+      "career": null,
       "difficulty": "medium",
       "popularity_rank": 13,
       "popularity_confidence": "medium",
@@ -2793,6 +3168,12 @@
         "tpo": 0,
         "tpm": 0,
         "trick_play_rate": "0%"
+      },
+      "career": {
+        "g": 34,
+        "b4s": 14,
+        "sb": 0,
+        "wo": 2
       },
       "difficulty": "medium",
       "popularity_rank": 14,
@@ -2830,6 +3211,12 @@
         "tpm": 1,
         "trick_play_rate": "40%"
       },
+      "career": {
+        "g": 38,
+        "b4s": 23,
+        "sb": 8,
+        "wo": 6
+      },
       "difficulty": "medium",
       "popularity_rank": 15,
       "popularity_confidence": "medium",
@@ -2865,6 +3252,12 @@
         "tpo": 1,
         "tpm": 0,
         "trick_play_rate": "0%"
+      },
+      "career": {
+        "g": 45,
+        "b4s": 6,
+        "sb": 3,
+        "wo": 7
       },
       "difficulty": "medium",
       "popularity_rank": 16,
@@ -2902,6 +3295,12 @@
         "tpm": 0,
         "trick_play_rate": "10%"
       },
+      "career": {
+        "g": 37,
+        "b4s": 12,
+        "sb": 2,
+        "wo": 2
+      },
       "difficulty": "medium",
       "popularity_rank": 17,
       "popularity_confidence": "medium",
@@ -2937,6 +3336,12 @@
         "tpo": 9,
         "tpm": 2,
         "trick_play_rate": "30%"
+      },
+      "career": {
+        "g": 40,
+        "b4s": 14,
+        "sb": 3,
+        "wo": 4
       },
       "difficulty": "medium",
       "popularity_rank": 18,
@@ -2985,6 +3390,12 @@
         "tpm": 0,
         "trick_play_rate": "20%"
       },
+      "career": {
+        "g": 8,
+        "b4s": 0,
+        "sb": 0,
+        "wo": 0
+      },
       "difficulty": "hard",
       "popularity_rank": 19,
       "popularity_confidence": "medium",
@@ -3032,6 +3443,12 @@
         "tpm": 0,
         "trick_play_rate": "0%"
       },
+      "career": {
+        "g": 68,
+        "b4s": 12,
+        "sb": 4,
+        "wo": 3
+      },
       "difficulty": "hard",
       "popularity_rank": 20,
       "popularity_confidence": "low",
@@ -3067,6 +3484,12 @@
         "tpo": 55,
         "tpm": 5,
         "trick_play_rate": "2.2%"
+      },
+      "career": {
+        "g": 88,
+        "b4s": 10,
+        "sb": 4,
+        "wo": 4
       },
       "difficulty": "hard",
       "popularity_rank": 21,
@@ -3115,6 +3538,12 @@
         "tpm": 0,
         "trick_play_rate": "10%"
       },
+      "career": {
+        "g": 2,
+        "b4s": 0,
+        "sb": 0,
+        "wo": 0
+      },
       "difficulty": "hard",
       "popularity_rank": 22,
       "popularity_confidence": "low",
@@ -3161,6 +3590,12 @@
         "tpo": 0,
         "tpm": 0,
         "trick_play_rate": "0%"
+      },
+      "career": {
+        "g": 1,
+        "b4s": 0,
+        "sb": 0,
+        "wo": 0
       },
       "difficulty": "hard",
       "popularity_rank": 23,
@@ -3209,6 +3644,12 @@
         "tpm": 0,
         "trick_play_rate": "10%"
       },
+      "career": {
+        "g": 3,
+        "b4s": 0,
+        "sb": 0,
+        "wo": 0
+      },
       "difficulty": "hard",
       "popularity_rank": 24,
       "popularity_confidence": "low",
@@ -3244,6 +3685,12 @@
         "tpo": 0,
         "tpm": 0,
         "trick_play_rate": "0%"
+      },
+      "career": {
+        "g": 39,
+        "b4s": 0,
+        "sb": 14,
+        "wo": 0
       },
       "difficulty": "hard",
       "popularity_rank": 25,
@@ -3292,6 +3739,12 @@
         "tpm": 0,
         "trick_play_rate": "10%"
       },
+      "career": {
+        "g": 1,
+        "b4s": 0,
+        "sb": 0,
+        "wo": 0
+      },
       "difficulty": "hard",
       "popularity_rank": 26,
       "popularity_confidence": "low",
@@ -3327,6 +3780,12 @@
         "tpo": 2,
         "tpm": 0,
         "trick_play_rate": "10%"
+      },
+      "career": {
+        "g": 273,
+        "b4s": 80,
+        "sb": 65,
+        "wo": 20
       },
       "difficulty": "easy",
       "popularity_rank": 1,
@@ -3365,6 +3824,12 @@
         "tpm": 0,
         "trick_play_rate": "0%"
       },
+      "career": {
+        "g": 114,
+        "b4s": 58,
+        "sb": 6,
+        "wo": 20
+      },
       "difficulty": "easy",
       "popularity_rank": 2,
       "popularity_confidence": "high",
@@ -3402,6 +3867,12 @@
         "tpm": 4,
         "trick_play_rate": "60%"
       },
+      "career": {
+        "g": 265,
+        "b4s": 151,
+        "sb": 56,
+        "wo": 24
+      },
       "difficulty": "easy",
       "popularity_rank": 3,
       "popularity_confidence": "high",
@@ -3438,6 +3909,12 @@
         "tpo": 10,
         "tpm": 0,
         "trick_play_rate": "50%"
+      },
+      "career": {
+        "g": 160,
+        "b4s": 48,
+        "sb": 12,
+        "wo": 10
       },
       "difficulty": "easy",
       "popularity_rank": 4,
@@ -3487,6 +3964,12 @@
         "tpm": 0,
         "trick_play_rate": "0%"
       },
+      "career": {
+        "g": 7,
+        "b4s": 0,
+        "sb": 0,
+        "wo": 0
+      },
       "difficulty": "easy",
       "popularity_rank": 5,
       "popularity_confidence": "high",
@@ -3523,6 +4006,12 @@
         "tpo": 25,
         "tpm": 6,
         "trick_play_rate": "100%"
+      },
+      "career": {
+        "g": 238,
+        "b4s": 77,
+        "sb": 57,
+        "wo": 17
       },
       "difficulty": "easy",
       "popularity_rank": 6,
@@ -3572,6 +4061,12 @@
         "tpm": 0,
         "trick_play_rate": "20%"
       },
+      "career": {
+        "g": 59,
+        "b4s": 13,
+        "sb": 2,
+        "wo": 0
+      },
       "difficulty": "easy",
       "popularity_rank": 7,
       "popularity_confidence": "high",
@@ -3620,6 +4115,12 @@
         "tpm": 0,
         "trick_play_rate": "10%"
       },
+      "career": {
+        "g": 3,
+        "b4s": 0,
+        "sb": 0,
+        "wo": 0
+      },
       "difficulty": "easy",
       "popularity_rank": 8,
       "popularity_confidence": "high",
@@ -3657,6 +4158,12 @@
         "tpm": 3,
         "trick_play_rate": "1.1%"
       },
+      "career": {
+        "g": 273,
+        "b4s": 140,
+        "sb": 54,
+        "wo": 23
+      },
       "difficulty": "easy",
       "popularity_rank": 9,
       "popularity_confidence": "medium",
@@ -3693,6 +4200,12 @@
         "tpo": 1,
         "tpm": 1,
         "trick_play_rate": "10%"
+      },
+      "career": {
+        "g": 27,
+        "b4s": 5,
+        "sb": 0,
+        "wo": 1
       },
       "difficulty": "medium",
       "popularity_rank": 10,
@@ -3742,6 +4255,12 @@
         "tpm": 0,
         "trick_play_rate": "10%"
       },
+      "career": {
+        "g": 25,
+        "b4s": 0,
+        "sb": 0,
+        "wo": 0
+      },
       "difficulty": "medium",
       "popularity_rank": 11,
       "popularity_confidence": "medium",
@@ -3778,6 +4297,12 @@
         "tpo": 0,
         "tpm": 0,
         "trick_play_rate": "0%"
+      },
+      "career": {
+        "g": 94,
+        "b4s": 29,
+        "sb": 6,
+        "wo": 3
       },
       "difficulty": "medium",
       "popularity_rank": 12,
@@ -3816,6 +4341,12 @@
         "tpm": 6,
         "trick_play_rate": "80%"
       },
+      "career": {
+        "g": 247,
+        "b4s": 125,
+        "sb": 52,
+        "wo": 21
+      },
       "difficulty": "medium",
       "popularity_rank": 13,
       "popularity_confidence": "medium",
@@ -3852,6 +4383,12 @@
         "tpo": 1,
         "tpm": 4,
         "trick_play_rate": "0%"
+      },
+      "career": {
+        "g": 36,
+        "b4s": 7,
+        "sb": 1,
+        "wo": 5
       },
       "difficulty": "medium",
       "popularity_rank": 14,
@@ -3901,6 +4438,12 @@
         "tpm": 2,
         "trick_play_rate": "2.1%"
       },
+      "career": {
+        "g": 233,
+        "b4s": 63,
+        "sb": 31,
+        "wo": 11
+      },
       "difficulty": "medium",
       "popularity_rank": 15,
       "popularity_confidence": "medium",
@@ -3949,6 +4492,12 @@
         "tpm": 0,
         "trick_play_rate": "30%"
       },
+      "career": {
+        "g": 6,
+        "b4s": 0,
+        "sb": 0,
+        "wo": 0
+      },
       "difficulty": "medium",
       "popularity_rank": 16,
       "popularity_confidence": "medium",
@@ -3985,6 +4534,12 @@
         "tpo": 0,
         "tpm": 0,
         "trick_play_rate": "0%"
+      },
+      "career": {
+        "g": 73,
+        "b4s": 11,
+        "sb": 1,
+        "wo": 0
       },
       "difficulty": "medium",
       "popularity_rank": 17,
@@ -4023,6 +4578,12 @@
         "tpm": 0,
         "trick_play_rate": "20%"
       },
+      "career": {
+        "g": 24,
+        "b4s": 2,
+        "sb": 0,
+        "wo": 0
+      },
       "difficulty": "medium",
       "popularity_rank": 18,
       "popularity_confidence": "medium",
@@ -4059,6 +4620,12 @@
         "tpo": 30,
         "tpm": 2,
         "trick_play_rate": "1.3%"
+      },
+      "career": {
+        "g": 255,
+        "b4s": 59,
+        "sb": 19,
+        "wo": 12
       },
       "difficulty": "hard",
       "popularity_rank": 19,
@@ -4108,6 +4675,12 @@
         "tpm": 0,
         "trick_play_rate": "0%"
       },
+      "career": {
+        "g": 2,
+        "b4s": 0,
+        "sb": 0,
+        "wo": 0
+      },
       "difficulty": "hard",
       "popularity_rank": 20,
       "popularity_confidence": "medium",
@@ -4144,6 +4717,12 @@
         "tpo": 0,
         "tpm": 0,
         "trick_play_rate": "0%"
+      },
+      "career": {
+        "g": 82,
+        "b4s": 1,
+        "sb": 17,
+        "wo": 1
       },
       "difficulty": "hard",
       "popularity_rank": 21,
@@ -4193,6 +4772,12 @@
         "tpm": 0,
         "trick_play_rate": "0%"
       },
+      "career": {
+        "g": 2,
+        "b4s": 0,
+        "sb": 0,
+        "wo": 0
+      },
       "difficulty": "hard",
       "popularity_rank": 22,
       "popularity_confidence": "low",
@@ -4229,6 +4814,12 @@
         "tpo": 16,
         "tpm": 2,
         "trick_play_rate": "60%"
+      },
+      "career": {
+        "g": 39,
+        "b4s": 14,
+        "sb": 0,
+        "wo": 8
       },
       "difficulty": "hard",
       "popularity_rank": 23,
@@ -4278,6 +4869,12 @@
         "tpm": 0,
         "trick_play_rate": "20%"
       },
+      "career": {
+        "g": 10,
+        "b4s": 0,
+        "sb": 0,
+        "wo": 0
+      },
       "difficulty": "hard",
       "popularity_rank": 24,
       "popularity_confidence": "low",
@@ -4325,6 +4922,12 @@
         "tpo": 0,
         "tpm": 0,
         "trick_play_rate": "0%"
+      },
+      "career": {
+        "g": 3,
+        "b4s": 0,
+        "sb": 0,
+        "wo": 0
       },
       "difficulty": "hard",
       "popularity_rank": 25,
@@ -4374,6 +4977,12 @@
         "tpm": 0,
         "trick_play_rate": "10%"
       },
+      "career": {
+        "g": 18,
+        "b4s": 0,
+        "sb": 2,
+        "wo": 0
+      },
       "difficulty": "hard",
       "popularity_rank": 26,
       "popularity_confidence": "low",
@@ -4422,6 +5031,12 @@
         "tpm": 1,
         "trick_play_rate": "20%"
       },
+      "career": {
+        "g": 2,
+        "b4s": 0,
+        "sb": 0,
+        "wo": 0
+      },
       "difficulty": "hard",
       "popularity_rank": 27,
       "popularity_confidence": "low",
@@ -4458,6 +5073,12 @@
         "tpo": 15,
         "tpm": 5,
         "trick_play_rate": "60%"
+      },
+      "career": {
+        "g": 269,
+        "b4s": 30,
+        "sb": 11,
+        "wo": 57
       },
       "difficulty": "easy",
       "popularity_rank": 1,
@@ -4496,6 +5117,12 @@
         "tpm": 7,
         "trick_play_rate": "1.6%"
       },
+      "career": {
+        "g": 134,
+        "b4s": 63,
+        "sb": 19,
+        "wo": 27
+      },
       "difficulty": "easy",
       "popularity_rank": 2,
       "popularity_confidence": "high",
@@ -4533,6 +5160,12 @@
         "tpm": 3,
         "trick_play_rate": "50%"
       },
+      "career": {
+        "g": 184,
+        "b4s": 46,
+        "sb": 24,
+        "wo": 42
+      },
       "difficulty": "easy",
       "popularity_rank": 3,
       "popularity_confidence": "high",
@@ -4569,6 +5202,12 @@
         "tpo": 1,
         "tpm": 1,
         "trick_play_rate": "0%"
+      },
+      "career": {
+        "g": 287,
+        "b4s": 110,
+        "sb": 31,
+        "wo": 57
       },
       "difficulty": "easy",
       "popularity_rank": 4,
@@ -4618,6 +5257,12 @@
         "tpm": 0,
         "trick_play_rate": "0%"
       },
+      "career": {
+        "g": 255,
+        "b4s": 6,
+        "sb": 0,
+        "wo": 6
+      },
       "difficulty": "easy",
       "popularity_rank": 5,
       "popularity_confidence": "high",
@@ -4666,6 +5311,12 @@
         "tpm": 0,
         "trick_play_rate": "0%"
       },
+      "career": {
+        "g": 1,
+        "b4s": 0,
+        "sb": 0,
+        "wo": 0
+      },
       "difficulty": "easy",
       "popularity_rank": 6,
       "popularity_confidence": "high",
@@ -4702,6 +5353,12 @@
         "tpo": 55,
         "tpm": 6,
         "trick_play_rate": "2.2%"
+      },
+      "career": {
+        "g": 301,
+        "b4s": 96,
+        "sb": 17,
+        "wo": 70
       },
       "difficulty": "easy",
       "popularity_rank": 7,
@@ -4751,6 +5408,7 @@
         "tpm": 0,
         "trick_play_rate": "0%"
       },
+      "career": null,
       "difficulty": "easy",
       "popularity_rank": 8,
       "popularity_confidence": "high",
@@ -4787,6 +5445,12 @@
         "tpo": 5,
         "tpm": 0,
         "trick_play_rate": "20%"
+      },
+      "career": {
+        "g": 108,
+        "b4s": 22,
+        "sb": 25,
+        "wo": 10
       },
       "difficulty": "easy",
       "popularity_rank": 9,
@@ -4825,6 +5489,12 @@
         "tpm": 4,
         "trick_play_rate": "1.8%"
       },
+      "career": {
+        "g": 187,
+        "b4s": 16,
+        "sb": 0,
+        "wo": 8
+      },
       "difficulty": "medium",
       "popularity_rank": 10,
       "popularity_confidence": "medium",
@@ -4862,6 +5532,12 @@
         "tpm": 1,
         "trick_play_rate": "1.4%"
       },
+      "career": {
+        "g": 282,
+        "b4s": 88,
+        "sb": 99,
+        "wo": 64
+      },
       "difficulty": "medium",
       "popularity_rank": 11,
       "popularity_confidence": "medium",
@@ -4898,6 +5574,12 @@
         "tpo": 29,
         "tpm": 1,
         "trick_play_rate": "1.2%"
+      },
+      "career": {
+        "g": 192,
+        "b4s": 64,
+        "sb": 33,
+        "wo": 65
       },
       "difficulty": "medium",
       "popularity_rank": 12,
@@ -4947,6 +5629,12 @@
         "tpm": 0,
         "trick_play_rate": "0%"
       },
+      "career": {
+        "g": 27,
+        "b4s": 0,
+        "sb": 1,
+        "wo": 0
+      },
       "difficulty": "medium",
       "popularity_rank": 13,
       "popularity_confidence": "medium",
@@ -4995,6 +5683,12 @@
         "tpm": 0,
         "trick_play_rate": "0%"
       },
+      "career": {
+        "g": 18,
+        "b4s": 0,
+        "sb": 0,
+        "wo": 0
+      },
       "difficulty": "medium",
       "popularity_rank": 14,
       "popularity_confidence": "medium",
@@ -5031,6 +5725,12 @@
         "tpo": 0,
         "tpm": 0,
         "trick_play_rate": "0%"
+      },
+      "career": {
+        "g": 287,
+        "b4s": 58,
+        "sb": 94,
+        "wo": 82
       },
       "difficulty": "medium",
       "popularity_rank": 15,
@@ -5080,6 +5780,12 @@
         "tpm": 1,
         "trick_play_rate": "10%"
       },
+      "career": {
+        "g": 274,
+        "b4s": 58,
+        "sb": 35,
+        "wo": 50
+      },
       "difficulty": "medium",
       "popularity_rank": 16,
       "popularity_confidence": "medium",
@@ -5127,6 +5833,12 @@
         "tpo": 2,
         "tpm": 1,
         "trick_play_rate": "20%"
+      },
+      "career": {
+        "g": 6,
+        "b4s": 0,
+        "sb": 0,
+        "wo": 0
       },
       "difficulty": "medium",
       "popularity_rank": 17,
@@ -5176,6 +5888,12 @@
         "tpm": 0,
         "trick_play_rate": "0%"
       },
+      "career": {
+        "g": 1,
+        "b4s": 0,
+        "sb": 0,
+        "wo": 0
+      },
       "difficulty": "medium",
       "popularity_rank": 18,
       "popularity_confidence": "low",
@@ -5212,6 +5930,12 @@
         "tpo": 3,
         "tpm": 1,
         "trick_play_rate": "10%"
+      },
+      "career": {
+        "g": 39,
+        "b4s": 30,
+        "sb": 1,
+        "wo": 2
       },
       "difficulty": "hard",
       "popularity_rank": 19,
@@ -5250,6 +5974,12 @@
         "tpm": 0,
         "trick_play_rate": "0%"
       },
+      "career": {
+        "g": 19,
+        "b4s": 3,
+        "sb": 0,
+        "wo": 0
+      },
       "difficulty": "hard",
       "popularity_rank": 20,
       "popularity_confidence": "low",
@@ -5286,6 +6016,12 @@
         "tpo": 0,
         "tpm": 0,
         "trick_play_rate": "0%"
+      },
+      "career": {
+        "g": 21,
+        "b4s": 0,
+        "sb": 9,
+        "wo": 1
       },
       "difficulty": "hard",
       "popularity_rank": 21,
@@ -5335,6 +6071,12 @@
         "tpm": 0,
         "trick_play_rate": "0%"
       },
+      "career": {
+        "g": 2,
+        "b4s": 0,
+        "sb": 0,
+        "wo": 0
+      },
       "difficulty": "hard",
       "popularity_rank": 22,
       "popularity_confidence": "low",
@@ -5382,6 +6124,12 @@
         "tpo": 0,
         "tpm": 0,
         "trick_play_rate": "0%"
+      },
+      "career": {
+        "g": 1,
+        "b4s": 0,
+        "sb": 0,
+        "wo": 0
       },
       "difficulty": "hard",
       "popularity_rank": 23,
@@ -5431,6 +6179,12 @@
         "tpm": 0,
         "trick_play_rate": "10%"
       },
+      "career": {
+        "g": 2,
+        "b4s": 0,
+        "sb": 0,
+        "wo": 0
+      },
       "difficulty": "hard",
       "popularity_rank": 24,
       "popularity_confidence": "low",
@@ -5467,6 +6221,12 @@
         "tpo": 0,
         "tpm": 0,
         "trick_play_rate": "0%"
+      },
+      "career": {
+        "g": 26,
+        "b4s": 0,
+        "sb": 13,
+        "wo": 0
       },
       "difficulty": "hard",
       "popularity_rank": 25,
@@ -5516,6 +6276,12 @@
         "tpm": 0,
         "trick_play_rate": "10%"
       },
+      "career": {
+        "g": 4,
+        "b4s": 0,
+        "sb": 0,
+        "wo": 0
+      },
       "difficulty": "hard",
       "popularity_rank": 26,
       "popularity_confidence": "low",
@@ -5564,6 +6330,12 @@
         "tpm": 0,
         "trick_play_rate": "10%"
       },
+      "career": {
+        "g": 1,
+        "b4s": 0,
+        "sb": 0,
+        "wo": 0
+      },
       "difficulty": "hard",
       "popularity_rank": 27,
       "popularity_confidence": "low",
@@ -5601,6 +6373,12 @@
         "tpm": 2,
         "trick_play_rate": "10%"
       },
+      "career": {
+        "g": 75,
+        "b4s": 11,
+        "sb": 1,
+        "wo": 4
+      },
       "difficulty": "easy",
       "popularity_rank": 1,
       "popularity_confidence": "high",
@@ -5636,6 +6414,12 @@
         "tpo": 96,
         "tpm": 2,
         "trick_play_rate": "3.7%"
+      },
+      "career": {
+        "g": 75,
+        "b4s": 5,
+        "sb": 1,
+        "wo": 0
       },
       "difficulty": "easy",
       "popularity_rank": 2,
@@ -5673,6 +6457,12 @@
         "tpm": 0,
         "trick_play_rate": "0%"
       },
+      "career": {
+        "g": 79,
+        "b4s": 27,
+        "sb": 4,
+        "wo": 6
+      },
       "difficulty": "easy",
       "popularity_rank": 3,
       "popularity_confidence": "high",
@@ -5708,6 +6498,12 @@
         "tpo": 10,
         "tpm": 3,
         "trick_play_rate": "50%"
+      },
+      "career": {
+        "g": 91,
+        "b4s": 22,
+        "sb": 13,
+        "wo": 6
       },
       "difficulty": "easy",
       "popularity_rank": 4,
@@ -5745,6 +6541,12 @@
         "tpm": 0,
         "trick_play_rate": "10%"
       },
+      "career": {
+        "g": 115,
+        "b4s": 38,
+        "sb": 1,
+        "wo": 6
+      },
       "difficulty": "easy",
       "popularity_rank": 5,
       "popularity_confidence": "high",
@@ -5781,6 +6583,12 @@
         "tpm": 1,
         "trick_play_rate": "1.3%"
       },
+      "career": {
+        "g": 86,
+        "b4s": 18,
+        "sb": 11,
+        "wo": 4
+      },
       "difficulty": "easy",
       "popularity_rank": 6,
       "popularity_confidence": "high",
@@ -5816,6 +6624,12 @@
         "tpo": 6,
         "tpm": 0,
         "trick_play_rate": "20%"
+      },
+      "career": {
+        "g": 41,
+        "b4s": 25,
+        "sb": 1,
+        "wo": 16
       },
       "difficulty": "easy",
       "popularity_rank": 7,
@@ -5864,6 +6678,12 @@
         "tpm": 2,
         "trick_play_rate": "50%"
       },
+      "career": {
+        "g": 9,
+        "b4s": 0,
+        "sb": 0,
+        "wo": 0
+      },
       "difficulty": "easy",
       "popularity_rank": 8,
       "popularity_confidence": "medium",
@@ -5899,6 +6719,12 @@
         "tpo": 44,
         "tpm": 9,
         "trick_play_rate": "1.7%"
+      },
+      "career": {
+        "g": 42,
+        "b4s": 9,
+        "sb": 5,
+        "wo": 9
       },
       "difficulty": "easy",
       "popularity_rank": 9,
@@ -5936,6 +6762,12 @@
         "tpm": 1,
         "trick_play_rate": "50%"
       },
+      "career": {
+        "g": 73,
+        "b4s": 22,
+        "sb": 3,
+        "wo": 7
+      },
       "difficulty": "medium",
       "popularity_rank": 10,
       "popularity_confidence": "medium",
@@ -5971,6 +6803,12 @@
         "tpo": 71,
         "tpm": 8,
         "trick_play_rate": "2.7%"
+      },
+      "career": {
+        "g": 134,
+        "b4s": 34,
+        "sb": 21,
+        "wo": 5
       },
       "difficulty": "medium",
       "popularity_rank": 11,
@@ -6019,6 +6857,12 @@
         "tpm": 0,
         "trick_play_rate": "0%"
       },
+      "career": {
+        "g": 2,
+        "b4s": 0,
+        "sb": 0,
+        "wo": 0
+      },
       "difficulty": "medium",
       "popularity_rank": 12,
       "popularity_confidence": "medium",
@@ -6054,6 +6898,12 @@
         "tpo": 16,
         "tpm": 0,
         "trick_play_rate": "60%"
+      },
+      "career": {
+        "g": 42,
+        "b4s": 15,
+        "sb": 2,
+        "wo": 7
       },
       "difficulty": "medium",
       "popularity_rank": 13,
@@ -6102,6 +6952,12 @@
         "tpm": 0,
         "trick_play_rate": "0%"
       },
+      "career": {
+        "g": 1,
+        "b4s": 0,
+        "sb": 0,
+        "wo": 0
+      },
       "difficulty": "medium",
       "popularity_rank": 14,
       "popularity_confidence": "medium",
@@ -6149,6 +7005,7 @@
         "tpm": 0,
         "trick_play_rate": "0%"
       },
+      "career": null,
       "difficulty": "medium",
       "popularity_rank": 15,
       "popularity_confidence": "medium",
@@ -6195,6 +7052,12 @@
         "tpo": 2,
         "tpm": 1,
         "trick_play_rate": "20%"
+      },
+      "career": {
+        "g": 3,
+        "b4s": 0,
+        "sb": 0,
+        "wo": 0
       },
       "difficulty": "medium",
       "popularity_rank": 16,
@@ -6243,6 +7106,12 @@
         "tpm": 0,
         "trick_play_rate": "20%"
       },
+      "career": {
+        "g": 2,
+        "b4s": 0,
+        "sb": 0,
+        "wo": 0
+      },
       "difficulty": "medium",
       "popularity_rank": 17,
       "popularity_confidence": "low",
@@ -6278,6 +7147,12 @@
         "tpo": 5,
         "tpm": 1,
         "trick_play_rate": "1.3%"
+      },
+      "career": {
+        "g": 44,
+        "b4s": 10,
+        "sb": 7,
+        "wo": 3
       },
       "difficulty": "medium",
       "popularity_rank": 18,
@@ -6326,6 +7201,12 @@
         "tpm": 0,
         "trick_play_rate": "0%"
       },
+      "career": {
+        "g": 1,
+        "b4s": 0,
+        "sb": 0,
+        "wo": 0
+      },
       "difficulty": "hard",
       "popularity_rank": 19,
       "popularity_confidence": "low",
@@ -6373,6 +7254,12 @@
         "tpm": 0,
         "trick_play_rate": "50%"
       },
+      "career": {
+        "g": 10,
+        "b4s": 0,
+        "sb": 0,
+        "wo": 0
+      },
       "difficulty": "hard",
       "popularity_rank": 20,
       "popularity_confidence": "low",
@@ -6409,6 +7296,12 @@
         "tpm": 0,
         "trick_play_rate": "0%"
       },
+      "career": {
+        "g": 14,
+        "b4s": 1,
+        "sb": 0,
+        "wo": 0
+      },
       "difficulty": "hard",
       "popularity_rank": 21,
       "popularity_confidence": "low",
@@ -6444,6 +7337,12 @@
         "tpo": 37,
         "tpm": 3,
         "trick_play_rate": "1.5%"
+      },
+      "career": {
+        "g": 78,
+        "b4s": 31,
+        "sb": 1,
+        "wo": 11
       },
       "difficulty": "hard",
       "popularity_rank": 22,
@@ -6492,6 +7391,12 @@
         "tpm": 0,
         "trick_play_rate": "0%"
       },
+      "career": {
+        "g": 4,
+        "b4s": 0,
+        "sb": 0,
+        "wo": 0
+      },
       "difficulty": "hard",
       "popularity_rank": 23,
       "popularity_confidence": "low",
@@ -6539,6 +7444,12 @@
         "tpm": 0,
         "trick_play_rate": "0%"
       },
+      "career": {
+        "g": 2,
+        "b4s": 0,
+        "sb": 0,
+        "wo": 0
+      },
       "difficulty": "hard",
       "popularity_rank": 24,
       "popularity_confidence": "low",
@@ -6574,6 +7485,12 @@
         "tpo": 0,
         "tpm": 0,
         "trick_play_rate": "0%"
+      },
+      "career": {
+        "g": 27,
+        "b4s": 0,
+        "sb": 17,
+        "wo": 0
       },
       "difficulty": "hard",
       "popularity_rank": 25,
@@ -6621,6 +7538,12 @@
         "tpo": 0,
         "tpm": 0,
         "trick_play_rate": "0%"
+      },
+      "career": {
+        "g": 1,
+        "b4s": 0,
+        "sb": 0,
+        "wo": 0
       },
       "difficulty": "hard",
       "popularity_rank": 26,
