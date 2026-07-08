@@ -102,22 +102,22 @@ const showstopperOwned = reserve(['Alex Ziegler', 'Kyle Luigs', 'JT Sokolove', '
 // in as cameos. Chosen from the actual stat leaders, favoring players whose
 // identity is that stat and who aren't already an Act-1 team headliner.
 const PERF_OWNED = {
-  sluggers: ['T.J. Reeves', 'Jordan Brewer', 'Taylor Justus'],
-  coldStreak: ['Danny Hosley', 'Armando Becerra', 'Grady Morgan'],
-  aces: ['Brian Trepanier', 'Nick Wilson', 'Trystan Levesque'],
-  strikeoutKings: ['Austin Drury', 'Bradford Webb', 'Jared Donalson'],
-  battingPractice: ['Clark Gilmore', 'Zach Smith', 'Vinny Santarsiero'],
-  trickPlay: ['Jonathan Luders', 'Jorden Hussein', 'Sal Jacobo'],
-  butterfingers: ['Bobby Lada', 'Dane Tofteland', 'Peyton Chatagnier'],
+  sluggers: ['T.J. Reeves', 'Jordan Brewer', 'Taylor Justus', 'Joe Gray Jr.'],
+  coldStreak: ['Danny Hosley', 'Armando Becerra', 'Grady Morgan', 'Brian Dansereau'],
+  aces: ['Brian Trepanier', 'Nick Wilson', 'Trystan Levesque', 'Kyle Perry'],
+  strikeoutKings: ['Austin Drury', 'Bradford Webb', 'Jared Donalson', 'Brett Sanchez'],
+  battingPractice: ['Clark Gilmore', 'Zach Smith', 'Vinny Santarsiero', 'Jimmy Lewis'],
+  trickPlay: ['Jonathan Luders', 'Jorden Hussein', 'Sal Jacobo', 'Caden Green'],
+  butterfingers: ['Bobby Lada', 'Dane Tofteland', 'Peyton Chatagnier', 'Mason Maxwell'],
   // Career-stat units (B4S / SB / WO). Cores chosen from the career leaders
   // who aren't already Act-1 team stars.
-  sprinters: ['Jake Skole', 'Reece Hampton', 'Jason Swan'],
-  baseBandits: ['Malachi Mitchell', 'DR Meadows', 'Bryson Bloomer'],
-  walkOffs: ['Dan Oberst', 'Eric Jones Jr.', 'Reese Alexiades'],
+  sprinters: ['Jake Skole', 'Reece Hampton', 'Jason Swan', 'Max Jung-Goldberg'],
+  baseBandits: ['Malachi Mitchell', 'DR Meadows', 'Bryson Bloomer', 'South Trimble'],
+  walkOffs: ['Dan Oberst', 'Eric Jones Jr.', 'Reese Alexiades', 'Logan Lacey'],
   // Experience units — rookie vs veteran, inferred from career-vs-season games.
-  freshFaces: ['Reese Miller', 'Joe Filomeno', 'Peter Holden'],
-  oldGuard: ['Dustin Baber', 'Chase Achuff', 'Tanner Thomas'],
-  fanFavorites: ['Noah Niznik', 'Bret Helton', 'Dalton Ponce'],
+  freshFaces: ['Reese Miller', 'Joe Filomeno', 'Peter Holden', 'C.J. Williams'],
+  oldGuard: ['Dustin Baber', 'Chase Achuff', 'Tanner Thomas', 'Bronson Balholm'],
+  fanFavorites: ['Noah Niznik', 'Bret Helton', 'Dalton Ponce', 'Austin Krzeminski'],
 };
 for (const names of Object.values(PERF_OWNED)) reserve(names);
 
@@ -144,20 +144,14 @@ unit('behind-the-plate', 'Behind the Plate', 'Catchers from every dugout.',
   takeAll((p) => fam(p.position_label) === 'C'),
   cameos(['Bill LeRoy', 'Andy Cosgrove', 'Dalton Cornett', 'Joe Lytle', 'Denae Benites', 'Taj Porter']));
 
-// The infield — basemen & shortstops, split into two even rounds.
-const ifTotal = P.filter((p) => !claimed.has(p.player_id) && fam(p.position_label) === 'IF').length;
+// The infield — basemen & shortstops in one unit (the stat-unit reservations
+// thin the pool, so this lands around 6 and doesn't need splitting).
 unit('the-infield', 'The Infield', 'Corner to corner around the diamond.',
-  { kind: 'icon', icon: 'diamond', accent: '#f59e0b' }, 2,
-  take(Math.ceil(ifTotal / 2), (p) => fam(p.position_label) === 'IF'));
-unit('middle-infield', 'Turning Two', 'More gloves up the middle.',
   { kind: 'icon', icon: 'diamond', accent: '#f59e0b' }, 2, takeAll((p) => fam(p.position_label) === 'IF'));
 
-// Grass patrol — outfielders, split into two even rounds.
-const ofTotal = P.filter((p) => !claimed.has(p.player_id) && fam(p.position_label) === 'OF').length;
+// Grass patrol — the whole outfield in one unit (the Act-1 stars already thin
+// the pool, so this lands around 5 and doesn't need splitting).
 unit('grass-patrol', 'Grass Patrol', 'The outfield, tracking everything down.',
-  { kind: 'icon', icon: 'target', accent: '#10b981' }, 2,
-  take(Math.ceil(ofTotal / 2), (p) => fam(p.position_label) === 'OF'));
-unit('warning-track', 'Warning Track', 'The rest of the outfield corps.',
   { kind: 'icon', icon: 'target', accent: '#10b981' }, 2, takeAll((p) => fam(p.position_label) === 'OF'));
 
 // Utility — two-way players, designated runners & hitters (the specialists).
@@ -166,24 +160,21 @@ unit('do-it-all', 'Do-It-All', 'Two-way players, runners, and designated bats.',
   takeAll((p) => ['2W', 'DR', 'DH', 'X'].includes(fam(p.position_label))));
 
 // ─── ACT 3 — The mound & the deep cuts (hardest; icon motifs) ──────────────
-// Repeat offenders — repeating-digit jersey numbers, league-wide.
-const REPEAT = new Set([11, 22, 33, 44, 55, 66, 77, 88, 99]);
-unit('repeat-offenders', 'Repeat Offenders', 'Double-digit repeats: #11, #22, #99…',
-  { kind: 'icon', icon: 'repeat', accent: '#0ea5e9' }, 3,
-  takeAll((p) => REPEAT.has(p.jersey_number)));
+// (The jersey-number trait units were dropped: with 13 four-player stat/
+// experience units reserving their cores, the number themes were left with too
+// few players to stand alone, and skill/personality themes read stronger.)
 
-// High numbers — the novelty 90s+.
-unit('high-numbers', 'The Nineties Club', 'Novelty numbers up in the 90s.',
-  { kind: 'icon', icon: 'shirt', accent: '#6366f1' }, 3,
-  takeAll((p) => p.jersey_number >= 89));
-
-// The bullpen — relief pitchers, split into rounds so a unit stays digestible.
+// The bullpen — relief pitchers split into three even, quiz-sized units (~8
+// each) rather than 11+11+2. Size is computed from whatever RP remain.
+const isRP = (p) => fam(p.position_label) === 'RP';
+const rpTotal = P.filter((p) => !claimed.has(p.player_id) && isRP(p)).length;
+const rpEach = Math.ceil(rpTotal / 3);
 unit('bullpen-1', 'The Bullpen', 'Relief arms out of the pen.',
-  { kind: 'icon', icon: 'flame', accent: '#ef4444' }, 3, take(11, (p) => fam(p.position_label) === 'RP'));
-unit('bullpen-2', 'Long Relief', 'Deeper into the bullpen.',
-  { kind: 'icon', icon: 'flame', accent: '#ef4444' }, 3, take(11, (p) => fam(p.position_label) === 'RP'));
-unit('bullpen-3', 'Mop-Up Duty', 'The last arms in the pen.',
-  { kind: 'icon', icon: 'flame', accent: '#ef4444' }, 3, takeAll((p) => fam(p.position_label) === 'RP'));
+  { kind: 'icon', icon: 'flame', accent: '#ef4444' }, 3, take(rpEach, isRP));
+unit('bullpen-2', 'Middle Relief', 'The middle innings crew.',
+  { kind: 'icon', icon: 'flame', accent: '#ef4444' }, 3, take(rpEach, isRP));
+unit('bullpen-3', 'Long Relief', 'The last arms in the pen.',
+  { kind: 'icon', icon: 'flame', accent: '#ef4444' }, 3, takeAll(isRP));
 
 // Starting rotation — remaining starters.
 unit('the-rotation', 'The Rotation', 'Starting pitchers who take the ball first.',
@@ -260,9 +251,12 @@ performanceUnit('walk-off-kings', 'Walk-Off Kings', 'Career walk-offs — they e
   { kind: 'icon', icon: 'crown', accent: '#f59e0b' },
   rank(qCar, (a, b) => (b.career.wo ?? 0) - (a.career.wo ?? 0)), 10, PERF_OWNED.walkOffs);
 
-// Fan Favorites — career foul-outs-to-fan (a pitching quirk); pitchers only.
-performanceUnit('fan-favorites', 'Fan Favorites', 'Career foul-outs-to-fan — the crowd made the play.',
-  { kind: 'icon', icon: 'star', accent: '#f43f5e' },
+// Crowd Control — career foul-outs-to-fan. In Banana Ball a fan cleanly
+// catching a foul is an OUT (bad for the batter), and the stat is credited to
+// the PITCHER on the mound. So this ranks pitchers who most often got the crowd
+// to record an out for them. (Pitchers only — position players never accrue it.)
+performanceUnit('crowd-control', 'Crowd Control', 'Career foul-outs-to-fan — the crowd caught them out.',
+  { kind: 'icon', icon: 'users', accent: '#f43f5e' },
   rank((p) => p.career?.fan, (a, b) => (b.career.fan ?? 0) - (a.career.fan ?? 0)), 10, PERF_OWNED.fanFavorites);
 
 // ─── ACT 3 (cont.) — Experience units ──────────────────────────────────────
@@ -287,14 +281,46 @@ if (leftover.length) {
     { kind: 'icon', icon: 'crown', accent: '#a855f7' }, 3, leftover);
 }
 
+// ─── Reorder Act 3 by ascending difficulty ─────────────────────────────────
+// Acts 1 & 2 keep their authored order. Within Act 3, sort units by their mean
+// owned-player difficulty so the ramp climbs instead of bouncing. Wild Cards
+// (the obscure grab-bag) is pinned last regardless of its computed average.
+const DIFF = { easy: 1, medium: 2, hard: 3 };
+const avgDiff = (u) =>
+  u.owned.reduce((s, id) => s + (DIFF[byId(id)?.difficulty] ?? 2), 0) / (u.owned.length || 1);
+const act3 = units.filter((u) => u.act === 3);
+act3.sort((a, b) => {
+  if (a.slug === 'wild-cards') return 1;
+  if (b.slug === 'wild-cards') return -1;
+  return avgDiff(a) - avgDiff(b);
+});
+const ordered = [...units.filter((u) => u.act !== 3), ...act3];
+
+// Reordering can turn a cameo into a forward reference (a stat unit cameoing a
+// player owned by a unit now placed later). Drop any such cameo so the "owned
+// earlier" invariant holds; log what was pruned so it's never silent.
+const ownedIndex = new Map();
+ordered.forEach((u, i) => u.owned.forEach((id) => ownedIndex.set(id, i)));
+let pruned = 0;
+ordered.forEach((u, i) => {
+  const kept = u.cameo.filter((id) => {
+    const home = ownedIndex.get(id);
+    const ok = home != null && home < i;
+    if (!ok) pruned++;
+    return ok;
+  });
+  u.cameo = kept;
+});
+if (pruned) console.log(`pruned ${pruned} forward-reference cameo(s) after reorder`);
+
 // ─── Emit ──────────────────────────────────────────────────────────────────
-const total = units.reduce((n, u) => n + u.owned.length, 0);
+const total = ordered.reduce((n, u) => n + u.owned.length, 0);
 if (total !== P.length) {
   console.error(`PARTITION ERROR: covered ${total} of ${P.length} players`);
   process.exit(1);
 }
 // drop empty units defensively
-const nonEmpty = units.filter((u) => u.owned.length > 0);
+const nonEmpty = ordered.filter((u) => u.owned.length > 0);
 writeFileSync('./src/data/units-2026.json', JSON.stringify(nonEmpty, null, 2) + '\n');
 console.log(`${nonEmpty.length} units, ${total}/${P.length} players placed`);
-for (const u of nonEmpty) console.log(`  ${String(u.owned.length).padStart(2)}  ${u.title}  (act ${u.act})`);
+for (const u of nonEmpty) console.log(`  ${String(u.owned.length).padStart(2)}  ${u.title}  (act ${u.act})  ${avgDiff(u).toFixed(2)}`);
