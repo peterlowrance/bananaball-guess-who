@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import type { Player } from '../../data/types';
 import { players as allPlayers } from '../../data/dataset';
 import { teamThemeSlug } from '../../lib/theme';
@@ -73,7 +73,14 @@ export function PlayerImage({ player, size = 120, className = '', rounded = 'rou
   const src = photos.length ? photos[(startAt + attempt) % photos.length] : undefined;
 
   // Reset when the player changes (component is often reused across questions).
+  // Guard on the PREVIOUS id, not just the dependency: the effect also runs on
+  // mount, and an unconditional setLoaded(false) here would clobber the ref
+  // callback's cache-hit detection below (the image is already complete, so
+  // onLoad never fires — that reset would strand it at opacity-0 forever).
+  const prevId = useRef(player.player_id);
   useEffect(() => {
+    if (prevId.current === player.player_id) return; // first mount: nothing changed
+    prevId.current = player.player_id;
     setAttempt(0);
     setLoaded(false);
     setExhausted(false);
@@ -108,7 +115,15 @@ export function PlayerImage({ player, size = 120, className = '', rounded = 'rou
         alt={player.name}
         width={size}
         height={size}
-        loading="lazy"
+        // A cache-hit image (e.g. the same photo shown on the intro card, then
+        // again on the "Who is this?" question) can finish decoding BEFORE React
+        // attaches onLoad — iOS Safari then never fires it, leaving the <img>
+        // stuck at opacity-0 (a blank tile). Catch that on mount via .complete.
+        // No loading="lazy": these tiles are always in-viewport and the lazy
+        // decode path widens that same race.
+        ref={(node) => {
+          if (node?.complete && node.naturalWidth > 0) setLoaded(true);
+        }}
         onLoad={() => setLoaded(true)}
         onError={onError}
         className={`h-full w-full object-cover ${rounded} ${loaded ? '' : 'opacity-0'}`}

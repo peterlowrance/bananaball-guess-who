@@ -112,6 +112,30 @@ describe('PlayerImage', () => {
     }
   });
 
+  // Regression: an image already complete in cache (the intro card warmed it,
+  // then the "Who is this?" question reuses it) can finish before React attaches
+  // onLoad, so onLoad never fires. iOS Safari then leaves the <img> at opacity-0
+  // — a blank tile. The ref must detect the already-complete image on mount.
+  it('reveals an image that is already complete in cache before onLoad fires', () => {
+    // Force the ref-callback path: any <img> reports complete + naturalWidth here.
+    const completeSpy = vi.spyOn(HTMLImageElement.prototype, 'complete', 'get').mockReturnValue(true);
+    const widthSpy = vi.spyOn(HTMLImageElement.prototype, 'naturalWidth', 'get').mockReturnValue(200);
+    try {
+      const p = makePlayer({
+        player_id: 'cached-hit',
+        images: ['https://cached.example/hit.jpg'],
+        image_url: 'https://cached.example/hit.jpg',
+      });
+      render(<PlayerImage player={p} />);
+      const img = screen.getByAltText('Test Player') as HTMLImageElement;
+      // Visible without ever firing onLoad.
+      expect(img.className).not.toContain('opacity-0');
+    } finally {
+      completeSpy.mockRestore();
+      widthSpy.mockRestore();
+    }
+  });
+
   it('does not mark a player broken for the session just because a photo was slow', () => {
     // A slow load leaves the player OUT of the no-photo set, so photo questions
     // remain eligible for them.
