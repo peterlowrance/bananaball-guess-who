@@ -1,10 +1,15 @@
 // Derives per-unit path status (locked / active / complete) from store state.
 // Pure given (units, pathState, srs). A unit is:
 //   - complete: its quiz has been passed
-//   - active: the first not-complete unit (or any unit after an unlocked one)
+//   - active: the first not-complete unit
 //   - locked: comes after the current active unit and isn't complete
 // Unlock rule: linear — you may play the first incomplete unit; the next
 // unlocks once the current unit's quiz is passed.
+//
+// The quiz for a unit unlocks once ALL of the unit's OWNED players have been
+// introduced (not after a fixed lesson count) — so you can never reach the
+// checkpoint with un-taught players. Cameo players are review flavor only and
+// never gate or count toward the unit.
 
 import type { Unit } from '../../data/curriculum';
 import type { PathState } from '../../store/schema';
@@ -17,16 +22,16 @@ export interface UnitProgress {
   status: UnitStatus;
   lessonsDone: number;
   quizPassed: boolean;
-  /** how many of the unit's players are introduced */
+  /** how many of the unit's OWNED players are introduced */
   introduced: number;
-  /** how many are mastered (box 5) */
+  /** how many OWNED players are mastered (box 5) */
   mastered: number;
-  /** whether all lessons are done and the quiz is available */
+  /** total owned players (the "/N" denominator) */
+  owned: number;
+  /** whether all owned players are introduced and the quiz is available */
   quizUnlocked: boolean;
   legendary: boolean;
 }
-
-const LESSONS_PER_UNIT = 2; // learn lessons before the quiz (plan §2.4/§3.4)
 
 export function computePathProgress(
   units: readonly Unit[],
@@ -38,7 +43,8 @@ export function computePathProgress(
     const rec = path.units[u.key] ?? { lessonsDone: 0, quizPassed: false, legendary: false };
     const introduced = u.playerIds.filter((id) => srs[id]?.introducedAt != null).length;
     const mastered = u.playerIds.filter((id) => (srs[id]?.box ?? 0) >= 5).length;
-    const quizUnlocked = rec.lessonsDone >= LESSONS_PER_UNIT;
+    const owned = u.playerIds.length;
+    const quizUnlocked = owned > 0 && introduced >= owned;
 
     let status: UnitStatus;
     if (rec.quizPassed) {
@@ -57,10 +63,9 @@ export function computePathProgress(
       quizPassed: rec.quizPassed,
       introduced,
       mastered,
+      owned,
       quizUnlocked,
       legendary: rec.legendary,
     };
   });
 }
-
-export { LESSONS_PER_UNIT };

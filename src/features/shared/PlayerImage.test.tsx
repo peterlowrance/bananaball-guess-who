@@ -18,6 +18,8 @@ function makePlayer(over: Partial<Player>): Player {
     images: over.images ?? [],
     hitting: null,
     pitching: null,
+    fielding: null,
+    career: null,
     difficulty: 'easy',
     popularity_rank: 1,
     popularity_confidence: 'high',

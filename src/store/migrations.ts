@@ -13,6 +13,11 @@ export const MIGRATIONS: Record<number, (s: AnyState) => AnyState> = {
   // 0 -> 1: initial shape. (No prior versions shipped; kept as an example of
   // how future migrations attach.)
   0: (s) => ({ ...s, version: 1 }),
+  // 1 -> 2: the curriculum moved from a generated (popularity) path to
+  // hand-authored themed units with owned/cameo rosters. Unit keys and
+  // membership are entirely redefined, so v1 progress can't be remapped
+  // meaningfully — reset to a fresh state. (Intentional full reset.)
+  1: () => ({ ...(freshState() as unknown as AnyState) }),
 };
 
 export function migrate(raw: unknown): PersistedState {

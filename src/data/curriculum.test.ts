@@ -1,98 +1,102 @@
 import { describe, it, expect } from 'vitest';
-import { players } from './dataset';
-import {
-  deriveCurriculum,
-  unitKey,
-  UNIT_SIZE,
-  type Unit,
-} from './curriculum';
-import type { Difficulty } from './types';
+import { unitDefs, loadCurriculum } from './curriculum';
+import { players, teams } from './dataset';
+import { teamThemeSlug } from '../lib/theme';
+import { MOTIF_ICON_NAMES } from '../lib/motif';
 
-const TIER_RANK: Record<Difficulty, number> = { easy: 0, medium: 1, hard: 2 };
+// The curriculum is now HAND-AUTHORED (units-2026.json). These invariants are
+// the safety net for authoring: a typo'd id, a player owned twice, or a player
+// left homeless fails loudly here instead of silently breaking the path.
+describe('authored curriculum', () => {
+  const defs = unitDefs();
+  const ids = new Set(players.map((p) => p.player_id));
 
-function allIds(units: Unit[]): string[] {
-  return units.flatMap((u) => u.playerIds);
-}
-
-describe('deriveCurriculum', () => {
-  const full = deriveCurriculum(players);
-
-  it('includes every player exactly once', () => {
-    const ids = allIds(full);
-    expect(ids).toHaveLength(players.length);
-    expect(new Set(ids).size).toBe(players.length);
+  it('has at least one unit', () => {
+    expect(defs.length).toBeGreaterThan(0);
   });
 
-  it('orders units easy -> medium -> hard, never spanning tiers', () => {
-    let prev = -1;
-    for (const u of full) {
-      expect(TIER_RANK[u.tier]).toBeGreaterThanOrEqual(prev);
-      prev = TIER_RANK[u.tier];
-      // every member matches the unit tier
-      for (const id of u.playerIds) {
-        const p = players.find((x) => x.player_id === id)!;
-        expect(p.difficulty).toBe(u.tier);
+  it('every unit slug is unique and non-empty', () => {
+    const slugs = defs.map((d) => d.slug);
+    expect(slugs.every(Boolean)).toBe(true);
+    expect(new Set(slugs).size).toBe(slugs.length);
+  });
+
+  it('every owned/cameo id refers to a real player', () => {
+    for (const d of defs) {
+      for (const id of [...d.owned, ...d.cameo]) {
+        expect(ids.has(id), `${d.slug}: unknown player_id ${id}`).toBe(true);
       }
     }
   });
 
-  it('units are at most UNIT_SIZE and indices are contiguous', () => {
-    full.forEach((u, i) => {
-      expect(u.index).toBe(i);
-      expect(u.playerIds.length).toBeGreaterThan(0);
-      expect(u.playerIds.length).toBeLessThanOrEqual(UNIT_SIZE);
+  it('every player is owned by exactly one unit', () => {
+    const owners = new Map<string, string[]>();
+    for (const d of defs) {
+      for (const id of d.owned) {
+        const arr = owners.get(id) ?? [];
+        arr.push(d.slug);
+        owners.set(id, arr);
+      }
+    }
+    // no player owned twice
+    for (const [id, us] of owners) {
+      expect(us.length, `player ${id} owned by ${us.join(', ')}`).toBe(1);
+    }
+    // no player left homeless
+    for (const id of ids) {
+      expect(owners.has(id), `player ${id} is not owned by any unit`).toBe(true);
+    }
+  });
+
+  it('no player is a cameo in a unit that also owns them', () => {
+    for (const d of defs) {
+      const owned = new Set(d.owned);
+      for (const id of d.cameo) {
+        expect(owned.has(id), `${d.slug}: ${id} is both owned and cameo`).toBe(false);
+      }
+    }
+  });
+
+  it('a cameo player is owned by an EARLIER unit (review-only back refs)', () => {
+    const ownedByIndex = new Map<string, number>();
+    defs.forEach((d, i) => d.owned.forEach((id) => ownedByIndex.set(id, i)));
+    defs.forEach((d, i) => {
+      for (const id of d.cameo) {
+        const home = ownedByIndex.get(id);
+        expect(home, `${d.slug}: cameo ${id} has no home unit`).not.toBeUndefined();
+        expect(home! < i, `${d.slug}: cameo ${id} is owned by a later unit`).toBe(true);
+      }
     });
   });
 
-  it('interleaves teams — unit 1 draws from multiple teams', () => {
-    const first = full[0];
-    const teamNames = new Set(
-      first.playerIds.map((id) => players.find((p) => p.player_id === id)!.team_name),
-    );
-    expect(teamNames.size).toBeGreaterThan(1);
-  });
-
-  it('the very first player learned is the flagship Savannah Bananas star', () => {
-    const firstId = full[0].playerIds[0];
-    const firstPlayer = players.find((p) => p.player_id === firstId)!;
-    expect(firstPlayer.team_name).toBe('Savannah Bananas');
-    expect(firstPlayer.popularity_rank).toBe(1);
-  });
-
-  it('is deterministic across calls', () => {
-    const a = deriveCurriculum(players);
-    const b = deriveCurriculum(players);
-    expect(a.map((u) => u.key)).toEqual(b.map((u) => u.key));
-  });
-
-  it('the same players always produce the same unit key (focus-filter stable)', () => {
-    // A unit that exists in both the full path and a single-team path (all its
-    // members from one team) must keep the same key so completion carries over.
-    const oneTeam = players[0].team_name;
-    const focused = deriveCurriculum(players, [oneTeam]);
-    const focusedIds = new Set(allIds(focused));
-
-    // Recompute keys directly from ids and confirm key() is pure/order-free.
-    for (const u of focused) {
-      expect(u.key).toBe(unitKey(u.playerIds));
-      expect(u.key).toBe(unitKey([...u.playerIds].reverse()));
-    }
-    // Every focused player is a real member of that team.
-    for (const id of focusedIds) {
-      expect(players.find((p) => p.player_id === id)!.team_name).toBe(oneTeam);
+  it('every motif is valid (team colors or a whitelisted icon)', () => {
+    const validTeams = new Set(teams.map((t) => teamThemeSlug(t.name)));
+    const hex = /^#[0-9a-fA-F]{6}$/;
+    for (const d of defs) {
+      const m = d.motif;
+      if (m.kind === 'team') {
+        expect(m.teams.length, `${d.slug}: team motif needs 1–2 teams`).toBeGreaterThanOrEqual(1);
+        expect(m.teams.length).toBeLessThanOrEqual(2);
+        for (const s of m.teams) {
+          expect(validTeams.has(s), `${d.slug}: unknown team ${s}`).toBe(true);
+        }
+      } else if (m.kind === 'icon') {
+        expect(MOTIF_ICON_NAMES.includes(m.icon), `${d.slug}: unknown icon ${m.icon}`).toBe(true);
+        expect(hex.test(m.accent), `${d.slug}: bad accent ${m.accent}`).toBe(true);
+      } else {
+        throw new Error(`${d.slug}: unknown motif kind`);
+      }
     }
   });
 
-  it('focus filter restricts the pool', () => {
-    const twoTeams = [players[0].team_name, players.find((p) => p.team_name !== players[0].team_name)!.team_name];
-    const focused = deriveCurriculum(players, twoTeams);
-    const names = new Set(
-      allIds(focused).map((id) => players.find((p) => p.player_id === id)!.team_name),
-    );
-    expect([...names].sort()).toEqual([...twoTeams].sort());
-  });
-
-  it('empty focus == no focus (all players)', () => {
-    expect(allIds(deriveCurriculum(players, [])).length).toBe(players.length);
+  it('loadCurriculum resolves in order with owned as playerIds', () => {
+    const units = loadCurriculum();
+    expect(units.length).toBe(defs.length);
+    units.forEach((u, i) => {
+      expect(u.index).toBe(i);
+      expect(u.key).toBe(defs[i].slug);
+      expect(u.playerIds).toEqual(defs[i].owned);
+      expect(u.cameoIds).toEqual(defs[i].cameo);
+    });
   });
 });

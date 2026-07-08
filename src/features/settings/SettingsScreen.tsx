@@ -1,9 +1,6 @@
 import { useRef, useState } from 'react';
 import { Download, Upload } from 'lucide-react';
 import { useStore } from '../../store';
-import { teams } from '../../data/dataset';
-import { teamThemeSlug } from '../../lib/theme';
-import { TeamLogo } from '../shared/TeamLogo';
 import type { Goal } from '../../engine/gamification/streak';
 
 const GOALS: { id: Goal; label: string; xp: number }[] = [
@@ -46,13 +43,6 @@ export function SettingsPanel() {
     setTimeout(() => setStatus(null), 2500);
   };
 
-  const toggleFocus = (teamName: string) => {
-    const set = new Set(settings.focusTeams);
-    if (set.has(teamName)) set.delete(teamName);
-    else set.add(teamName);
-    setSettings({ focusTeams: [...set] });
-  };
-
   return (
     <div className="flex flex-col gap-6 border-t-2 border-[var(--hairline)] pt-6">
       <h2 className="text-xl font-black">Settings</h2>
@@ -71,27 +61,6 @@ export function SettingsPanel() {
               <div className="text-xs text-[var(--muted)]">{g.xp} XP</div>
             </button>
           ))}
-        </div>
-      </Section>
-
-      <Section title="Focus teams" subtitle="Learn only selected teams. None = all teams.">
-        <div className="grid grid-cols-2 gap-2">
-          {teams.map((t) => {
-            const on = settings.focusTeams.includes(t.name);
-            return (
-              <button
-                key={t.team_id}
-                data-team-theme={teamThemeSlug(t.name)}
-                onClick={() => toggleFocus(t.name)}
-                className={`flex items-center gap-2 rounded-2xl border-2 p-2 text-left text-sm font-bold transition active:scale-[0.97] ${
-                  on ? 'border-[var(--team)] bg-[var(--team-soft)]' : 'border-[var(--hairline)]'
-                }`}
-              >
-                <TeamLogo teamName={t.name} size={28} />
-                <span className="leading-tight">{t.name}</span>
-              </button>
-            );
-          })}
         </div>
       </Section>
 

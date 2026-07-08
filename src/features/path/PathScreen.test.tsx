@@ -20,16 +20,19 @@ beforeAll(() => {
 });
 
 describe('PathScreen (smoke)', () => {
-  it('renders the derived curriculum without crashing (no render loop)', async () => {
+  it('renders the authored curriculum without crashing (no render loop)', async () => {
     const { PathScreen } = await import('./PathScreen');
+    const { curriculumUnits } = await import('./units');
     render(
       <MemoryRouter>
         <PathScreen />
       </MemoryRouter>,
     );
-    // Tier banner from the derived curriculum should be present.
+    // Act banner from the authored curriculum should be present.
     expect(screen.getByText(/The players everyone knows/i)).toBeTruthy();
-    expect(screen.getAllByText(/leads with/i).length).toBeGreaterThan(0);
+    // The first unit's authored title should render.
+    const firstTitle = curriculumUnits()[0].title;
+    expect(screen.getAllByText(firstTitle).length).toBeGreaterThan(0);
     // header shows XP
     expect(screen.getByText(/XP/)).toBeTruthy();
   });

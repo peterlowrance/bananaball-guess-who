@@ -17,12 +17,37 @@ export interface HittingStats {
 
 export interface PitchingStats {
   g: number | null;
+  gs: number | null;
   w: number | null;
   l: number | null;
   sv: number | null;
   ip: string | null;
-  so: number | null;
+  so: number | null; // strikeouts (source field: k)
   era: string | null;
+  runs_allowed: number | null;
+  hits_allowed: number | null;
+}
+
+/** Career (all-seasons) totals for the Banana-Ball-only stats the season slice
+ *  doesn't expose. NOT season-scoped — these are lifetime totals. */
+export interface CareerStats {
+  g: number | null; // career games
+  b4s: number | null; // ball-four sprints (took off instead of walking)
+  sb: number | null; // stolen bases
+  wo: number | null; // walk-offs
+  fan: number | null; // foul-outs-to-fan: a fan cleanly catches a foul = an OUT,
+                       // credited to the pitcher on the mound (null if never pitched)
+  er: number | null; // career earned runs allowed (pitching)
+}
+
+export interface FieldingStats {
+  g: number | null;
+  e: number | null; // errors
+  air_outs: number | null;
+  ground_outs: number | null;
+  tpo: number | null; // trick play outs
+  tpm: number | null; // trick plays missed
+  trick_play_rate: string | null; // e.g. "3.7%"
 }
 
 export interface Team {
@@ -51,6 +76,9 @@ export interface Player {
   images: string[];
   hitting: HittingStats | null;
   pitching: PitchingStats | null;
+  fielding: FieldingStats | null;
+  /** Career (all-seasons) B4S/SB/WO totals — not season-scoped. */
+  career: CareerStats | null;
   difficulty: Difficulty;
   popularity_rank: number | null;
   popularity_confidence: Confidence;

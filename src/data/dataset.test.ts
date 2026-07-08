@@ -51,4 +51,43 @@ describe('players-2026 dataset', () => {
   it('excludes celebrity guest players', () => {
     expect(dataset.players.some((p) => p.position_label === 'Guest Player')).toBe(false);
   });
+
+  it('every player has a fielding block with trick-play + error stats', () => {
+    for (const p of dataset.players) {
+      const f = p.fielding;
+      expect(f, `${p.name} missing fielding`).toBeTruthy();
+      if (!f) continue;
+      for (const k of ['e', 'air_outs', 'ground_outs', 'tpo', 'tpm'] as const) {
+        expect(typeof f[k] === 'number' || f[k] === null, `${p.name}.fielding.${k}`).toBe(true);
+      }
+    }
+  });
+
+  it('carries a distinct career block (B4S/SB/WO) for most players', () => {
+    // Career totals live in their own block so they are never confused with the
+    // season-scoped hitting/pitching/fielding stats. Most (not all — brand-new
+    // players have no career history) should have it.
+    const withCareer = dataset.players.filter((p) => p.career);
+    expect(withCareer.length).toBeGreaterThan(140);
+    for (const p of withCareer) {
+      for (const k of ['g', 'b4s', 'sb', 'wo', 'fan', 'er'] as const) {
+        expect(typeof p.career![k] === 'number' || p.career![k] === null, `${p.name}.career.${k}`).toBe(true);
+      }
+    }
+  });
+
+  it('pitchers carry strikeouts (so) and the extra pitching fields', () => {
+    const pitchers = dataset.players.filter((p) => p.pitching);
+    expect(pitchers.length).toBeGreaterThan(50);
+    // strikeouts (source: k) must be mapped for most pitchers — regression guard
+    // against the old bug where so read a nonexistent field and was always null.
+    const withK = pitchers.filter((p) => typeof p.pitching?.so === 'number');
+    expect(withK.length).toBeGreaterThan(50);
+    for (const p of pitchers) {
+      expect(p.pitching).toBeTruthy();
+      for (const k of ['gs', 'runs_allowed', 'hits_allowed'] as const) {
+        expect(p.pitching && k in p.pitching, `${p.name}.pitching.${k}`).toBe(true);
+      }
+    }
+  });
 });

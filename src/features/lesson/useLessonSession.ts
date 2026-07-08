@@ -13,8 +13,10 @@ import { brokenImageIds } from '../shared/PlayerImage';
 import { useQuestionRunner } from './useQuestionRunner';
 
 export interface LessonConfig {
-  /** unit player ids to (potentially) introduce/practice */
+  /** OWNED unit player ids — introduced/practiced/mastered here */
   unitPlayerIds: string[];
+  /** CAMEO player ids — owned elsewhere, mixed in as review flavor only */
+  cameoIds?: string[];
   /** attempt number for this node — varies the seed */
   attempt: number;
   /** review-only session (quiz/practice) introduces no new players */
@@ -24,7 +26,6 @@ export interface LessonConfig {
 
 export function useLessonSession(config: LessonConfig) {
   const storeState = useStore();
-  const focusTeams = storeState.profile.settings.focusTeams;
 
   // Build the session once per (unit, attempt). Uses a seeded rng so it is
   // reproducible; a new attempt yields a fresh session.
@@ -42,40 +43,41 @@ export function useLessonSession(config: LessonConfig) {
       };
     };
 
-    // new players = unit members not yet introduced (in intended order)
+    // new players = OWNED unit members not yet introduced (in intended order).
+    // Cameo players are never introduced here — they're owned by an earlier
+    // unit and appear only as review flavor.
     const newPlayers = config.reviewOnly
       ? []
       : config.unitPlayerIds.filter((id) => srsFor(id).introducedAt === null).map(stateFor);
 
-    // due reviews across the (optionally focused) pool
-    const pool = focusTeams.length
-      ? players.filter((p) => focusTeams.includes(p.team_name))
-      : players;
+    // due reviews across the whole roster
     const dueIds = new Set(
-      pool.filter((p) => isDue(srsFor(p.player_id), now)).map((p) => p.player_id),
+      players.filter((p) => isDue(srsFor(p.player_id), now)).map((p) => p.player_id),
     );
-    // Make sure a session is never empty. Two cases need the unit's already-
-    // introduced members folded in as review candidates regardless of SRS due:
-    //  - a quiz (reviewOnly) is a checkpoint on what you just learned; and
-    //  - replaying a unit whose players are all introduced but none are due yet
-    //    (e.g. a completed unit) — otherwise buildSession gets nothing and the
-    //    lesson lands straight on "0/0 correct".
-    // Whenever there are no brand-new players to introduce, seed the unit's
-    // introduced members so there's always something to practice.
+    // Make sure a session is never empty, and always drill this unit's context.
+    // Fold in as review candidates (regardless of SRS due):
+    //  - the unit's already-introduced OWNED members (a quiz is a checkpoint on
+    //    what you just learned; a replay of a completed unit has nothing due);
+    //  - the unit's CAMEO players (owned elsewhere) as themed review flavor.
+    // Cameos never advance mastery unless genuinely due — the scheduler gates
+    // box advancement on due-ness, so cameo reps don't let you grind a player
+    // this unit doesn't own.
+    const cameoIds = config.cameoIds ?? [];
     const reviewIds = new Set(dueIds);
     if (config.reviewOnly || newPlayers.length === 0) {
       for (const id of config.unitPlayerIds) {
         if (srsFor(id).introducedAt !== null) reviewIds.add(id);
       }
     }
+    for (const id of cameoIds) {
+      if (srsFor(id).introducedAt !== null) reviewIds.add(id);
+    }
     const dueReviews = [...reviewIds]
       .sort((a, b) => srsFor(a).due - srsFor(b).due)
       .map(stateFor);
 
-    // roster available as distractors: whole roster (locked players allowed),
-    // but narrow to focus teams if the user is focusing, so distractors feel
-    // on-topic and single-team sessions stay coherent.
-    const roster = focusTeams.length ? pool : players;
+    // distractors: the whole roster (locked players allowed as plausible faces)
+    const roster = players;
 
     const seed = hashSeed('lesson', config.unitPlayerIds.join(','), config.attempt);
     return buildSession(
@@ -89,7 +91,12 @@ export function useLessonSession(config: LessonConfig) {
       mulberry32(seed),
     );
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [config.unitPlayerIds.join(','), config.attempt, config.reviewOnly, focusTeams.join(',')]);
+  }, [
+    config.unitPlayerIds.join(','),
+    (config.cameoIds ?? []).join(','),
+    config.attempt,
+    config.reviewOnly,
+  ]);
 
   return useQuestionRunner(questions);
 }

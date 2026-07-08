@@ -3,15 +3,9 @@ import { players } from '../../data/dataset';
 import { isDue } from '../../engine/srs/scheduler';
 import { newSrsRecord, type SrsRecord } from '../../engine/srs/types';
 
-export function dueCount(
-  srs: Record<string, SrsRecord>,
-  focusTeams: readonly string[],
-  now = Date.now(),
-): number {
-  const focus = new Set(focusTeams);
+export function dueCount(srs: Record<string, SrsRecord>, now = Date.now()): number {
   let n = 0;
   for (const p of players) {
-    if (focus.size && !focus.has(p.team_name)) continue;
     if (isDue(srs[p.player_id] ?? newSrsRecord(), now)) n++;
   }
   return n;

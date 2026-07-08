@@ -6,10 +6,11 @@ import type { SrsRecord } from '../engine/srs/types';
 import type { StreakState } from '../engine/gamification/streak';
 
 export const STORE_KEY = 'bbgw';
-export const SCHEMA_VERSION = 1;
+// v2: curriculum is hand-authored (themed units, owned/cameo). Units were
+// redefined, so v1 path/SRS state is reset on upgrade (see migrations.ts).
+export const SCHEMA_VERSION = 2;
 
 export interface Settings {
-  focusTeams: string[]; // team names; empty = all
   sound: boolean;
   haptics: boolean;
   dark: boolean;
@@ -54,7 +55,6 @@ export interface PersistedState {
 
 export function defaultSettings(): Settings {
   return {
-    focusTeams: [],
     sound: true,
     haptics: true,
     dark: false,
