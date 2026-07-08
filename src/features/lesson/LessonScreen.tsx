@@ -33,7 +33,9 @@ export function LessonScreen() {
     (s: RunnerSummary) => {
       if (!unit) return;
       if (isQuiz) {
-        const passed = s.correctCount >= Math.ceil(s.total * 0.8);
+        // Pass on FIRST-TRY correctness (retries don't count), matching the
+        // score shown on the complete screen.
+        const passed = s.firstTryCorrect >= Math.ceil(s.total * 0.8);
         if (passed) passUnitQuiz(unit.key);
       } else {
         markUnitLesson(unit.key);

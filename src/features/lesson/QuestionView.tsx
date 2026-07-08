@@ -314,38 +314,39 @@ function BuildName({ question: q, onAnswer, disabled }: Props) {
   // Track tiles by index so duplicate words stay distinct.
   const [slots, setSlots] = useState<number[]>([]);
   const tiles = q.tiles ?? [];
-  const inBank = tiles.map((_, i) => i).filter((i) => !slots.includes(i));
   const built = slots.map((i) => tiles[i]).join(' ');
+  const toggle = (i: number) =>
+    setSlots((s) => (s.includes(i) ? s.filter((x) => x !== i) : [...s, i]));
   return (
     <div>
       <Prompt>Spell the name</Prompt>
       <div className="mb-4 flex justify-center">
         <PlayerImage player={target} size={160} rounded="rounded-3xl" />
       </div>
-      <div className="mb-3 flex min-h-14 flex-wrap items-center justify-center gap-2 rounded-2xl border-2 border-dashed border-[var(--hairline)] p-3">
-        {slots.length === 0 && <span className="text-[var(--muted)]">tap tiles below</span>}
-        {slots.map((tileIdx, pos) => (
-          <TapButton
-            key={pos}
-            disabled={disabled}
-            onPick={() => setSlots((s) => s.filter((_, p) => p !== pos))}
-            className="rounded-xl bg-[var(--team-soft)] px-3 py-2 font-bold transition active:scale-95"
-          >
-            {tiles[tileIdx]}
-          </TapButton>
-        ))}
+      {/* Preview of what's built — fixed height so the tiles below never shift
+          down as words are added. */}
+      <div className="mb-3 flex h-16 items-center justify-center overflow-hidden rounded-2xl border-2 border-dashed border-[var(--hairline)] p-3 text-center text-lg font-bold">
+        {built ? built : <span className="text-[var(--muted)]">tap tiles below</span>}
       </div>
+      {/* Tiles stay put; picked ones gray out in place instead of moving. */}
       <div className="mb-4 flex flex-wrap justify-center gap-2">
-        {inBank.map((i) => (
-          <TapButton
-            key={i}
-            disabled={disabled}
-            onPick={() => setSlots((s) => [...s, i])}
-            className="rounded-xl border-2 border-[var(--hairline)] px-3 py-2 font-bold active:scale-95"
-          >
-            {tiles[i]}
-          </TapButton>
-        ))}
+        {tiles.map((tile, i) => {
+          const picked = slots.includes(i);
+          return (
+            <TapButton
+              key={i}
+              disabled={disabled}
+              onPick={() => toggle(i)}
+              className={`rounded-xl border-2 px-3 py-2 font-bold transition active:scale-95 ${
+                picked
+                  ? 'border-transparent bg-[var(--hairline)] text-[var(--muted)] opacity-50'
+                  : 'border-[var(--hairline)]'
+              }`}
+            >
+              {tile}
+            </TapButton>
+          );
+        })}
       </div>
       <TapButton
         onPick={() => onAnswer({ correct: built === q.answerText })}
@@ -362,42 +363,41 @@ function BuildLetters({ question: q, onAnswer, disabled, prompt }: Props & { pro
   const target = getPlayer(q.targetId);
   const [slots, setSlots] = useState<number[]>([]);
   const tiles = q.tiles ?? [];
-  const inBank = tiles.map((_, i) => i).filter((i) => !slots.includes(i));
   const built = slots.map((i) => tiles[i]).join('');
   const answer = (q.answerText ?? '').replace(/[^a-zA-Z]/g, '');
   const correct = built.toLowerCase() === answer.toLowerCase();
+  const toggle = (i: number) =>
+    setSlots((s) => (s.includes(i) ? s.filter((x) => x !== i) : [...s, i]));
   return (
     <div>
       <Prompt>{prompt}</Prompt>
       <div className="mb-4 flex justify-center">
         <PlayerImage player={target} size={160} rounded="rounded-3xl" />
       </div>
-      {/* assembled letters */}
-      <div className="mb-3 flex min-h-14 flex-wrap items-center justify-center gap-1 rounded-2xl border-2 border-dashed border-[var(--hairline)] p-3">
-        {slots.length === 0 && <span className="text-[var(--muted)]">tap letters below</span>}
-        {slots.map((tileIdx, pos) => (
-          <TapButton
-            key={pos}
-            disabled={disabled}
-            onPick={() => setSlots((s) => s.filter((_, p) => p !== pos))}
-            className="h-10 w-9 rounded-lg bg-[var(--team-soft)] font-black transition active:scale-95"
-          >
-            {tiles[tileIdx]}
-          </TapButton>
-        ))}
+      {/* Assembled letters as plain text — fixed height so the tiles below
+          never shift down when text appears/grows. */}
+      <div className="mb-3 flex h-14 items-center justify-center overflow-hidden rounded-2xl border-2 border-dashed border-[var(--hairline)] p-3 text-center text-2xl font-black tracking-widest">
+        {built ? built : <span className="text-base tracking-normal text-[var(--muted)]">tap letters below</span>}
       </div>
-      {/* letter bank */}
+      {/* Letter bank: picked letters gray out in place rather than repositioning. */}
       <div className="mb-4 flex flex-wrap justify-center gap-1.5">
-        {inBank.map((i) => (
-          <TapButton
-            key={i}
-            disabled={disabled}
-            onPick={() => setSlots((s) => [...s, i])}
-            className="h-10 w-9 rounded-lg border-2 border-[var(--hairline)] font-black transition active:scale-95"
-          >
-            {tiles[i]}
-          </TapButton>
-        ))}
+        {tiles.map((tile, i) => {
+          const picked = slots.includes(i);
+          return (
+            <TapButton
+              key={i}
+              disabled={disabled}
+              onPick={() => toggle(i)}
+              className={`h-10 w-9 rounded-lg border-2 font-black transition active:scale-95 ${
+                picked
+                  ? 'border-transparent bg-[var(--hairline)] text-[var(--muted)] opacity-50'
+                  : 'border-[var(--hairline)]'
+              }`}
+            >
+              {tile}
+            </TapButton>
+          );
+        })}
       </div>
       <TapButton
         onPick={() => onAnswer({ correct })}

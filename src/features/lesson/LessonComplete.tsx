@@ -47,7 +47,11 @@ export function LessonComplete() {
 
   const { summary } = state;
   const newlyUnlocked = state.newlyUnlocked ?? [];
-  const accuracy = summary.total ? Math.round((summary.correctCount / summary.total) * 100) : 0;
+  // Score by FIRST-TRY correctness: a question you missed and then got on the
+  // retry shouldn't count toward the score (that's why "12/12" was showing even
+  // after a miss). correctCount includes retries; firstTryCorrect does not.
+  const scored = summary.firstTryCorrect;
+  const accuracy = summary.total ? Math.round((scored / summary.total) * 100) : 0;
   const perfect = summary.firstTryCorrect === summary.total && summary.total > 0;
   const backTo = location.pathname.startsWith('/practice') ? '/practice' : '/';
   const isQuiz = state.quiz === true;
@@ -77,7 +81,7 @@ export function LessonComplete() {
       <div className="flex w-full max-w-xs justify-around rounded-3xl bg-[var(--surface)] p-5 shadow-sm">
         <Stat label="Accuracy" value={`${accuracy}%`} />
         <Stat label="Best combo" value={`🔥${summary.bestCombo}`} />
-        <Stat label="Correct" value={`${summary.correctCount}/${summary.total}`} />
+        <Stat label="Correct" value={`${scored}/${summary.total}`} />
       </div>
 
       {newlyUnlocked.length > 0 && (
