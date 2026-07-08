@@ -90,15 +90,15 @@ function UnitCard({
   // the motif: the team color for a team unit, the accent hex for an icon unit.
   const color = motifColor(p.unit.motif);
 
-  const subtitle = complete
+  // Locked units stay minimal (one line). Unlocked units (active/complete) show
+  // the theme line plus a status line beneath it.
+  const status = complete
     ? `Mastered ${p.mastered}/${p.owned}`
     : showQuiz
       ? 'Unit quiz ready!'
-      : locked
-        ? `${p.owned} players · locked`
-        : p.introduced > 0
-          ? `Learning · ${p.introduced}/${p.owned} met`
-          : p.unit.theme;
+      : p.introduced > 0
+        ? `Learning · ${p.introduced}/${p.owned} met`
+        : `${p.owned} players`;
 
   const inner = (
     <div
@@ -110,7 +110,14 @@ function UnitCard({
       <UnitBadge motif={p.unit.motif} complete={complete} locked={locked} index={p.unit.index} />
       <div className="min-w-0 flex-1">
         <div className="truncate font-bold">{p.unit.title}</div>
-        <div className="truncate text-xs text-[var(--muted)]">{subtitle}</div>
+        {locked ? (
+          <div className="truncate text-xs text-[var(--muted)]">{p.owned} players · locked</div>
+        ) : (
+          <>
+            <div className="truncate text-xs text-[var(--muted)]">{p.unit.theme}</div>
+            <div className="truncate text-xs font-semibold" style={{ color }}>{status}</div>
+          </>
+        )}
       </div>
       {/* mastery pips — one per OWNED player */}
       {!locked && (
