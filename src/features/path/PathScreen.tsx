@@ -102,35 +102,35 @@ function UnitCard({
 
   const inner = (
     <div
-      className={`flex items-center gap-3 rounded-[var(--radius)] border-2 p-3 transition ${
+      className={`flex flex-col gap-2 rounded-[var(--radius)] border-2 p-3 transition ${
         locked ? 'opacity-70' : 'active:scale-[0.99]'
       }`}
       style={{ borderColor: complete ? color : 'var(--hairline)', background: 'var(--surface)' }}
     >
-      <UnitBadge motif={p.unit.motif} complete={complete} locked={locked} index={p.unit.index} />
-      <div className="min-w-0 flex-1">
-        <div className="truncate font-bold">{p.unit.title}</div>
-        {locked ? (
-          <div className="truncate text-xs text-[var(--muted)]">{p.owned} players · locked</div>
-        ) : (
-          <>
-            <div className="truncate text-xs text-[var(--muted)]">{p.unit.theme}</div>
-            <div className="truncate text-xs font-semibold" style={{ color }}>{status}</div>
-          </>
+      {/* top row: badge · title+status · pips */}
+      <div className="flex items-center gap-3">
+        <UnitBadge motif={p.unit.motif} complete={complete} locked={locked} index={p.unit.index} />
+        <div className="min-w-0 flex-1">
+          <div className="truncate font-bold">{p.unit.title}</div>
+          <div className="truncate text-xs font-semibold" style={{ color: locked ? 'var(--muted)' : color }}>
+            {locked ? `${p.owned} players · locked` : status}
+          </div>
+        </div>
+        {/* mastery pips — one per OWNED player */}
+        {!locked && (
+          <div className="flex flex-wrap justify-end gap-0.5" style={{ maxWidth: 72 }}>
+            {p.unit.playerIds.map((id) => (
+              <span
+                key={id}
+                className="h-1.5 w-1.5 rounded-full"
+                style={{ background: (srs[id]?.box ?? 0) >= 5 ? color : 'var(--hairline)' }}
+              />
+            ))}
+          </div>
         )}
       </div>
-      {/* mastery pips — one per OWNED player */}
-      {!locked && (
-        <div className="flex flex-wrap justify-end gap-0.5" style={{ maxWidth: 72 }}>
-          {p.unit.playerIds.map((id) => (
-            <span
-              key={id}
-              className="h-1.5 w-1.5 rounded-full"
-              style={{ background: (srs[id]?.box ?? 0) >= 5 ? color : 'var(--hairline)' }}
-            />
-          ))}
-        </div>
-      )}
+      {/* full-width theme line beneath, so it isn't squeezed by the title row */}
+      {!locked && <div className="text-xs text-[var(--muted)]">{p.unit.theme}</div>}
     </div>
   );
 
