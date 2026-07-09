@@ -174,3 +174,31 @@ describe('type-name answer integrates with checker', () => {
     expect(getPlayer(q.targetId).name).toBe(target.name);
   });
 });
+
+describe('name-to-photo distractors share the target team', () => {
+  // The photo tiles show jerseys, so an other-team distractor is identifiable
+  // without recognizing the face. All tiles should wear the target's jersey
+  // when the team is large enough to supply them (regardless of SRS box).
+  it('picks only same-team distractors for a player on a large team', () => {
+    // Pick a target whose team has >= 4 players so 3 same-team tiles are possible.
+    const byTeam = new Map<string, typeof players[number][]>();
+    for (const p of players) {
+      const arr = byTeam.get(p.team_id) ?? [];
+      arr.push(p);
+      byTeam.set(p.team_id, arr);
+    }
+    const target = players.find((p) => (byTeam.get(p.team_id)?.length ?? 0) >= 4)!;
+    for (let seed = 0; seed < 30; seed++) {
+      // box 0 is where the old weighting most preferred OTHER teams.
+      const q = generateOfType(
+        { target, box: 0, roster: players, isReview: false, qid: 'q' },
+        'name-to-photo',
+        mulberry32(seed),
+      );
+      for (const c of q.choices) {
+        if (c.playerId === target.player_id) continue;
+        expect(getPlayer(c.playerId).team_id).toBe(target.team_id);
+      }
+    }
+  });
+});

@@ -21,6 +21,10 @@ export interface DistractorParams {
   /** player_ids the user has previously confused the target with */
   confusedWith?: readonly string[];
   count?: number; // default 3
+  /** Restrict distractors to the target's OWN team (backfilling from the rest of
+   *  the roster only if the team is too small). Used for photo-choice questions,
+   *  where an other-team tile is identifiable by jersey alone. */
+  sameTeam?: boolean;
 }
 
 // Weights are MULTIPLICATIVE so a strong preference dominates even when the
@@ -73,21 +77,31 @@ function weightedSample(
 }
 
 export function pickDistractors(params: DistractorParams, rng: Rng): Player[] {
-  const { target, box, roster, count = 3 } = params;
+  const { target, box, roster, count = 3, sameTeam = false } = params;
   const confused = new Set(params.confusedWith ?? []);
-  const candidates = roster
-    .filter((p) => p.player_id !== target.player_id)
-    .map((player) => ({ player, weight: weightFor(target, player, box, confused) }));
+  const eligible = roster.filter((p) => p.player_id !== target.player_id);
+
+  // sameTeam: draw from the target's team first so photo tiles share a jersey
+  // and the face is the only tell. Fall back to the full roster only when the
+  // team can't supply enough distinct players (e.g. a tiny team).
+  const primary = sameTeam ? eligible.filter((p) => p.team_id === target.team_id) : eligible;
+  const candidates = primary.map((player) => ({
+    player,
+    weight: weightFor(target, player, box, confused),
+  }));
 
   const picked = weightedSample(candidates, count, rng);
 
-  // Safety: if the roster was too small to fill (shouldn't happen with 158),
-  // top up with any remaining players.
+  // Top up if the primary pool couldn't fill: same-team backfills from the rest
+  // of the roster; the safety path (roster too small) uses whatever remains.
   if (picked.length < count) {
-    const have = new Set(picked.map((p) => p.player_id));
-    for (const c of candidates) {
+    const have = new Set([target.player_id, ...picked.map((p) => p.player_id)]);
+    const backfill = (sameTeam ? eligible : candidates.map((c) => c.player)).filter(
+      (p) => !have.has(p.player_id),
+    );
+    for (const p of rng.shuffle(backfill)) {
       if (picked.length >= count) break;
-      if (!have.has(c.player.player_id)) picked.push(c.player);
+      picked.push(p);
     }
   }
   return picked;

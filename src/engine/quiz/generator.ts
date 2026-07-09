@@ -83,7 +83,15 @@ function letterTiles(answer: string, rng: Rng): string[] {
 export function generateQuestion(params: GenParams, rng: Rng): Question {
   const { target, box, roster, confusedWith, isReview, qid } = params;
   const type = params.forceType ?? rng.pick(eligibleTypes(box));
-  const distractors = pickDistractors({ target, box, roster, confusedWith }, rng);
+  // For name-to-photo the DISTRACTOR photos are shown, so an all-other-team set
+  // is a giveaway — you'd just pick the one tile wearing the right jersey. Force
+  // same-team distractors so the jersey can't be the tell and you must recognize
+  // the face. (photo-to-name shows only the target's photo + name choices, so
+  // jersey parity is irrelevant there.)
+  const distractors = pickDistractors(
+    { target, box, roster, confusedWith, sameTeam: type === 'name-to-photo' },
+    rng,
+  );
 
   switch (type) {
     case 'photo-to-name':
