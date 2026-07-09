@@ -77,6 +77,58 @@ describe('buildSession', () => {
     }
   });
 
+  // A single-team section makes "which team is this player on?" a giveaway —
+  // there's only one team in play. It must never appear (when images are fine).
+  it('never asks which-team in a single-team section', () => {
+    const one = teamPlayers.slice(0, 8).map((p) => state(p, 4)); // high box: all types eligible
+    // Sweep many seeds so a rare pick would still be caught.
+    for (let seed = 0; seed < 40; seed++) {
+      const s = buildSession(
+        { newPlayers: one.slice(0, 3).map((p) => ({ ...p, introduced: false })), dueReviews: one, roster },
+        mulberry32(seed),
+      );
+      expect(s.some((q) => q.type === 'which-team')).toBe(false);
+    }
+  });
+
+  // A broken image in a single-team section is the one case which-team is still
+  // allowed: a broken photo is worse than an easy team question.
+  it('still allows which-team for a broken image even in a single-team section', () => {
+    const target = teamPlayers[0];
+    const s = buildSession(
+      {
+        newPlayers: [state(target, 5)],
+        dueReviews: [state(target, 5)],
+        roster,
+        brokenImageIds: new Set([target.player_id]),
+        maxNew: 1,
+      },
+      mulberry32(9),
+    );
+    // every question about the broken target is which-team (the only safe type).
+    for (const q of s) {
+      if (q.targetId === target.player_id) expect(q.type).toBe('which-team');
+    }
+  });
+
+  // With enough teams in play, which-team is allowed but should stay rare.
+  it('keeps which-team rare in a multi-team (2-3) section', () => {
+    const teams = [...playersByTeamId.values()];
+    const twoTeam = [...teams[0].slice(0, 4), ...teams[1].slice(0, 4)].map((p) => state(p, 4));
+    let total = 0;
+    let whichTeam = 0;
+    for (let seed = 0; seed < 60; seed++) {
+      const s = buildSession({ newPlayers: [], dueReviews: twoTeam, roster }, mulberry32(seed));
+      for (const q of s) {
+        total++;
+        if (q.type === 'which-team') whichTeam++;
+      }
+    }
+    // Uniform selection would put which-team near 1/9 of eligible questions;
+    // the 0.8 re-roll should push it well below that.
+    expect(whichTeam / total).toBeLessThan(0.05);
+  });
+
   it('does not ask two consecutive questions about the same target (when alternatives exist)', () => {
     const s = buildSession(
       {

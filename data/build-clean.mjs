@@ -166,6 +166,17 @@ const NAME_ALIASES = {
   'dakota albritton': 'stilts',
 };
 
+// Hand-picked photos for players who have no image from any automated source
+// (stats headshot is an HTML placeholder AND the team publishes no media-day
+// shot). Keyed by normalized dataset name. These are validated like any other
+// URL and only used as a LAST resort, so a player never renders bare initials
+// when a real picture exists. Keep this tiny and obvious.
+const MANUAL_PHOTOS = {
+  // Clowns mascot: stats .webp is an HTML placeholder; no media-day photo.
+  'peanuts the elephant':
+    'https://i.ytimg.com/vi/OnwcVsj4wY8/oardefault.jpg?sqp=-oaymwEYCJUDENAFSFqQAgHyq4qpAwcIARUAAIhC&rs=AOn4CLA49BUOa75EUhhWZiJT2VVYTmW46A&usqp=CCk',
+};
+
 let teamPhotos = { photos: {} };
 try {
   teamPhotos = JSON.parse(readFileSync(new URL('./team-photos.json', import.meta.url)));
@@ -213,6 +224,15 @@ for (const p of players) {
   if (hit?.url && !images.includes(hit.url)) {
     images.push(hit.url);
     mediaAdded++;
+  }
+
+  // 3. Last resort: a hand-picked photo, only if nothing above supplied one.
+  if (images.length === 0) {
+    const manual = MANUAL_PHOTOS[key];
+    if (manual && (await isRealImage(manual)) !== false) {
+      images.push(manual);
+      mediaAdded++;
+    }
   }
 
   p.images = images;

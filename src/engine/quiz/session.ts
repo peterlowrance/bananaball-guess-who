@@ -44,12 +44,41 @@ const PHOTO_TYPES: ReadonlySet<QuestionType> = new Set([
 // distractor photos too. For a broken *target* image, prefer name-based recall.
 const NON_TARGET_PHOTO_TYPES: ReadonlySet<QuestionType> = new Set(['which-team']);
 
-/** Choose a question type for a target, avoiding photo types if its image is broken. */
-function chooseType(state: PlayerState, broken: boolean, rng: Rng): QuestionType {
+/**
+ * Choose a question type for a target.
+ *  - Avoids photo types if the target's image is broken.
+ *  - Scales down (or drops) 'which-team' when the section spans few teams:
+ *    with one team it's a giveaway (only one possible answer in context), and
+ *    with a couple of teams it's still too easy to be common. `sectionTeams` is
+ *    the number of distinct teams among the players this session quizzes.
+ */
+function chooseType(
+  state: PlayerState,
+  broken: boolean,
+  sectionTeams: number,
+  rng: Rng,
+): QuestionType {
   let types = eligibleTypes(state.box);
   if (broken) {
+    // A broken target image: never show its photo. The ONLY non-target-photo
+    // choice type is which-team, so it stays eligible here even in a single-team
+    // section (a slightly-easy team question beats a broken image). We still fall
+    // through to the down-weighting below when the section has enough teams.
     const safe = types.filter((t) => NON_TARGET_PHOTO_TYPES.has(t) || !PHOTO_TYPES.has(t));
     types = safe.length ? safe : ['which-team'];
+    return rng.pick(types);
+  }
+  // Single-team section: 'which-team' has only one real answer — drop it.
+  if (sectionTeams <= 1) {
+    types = types.filter((t) => t !== 'which-team');
+  } else if (sectionTeams <= 3 && types.includes('which-team')) {
+    // Few teams: keep it possible but rare. Re-roll a which-team pick most of
+    // the time so it shows up occasionally instead of at uniform frequency.
+    const pick = rng.pick(types);
+    if (pick === 'which-team' && rng.next() < 0.8) {
+      return rng.pick(types.filter((t) => t !== 'which-team'));
+    }
+    return pick;
   }
   return rng.pick(types);
 }
@@ -90,7 +119,16 @@ export function buildSession(spec: SessionSpec, rng: Rng): SessionQuestion[] {
     intro,
   });
 
-  // 1. Introduce new players: intro card + 2 easy questions each.
+  // How many distinct teams this session actually quizzes (NOT the distractor
+  // roster, which is the whole dataset). Drives how often — if at all — we ask
+  // "which team is this player on": pointless in a single-team section.
+  const sectionTeams = new Set(
+    [...spec.dueReviews, ...chosenNew].map((s) => s.player.team_id),
+  ).size;
+
+  // 1. Introduce new players: intro card + 2 easy questions each. A broken-image
+  //    intro falls back to which-team (the only non-target-photo choice type),
+  //    even in a single-team section — a broken photo is worse than an easy team.
   for (const state of chosenNew) {
     const isBroken = broken.has(state.player.player_id);
     out.push(makeQ(state, isBroken ? 'which-team' : 'photo-to-name', true, false));
@@ -119,7 +157,7 @@ export function buildSession(spec: SessionSpec, rng: Rng): SessionQuestion[] {
         continue;
       }
       const isBroken = broken.has(state.player.player_id);
-      out.push(makeQ(state, chooseType(state, isBroken, rng), false, isReview));
+      out.push(makeQ(state, chooseType(state, isBroken, sectionTeams, rng), false, isReview));
     }
   }
 

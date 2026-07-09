@@ -1455,7 +1455,7 @@
       "team_name": "Indianapolis Clowns",
       "jersey_number": 96,
       "position_label": "Relief Pitcher",
-      "image_url": null,
+      "image_url": "https://i.ytimg.com/vi/OnwcVsj4wY8/oardefault.jpg?sqp=-oaymwEYCJUDENAFSFqQAgHyq4qpAwcIARUAAIhC&rs=AOn4CLA49BUOa75EUhhWZiJT2VVYTmW46A&usqp=CCk",
       "hitting": {
         "g": 5,
         "ab": 0,
@@ -1491,7 +1491,9 @@
       "difficulty": "easy",
       "popularity_rank": 4,
       "popularity_confidence": "high",
-      "images": []
+      "images": [
+        "https://i.ytimg.com/vi/OnwcVsj4wY8/oardefault.jpg?sqp=-oaymwEYCJUDENAFSFqQAgHyq4qpAwcIARUAAIhC&rs=AOn4CLA49BUOa75EUhhWZiJT2VVYTmW46A&usqp=CCk"
+      ]
     },
     {
       "player_id": "1d187c0a-45b5-4228-bf10-85f23062041d",
