@@ -40,6 +40,7 @@ export function useLessonSession(config: LessonConfig) {
         box: rec.box,
         confusedWith: rec.lastWrongWith,
         introduced: rec.introducedAt !== null,
+        dueNow: isDue(rec, now),
       };
     };
 
@@ -54,20 +55,19 @@ export function useLessonSession(config: LessonConfig) {
     const dueIds = new Set(
       players.filter((p) => isDue(srsFor(p.player_id), now)).map((p) => p.player_id),
     );
-    // Make sure a session is never empty, and always drill this unit's context.
     // Fold in as review candidates (regardless of SRS due):
-    //  - the unit's already-introduced OWNED members (a quiz is a checkpoint on
-    //    what you just learned; a replay of a completed unit has nothing due);
+    //  - the unit's already-introduced OWNED members, ALWAYS — a lesson mixes
+    //    new players with the ones you already learned in this section
+    //    (Duolingo-style interleaving), a quiz is a checkpoint on the whole
+    //    unit, and a replay of a completed unit has nothing due;
     //  - the unit's CAMEO players (owned elsewhere) as themed review flavor.
-    // Cameos never advance mastery unless genuinely due — the scheduler gates
-    // box advancement on due-ness, so cameo reps don't let you grind a player
-    // this unit doesn't own.
+    // Mix-in reps can advance mastery, but grinding is bounded: the runner
+    // caps advancement at +1 per player per session and the scheduler caps
+    // box-ups per rolling day.
     const cameoIds = config.cameoIds ?? [];
     const reviewIds = new Set(dueIds);
-    if (config.reviewOnly || newPlayers.length === 0) {
-      for (const id of config.unitPlayerIds) {
-        if (srsFor(id).introducedAt !== null) reviewIds.add(id);
-      }
+    for (const id of config.unitPlayerIds) {
+      if (srsFor(id).introducedAt !== null) reviewIds.add(id);
     }
     for (const id of cameoIds) {
       if (srsFor(id).introducedAt !== null) reviewIds.add(id);

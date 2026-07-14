@@ -50,6 +50,25 @@ function Prompt({ children }: { children: React.ReactNode }) {
   return <h2 className="mb-4 text-center text-xl font-black">{children}</h2>;
 }
 
+// About half of identification questions surface the target's number/position
+// alongside the prompt, so those facts get rehearsed while you're recalling the
+// name/face (not only in feedback). Deterministic per question id — no flicker
+// on re-render, and a requeued retry keeps its hint.
+function showFactHint(q: SessionQuestion): boolean {
+  let h = 0;
+  const s = q.id + q.targetId;
+  for (let i = 0; i < s.length; i++) h = (Math.imul(31, h) + s.charCodeAt(i)) | 0;
+  return (h & 1) === 0;
+}
+
+function FactHint({ player }: { player: ReturnType<typeof getPlayer> }) {
+  return (
+    <p className="mb-4 text-center text-sm font-bold text-[var(--muted)]">
+      #{player.jersey_number} · {player.position_label}
+    </p>
+  );
+}
+
 type CState = 'idle' | 'correct' | 'wrong' | 'dim';
 function choiceState(i: number, reveal: number | null, picked: number | null): CState {
   if (reveal === null) return 'idle';
@@ -146,12 +165,14 @@ function PhotoChoice({
 
 function PhotoToName({ question: q, onAnswer, disabled, revealCorrect, pickedIndex }: Props) {
   const target = getPlayer(q.targetId);
+  const hint = showFactHint(q);
   return (
     <div>
       <Prompt>Who is this?</Prompt>
-      <div className="mb-6 flex justify-center">
+      <div className={`${hint ? 'mb-2' : 'mb-6'} flex justify-center`}>
         <PlayerImage player={target} size={200} rounded="rounded-3xl" />
       </div>
+      {hint && <FactHint player={target} />}
       <div className="grid grid-cols-1 gap-3">
         {q.choices.map((c, i) => (
           <ChoiceButton
@@ -169,12 +190,14 @@ function PhotoToName({ question: q, onAnswer, disabled, revealCorrect, pickedInd
 
 function PartialName({ question: q, onAnswer, disabled, revealCorrect, pickedIndex, prompt }: Props & { prompt: string }) {
   const target = getPlayer(q.targetId);
+  const hint = showFactHint(q);
   return (
     <div>
       <Prompt>{prompt}</Prompt>
-      <div className="mb-6 flex justify-center">
+      <div className={`${hint ? 'mb-2' : 'mb-6'} flex justify-center`}>
         <PlayerImage player={target} size={200} rounded="rounded-3xl" />
       </div>
+      {hint && <FactHint player={target} />}
       <div className="grid grid-cols-2 gap-3">
         {q.choices.map((c, i) => (
           <ChoiceButton
@@ -195,6 +218,7 @@ function NameToPhoto({ question: q, onAnswer, disabled, revealCorrect, pickedInd
   return (
     <div>
       <Prompt>Pick {target.name}</Prompt>
+      {showFactHint(q) && <FactHint player={target} />}
       <div className="grid grid-cols-2 gap-3">
         {q.choices.map((c, i) => (
           <PhotoChoice

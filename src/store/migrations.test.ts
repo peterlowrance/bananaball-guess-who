@@ -42,6 +42,20 @@ describe('migrations', () => {
     expect(s.path.checkpointsPassed).toEqual([]);
   });
 
+  it('2 -> 3 backfills boxUps on existing SRS records, keeping progress', () => {
+    const v2 = {
+      version: 2,
+      players: { p1: { box: 4, due: 999, seen: 5, correct: 4, lastWrongWith: [], legendary: false, introducedAt: 100 } },
+      profile: { totalXp: 500 },
+      path: { units: {}, checkpointsPassed: [] },
+    };
+    const s = migrate(v2 as unknown);
+    expect(s.version).toBe(SCHEMA_VERSION);
+    expect(s.players['p1'].box).toBe(4); // progress preserved
+    expect(s.players['p1'].boxUps).toEqual([]);
+    expect(s.profile.totalXp).toBe(500);
+  });
+
   it('returns fresh state for non-object input', () => {
     expect(migrate(null).version).toBe(SCHEMA_VERSION);
     expect(migrate('garbage').version).toBe(SCHEMA_VERSION);
@@ -59,6 +73,7 @@ describe('migrations', () => {
       lastWrongWith: ['x'],
       legendary: true,
       introducedAt: 100,
+      boxUps: [90, 100],
     };
     const restored = migrate(JSON.parse(JSON.stringify(original)));
     expect(restored.profile.totalXp).toBe(1234);

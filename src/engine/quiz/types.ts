@@ -31,7 +31,7 @@ export interface Question {
   tiles?: string[];
   /** the correct assembled answer / typed answer target text */
   answerText?: string;
-  isReview: boolean; // graded as a review (advances box) vs new/practice
+  isReview: boolean; // a genuine due review (informational; caps gate advancement)
 }
 
 export interface SessionQuestion extends Question {

@@ -127,6 +127,10 @@ export function PlayerImage({ player, size = 120, className = '', rounded = 'rou
         onLoad={() => setLoaded(true)}
         onError={onError}
         className={`h-full w-full object-cover ${rounded} ${loaded ? '' : 'opacity-0'}`}
+        // Bias the crop toward the top of the frame: source photos are mostly
+        // portrait, and a centered square crop lands on the chest and slices
+        // off the face. 50% 25% keeps heads in frame; no-op for square sources.
+        style={{ objectPosition: '50% 25%' }}
       />
     </div>
   );

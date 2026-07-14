@@ -6,8 +6,8 @@ import { mascotQuote } from '../shared/quotes';
 import { useTap } from '../shared/useTap';
 
 // Question types where you're only shown/asked part of the name (or a photo,
-// with no full name in the prompt). For these we always reveal the full name
-// in feedback — even on a correct answer — so you actually learn it.
+// with no full name in the prompt). For these the full name leads the feedback
+// line — even on a correct answer — so you actually learn it.
 const NAME_LEARNING_TYPES: ReadonlySet<QuestionType> = new Set([
   'first-name',
   'last-name',
@@ -49,10 +49,11 @@ export function FeedbackSheet({
     return () => window.removeEventListener('keydown', onKey);
   }, [onContinue]);
 
-  // Reveal the full name when the answer was wrong, OR when the question only
-  // exercised part of the name (first/last/build-first/build-last) so a correct
-  // answer still teaches the whole name.
-  const showFullName =
+  // Every answer recaps the player's full identity (name, number, position,
+  // team) so each rep also reinforces the facts you weren't asked about. When
+  // the question only exercised part of the name, or the answer was wrong, the
+  // full name gets extra emphasis in the lead-in copy.
+  const emphasizeName =
     !correct || (questionType != null && NAME_LEARNING_TYPES.has(questionType));
 
   const tap = useTap(onContinue);
@@ -66,13 +67,12 @@ export function FeedbackSheet({
         {correct ? <Check size={24} strokeWidth={3} aria-hidden /> : <X size={24} strokeWidth={3} aria-hidden />}
         <span>{quip}</span>
       </div>
-      {showFullName && (
-        <p className="mb-3 font-bold">
-          {correct ? 'Full name: ' : 'That was '}
-          <span className="underline">{player.name}</span> · #{player.jersey_number} ·{' '}
-          {player.team_name}
-        </p>
-      )}
+      <p className="mb-3 font-bold">
+        {!correct && 'That was '}
+        {emphasizeName && correct && 'Full name: '}
+        <span className={emphasizeName ? 'underline' : ''}>{player.name}</span> · #
+        {player.jersey_number} · {player.position_label} · {player.team_name}
+      </p>
       <button
         {...tap}
         className="w-full touch-manipulation rounded-2xl bg-white py-3 font-black transition active:scale-[0.98]"

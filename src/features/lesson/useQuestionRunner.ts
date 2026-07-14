@@ -1,8 +1,13 @@
 // Shared runner for a queue of questions — drives grading, wrong-answer
 // re-queue (capped), combo tracking, and end-of-session summary. Used by both
 // lessons and practice sessions.
+//
+// SRS effects (introduce/grade) are BUFFERED during the run and only written to
+// the store by commit(), which the view calls when the session completes.
+// Quitting halfway therefore persists nothing — an abandoned lesson doesn't
+// count toward (or against) mastery.
 import { useState, useRef, useCallback } from 'react';
-import { useStore } from '../../store';
+import { useStore, type GradeArgs } from '../../store';
 import type { SessionQuestion } from '../../engine/quiz/types';
 
 // Re-shuffle a question's multiple-choice options so a re-asked question (after
@@ -34,7 +39,12 @@ export interface RunnerSummary {
   bestCombo: number;
 }
 
-export function useQuestionRunner(initialQuestions: SessionQuestion[]) {
+export function useQuestionRunner(
+  initialQuestions: SessionQuestion[],
+  // practice softens wrong answers (-1 box instead of -2); advancement rules
+  // are otherwise identical across session kinds.
+  sessionKind: 'lesson' | 'practice' = 'lesson',
+) {
   const [queue, setQueue] = useState<SessionQuestion[]>(initialQuestions);
   const [index, setIndex] = useState(0);
   const answers = useRef<AnswerRecord[]>([]);
@@ -43,6 +53,13 @@ export function useQuestionRunner(initialQuestions: SessionQuestion[]) {
   const bestCombo = useRef(0);
   const firstTryIds = useRef<Set<string>>(new Set());
   const missedKeys = useRef<Set<string>>(new Set());
+  // Buffered SRS ops, applied in answer order by commit(). Intros and grades
+  // interleave (a grade may depend on its intro having run), so one list.
+  const pendingOps = useRef<({ op: 'intro'; playerId: string } | { op: 'grade'; args: GradeArgs })[]>([]);
+  // Players whose one box-up this session is spent. An introduction counts —
+  // it's the 0→1 move — so a brand-new player still ends their first lesson at
+  // box 1 and gets the day-1 review instead of skipping to box 2.
+  const advancedIds = useRef<Set<string>>(new Set());
 
   const gradeAnswer = useStore((s) => s.gradeAnswer);
   const introducePlayer = useStore((s) => s.introducePlayer);
@@ -58,14 +75,23 @@ export function useQuestionRunner(initialQuestions: SessionQuestion[]) {
       const key = q.targetId + q.id;
       const firstTry = !missedKeys.current.has(key);
 
-      if (q.intro) introducePlayer(q.targetId);
-      gradeAnswer({
-        playerId: q.targetId,
-        correct,
-        typed: q.type === 'type-name',
-        confusedWith: correct ? null : (confusedWith ?? null),
-        isReview: q.isReview,
-        jerseyQuestion: q.type === 'jersey',
+      if (q.intro) {
+        pendingOps.current.push({ op: 'intro', playerId: q.targetId });
+        advancedIds.current.add(q.targetId);
+      }
+      const allowAdvance = correct && !advancedIds.current.has(q.targetId);
+      if (allowAdvance) advancedIds.current.add(q.targetId);
+      pendingOps.current.push({
+        op: 'grade',
+        args: {
+          playerId: q.targetId,
+          correct,
+          typed: q.type === 'type-name',
+          confusedWith: correct ? null : (confusedWith ?? null),
+          allowAdvance,
+          practice: sessionKind === 'practice',
+          jerseyQuestion: q.type === 'jersey',
+        },
       });
 
       answers.current.push({ question: q, correct, firstTry });
@@ -90,8 +116,19 @@ export function useQuestionRunner(initialQuestions: SessionQuestion[]) {
       }
       setIndex((i) => i + 1);
     },
-    [queue, index, gradeAnswer, introducePlayer],
+    [queue, index, sessionKind],
   );
+
+  /** Flush buffered SRS effects to the store. Call once, on session completion
+   *  — never on quit, so an abandoned session leaves no trace. Idempotent. */
+  const commit = useCallback(() => {
+    const ops = pendingOps.current;
+    pendingOps.current = [];
+    for (const op of ops) {
+      if (op.op === 'intro') introducePlayer(op.playerId);
+      else gradeAnswer(op.args);
+    }
+  }, [gradeAnswer, introducePlayer]);
 
   const summary = useCallback(
     (): RunnerSummary => ({
@@ -103,5 +140,5 @@ export function useQuestionRunner(initialQuestions: SessionQuestion[]) {
     [total],
   );
 
-  return { current, index, total, queueLength: queue.length, combo: combo.current, done, submit, summary };
+  return { current, index, total, queueLength: queue.length, combo: combo.current, done, submit, commit, summary };
 }

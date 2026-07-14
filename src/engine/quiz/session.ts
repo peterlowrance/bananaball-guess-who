@@ -11,6 +11,12 @@ export interface PlayerState {
   box: number;
   confusedWith: readonly string[];
   introduced: boolean;
+  /** whether this player is genuinely due right now (vs folded in as review
+   *  flavor: unit mix-ins, cameos, "any" practice). Drives the new-material
+   *  throttle and the informational isReview flag; advancement itself is
+   *  capped elsewhere (+1/session in the runner, daily cap in the scheduler).
+   *  Defaults to true. */
+  dueNow?: boolean;
 }
 
 export interface SessionSpec {
@@ -88,10 +94,12 @@ export function buildSession(spec: SessionSpec, rng: Rng): SessionQuestion[] {
   const broken = spec.brokenImageIds ?? new Set<string>();
   const maxNew = Math.min(spec.maxNew ?? 3, spec.newPlayers.length);
 
-  // Scale down new material when the review queue is heavy (plan §3.2).
+  // Scale down new material when the review queue is heavy (plan §3.2). Only
+  // genuinely-due reviews count — not-due mix-ins aren't backlog.
+  const genuinelyDue = spec.dueReviews.filter((s) => s.dueNow ?? true).length;
   let newCount = maxNew;
-  if (spec.dueReviews.length >= 30) newCount = 0;
-  else if (spec.dueReviews.length >= 15) newCount = Math.min(2, maxNew);
+  if (genuinelyDue >= 30) newCount = 0;
+  else if (genuinelyDue >= 15) newCount = Math.min(2, maxNew);
 
   const chosenNew = spec.newPlayers.slice(0, newCount);
   const out: SessionQuestion[] = [];
@@ -126,31 +134,57 @@ export function buildSession(spec: SessionSpec, rng: Rng): SessionQuestion[] {
     [...spec.dueReviews, ...chosenNew].map((s) => s.player.team_id),
   ).size;
 
-  // 1. Introduce new players: intro card + 2 easy questions each. A broken-image
-  //    intro falls back to which-team (the only non-target-photo choice type),
-  //    even in a single-team section — a broken photo is worse than an easy team.
+  // 1. Introduce new players: intro card + one easy recognition question each,
+  //    then a second, *varied* follow-up per player — interleaved across the
+  //    new players (A,B,C then A,B,C) instead of drilling one player twice in
+  //    a row, so the pattern isn't the same rote intro/q/q every time. A
+  //    broken-image player falls back to which-team (the only non-target-photo
+  //    choice type), even in a single-team section — a broken photo is worse
+  //    than an easy team question.
+  const INTRO_TYPES: QuestionType[] = ['photo-to-name', 'name-to-photo'];
+  const followupPool: QuestionType[] = [...INTRO_TYPES, 'first-name', 'last-name'];
+  if (sectionTeams >= 4) followupPool.push('which-team');
+  const introType = new Map<string, QuestionType>();
   for (const state of chosenNew) {
     const isBroken = broken.has(state.player.player_id);
-    out.push(makeQ(state, isBroken ? 'which-team' : 'photo-to-name', true, false));
-    out.push(makeQ(state, isBroken ? 'which-team' : 'name-to-photo', false, false));
+    const t = isBroken ? 'which-team' : rng.pick(INTRO_TYPES);
+    introType.set(state.player.player_id, t);
+    out.push(makeQ(state, t, true, false));
+  }
+  for (const state of chosenNew) {
+    const isBroken = broken.has(state.player.player_id);
+    const first = introType.get(state.player.player_id);
+    const t = isBroken
+      ? 'which-team'
+      : rng.pick(followupPool.filter((ft) => ft !== first));
+    out.push(makeQ(state, t, false, false));
   }
 
   // 2. Fill remaining slots. Reviews come first (advance boxes), then recycle
   //    just-introduced players if reviews run out. We cycle a fixed candidate
   //    list; a hard iteration cap guarantees termination.
   const fill: { state: PlayerState; isReview: boolean }[] = [
-    ...spec.dueReviews.map((state) => ({ state, isReview: true })),
+    // isReview marks a genuine due review (informational — advancement is
+    // capped by the runner/scheduler, not by this flag).
+    ...spec.dueReviews.map((state) => ({ state, isReview: state.dueNow ?? true })),
     ...chosenNew.map((state) => ({ state, isReview: false })),
   ];
   const distinctTargets = new Set(fill.map((f) => f.state.player.player_id)).size;
 
   if (fill.length > 0) {
-    let idx = 0;
+    // First pass keeps due-order priority (most-overdue first); subsequent
+    // passes are re-shuffled so the session isn't a predictable round-robin.
+    let order = fill;
+    let pos = 0;
     let guard = 0;
     const maxIters = length * 4 + 8;
     while (out.length < length && guard++ < maxIters) {
-      const { state, isReview } = fill[idx % fill.length];
-      idx++;
+      if (pos >= order.length) {
+        order = rng.shuffle(fill);
+        pos = 0;
+      }
+      const { state, isReview } = order[pos];
+      pos++;
       // avoid two consecutive questions on the same target when we can
       const prev = out[out.length - 1];
       if (prev && prev.targetId === state.player.player_id && distinctTargets > 1) {

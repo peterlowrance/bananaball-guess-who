@@ -22,6 +22,7 @@ interface Runner {
   combo: number;
   done: boolean;
   submit: (correct: boolean, confusedWith?: string | null) => void;
+  commit: () => void;
   summary: () => RunnerSummary;
 }
 
@@ -96,6 +97,8 @@ export function RunnerView({
     if (runner.done && !feedback && !ranComplete.current) {
       ranComplete.current = true;
       if (soundOn) playSound('complete');
+      // Persist SRS effects only now — quitting mid-session never commits.
+      runner.commit();
       onComplete(runner.summary());
     }
   }, [runner, feedback, soundOn, onComplete]);

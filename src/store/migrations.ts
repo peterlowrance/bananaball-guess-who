@@ -18,6 +18,17 @@ export const MIGRATIONS: Record<number, (s: AnyState) => AnyState> = {
   // membership are entirely redefined, so v1 progress can't be remapped
   // meaningfully — reset to a fresh state. (Intentional full reset.)
   1: () => ({ ...(freshState() as unknown as AnyState) }),
+  // 2 -> 3: SrsRecord gains `boxUps` (recent box-up timestamps for the daily
+  // advancement cap). Existing records start with an empty history.
+  2: (s) => {
+    const players = Object.fromEntries(
+      Object.entries((s.players as Record<string, AnyState>) ?? {}).map(([id, rec]) => [
+        id,
+        { boxUps: [], ...rec },
+      ]),
+    );
+    return { ...s, players, version: 3 };
+  },
 };
 
 export function migrate(raw: unknown): PersistedState {

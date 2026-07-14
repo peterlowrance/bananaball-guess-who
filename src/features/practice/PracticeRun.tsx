@@ -15,13 +15,13 @@ export function PracticeRun() {
   const any = sp.get('any') === '1';
 
   const questions = usePracticeQuestions({ mode, teams, any });
-  const runner = useQuestionRunner(questions);
+  const runner = useQuestionRunner(questions, 'practice');
   const finishLesson = useStore((s) => s.finishLesson);
 
   const onComplete = useCallback(
     (s: RunnerSummary) => {
-      // practice awards flat XP (no box grinding — the engine already blocks
-      // box advancement for not-due players).
+      // practice awards flat XP; box grinding is bounded by the +1-per-session
+      // and per-day advancement caps in the runner/scheduler.
       const res = finishLesson({ ...s, xp: XP.practice, finishHour: new Date().getHours() });
       navigate('/practice/complete', { state: { summary: s, xp: res.awardedXp }, replace: true });
     },

@@ -28,7 +28,15 @@ export function buildPracticeQuestions(config: PracticeConfig, srs: Record<strin
   const introduced = (id: string) => rec(id).introducedAt != null;
   const stateFor = (id: string): PlayerState => {
     const r = rec(id);
-    return { player: getPlayer(id), box: r.box, confusedWith: r.lastWrongWith, introduced: true };
+    return {
+      player: getPlayer(id),
+      box: r.box,
+      confusedWith: r.lastWrongWith,
+      introduced: true,
+      // informational (isReview flag); advancement caps live in the
+      // runner (+1/session) and scheduler (daily cap).
+      dueNow: isDue(r, now),
+    };
   };
 
   let pool: string[] = [];

@@ -8,7 +8,9 @@ import type { StreakState } from '../engine/gamification/streak';
 export const STORE_KEY = 'bbgw';
 // v2: curriculum is hand-authored (themed units, owned/cameo). Units were
 // redefined, so v1 path/SRS state is reset on upgrade (see migrations.ts).
-export const SCHEMA_VERSION = 2;
+// v3: SrsRecord gains `boxUps` (recent box-up timestamps for the daily
+// advancement cap); existing records get an empty list.
+export const SCHEMA_VERSION = 3;
 
 export interface Settings {
   sound: boolean;

@@ -166,6 +166,50 @@ describe('buildSession', () => {
     expect(s).toHaveLength(0);
   });
 
+  it('interleaves intro follow-ups across new players and varies their types', () => {
+    const news = teamPlayers.slice(0, 3).map((p) => state(p, 0, false));
+    const followupTypes = new Set<QuestionType>();
+    for (let seed = 0; seed < 30; seed++) {
+      const s = buildSession({ newPlayers: news, dueReviews: [], roster }, mulberry32(seed));
+      // First 3 slots are the intros (A,B,C), next 3 the follow-ups (A,B,C
+      // again) — never the old intro/q/q drill on one player back-to-back.
+      const ids = news.map((n) => n.player.player_id);
+      expect(s.slice(0, 3).map((q) => q.targetId)).toEqual(ids);
+      expect(s.slice(3, 6).map((q) => q.targetId)).toEqual(ids);
+      s.slice(3, 6).forEach((q) => followupTypes.add(q.type));
+    }
+    // The follow-up isn't always the same question type.
+    expect(followupTypes.size).toBeGreaterThan(1);
+  });
+
+  it('grades not-due mix-ins as practice (isReview=false), genuine dues as reviews', () => {
+    const s = buildSession(
+      {
+        newPlayers: [],
+        dueReviews: [
+          { ...state(teamPlayers[0], 3), dueNow: true },
+          { ...state(teamPlayers[1], 3), dueNow: false },
+        ],
+        roster,
+      },
+      mulberry32(11),
+    );
+    for (const q of s) {
+      const expected = q.targetId === teamPlayers[0].player_id;
+      expect(q.isReview).toBe(expected);
+    }
+  });
+
+  it('does not throttle new intros for not-due mix-ins (only genuine backlog counts)', () => {
+    const news = teamPlayers.slice(0, 3).map((p) => state(p, 0, false));
+    const mixins = Array.from({ length: 20 }, (_, i) => ({
+      ...state(roster[i % roster.length], 2),
+      dueNow: false,
+    }));
+    const s = buildSession({ newPlayers: news, dueReviews: mixins, roster }, mulberry32(12));
+    expect(s.filter((q) => q.intro).length).toBe(3);
+  });
+
   it('is deterministic per seed', () => {
     const spec = {
       newPlayers: teamPlayers.slice(0, 3).map((p) => state(p, 0, false)),

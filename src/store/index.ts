@@ -36,7 +36,10 @@ export interface GradeArgs {
   correct: boolean;
   typed?: boolean;
   confusedWith?: string | null;
-  isReview?: boolean;
+  /** false when this player already moved up a box this session (+1/session cap) */
+  allowAdvance?: boolean;
+  /** practice session — wrong answers drop 1 box instead of 2 */
+  practice?: boolean;
   jerseyQuestion?: boolean;
 }
 
@@ -119,7 +122,8 @@ export const useStore = create<Store>()(
             rng: clockRng(),
             typed: args.typed,
             confusedWith: args.confusedWith,
-            isReview: args.isReview,
+            allowAdvance: args.allowAdvance,
+            practice: args.practice,
           };
           const updated = srsGrade(input);
           const jerseyCorrect =

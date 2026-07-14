@@ -43,10 +43,10 @@ describe('store actions', () => {
     expect(useStore.getState().srsFor(id).introducedAt).toBe(first.introducedAt);
   });
 
-  it('grades an answer and advances the box on a correct review', () => {
+  it('grades an answer and advances the box on a correct answer', () => {
     const id = players[1].player_id;
     useStore.getState().introducePlayer(id);
-    useStore.getState().gradeAnswer({ playerId: id, correct: true, isReview: true });
+    useStore.getState().gradeAnswer({ playerId: id, correct: true });
     expect(useStore.getState().srsFor(id).box).toBe(2);
   });
 

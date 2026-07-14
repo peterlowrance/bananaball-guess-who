@@ -9,6 +9,10 @@ export interface SrsRecord {
   lastWrongWith: string[]; // player_ids this player was confused with (capped)
   legendary: boolean; // reached box 5 AND passed a typed-name question
   introducedAt: number | null; // epoch ms first introduced, null if never
+  /** epoch ms of recent box advancements (incl. the 0→1 introduce), pruned to
+   *  the last rolling day — enforces the max-box-ups-per-day cap. Internal
+   *  bookkeeping, never shown to the user. */
+  boxUps: number[];
 }
 
 export function newSrsRecord(): SrsRecord {
@@ -20,5 +24,6 @@ export function newSrsRecord(): SrsRecord {
     lastWrongWith: [],
     legendary: false,
     introducedAt: null,
+    boxUps: [],
   };
 }

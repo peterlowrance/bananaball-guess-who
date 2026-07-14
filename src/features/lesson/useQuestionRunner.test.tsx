@@ -58,6 +58,44 @@ describe('useQuestionRunner scoring', () => {
     expect(s.correctCount).toBe(3);
   });
 
+  it('buffers SRS writes until commit — quitting mid-session persists nothing', async () => {
+    const { useStore } = await import('../../store');
+    const questions = [{ ...q('intro1'), intro: true }, q('2')];
+    const { result } = renderHook(() => useQuestionRunner(questions));
+
+    act(() => result.current.submit(true));
+    act(() => result.current.submit(true));
+    // Answers given, but nothing hits the store until commit() — abandoning
+    // here must not record introductions or grades.
+    expect(useStore.getState().players['p_intro1']).toBeUndefined();
+    expect(useStore.getState().players['p_2']).toBeUndefined();
+
+    act(() => result.current.commit());
+    expect(useStore.getState().players['p_intro1']?.introducedAt).not.toBeNull();
+    expect(useStore.getState().players['p_2']?.seen).toBe(1);
+  });
+
+  it('caps box advancement at +1 per player per session (intro counts as the +1)', async () => {
+    const { useStore } = await import('../../store');
+    useStore.getState().resetProgress();
+    // Two correct answers on the same player in one session → one box-up.
+    const same = [q('a'), { ...q('b'), targetId: 'p_a' }];
+    const { result } = renderHook(() => useQuestionRunner(same));
+    act(() => result.current.submit(true));
+    act(() => result.current.submit(true));
+    act(() => result.current.commit());
+    expect(useStore.getState().players['p_a'].box).toBe(1);
+
+    // An introduced player's 0→1 IS the session's box-up: correct answers in
+    // the intro lesson leave them at box 1 (day-1 review preserved).
+    const intro = [{ ...q('c'), intro: true }, { ...q('d'), targetId: 'p_c' }];
+    const { result: r2 } = renderHook(() => useQuestionRunner(intro));
+    act(() => r2.current.submit(true));
+    act(() => r2.current.submit(true));
+    act(() => r2.current.commit());
+    expect(useStore.getState().players['p_c'].box).toBe(1);
+  });
+
   it('scores a clean run as all first-try correct', () => {
     const questions = [q('1'), q('2')];
     const { result } = renderHook(() => useQuestionRunner(questions));
