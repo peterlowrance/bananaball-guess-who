@@ -68,14 +68,26 @@ describe('generateQuestion — property: always answerable', () => {
               expect(q.tiles).not.toContain('Jr.');
             }
             if (type === 'build-first' || type === 'build-last') {
-              // the answer's letters are all present among the (uppercase) tiles
-              const answer = (type === 'build-first' ? firstName : lastName)(target.name);
-              const bank = [...(q.tiles ?? [])];
-              for (const ch of answer.replace(/[^a-zA-Z]/g, '').toUpperCase()) {
-                const at = bank.indexOf(ch);
-                expect(at).toBeGreaterThanOrEqual(0);
-                bank.splice(at, 1); // consume so duplicate letters need duplicate tiles
-              }
+              // Tiles may be single letters OR 2-3 letter chunks. In every case
+              // SOME subset of the tiles, concatenated in some order, must spell
+              // the answer exactly. A decoy can be a prefix of the remaining
+              // answer, so a naive greedy match can dead-end — backtrack.
+              const answer = (type === 'build-first' ? firstName : lastName)(target.name)
+                .replace(/[^a-zA-Z]/g, '')
+                .toUpperCase();
+              const tiles = [...(q.tiles ?? [])];
+              const used = new Array(tiles.length).fill(false);
+              const solve = (rest: string): boolean => {
+                if (rest.length === 0) return true;
+                for (let ti = 0; ti < tiles.length; ti++) {
+                  if (used[ti] || !rest.startsWith(tiles[ti])) continue;
+                  used[ti] = true;
+                  if (solve(rest.slice(tiles[ti].length))) return true;
+                  used[ti] = false;
+                }
+                return false;
+              };
+              expect(solve(answer)).toBe(true);
             }
           } else {
             // choice-based: correctIndex valid and choices distinct
@@ -157,6 +169,60 @@ describe('build-name / build-last never leak a Jr. suffix', () => {
       mulberry32(3),
     );
     expect(bl.answerText).toBe(lastName(jr.name));
+  });
+});
+
+describe('build-first / build-last tile granularity', () => {
+  // At the unlock rung (box 2) the tiles should be chunks, not single letters:
+  // for a name with >3 letters, at least one tile has length >= 2, and the
+  // total tile count is far below the letter count.
+  it('uses multi-letter chunks at box 2 for longer names', () => {
+    // Find a target whose first name has >= 6 letters so chunking is meaningful.
+    const target = players.find((p) => firstName(p.name).replace(/[^a-zA-Z]/g, '').length >= 6)!;
+    let sawChunk = false;
+    for (let s = 0; s < 40; s++) {
+      const q = generateOfType(
+        { target, box: 2, roster: players, isReview: true, qid: 'q' },
+        'build-first',
+        mulberry32(s + 1),
+      );
+      const tiles = q.tiles ?? [];
+      // every tile is 1-3 chars; at box 2 chunks are forced so some tile is >1.
+      expect(tiles.every((t) => t.length >= 1 && t.length <= 3)).toBe(true);
+      if (tiles.some((t) => t.length >= 2)) sawChunk = true;
+      // chunk mode has far fewer tiles than letters (letters + up-to-4 decoys).
+      const letterCount = firstName(target.name).replace(/[^a-zA-Z]/g, '').length;
+      expect(tiles.length).toBeLessThan(letterCount);
+    }
+    expect(sawChunk).toBe(true);
+  });
+
+  // Chunk tiles must be assemblable into the exact answer, and no decoy chunk
+  // duplicates a real one (which would make an extra tile silently "correct").
+  it('chunk tiles concatenate to the answer with distinct decoys', () => {
+    for (let s = 0; s < 200; s++) {
+      const target = players[s % players.length];
+      const q = generateOfType(
+        { target, box: 2, roster: players, isReview: true, qid: 'q' },
+        'build-last',
+        mulberry32(s + 7),
+      );
+      const answer = lastName(target.name).replace(/[^a-zA-Z]/g, '').toUpperCase();
+      const tiles = [...(q.tiles ?? [])];
+      // The concatenation of some ordered subset equals the answer (backtracking).
+      const used = new Array(tiles.length).fill(false);
+      const solve = (rest: string): boolean => {
+        if (rest.length === 0) return true;
+        for (let ti = 0; ti < tiles.length; ti++) {
+          if (used[ti] || !rest.startsWith(tiles[ti])) continue;
+          used[ti] = true;
+          if (solve(rest.slice(tiles[ti].length))) return true;
+          used[ti] = false;
+        }
+        return false;
+      };
+      expect(solve(answer)).toBe(true);
+    }
   });
 });
 

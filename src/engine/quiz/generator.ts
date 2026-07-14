@@ -69,15 +69,58 @@ function partialNameChoices(
   return { choices, correctIndex: all.findIndex((p) => p.player_id === target.player_id) };
 }
 
-/** Letter tiles for spelling a single name: the answer's letters plus a few
- *  decoy letters, all uppercased so decoys aren't distinguishable by case.
- *  Spaces/punctuation are not tiled (single names don't have them). */
-function letterTiles(answer: string, rng: Rng): string[] {
+/** Split an alpha-only, uppercased name into ordered chunks of 2-3 letters.
+ *  Chunking keeps each tile's internal order intact, so the player only has to
+ *  sequence a handful of syllable-ish pieces instead of every single letter —
+ *  a much easier rung than full letter-scramble. Chunk sizes are chosen so no
+ *  chunk is a lone trailing letter (we grow the previous chunk to 3 instead).
+ *  Deterministic given `rng`. */
+function chunkName(letters: string[], rng: Rng): string[] {
+  if (letters.length <= 3) return [letters.join('')];
+  const chunks: string[] = [];
+  let i = 0;
+  while (i < letters.length) {
+    const remaining = letters.length - i;
+    // Never leave a size-1 tail: with 4 left, take 2 (→2,2); otherwise pick 2-3.
+    let size = remaining <= 3 ? remaining : remaining === 4 ? 2 : 2 + rng.int(2);
+    if (remaining - size === 1) size = remaining; // avoid a lone final letter
+    chunks.push(letters.slice(i, i + size).join(''));
+    i += size;
+  }
+  return chunks;
+}
+
+/** Tiles for spelling a single name. Difficulty scales the tile granularity:
+ *   - 'chunks'  : ordered 2-3 letter pieces + a couple decoy chunks (easiest)
+ *   - 'letters' : every letter as its own tile + decoy letters (hardest)
+ *  All uppercased so decoys aren't distinguishable by case. Spaces/punctuation
+ *  are not tiled (single names don't have them). */
+function nameTiles(answer: string, mode: 'chunks' | 'letters', rng: Rng): string[] {
   const letters = answer.replace(/[^a-zA-Z]/g, '').toUpperCase().split('');
-  const alphabet = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'.split('').filter((c) => !letters.includes(c));
-  const decoyCount = Math.min(4, Math.max(2, Math.round(letters.length / 2)));
-  const decoys = rng.sample(alphabet, decoyCount);
-  return rng.shuffle([...letters, ...decoys]);
+  if (mode === 'letters') {
+    const alphabet = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'.split('').filter((c) => !letters.includes(c));
+    const decoyCount = Math.min(4, Math.max(2, Math.round(letters.length / 2)));
+    return rng.shuffle([...letters, ...rng.sample(alphabet, decoyCount)]);
+  }
+  // chunk mode: the real chunks plus 1-2 decoy chunks that look plausible but
+  // aren't one of the real pieces (so a decoy can't double as a correct tile).
+  const chunks = chunkName(letters, rng);
+  const decoyCount = chunks.length <= 2 ? 1 : 2;
+  const real = new Set(chunks);
+  const vowels = 'AEIOU';
+  const cons = 'BCDFGHKLMNPRST';
+  const decoys: string[] = [];
+  let guard = 0;
+  while (decoys.length < decoyCount && guard++ < 50) {
+    const len = 2 + rng.int(2); // 2 or 3
+    let d = '';
+    for (let k = 0; k < len; k++) {
+      const pool = k % 2 === 0 ? cons : vowels; // alternate → pronounceable-ish
+      d += pool[rng.int(pool.length)];
+    }
+    if (!real.has(d) && !decoys.includes(d)) decoys.push(d);
+  }
+  return rng.shuffle([...chunks, ...decoys]);
 }
 
 export function generateQuestion(params: GenParams, rng: Rng): Question {
@@ -186,13 +229,17 @@ export function generateQuestion(params: GenParams, rng: Rng): Question {
     case 'build-first':
     case 'build-last': {
       const answer = (type === 'build-first' ? firstName : lastName)(target.name);
+      // Difficulty ramps with the box: at the unlock rung (box 2) always use the
+      // easier chunk tiles; from box 3 up, mostly single-letter tiles but still
+      // occasionally chunks for variety. Full letter-scramble is the hard mode.
+      const mode: 'chunks' | 'letters' = box <= 2 || rng.next() < 0.35 ? 'chunks' : 'letters';
       return {
         id: qid,
         type,
         targetId: target.player_id,
         choices: [],
         correctIndex: -1,
-        tiles: letterTiles(answer, rng),
+        tiles: nameTiles(answer, mode, rng),
         answerText: answer,
         isReview,
       };

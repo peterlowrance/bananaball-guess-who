@@ -403,7 +403,9 @@ function BuildLetters({ question: q, onAnswer, disabled, prompt }: Props & { pro
       <div className="mb-3 flex h-14 items-center justify-center overflow-hidden rounded-2xl border-2 border-dashed border-[var(--hairline)] p-3 text-center text-2xl font-black tracking-widest">
         {built ? built : <span className="text-base tracking-normal text-[var(--muted)]">tap letters below</span>}
       </div>
-      {/* Letter bank: picked letters gray out in place rather than repositioning. */}
+      {/* Tile bank: picked tiles gray out in place rather than repositioning.
+          Tiles may be single letters or 2-3 letter chunks, so width is auto
+          (min-w keeps single letters square-ish) with horizontal padding. */}
       <div className="mb-4 flex flex-wrap justify-center gap-1.5">
         {tiles.map((tile, i) => {
           const picked = slots.includes(i);
@@ -412,7 +414,7 @@ function BuildLetters({ question: q, onAnswer, disabled, prompt }: Props & { pro
               key={i}
               disabled={disabled}
               onPick={() => toggle(i)}
-              className={`h-10 w-9 rounded-lg border-2 font-black transition active:scale-95 ${
+              className={`h-10 min-w-9 rounded-lg border-2 px-2 font-black tracking-wide transition active:scale-95 ${
                 picked
                   ? 'border-transparent bg-[var(--hairline)] text-[var(--muted)] opacity-50'
                   : 'border-[var(--hairline)]'
